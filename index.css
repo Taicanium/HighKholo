@@ -72,6 +72,7 @@ tr * {
 }
 
 .subdiv {
+	display: none;
 	opacity: 0;
 	position: absolute;
 	left: 15%;
@@ -79,19 +80,16 @@ tr * {
 	width: 80%;
 	height: 80%;
 	z-index: -1;
-	-webkit-transition: opacity 0.5s;
-	-moz-transition: opacity 0.5s;
-	-o-transition: opacity 0.5s;
-	transition: opacity 0.5s;
 }
 
 .subdiv:target {
+	display: block;
 	opacity: 1;
 	z-index: 1;
 }
 
 .icon {
-	position: absolute;
+	position: fixed;
 	left: 5%;
 	bottom: 5%;
 	width: 3%;
