@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>High Kholo — Conlang by Taica</title>
+		<link rel="stylesheet" href="index.css" />
+		
+		<script type="text/javascript">
+			function showHappy() {
+				document.getElementById("happy").style.zIndex = "2";
+				document.getElementById("happy").style.opacity = "1";
+				
+				document.getElementById("normal").style.zIndex = "1";
+				document.getElementById("normal").style.opacity = "0";
+			}
+			
+			function showNormal() {
+				document.getElementById("happy").style.zIndex = "1";
+				document.getElementById("happy").style.opacity = "0";
+				
+				document.getElementById("normal").style.zIndex = "2";
+				document.getElementById("normal").style.opacity = "1";
+			}
+		</script>
+	</head>
+	<body>
+		<ul>
+			<li><a href="#introduction">I.<br />Introduction</a></li>
+			<li><a href="#phonemes">II.<br />Phonemes</a></li>
+			<li><a href="#grammar">III.<br />Grammar</a></li>
+			<li><a href="#morphology">IV.<br />Morphology</a></li>
+			<li><a href="#numerals">V.<br />Numerals</a></li>
+			<li><a href="#lexicon">VI.<br />Lexicon</a></li>
+			<li><a href="#phrases">VII.<br />Irregular Phrases</a></li>
+			<li><a href="#excerpts">VIII.<br />Excerpts</a></li>
+		</ul>
+
+		<span class="title">High Kholo</span>
+		
+		<a href="https://taicanium.github.io/" target="_blank"><img class="icon" id="happy" src="https://i.ibb.co/fnvbrfg/Rhian-Happy.png" alt="Rhian-Happy" onmouseleave="showNormal()" /></a>
+		<img class="icon" id="normal" src="https://i.ibb.co/xhFCWhs/Rhian-Normal.png" alt="Rhian-Normal" onmouseenter="showHappy()" />
+		
+		<div class="subdiv" id="introduction">
+			This is the introduction.
+		</div>
+		
+		<div class="subdiv" id="phonemes">
+			This is phonemes.
+		</div>
+		
+		<div class="subdiv" id="grammar">
+			This is grammar.
+		</div>
+		
+		<div class="subdiv" id="morphology">
+			This is morphology.
+		</div>
+		
+		<div class="subdiv" id="numerals">
+			This is numerals.
+		</div>
+		
+		<div class="subdiv" id="lexicon">
+			This is lexicon.
+		</div>
+		
+		<div class="subdiv" id="phrases">
+			This is phrases.
+		</div>
+		
+		<div class="subdiv" id="excerpts">
+			This is excerpts.
+		</div>
+	</body>
+</html>

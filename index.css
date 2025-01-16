@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body {
+	background-color: #1D1D2B;
+	color: #BCB8B8;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 10%;
+	background-color: rgba(26, 21, 28, 0.4);
+	position: fixed;
+	overflow: auto;
+	border: 1px solid #555;
+	border-bottom: none;
+}
+
+li a {
+	display: block;
+	color: #BCB8B8;
+	padding: 8px 16px;
+	text-decoration: none;
+	text-align: center;
+	border-bottom: 1px solid #555;
+}
+
+li:last-child {
+	border-bottom: none;
+}
+
+li a:hover {
+	background-color: #3E2734;
+}
+
+li a:active {
+	background-color: #782734;
+}
+
+.title {
+	font-family: "Playfair Display", serif;
+	font-optical-sizing: auto;
+	font-size: 28pt;
+	font-style: normal;
+	font-weight: 400;
+	position: absolute;
+	right: 45%;
+}
+
+.subdiv {
+	opacity: 0;
+	position: absolute;
+	left: 15%;
+	top: 15%;
+	width: 80%;
+	height: 80%;
+	z-index: -1;
+	-webkit-transition: opacity 0.5s;
+	-moz-transition: opacity 0.5s;
+	-o-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+
+.subdiv:target {
+	opacity: 1;
+	z-index: 1;
+}
+
+.icon {
+	position: absolute;
+	left: 5%;
+	bottom: 5%;
+	width: 3%;
+	height: auto;
+	border: 0;
+}
+
+#happy {
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	opacity: 0;
+	z-index: 1;
+}
+
+#normal {
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	opacity: 1;
+	z-index: 2;
+}
+
+#dizzy {
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	opacity: 0;
+	z-index: 0;
+}
