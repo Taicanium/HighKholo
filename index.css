@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat&display=swap');
 
 body {
+	font-family: "Calibri", serif;
 	background-color: #1D1D2B;
 	color: #BCB8B8;
 }
@@ -38,14 +39,36 @@ li a:active {
 	background-color: #782734;
 }
 
+tr * {
+	border: 1px solid #555;
+	min-width: 50px;
+	text-align: center;
+}
+
 .title {
 	font-family: "Playfair Display", serif;
 	font-optical-sizing: auto;
-	font-size: 28pt;
+	font-size: 36pt;
 	font-style: normal;
-	font-weight: 400;
+	font-weight: 500;
 	position: absolute;
 	right: 45%;
+}
+
+.subtitle {
+	font-family: "Playfair Display", serif;
+	font-optical-sizing: auto;
+	font-size: 24pt;
+	font-style: normal;
+	font-weight: 400;
+}
+
+.smalltext {
+	font-family: "Montserrat", serif;
+	font-optical-sizing: auto;
+	font-size: 9pt;
+	font-style: normal;
+	font-weight: 400;
 }
 
 .subdiv {
@@ -92,13 +115,4 @@ li a:active {
 	transition: all 0.5s ease;
 	opacity: 1;
 	z-index: 2;
-}
-
-#dizzy {
-	-webkit-transition: all 0.5s ease;
-	-moz-transition: all 0.5s ease;
-	-o-transition: all 0.5s ease;
-	transition: all 0.5s ease;
-	opacity: 0;
-	z-index: 0;
 }
