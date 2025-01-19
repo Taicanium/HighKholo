@@ -87,7 +87,7 @@ td {
 	font-weight: 400;
 }
 
-#revision {
+.revision {
 	font-family: "Montserrat", serif;
 	font-optical-sizing: auto;
 	font-size: 9pt;
