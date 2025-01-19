@@ -55,8 +55,7 @@ document.getElementById("normal").style.opacity = "1";
 <li><a href="#morphology">V.<br />Morphology</a></li>
 <li><a href="#numerals">VI.<br />Numerals</a></li>
 <li><a href="#lexicon">VII.<br />Lexicon</a></li>
-<li><a href="#phrases">VIII.<br />Irregular Phrases</a></li>
-<li><a href="#excerpts">IX.<br />Excerpts</a></li>
+<li><a href="#excerpts">VIII.<br />Excerpts</a></li>
 </ul>
 
 <span class="title1">High Kholo</span>
@@ -151,12 +150,12 @@ Herein detailed: The dialect most commonly spoken among gnolls of the Mwangi Exp
 <table>
 <thead>
 <tr>
-<th />
-<th>Front</th>
-<th />
-<th>Mid</th>
-<th />
-<th>Back</th>
+<th style="width: 50px;" />
+<th style="width: 50px;">Front</th>
+<th style="width: 50px;" />
+<th style="width: 50px;">Mid</th>
+<th style="width: 50px;" />
+<th style="width: 50px;">Back</th>
 </tr>
 </thead>
 <tr>
@@ -224,8 +223,8 @@ Kholo declines nouns, verbs, and adjectives according to a fusional suffix syste
 <table>
 <thead>
 <th colspan="2" />
-<th>Informal</th>
-<th>Formal</th>
+<th style="width: 100px;">Informal</th>
+<th style="width: 70px;">Formal</th>
 </thead>
 <tr>
 <th colspan="2">Past</th>
@@ -233,12 +232,12 @@ Kholo declines nouns, verbs, and adjectives according to a fusional suffix syste
 <td>-to</td>
 </tr>
 <tr>
-<th rowspan="2">Present</th>
+<th rowspan="2" style="width: 70px;">Present</th>
 <th>Perfect</th>
 <td>-(j)o</td>
 </tr>
 <tr>
-<th>Continuous</th>
+<th style="width: 85px;">Continuous</th>
 <td><i>unmodified</i></td>
 <td>-(')ej</td>
 </tr>
@@ -249,14 +248,14 @@ Kholo declines nouns, verbs, and adjectives according to a fusional suffix syste
 <tr>
 <th rowspan="2" />
 <th colspan="2">Informal</th>
-<th rowspan="2">Formal</th>
+<th rowspan="2" style="width: 60px;">Formal</th>
 </tr>
 <tr>
-<th>Non-Kholo</th>
-<th>Kholo</th>
+<th style="width: 80px;">Non-Kholo</th>
+<th style="width: 60px;">Kholo</th>
 </tr>
 <tr>
-<th>Singular</th>
+<th style="width: 75px;">Singular</th>
 <td colspan="2"><i>unmodified</i></td>
 <td>-(')im</td>
 </tr>
@@ -302,6 +301,8 @@ To indicate a hypothetical action (as in Common "would"), Kholo relies on making
 <td>"I would break your paw."</td>
 </tr>
 </table>
+<br />
+Note the use of "uubasja", a contraction of "u ba se'a", meaning "but I do not".
 <br /><br /><br />
 <span class="title3">Genitive</span><br />
 The genitive case indicates ownership, possession, or association. In Common, this case is shown with the suffix 's, as in "Timmy's ball", or with the particle 'of', as in "the Ides of March".<br /><br />Kholo follows a principle of attribution, whereby the genitive case is shown by treating the owner or possessor as an adjective of the owned noun:<br /><br />
@@ -392,7 +393,7 @@ Kholo speech tends to sonorize (i.e. morph from voiceless to voiced) consonants 
 
 <div class="subdiv" id="numerals">
 Ordinal numbers (i.e. 'first', 'second') are indicated with the suffix -jan ('-most').<br /><br />
-<table>
+<table style="width: 250px;">
 <thead>
 <th>Kholo</th>
 <th>Common</th>
@@ -403,7 +404,7 @@ Ordinal numbers (i.e. 'first', 'second') are indicated with the suffix -jan ('-m
 </tr>
 </table>
 <br />
-<table>
+<table style="width: 250px;">
 <tr>
 <td>Ik</td>
 <td>One</td>
@@ -446,7 +447,7 @@ Ordinal numbers (i.e. 'first', 'second') are indicated with the suffix -jan ('-m
 </tr>
 </table>
 <br />
-<table>
+<table style="width: 250px;">
 <tr>
 <td>Ird-wakh</td>
 <td>Twenty</td>
@@ -469,7 +470,7 @@ Ordinal numbers (i.e. 'first', 'second') are indicated with the suffix -jan ('-m
 </tr>
 </table>
 <br />
-<table>
+<table style="width: 250px;">
 <tr>
 <td>Aka</td>
 <td>"A lot"</td>
@@ -483,7 +484,7 @@ Ordinal numbers (i.e. 'first', 'second') are indicated with the suffix -jan ('-m
 
 <div class="subdiv" id="lexicon">
 <span class="smalltext">Currently, this remains a three-column word list. Given time, I would like to (and will) implement a more user-friendly searchable dictionary in JavaScript.</span><br /><br />
-<table>
+<table id="dict">
 <thead>
 <th>Common</th>
 <th>Kholo</th>
@@ -859,28 +860,6 @@ Ordinal numbers (i.e. 'first', 'second') are indicated with the suffix -jan ('-m
 <tr><td>Yellow</td><td /><td /></tr>
 <tr><td>Yes</td><td>Uu</td><td /></tr>
 <tr><td>Young</td><td>Liivi</td><td /></tr>
-</table>
-</div>
-
-<div class="subdiv" id="phrases">
-<table>
-<thead>
-<th>Kholo</th>
-<th>Common (literal)</th>
-<th>Common (proper)</th>
-<th>(notes)</th>
-</thead>
-<tr>
-<td>Ber<br />(Ba'er)</td>
-<td>Me-for</td>
-<td>For me<br />To me<br />At me<br />etc.</td>
-<td />
-</tr>
-<tr>
-<td>Uubasja<br />(U ba se'a)</td>
-<td colspan="2">But I do not</td>
-<td>Used in the conditional mood.</td>
-</tr>
 </table>
 </div>
 
