@@ -39,9 +39,9 @@ li a:active {
 	background-color: #782734;
 }
 
-tr * {
+tr *:not(i) {
 	border: 1px solid #555;
-	min-width: 50px;
+	min-width: 125px;
 	text-align: center;
 }
 
