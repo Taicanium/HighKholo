@@ -42,7 +42,7 @@ li a:active {
 
 tr *:not(i,sup) {
 	border: 1px solid #555;
-	min-width: 100px;
+	min-width: 75px;
 	text-align: center;
 }
 
