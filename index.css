@@ -93,7 +93,7 @@ td {
 	font-size: 9pt;
 	font-style: normal;
 	font-weight: 400;
-	position: fixed;
+	position: absolute;
 	left: 3%;
 	bottom: 18%;
 }
