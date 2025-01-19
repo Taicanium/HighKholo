@@ -44,7 +44,7 @@ li a:active {
 	background-color: #782734;
 }
 
-tr *:not(i,sup,a) {
+tr *:not(i,sup,span,a) {
 	border: 1px solid #555;
 	text-align: center;
 }
