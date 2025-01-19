@@ -95,9 +95,9 @@ td {
 	display: none;
 	opacity: 0;
 	position: absolute;
-	left: 15%;
+	left: 25%;
 	top: 15%;
-	width: 80%;
+	width: 70%;
 	height: 80%;
 	z-index: -1;
 }
