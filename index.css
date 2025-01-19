@@ -87,6 +87,17 @@ td {
 	font-weight: 400;
 }
 
+#revision {
+	font-family: "Montserrat", serif;
+	font-optical-sizing: auto;
+	font-size: 9pt;
+	font-style: normal;
+	font-weight: 400;
+	position: fixed;
+	left: 3%;
+	bottom: 18%;
+}
+
 .subdiv {
 	display: none;
 	opacity: 0;
@@ -106,7 +117,7 @@ td {
 
 .icon {
 	position: fixed;
-	left: 5%;
+	left: 3%;
 	bottom: 5%;
 	width: 3%;
 	height: auto;

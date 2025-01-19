@@ -6,6 +6,29 @@
 <link rel="stylesheet" href="index.css" />
 
 <script type="text/javascript">
+function readTextFile(file, callback) {
+var rawFile = new XMLHttpRequest();
+rawFile.overrideMimeType("application/json");
+rawFile.open("GET", file, true);
+rawFile.onreadystatechange = function() {
+if (rawFile.readyState === 4 && rawFile.status == "200") {
+callback(rawFile.responseText);
+}
+}
+rawFile.send(null);
+}
+
+window.addEventListener("load", (event) => {
+readTextFile("https://api.github.com/repos/taicanium/HighKholo/commits?page=1&per_page=1", function(text){
+var data = JSON.parse(text);
+var time = data[0]['commit']['committer']['date'];
+var date = new Date(Date.parse(time));
+var dateString = date.toLocaleString();
+
+document.getElementById("revision").innerHTML += date.toLocaleString();
+});
+});
+
 function showHappy() {
 document.getElementById("happy").style.zIndex = "2";
 document.getElementById("happy").style.opacity = "1";
@@ -37,6 +60,8 @@ document.getElementById("normal").style.opacity = "1";
 </ul>
 
 <span class="title1">High Kholo</span>
+
+<span id="revision">Last modified:<br /><br /></span>
 
 <a href="https://taicanium.github.io/" target="_blank"><img class="icon" id="happy" src="https://i.ibb.co/fnvbrfg/Rhian-Happy.png" alt="Rhian-Happy" onmouseleave="showNormal()" /></a>
 <a href="https://taicanium.github.io/" target="_blank"><img class="icon" id="normal" src="https://i.ibb.co/xhFCWhs/Rhian-Normal.png" alt="Rhian-Normal" onmouseenter="showHappy()" /></a>
