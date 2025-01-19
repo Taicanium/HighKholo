@@ -87,17 +87,6 @@ td {
 	font-weight: 400;
 }
 
-.revision {
-	font-family: "Montserrat", serif;
-	font-optical-sizing: auto;
-	font-size: 9pt;
-	font-style: normal;
-	font-weight: 400;
-	position: absolute;
-	left: 3%;
-	bottom: 18%;
-}
-
 .subdiv {
 	display: none;
 	opacity: 0;
@@ -122,6 +111,17 @@ td {
 	width: 3%;
 	height: auto;
 	border: 0;
+}
+
+#gitRev {
+	font-family: "Montserrat", serif;
+	font-optical-sizing: auto;
+	font-size: 9pt;
+	font-style: normal;
+	font-weight: 400;
+	position: absolute;
+	left: 3%;
+	bottom: 18%;
 }
 
 #happy {
