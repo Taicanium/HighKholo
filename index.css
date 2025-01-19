@@ -39,28 +39,44 @@ li a:active {
 	background-color: #782734;
 }
 
-tr *:not(i) {
+tr *:not(i,sup) {
 	border: 1px solid #555;
-	min-width: 125px;
+	min-width: 100px;
 	text-align: center;
 }
 
-.title {
+th {
+	background-color: #1A1A21;
+}
+
+td {
+	background-color: #21212D;
+}
+
+.title1 {
 	font-family: "Playfair Display", serif;
 	font-optical-sizing: auto;
-	font-size: 36pt;
+	font-size: 48pt;
 	font-style: normal;
 	font-weight: 500;
 	position: absolute;
-	right: 45%;
+	right: 40%;
 }
 
-.subtitle {
+.title2 {
 	font-family: "Playfair Display", serif;
 	font-optical-sizing: auto;
-	font-size: 24pt;
+	font-size: 32pt;
 	font-style: normal;
 	font-weight: 400;
+}
+
+.title3 {
+	font-family: "Montserrat", serif;
+	font-optical-sizing: auto;
+	font-size: 18pt;
+	font-style: normal;
+	font-weight: 500;
 }
 
 .smalltext {
