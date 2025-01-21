@@ -1,153 +1,153 @@
 @import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat&display=swap');
 
 body {
-	font-family: "Calibri", serif;
-	background-color: #1D1D2B;
-	color: #BCB8B8;
+font-family: "Calibri", serif;
+background-color: #1D1D2B;
+color: #BCB8B8;
 }
 
 a {
-	color: #BCB8D8;
+color: #BCB8D8;
 }
 
 ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	width: 10%;
-	min-width: 200px;
-	background-color: rgba(26, 21, 28, 0.4);
-	position: fixed;
-	overflow: auto;
-	border: 1px solid #555;
-	border-bottom: none;
-	z-index: 2;
+list-style-type: none;
+margin: 0;
+padding: 0;
+width: 10%;
+min-width: 200px;
+background-color: rgba(26, 21, 28, 0.4);
+position: fixed;
+overflow: auto;
+border: 1px solid #555;
+border-bottom: none;
+z-index: 2;
 }
 
 li a {
-	display: block;
-	color: #BCB8B8;
-	padding: 8px 16px;
-	text-decoration: none;
-	text-align: center;
-	border-bottom: 1px solid #555;
+display: block;
+color: #BCB8B8;
+padding: 8px 16px;
+text-decoration: none;
+text-align: center;
+border-bottom: 1px solid #555;
 }
 
 li:last-child {
-	border-bottom: none;
+border-bottom: none;
 }
 
 li a:hover {
-	background-color: #3E2734;
+background-color: #3E2734;
 }
 
 li a:active {
-	background-color: #782734;
+background-color: #782734;
 }
 
 tr *:not(i,sup,span,a) {
-	border: 1px solid #555;
-	text-align: center;
+border: 1px solid #555;
+text-align: center;
 }
 
 th {
-	background-color: #1A1A21;
+background-color: #1A1A21;
 }
 
 td {
-	background-color: #21212D;
+background-color: #21212D;
 }
 
 .title1 {
-	background-color: #1D1D2B;
-	font-family: "Playfair Display", serif;
-	font-optical-sizing: auto;
-	font-size: 48pt;
-	font-style: normal;
-	font-weight: 500;
-	position: absolute;
-	z-index: 1;
-	left: 0%;
-	width: 100%;
-	text-align: center;
+background-color: #1D1D2B;
+font-family: "Playfair Display", serif;
+font-optical-sizing: auto;
+font-size: 48pt;
+font-style: normal;
+font-weight: 500;
+position: absolute;
+z-index: 1;
+left: 0%;
+width: 100%;
+text-align: center;
 }
 
 .title2 {
-	font-family: "Playfair Display", serif;
-	font-optical-sizing: auto;
-	font-size: 32pt;
-	font-style: normal;
-	font-weight: 400;
+font-family: "Playfair Display", serif;
+font-optical-sizing: auto;
+font-size: 32pt;
+font-style: normal;
+font-weight: 400;
 }
 
 .title3 {
-	font-family: "Montserrat", serif;
-	font-optical-sizing: auto;
-	font-size: 18pt;
-	font-style: normal;
-	font-weight: 500;
+font-family: "Montserrat", serif;
+font-optical-sizing: auto;
+font-size: 18pt;
+font-style: normal;
+font-weight: 500;
 }
 
 .smalltext {
-	font-family: "Montserrat", serif;
-	font-optical-sizing: auto;
-	font-size: 9pt;
-	font-style: normal;
-	font-weight: 400;
+font-family: "Montserrat", serif;
+font-optical-sizing: auto;
+font-size: 9pt;
+font-style: normal;
+font-weight: 400;
 }
 
 .subdiv {
-	display: none;
-	opacity: 0;
-	position: absolute;
-	left: 25%;
-	bottom: 5%;
-	height: 80%;
-	width: 70%;
-	z-index: -1;
+display: none;
+opacity: 0;
+position: absolute;
+left: 25%;
+bottom: 5%;
+height: 80%;
+width: 70%;
+z-index: -1;
 }
 
 .subdiv:target {
-	display: block;
-	opacity: 1;
-	z-index: 0;
+display: block;
+opacity: 1;
+z-index: 0;
 }
 
 .icon {
-	position: fixed;
-	left: 3%;
-	bottom: 5%;
-	height: 7%;
-	max-height: 130px;
-	width: auto;
-	border: 0;
+position: fixed;
+left: 3%;
+bottom: 5%;
+height: 7%;
+max-height: 130px;
+width: auto;
+border: 0;
 }
 
 #gitRev {
-	font-family: "Montserrat", serif;
-	font-optical-sizing: auto;
-	font-size: 9pt;
-	font-style: normal;
-	font-weight: 400;
-	position: fixed;
-	left: 3%;
-	bottom: 18%;
+font-family: "Montserrat", serif;
+font-optical-sizing: auto;
+font-size: 9pt;
+font-style: normal;
+font-weight: 400;
+position: fixed;
+left: 3%;
+bottom: 18%;
 }
 
 #happy {
-	-webkit-transition: all 0.5s ease;
-	-moz-transition: all 0.5s ease;
-	-o-transition: all 0.5s ease;
-	transition: all 0.5s ease;
-	opacity: 0;
-	z-index: 1;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+transition: all 0.5s ease;
+opacity: 0;
+z-index: 1;
 }
 
 #normal {
-	-webkit-transition: all 0.5s ease;
-	-moz-transition: all 0.5s ease;
-	-o-transition: all 0.5s ease;
-	transition: all 0.5s ease;
-	opacity: 1;
-	z-index: 2;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+transition: all 0.5s ease;
+opacity: 1;
+z-index: 2;
 }
