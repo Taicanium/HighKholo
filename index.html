@@ -30,6 +30,28 @@ document.getElementById("gitRev").innerHTML += date.toLocaleString();
 });
 });
 
+function readDBWords(letter) {
+document.getElementById("lexText").innerHTML = "";
+
+readTextFile("https://raw.githubusercontent.com/Taicanium/HighKholo/refs/heads/main/hk_dict.json", function(text){
+var data = JSON.parse(text);
+var classes = data['classes'];
+var words = data['words'];
+
+words.forEach(word => {
+if (word['e'].startsWith(letter)) {
+document.getElementById("lexText").innerHTML += "<i>".concat(word['e']).concat("</i>");
+document.getElementById("lexText").innerHTML += " &mdash; ".concat(classes[word['c']]).concat(": ");
+document.getElementById("lexText").innerHTML += "<b>".concat(word['k']).concat("</b>");
+if ('n' in word) {
+document.getElementById("lexText").innerHTML += " &ndash; <span class=\"smalltext\"><i>".concat(word['n']).concat("</i></span>");
+}
+document.getElementById("lexText").innerHTML += "<br />";
+}
+});
+});
+}
+
 function showHappy() {
 document.getElementById("happy").style.zIndex = "2";
 document.getElementById("happy").style.opacity = "1";
@@ -450,8 +472,8 @@ Kholo speech tends to sonorize (i.e. morph from voiceless to voiced) consonants 
 <tr>
 <td>Pak</td>
 <td>Paj</td>
-<td>Ta<br />Pajda?</td>
-<td>Tuu<br />Pajduu?</td>
+<td>Pajda</td>
+<td>Pajduu</td>
 <td>Yyo'a</td>
 <td>Iikha</td>
 </tr>
@@ -554,385 +576,39 @@ Ordinal numbers (i.e. 'first', 'second') are indicated with the suffix -jan ('-m
 
 <div class="subdiv" id="lexicon">
 <span class="title2">Lexicon</span><br /><br />
-<span class="smalltext">Currently, this remains a three-column word list. Given time, I would like to (and will) implement a more user-friendly searchable dictionary in JavaScript.</span><br /><br />
-<span class="smalltext">Furthermore, I'll migrate the infamous thirty-seven words for 'slave' over here when I can determine a proper layout for it that won't conflict with the rest of the site.<br />In the meantime, <a href="https://docs.google.com/spreadsheets/d/1U5Sn7E5-BVqLJewDYY0Bpa47cfGhc5YutI2XASZkZ-c/edit?usp=sharing" target="_blank">the old Google Sheet</a> still exists if you need access to the slave system. ...freaks.</span><br /><br />
-<table id="dict">
+<span class="smalltext">I'll migrate the infamous thirty-seven words for 'slave' over here when I can determine a proper layout for it that won't conflict with the rest of the site.<br />In the meantime, <a href="https://docs.google.com/spreadsheets/d/1U5Sn7E5-BVqLJewDYY0Bpa47cfGhc5YutI2XASZkZ-c/edit?usp=sharing" target="_blank">the old Google Sheet</a> still exists if you need access to the slave system. ...freaks.</span><br /><br /><br />
+<table id="lexRibbon">
 <thead>
-<th>Common</th>
-<th>Kholo</th>
-<th>(notes)</th>
+<th><a href="javascript:void(0);" onclick="readDBWords('a');">A</a></th>
+<th><a href="javascript:void(0);" onclick="readDBWords('b');">B</a></th>
+<th><a href="javascript:void(0);" onclick="readDBWords('c');">C</a></th>
+<th><a href="javascript:void(0);" onclick="readDBWords('d');">D</a></th>
+<th><a href="javascript:void(0);" onclick="readDBWords('e');">E</a></th>
+<th><a href="javascript:void(0);" onclick="readDBWords('f');">F</a></th>
+<th><a href="javascript:void(0);" onclick="readDBWords('g');">G</a></th>
+<th><a href="javascript:void(0);" onclick="readDBWords('h');">H</a></th>
+<th><a href="javascript:void(0);" onclick="readDBWords('i');">I</a></th>
+<th><a href="javascript:void(0);" onclick="readDBWords('j');">J</a></th>
+<th><a href="javascript:void(0);" onclick="readDBWords('k');">K</a></th>
+<th><a href="javascript:void(0);" onclick="readDBWords('l');">L</a></th>
+<th><a href="javascript:void(0);" onclick="readDBWords('m');">M</a></th>
+<th><a href="javascript:void(0);" onclick="readDBWords('n');">N</a></th>
+<th><a href="javascript:void(0);" onclick="readDBWords('o');">O</a></th>
+<th><a href="javascript:void(0);" onclick="readDBWords('p');">P</a></th>
+<th><a href="javascript:void(0);" onclick="readDBWords('q');">Q</a></th>
+<th><a href="javascript:void(0);" onclick="readDBWords('r');">R</a></th>
+<th><a href="javascript:void(0);" onclick="readDBWords('s');">S</a></th>
+<th><a href="javascript:void(0);" onclick="readDBWords('t');">T</a></th>
+<th><a href="javascript:void(0);" onclick="readDBWords('u');">U</a></th>
+<th><a href="javascript:void(0);" onclick="readDBWords('v');">V</a></th>
+<th><a href="javascript:void(0);" onclick="readDBWords('w');">W</a></th>
+<th><a href="javascript:void(0);" onclick="readDBWords('x');">X</a></th>
+<th><a href="javascript:void(0);" onclick="readDBWords('y');">Y</a></th>
+<th><a href="javascript:void(0);" onclick="readDBWords('z');">Z</a></th>
 </thead>
-<tr><td>After</td><td>Enkha</td><td /></tr>
-<tr><td>Again</td><td>Shikh</td><td /></tr>
-<tr><td>Air</td><td>Jol</td><td /></tr>
-<tr><td>All</td><td>Li</td><td /></tr>
-<tr><td>Allow</td><td>Vrit (v.)</td><td /></tr>
-<tr><td>Already</td><td>Okhik</td><td>Okha'ik, "Before-once"</td></tr>
-<tr><td>Ancestor</td><td>Roba</td><td>"Old-me"</td></tr>
-<tr><td>Ancient</td><td>Alro</td><td>"High-old"</td></tr>
-<tr><td>And</td><td>Ez/-z</td><td>Typically omitted when a clausal relationship is obvious.</td></tr>
-<tr><td>Angel</td><td>Hhjik</td><td>"One who sings"</td></tr>
-<tr><td>Anger</td><td /><td /></tr>
-<tr><td>Animal</td><td>Krom</td><td>Krom also means "waste".</td></tr>
-<tr><td>Arrow</td><td>Fea</td><td /></tr>
-<tr><td>Ask</td><td>Fuur</td><td /></tr>
-<tr><td>Axe</td><td>Hhora</td><td /></tr>
-<tr><td>Back</td><td /><td /></tr>
-<tr><td>Backward</td><td>Hhekh</td><td /></tr>
-<tr><td>Bad</td><td>Ginna</td><td>Gid'nna, "Hurt-you"</td></tr>
-<tr><td>Bag</td><td>Wora</td><td /></tr>
-<tr><td>Be</td><td>Lu</td><td>Rarely to never used; except to provide context or specificity, or to be poetic.</td></tr>
-<tr><td>Become</td><td>Lusha</td><td>Related to Lu, "Be", as in Common.</td></tr>
-<tr><td>Before</td><td>Okha</td><td /></tr>
-<tr><td>Best</td><td>Ban/B'an</td><td>Benjan, "good-most"</td></tr>
-<tr><td>Between</td><td>Ko'ird</td><td>"In-two"</td></tr>
-<tr><td>Beyond</td><td>Dinkh</td><td /></tr>
-<tr><td>Birth</td><td>Fiti</td><td /></tr>
-<tr><td>Black</td><td>Tuunu</td><td /></tr>
-<tr><td>Blade</td><td>Kipnhii</td><td>"Smallsword"</td></tr>
-<tr><td>Blind</td><td /><td /></tr>
-<tr><td>Blood</td><td>Nhi</td><td /></tr>
-<tr><td>Blue</td><td>Fiir</td><td /></tr>
-<tr><td>Bone</td><td>Zhe</td><td /></tr>
-<tr><td>Book</td><td /><td /></tr>
-<tr><td>Bounty</td><td>Evri</td><td /></tr>
-<tr><td>Bow</td><td>Dan (n.)</td><td /></tr>
-<tr><td>Break</td><td>Khlit (v.)</td><td /></tr>
-<tr><td>Bright</td><td>Tiighra</td><td /></tr>
-<tr><td>Brother</td><td>Alshuu</td><td>"High-son"</td></tr>
-<tr><td>Brow</td><td>Viiwe</td><td /></tr>
-<tr><td>Brown</td><td /><td /></tr>
-<tr><td>Burn</td><td>Souukh (v.)</td><td /></tr>
-<tr><td>But</td><td>U</td><td /></tr>
-<tr><td>Bye</td><td>Jii</td><td /></tr>
-<tr><td>Call</td><td>Gedat</td><td /></tr>
-<tr><td>Carry</td><td>Vuuta</td><td /></tr>
-<tr><td>Champion</td><td>Aljan zetik</td><td>"Highest warrior"</td></tr>
-<tr><td>Choke</td><td>Korkh (v.)</td><td /></tr>
-<tr><td>City</td><td>Loyya</td><td /></tr>
-<tr><td>Cloth</td><td>Iizh</td><td /></tr>
-<tr><td>Clothing</td><td>Iizhakh</td><td>"Cloth (plural)"</td></tr>
-<tr><td>Cold</td><td /><td /></tr>
-<tr><td>Come</td><td>Suu</td><td /></tr>
-<tr><td>Concubine</td><td>Tunshuua/Tunimo</td><td>"Low-male/Low-female"</td></tr>
-<tr><td>Confuse</td><td /><td /></tr>
-<tr><td>Country</td><td>Toa</td><td /></tr>
-<tr><td>Cover</td><td>Hhem</td><td /></tr>
-<tr><td>Cower</td><td>Zajii (v.)</td><td /></tr>
-<tr><td>Create</td><td /><td /></tr>
-<tr><td>Cry</td><td /><td /></tr>
-<tr><td>Dance</td><td>Pip (v.)</td><td /></tr>
-<tr><td>Danger</td><td>Hhiin</td><td /></tr>
-<tr><td>Dark</td><td>Tuunu</td><td /></tr>
-<tr><td>Daughter</td><td>Ima</td><td /></tr>
-<tr><td>Dawn</td><td /><td /></tr>
-<tr><td>Day</td><td>Jira</td><td /></tr>
-<tr><td>Death</td><td>Nnuu</td><td /></tr>
-<tr><td>Deep</td><td>Uuf</td><td /></tr>
-<tr><td>Demon</td><td>Tanik/Tunjanik</td><td>"Lowest-one"</td></tr>
-<tr><td>Despair</td><td>Khorahhii</td><td /></tr>
-<tr><td>Destroy</td><td /><td /></tr>
-<tr><td>Devil</td><td /><td /></tr>
-<tr><td>Dirt</td><td>Ot</td><td /></tr>
-<tr><td>Disgrace</td><td>A'fiia</td><td>"No-grace"</td></tr>
-<tr><td>Do</td><td>Se</td><td /></tr>
-<tr><td>Doctor</td><td>Gidwik</td><td>"Hurt-worker"</td></tr>
-<tr><td>Down</td><td /><td /></tr>
-<tr><td>Drink</td><td /><td /></tr>
-<tr><td>Drop</td><td>Tont (v.)</td><td /></tr>
-<tr><td>Ear</td><td /><td /></tr>
-<tr><td>Earth</td><td>Rosua</td><td /></tr>
-<tr><td>Ease</td><td>Zem</td><td /></tr>
-<tr><td>East</td><td /><td /></tr>
-<tr><td>Easy</td><td>Zem'ayi</td><td>"Ease-with"</td></tr>
-<tr><td>Eat</td><td>Aol</td><td>Possibly related to Mwangi 'ali', "eaten".</td></tr>
-<tr><td>Eight</td><td>Mana</td><td /></tr>
-<tr><td>End</td><td>Ston</td><td /></tr>
-<tr><td>Enemy</td><td /><td /></tr>
-<tr><td>Evil</td><td>Ginn</td><td /></tr>
-<tr><td>Eye</td><td>Twa</td><td /></tr>
-<tr><td>Face</td><td>Sonaut (n.)</td><td /></tr>
-<tr><td>Fall</td><td>Wolu</td><td /></tr>
-<tr><td>Far</td><td>Oma</td><td /></tr>
-<tr><td>Farewell</td><td /><td /></tr>
-<tr><td>Father</td><td>Hhama</td><td /></tr>
-<tr><td>Fear</td><td>Leme</td><td /></tr>
-<tr><td>Feel</td><td>Elm (v.)</td><td /></tr>
-<tr><td>Female</td><td>Imo</td><td /></tr>
-<tr><td>Fertile</td><td /><td /></tr>
-<tr><td>Few</td><td /><td /></tr>
-<tr><td>Fight</td><td>Zet</td><td /></tr>
-<tr><td>Final</td><td /><td /></tr>
-<tr><td>Find</td><td /><td /></tr>
-<tr><td>Finger</td><td>Poltop</td><td /></tr>
-<tr><td>Fire</td><td /><td /></tr>
-<tr><td>First</td><td>Ikjan</td><td>See 'Numerals' tab for more.</td></tr>
-<tr><td>Five</td><td>Nara</td><td /></tr>
-<tr><td>Flash</td><td>Tiilikh</td><td /></tr>
-<tr><td>Food</td><td>Sikh</td><td>Sikh also means "meat".</td></tr>
-<tr><td>For</td><td>Er</td><td>Usually attached as a suffix, especially in more formal settings.</td></tr>
-<tr><td>Forbid</td><td /><td /></tr>
-<tr><td>Forward</td><td>Dakh</td><td /></tr>
-<tr><td>Four</td><td>Nen</td><td /></tr>
-<tr><td>Fresh</td><td>Siivi</td><td /></tr>
-<tr><td>Friend</td><td>Sil</td><td /></tr>
-<tr><td>From</td><td>Ap</td><td /></tr>
-<tr><td>Front</td><td>Lete</td><td /></tr>
-<tr><td>Fur</td><td>Emji</td><td /></tr>
-<tr><td>Get</td><td>Sim</td><td /></tr>
-<tr><td>Give</td><td>Per</td><td /></tr>
-<tr><td>Gnoll</td><td>Kholo</td><td /></tr>
-<tr><td>Go</td><td>Rii</td><td /></tr>
-<tr><td>God</td><td>Aljanik</td><td>"Highest-one"</td></tr>
-<tr><td>Gold</td><td /><td /></tr>
-<tr><td>Good</td><td>Ben</td><td /></tr>
-<tr><td>Goodbye</td><td>Khajii</td><td /></tr>
-<tr><td>Grace</td><td>Fiia</td><td /></tr>
-<tr><td>Green</td><td>Mejo</td><td /></tr>
-<tr><td>Grey</td><td>Min</td><td /></tr>
-<tr><td>Grow</td><td /><td /></tr>
-<tr><td>Guard</td><td /><td /></tr>
-<tr><td>Half</td><td>Uur</td><td /></tr>
-<tr><td>Happy</td><td /><td /></tr>
-<tr><td>Hard</td><td /><td /></tr>
-<tr><td>Have</td><td>Rel</td><td /></tr>
-<tr><td>Hawk</td><td>Inso</td><td /></tr>
-<tr><td>Hear</td><td>Prika</td><td /></tr>
-<tr><td>Heart</td><td>Shava</td><td /></tr>
-<tr><td>Heaven</td><td>Meruua</td><td /></tr>
-<tr><td>Hello</td><td>Khaja</td><td /></tr>
-<tr><td>Help</td><td>Kral</td><td /></tr>
-<tr><td>Here</td><td>Hhet</td><td /></tr>
-<tr><td>Hi</td><td>Ja</td><td /></tr>
-<tr><td>Hide</td><td>Iifit</td><td /></tr>
-<tr><td>High</td><td>Al</td><td /></tr>
-<tr><td>Hiss</td><td>Iss</td><td>Simulation of the sound, as in Common.</td></tr>
-<tr><td>Hold</td><td>Khurum (v.)</td><td /></tr>
-<tr><td>Home</td><td>Tuu</td><td /></tr>
-<tr><td>Honor</td><td>Kejro (n.) Kej (v.)</td><td /></tr>
-<tr><td>Horizon</td><td>Enotwo</td><td /></tr>
-<tr><td>Horn</td><td>Ziji</td><td /></tr>
-<tr><td>Hot</td><td /><td /></tr>
-<tr><td>How</td><td>Iikha</td><td /></tr>
-<tr><td>Human</td><td>Kwea</td><td /></tr>
-<tr><td>Hundred</td><td>Wanut</td><td /></tr>
-<tr><td>Hunger</td><td>Yyuu</td><td /></tr>
-<tr><td>Hunt</td><td /><td /></tr>
-<tr><td>Hurt</td><td>Gid (v.)</td><td /></tr>
-<tr><td>In</td><td>Ko</td><td /></tr>
-<tr><td>Jewel</td><td>Tova</td><td /></tr>
-<tr><td>Judge</td><td>Alkejro (n.) Alkej (v.)</td><td>"High-honor"</td></tr>
-<tr><td>Jungle</td><td>Uufora</td><td>"Deep-wood"</td></tr>
-<tr><td>Just</td><td>Sekh (adv.)</td><td>As in "I just need" or "It just might".</td></tr>
-<tr><td>Kill</td><td>Nii</td><td /></tr>
-<tr><td>King</td><td>Aligha</td><td>"High-lord"</td></tr>
-<tr><td>Knee</td><td>Inkh</td><td /></tr>
-<tr><td>Knife</td><td /><td /></tr>
-<tr><td>Know</td><td>Riile</td><td /></tr>
-<tr><td>Lady</td><td>Im</td><td /></tr>
-<tr><td>Land</td><td /><td /></tr>
-<tr><td>Last</td><td>Gom</td><td /></tr>
-<tr><td>League</td><td>1. Loyyaka 2. Alik'hha</td><td>1. "City-many" 2. "People-many"</td></tr>
-<tr><td>Least</td><td /><td /></tr>
-<tr><td>Leave</td><td>Mjon (v.)</td><td /></tr>
-<tr><td>Left</td><td /><td /></tr>
-<tr><td>Legend</td><td>Alkhit</td><td>"High-story"</td></tr>
-<tr><td>Less</td><td>Julkh</td><td /></tr>
-<tr><td>Life</td><td>Yhag</td><td /></tr>
-<tr><td>Light</td><td>Tiikh</td><td /></tr>
-<tr><td>Like</td><td>E'- (adj.) Sju (v.)</td><td /></tr>
-<tr><td>Live</td><td>Yha (v.)</td><td /></tr>
-<tr><td>Long</td><td>Tashikh</td><td>In the sense of a long span of time.</td></tr>
-<tr><td>Look</td><td>Jos</td><td /></tr>
-<tr><td>Lord</td><td>Igha</td><td /></tr>
-<tr><td>Lose</td><td>Nnim</td><td /></tr>
-<tr><td>Loss</td><td>Nnima</td><td /></tr>
-<tr><td>Loud</td><td /><td /></tr>
-<tr><td>Low</td><td>Tun</td><td /></tr>
-<tr><td>Luck</td><td>Sesta</td><td /></tr>
-<tr><td>Mace</td><td>Sit</td><td>In the sense of a many-pointed weapon.</td></tr>
-<tr><td>Machine</td><td /><td /></tr>
-<tr><td>Magic</td><td>Piing</td><td /></tr>
-<tr><td>Make</td><td>Hho</td><td /></tr>
-<tr><td>Male</td><td>Shuua</td><td /></tr>
-<tr><td>Maybe</td><td /><td /></tr>
-<tr><td>Meat</td><td>Sikh</td><td /></tr>
-<tr><td>Mechanic</td><td>Bojawik</td><td>"Pearl-worker". Possibly originates in that machines require tender care to work, as when polishing a pearl.</td></tr>
-<tr><td>Medicine</td><td>Gidwa</td><td>"Hurt-work"</td></tr>
-<tr><td>Memory</td><td>Wahhar</td><td /></tr>
-<tr><td>Mercy</td><td>Kraia</td><td /></tr>
-<tr><td>Mind</td><td /><td /></tr>
-<tr><td>Money</td><td /><td /></tr>
-<tr><td>Moon</td><td>Tuntiikh</td><td>"Low-light"</td></tr>
-<tr><td>More</td><td>Shikh</td><td /></tr>
-<tr><td>Most</td><td>-jan</td><td /></tr>
-<tr><td>Mother</td><td>Yyiima</td><td /></tr>
-<tr><td>Mourn</td><td>Nnomo</td><td /></tr>
-<tr><td>Muzzle</td><td>Benet</td><td /></tr>
-<tr><td>Near</td><td>Juuma</td><td /></tr>
-<tr><td>Need</td><td>Zhii</td><td /></tr>
-<tr><td>New</td><td>Zua</td><td /></tr>
-<tr><td>Nine</td><td>Wen</td><td /></tr>
-<tr><td>No</td><td>A'</td><td /></tr>
-<tr><td>None</td><td>Oa</td><td /></tr>
-<tr><td>North</td><td>Ent</td><td /></tr>
-<tr><td>Not</td><td>A'-</td><td /></tr>
-<tr><td>Now</td><td>Ket</td><td /></tr>
-<tr><td>Of</td><td>Ap</td><td /></tr>
-<tr><td>Offer</td><td>Perre</td><td>Related to "per", give.</td></tr>
-<tr><td>Okay</td><td>Iig</td><td /></tr>
-<tr><td>Old</td><td>Ro</td><td /></tr>
-<tr><td>On</td><td>Jogra</td><td /></tr>
-<tr><td>One</td><td>Ik</td><td /></tr>
-<tr><td>Or</td><td>Si</td><td /></tr>
-<tr><td>Orange</td><td /><td /></tr>
-<tr><td>Osirion</td><td>Zuatoa</td><td>"New-country" (roughly the meaning of Osirion)</td></tr>
-<tr><td>Other</td><td>Folkha</td><td /></tr>
-<tr><td>Out</td><td>Ke</td><td /></tr>
-<tr><td>Over</td><td>Jogra</td><td /></tr>
-<tr><td>Pain</td><td /><td /></tr>
-<tr><td>Path</td><td>Konat</td><td /></tr>
-<tr><td>Paw</td><td>Owja</td><td /></tr>
-<tr><td>Pearl</td><td>Boja</td><td /></tr>
-<tr><td>Person</td><td>Alik</td><td>"High-one"</td></tr>
-<tr><td>Pierce</td><td>Shtiip</td><td /></tr>
-<tr><td>Pink</td><td /><td /></tr>
-<tr><td>Place</td><td>Tuu</td><td /></tr>
-<tr><td>Predator</td><td>Lo</td><td /></tr>
-<tr><td>Prey</td><td>Yyuumi</td><td>"Hunger-thing"</td></tr>
-<tr><td>Problem</td><td>Hhara</td><td /></tr>
-<tr><td>Purple</td><td /><td /></tr>
-<tr><td>Put</td><td /><td /></tr>
-<tr><td>Queen</td><td>Alim</td><td>"High-lady"</td></tr>
-<tr><td>Question</td><td>[item]mi</td><td>Where [item] is any of 'who', 'what', 'when', etc. The default, or fallback, is 'Pajmi', 'what-thing'.</td></tr>
-<tr><td>Rabbit</td><td /><td /></tr>
-<tr><td>Rage</td><td /><td /></tr>
-<tr><td>Rank</td><td>Tua (n.)</td><td /></tr>
-<tr><td>Reach</td><td>Veswe (v.)</td><td /></tr>
-<tr><td>Red</td><td /><td /></tr>
-<tr><td>Refuse</td><td>Arnh (v.)</td><td /></tr>
-<tr><td>Release</td><td>Tunke (v.)</td><td /></tr>
-<tr><td>Ride</td><td>Wilt (v.)</td><td /></tr>
-<tr><td>Right</td><td /><td /></tr>
-<tr><td>Ring</td><td /><td /></tr>
-<tr><td>Rise</td><td>Nhis</td><td /></tr>
-<tr><td>Road</td><td>Konat</td><td /></tr>
-<tr><td>Rock</td><td>Zhet</td><td /></tr>
-<tr><td>Savanna</td><td>Mowan</td><td /></tr>
-<tr><td>See</td><td>Pet</td><td /></tr>
-<tr><td>Seven</td><td>Mjo</td><td /></tr>
-<tr><td>Shield</td><td>Veren</td><td /></tr>
-<tr><td>Shoulder</td><td>Ghalmate</td><td /></tr>
-<tr><td>Shout</td><td>Ofrelet</td><td /></tr>
-<tr><td>Silent</td><td>Yohho</td><td /></tr>
-<tr><td>Silver</td><td /><td /></tr>
-<tr><td>Sing</td><td>Hhja</td><td /></tr>
-<tr><td>Six</td><td>Mon</td><td /></tr>
-<tr><td>Skin</td><td>Suuli</td><td /></tr>
-<tr><td>Skull</td><td /><td /></tr>
-<tr><td>Sky</td><td>Altuu</td><td>"High-place"</td></tr>
-<tr><td>Slaughter</td><td>Niika</td><td>"Kill-many"</td></tr>
-<tr><td>Slave</td><td><a href="https://docs.google.com/spreadsheets/d/1U5Sn7E5-BVqLJewDYY0Bpa47cfGhc5YutI2XASZkZ-c/edit?usp=sharing" target="_blank"><i>(see reference)</i></a></td><td /></tr>
-<tr><td>Sleep</td><td>Desh (v.)</td><td /></tr>
-<tr><td>Small</td><td>Kip</td><td /></tr>
-<tr><td>Smith</td><td>Hho'ik</td><td>"Make-one"</td></tr>
-<tr><td>Smoke</td><td /><td /></tr>
-<tr><td>Smooth</td><td /><td /></tr>
-<tr><td>Sneer</td><td>Bintos (n.)</td><td>Bint'jos, "Tooth-look"</td></tr>
-<tr><td>Soft</td><td /><td /></tr>
-<tr><td>Soldier</td><td>Fo (n.)</td><td /></tr>
-<tr><td>Some</td><td /><td /></tr>
-<tr><td>Son</td><td>Shuu</td><td /></tr>
-<tr><td>Sorcerer</td><td /><td /></tr>
-<tr><td>Sorrow</td><td>Hhiguu</td><td /></tr>
-<tr><td>Sound</td><td>Voa (n. & v.)</td><td /></tr>
-<tr><td>South</td><td /><td /></tr>
-<tr><td>Speak</td><td>Yyip</td><td>Note the single i.</td></tr>
-<tr><td>Speaker</td><td>Yyipik</td><td>"Speak-one"</td></tr>
-<tr><td>Spear</td><td>Ip (n.)</td><td /></tr>
-<tr><td>Spill</td><td /><td /></tr>
-<tr><td>Spoil</td><td>Iklo (v.)</td><td /></tr>
-<tr><td>Staff</td><td>Duukh</td><td /></tr>
-<tr><td>Stand</td><td>Ura</td><td /></tr>
-<tr><td>Step</td><td>Owa</td><td /></tr>
-<tr><td>Still</td><td>Weten (adj.)</td><td>In the sense of not moving.</td></tr>
-<tr><td>Stone</td><td>Punt</td><td /></tr>
-<tr><td>Stop</td><td>Hhap</td><td /></tr>
-<tr><td>Story</td><td>Khit</td><td /></tr>
-<tr><td>Strong</td><td>Kora (adj.)</td><td /></tr>
-<tr><td>Stuff</td><td>Mi'akh (n.)</td><td>"Things"</td></tr>
-<tr><td>Sun</td><td>Jira</td><td /></tr>
-<tr><td>Surrender</td><td>Joyhot</td><td /></tr>
-<tr><td>Survivor</td><td>Tunyhag</td><td>"Low-life"</td></tr>
-<tr><td>Sword</td><td>Nhii</td><td /></tr>
-<tr><td>Take</td><td>Ghep</td><td /></tr>
-<tr><td>Talk</td><td>Yyip (v.)</td><td>Note the single i.</td></tr>
-<tr><td>Tall</td><td /><td /></tr>
-<tr><td>Tear</td><td>Shiiu (n.)</td><td /></tr>
-<tr><td>Ten</td><td>Wakh</td><td /></tr>
-<tr><td>Terror</td><td>Aleme</td><td>Al'leme, "high-fear"</td></tr>
-<tr><td>Thanks (for...)</td><td>A'ginna (ta...)</td><td>"Not-bad (when...)"</td></tr>
-<tr><td>That</td><td>Khuu</td><td /></tr>
-<tr><td>Then</td><td>Ez</td><td>Same as 'and'.</td></tr>
-<tr><td>There</td><td>Hhata</td><td /></tr>
-<tr><td>Thing</td><td>Mi</td><td /></tr>
-<tr><td>Think</td><td>Khrish</td><td /></tr>
-<tr><td>This</td><td>Khe</td><td /></tr>
-<tr><td>Thorn</td><td>Yyii'ta</td><td /></tr>
-<tr><td>Thousand</td><td>Ghoro</td><td /></tr>
-<tr><td>Three</td><td>Jink</td><td /></tr>
-<tr><td>Through</td><td>Keko</td><td>"Out-in"</td></tr>
-<tr><td>Time</td><td>Ta</td><td /></tr>
-<tr><td>To</td><td>Er</td><td /></tr>
-<tr><td>Together</td><td>Yhii'ayi</td><td>"Them-with"</td></tr>
-<tr><td>Tooth</td><td>Bint</td><td /></tr>
-<tr><td>Touch</td><td>Firit</td><td /></tr>
-<tr><td>Toward</td><td /><td /></tr>
-<tr><td>Treasure</td><td>Ifro</td><td /></tr>
-<tr><td>Tribe</td><td>Kho</td><td /></tr>
-<tr><td>True</td><td>Iit'ayi</td><td>"Truth-with"</td></tr>
-<tr><td>Truth</td><td>IIt</td><td /></tr>
-<tr><td>Turn</td><td>Mobet</td><td /></tr>
-<tr><td>Twist</td><td>Kowtsh</td><td /></tr>
-<tr><td>Two</td><td>Ird</td><td /></tr>
-<tr><td>Under</td><td>Jogo</td><td /></tr>
-<tr><td>Up</td><td>Ti</td><td /></tr>
-<tr><td>Use</td><td>Gent</td><td /></tr>
-<tr><td>Vein</td><td>Gifo</td><td>In the sense of an ore deposit.</td></tr>
-<tr><td>Victory</td><td /><td /></tr>
-<tr><td>Voice</td><td>Yyiip (n.)</td><td>Note the double i.</td></tr>
-<tr><td>Walk</td><td>Mat</td><td /></tr>
-<tr><td>Want</td><td>Hhuu (v.)</td><td /></tr>
-<tr><td>War</td><td>Zet</td><td /></tr>
-<tr><td>Warm</td><td /><td /></tr>
-<tr><td>Warrior</td><td>Zetik</td><td>"War-one"</td></tr>
-<tr><td>Waste</td><td>Krom</td><td /></tr>
-<tr><td>Watch</td><td>Penet</td><td /></tr>
-<tr><td>Water</td><td>Poa</td><td /></tr>
-<tr><td>Weak</td><td>Fuu</td><td /></tr>
-<tr><td>Weight</td><td>Onje</td><td /></tr>
-<tr><td>West</td><td /><td /></tr>
-<tr><td>What</td><td>Paj</td><td /></tr>
-<tr><td>When</td><td>Pajda</td><td>"What-time"</td></tr>
-<tr><td>Where</td><td>Pajduu</td><td>"What-place"</td></tr>
-<tr><td>White</td><td>Ven</td><td /></tr>
-<tr><td>Who</td><td>Pak</td><td /></tr>
-<tr><td>Why</td><td>Yyo'a</td><td /></tr>
-<tr><td>Wide</td><td>Ghint</td><td /></tr>
-<tr><td>Wind</td><td>Majol</td><td /></tr>
-<tr><td>With</td><td>-'ayi</td><td /></tr>
-<tr><td>Wizard</td><td /><td /></tr>
-<tr><td>Wood</td><td>Ora</td><td /></tr>
-<tr><td>Word</td><td>Bit</td><td /></tr>
-<tr><td>Work</td><td>1. Wa 2. Triip</td><td>"Wa" is 'respectable' work, 'triip' is menial work.</td></tr>
-<tr><td>Worker</td><td>Wik</td><td>Wa'ik, "work-one"</td></tr>
-<tr><td>Worship</td><td>Khuje (n.)</td><td /></tr>
-<tr><td>Wrinkle</td><td /><td /></tr>
-<tr><td>Write</td><td>Nno</td><td /></tr>
-<tr><td>Yellow</td><td /><td /></tr>
-<tr><td>Yes</td><td>Uu</td><td /></tr>
-<tr><td>Young</td><td>Liivi</td><td /></tr>
 </table>
+<br /><br />
+<div id="lexText" />
 </div>
 
 <div class="subdiv" id="phrases">
