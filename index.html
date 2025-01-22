@@ -25,6 +25,8 @@ function readWords(letter) {
 var classes = lexDB['classes'];
 var words = lexDB['words'];
 
+document.getElementById("lexText").innerHTML = "";
+
 words.forEach(word => {
 if (word['e'].startsWith(letter)) {
 document.getElementById("lexText").innerHTML += "<i>".concat(word['e']).concat("</i>");
@@ -39,8 +41,13 @@ document.getElementById("lexText").innerHTML += "<br />";
 }
 
 function readDB(letter) {
-document.getElementById("lexText").innerHTML = "";
-
+if (letter === "*S") {
+document.getElementById("lexText").innerHTML = document.getElementById("slave").innerHTML;
+}
+else if (letter === "*P") {
+document.getElementById("lexText").innerHTML = document.getElementById("phrases").innerHTML;
+}
+else {
 if (lexDB.length == 0) {
 readTextFile("https://raw.githubusercontent.com/Taicanium/HighKholo/refs/heads/main/hk_dict.json", function(text){
 lexDB = JSON.parse(text);
@@ -50,6 +57,7 @@ readWords(letter);
 else
 {
 readWords(letter);
+}
 }
 }
 
@@ -91,8 +99,7 @@ document.getElementById("gitRev").innerHTML += date.toLocaleString();
 <li><a href="#pronouns">VI.<br />Pronouns</a></li>
 <li><a href="#numerals">VII.<br />Numerals</a></li>
 <li><a href="#lexicon">VIII.<br />Lexicon</a></li>
-<li><a href="#phrases">IX.<br />Common Phrases</a></li>
-<li><a href="#excerpts">X.<br />Excerpts</a></li>
+<li><a href="#excerpts">IX.<br />Excerpts</a></li>
 </ul>
 
 <span class="title1">High Kholo</span>
@@ -104,7 +111,7 @@ document.getElementById("gitRev").innerHTML += date.toLocaleString();
 
 <div class="subdiv" id="introduction">
 <span class="title2">Gnolls, and the Language Thereof</span><br /><br />
-Herein detailed: The dialect most commonly spoken among gnolls of the Mwangi Expanse, as opposed to those dialects spoken in Katapesh or other areas.<br/>Commonly referred to as High Kholo, reflecting the Mwangi gnolls' greater (by comparison) penchant for civilized culture and trade.<br /><br />Natively it is simply called <a href="https://pathfinderwiki.com/wiki/Kholo#tabber-2E">Kholo</a>, as are its speakers.<br /><br />
+Herein detailed: The dialect most commonly spoken among gnolls of the <a href="https://pathfinderwiki.com/wiki/Mwangi_Expanse" target="_blank">Mwangi Expanse</a>, as opposed to those dialects spoken in <a href="https://pathfinderwiki.com/wiki/Katapesh" target="_blank">Katapesh</a> or other areas.<br/>Commonly referred to as High Kholo, reflecting the Mwangi gnolls' greater (by comparison) penchant for civilized culture and trade.<br /><br />Natively it is simply called <a href="https://pathfinderwiki.com/wiki/Kholo#tabber-2E">Kholo</a>, as are its speakers.<br /><br />
 <span class="smalltext">Remember: Kholo are not humans, and do not possess human mouth anatomy. This document takes a little "Okay so these guys have funny dog mouths" to follow. It's worth it, this is fun. I promise.</span><br /><br /><br />
 <span class="smalltext">My name is Taica, and neither I nor this document nor any of its contents are directly affiliated with Rose-Winds LLC or Blake Davis.</span>
 </div>
@@ -588,9 +595,8 @@ Ordinal numbers (i.e. 'first', 'second') are indicated with the suffix -jan ('-m
 
 <div class="subdiv" id="lexicon">
 <span class="title2">Lexicon</span><br /><br />
-<span class="smalltext">I'll migrate the infamous thirty-seven words for 'slave' over here when I can determine a proper layout for it that won't conflict with the rest of the site.<br />In the meantime, <a href="https://docs.google.com/spreadsheets/d/1U5Sn7E5-BVqLJewDYY0Bpa47cfGhc5YutI2XASZkZ-c/edit?usp=sharing" target="_blank">the old Google Sheet</a> still exists if you need access to the slave system. ...freaks.</span><br /><br /><br />
 <table id="lexRibbon">
-<thead>
+<tr style="font-size: 16pt;">
 <th><a href="javascript:void(0);" onclick="readDB('a');">A</a></th>
 <th><a href="javascript:void(0);" onclick="readDB('b');">B</a></th>
 <th><a href="javascript:void(0);" onclick="readDB('c');">C</a></th>
@@ -617,14 +623,14 @@ Ordinal numbers (i.e. 'first', 'second') are indicated with the suffix -jan ('-m
 <th><a href="javascript:void(0);" onclick="readDB('x');">X</a></th>
 <th><a href="javascript:void(0);" onclick="readDB('y');">Y</a></th>
 <th><a href="javascript:void(0);" onclick="readDB('z');">Z</a></th>
-</thead>
+</tr>
+<tr style="font-size: 14pt;">
+<th colspan="13"><a href="javascript:void(0);" onclick="readDB('*P');">Common Phrases</a></th>
+<th colspan="13"><a href="javascript:void(0);" onclick="readDB('*S');">The Slave System</a></th>
+</tr>
 </table>
 <br /><br />
-<div id="lexText"></div>
-</div>
-
-<div class="subdiv" id="phrases">
-<span class="title2">Common Phrases</span><br /><br />
+<div id="phrases" style="display: none;">
 <table>
 <thead>
 <th>Common</th>
@@ -667,6 +673,97 @@ Ordinal numbers (i.e. 'first', 'second') are indicated with the suffix -jan ('-m
 <td>Uubasja.<br />(Contraction of "U ba se'a.")</td>
 </tr>
 </table>
+</div>
+<div id="slave" style="display: none;">
+Kholo infamously features 37 words to distinguish between the types of slaves in their culture.<br />These are organized into six groups differing by their purpose and in harshness of their treatment.<br />Slaves in the two 'highest' groups, indentured and personal servants, are owned by single kholo or families, and further ranked according to the work they do.<br />Lower types are communally owned, and not differentiated in this way.
+<br /><br />
+"Wik" is a generic word referring to a worker of any type. When it appears as a suffix in the name of a servant type, it may be replaced with "wa"<br />("respectable work") or "triip" ("menial work") to refer to the labor itself.
+<br /><br />
+
+<table>
+<thead>
+<th>Venwik</th>
+<th>"White-worker"</th>
+<th>Indentured Servants (4 types, hierarchical)<br />Personal homeworkers</th>
+</thead>
+<tr><td>Silwik</td><td>"Friend-worker"</td><td>Performs "respectable" work around a kholo's home, including acting as a face similar to a butler.<br />Usually trusted to care for their master's most treasured valuables.<br />In addition, they often speak candidly with the master, and may even be on casually friendly terms.<br />The silwik is much like a personal aid or private escort, or more bluntly a lap-dog.<br />Among all kholo slaves who are ever willingly freed, the overwhelming majority are silwakh.</td></tr>
+<tr><td>Alwik</td><td>"High-worker"</td><td>Oversees and organizes the lower servants, both indentured and personal, as a supervisor of sorts.<br />Their work is easily performed by a silwik, so to own an alwik is a mark of highly conspicuous luxury.</td></tr>
+<tr><td>Tovawik</td><td>"Jewel-worker"</td><td>An indentured apprentice in a kholo's trade. Despite their name, the trade need not necessarily be gemsmithing.<br />The tovawik is taught much like a student in addition to their duties as a servant.<br />Tovawakh are rarely freed, rather kept as assistants in the trade. Sometimes, an elderly master may free them on his deathbed.<br />They may be sold to other kholo once their skills are sufficiently honed or are no longer needed.</td></tr>
+<tr><td>Tuuwik</td><td>"Home-worker"</td><td>Performs menial, undifferentiated work around the kholo's home, much like a farmhand.<br />Their indentured status still affords them luxuries such as better meals and private living quarters.</td></tr>
+</table>
+<br />
+<table>
+<thead>
+<th>Minwik</th>
+<th>"Grey-worker"</th>
+<th>Indentured Servants (4 types, hierarchical)<br />Personal homeworkers</th>
+</thead>
+<tr><td>Yyipwik</td><td>"Speak-worker"</td><td>A correspondent; carries orders to and from other servants and messages to other kholo.<br />Frequently an assistant to a silwik or alwik.</td></tr>
+<tr><td>Niiwik</td><td>"Kill-worker"</td><td>A personal gatherer or hunter.</td></tr>
+<tr><td>Owjawik</td><td>"Paw-worker"</td><td>A personal groomer.</td></tr>
+<tr><td>Mejowik</td><td>"Green-worker"</td><td>A menial worker; similar to a tuuwik but dealing with "lower" work, often of an outdoor and/or sanitary nature.<br />If the master owns livestock, it is usually mejowakh who care for them.</td></tr>
+</table>
+<br />
+<table>
+<thead>
+<th>Zijiwik</th>
+<th>"Horn-worker"</th>
+<th>Caste Laborers (6 types)<br />Have a skill or talent that saves them from being treated like ordinary chattel slaves</th>
+</thead>
+<tr><td>Bojawik</td><td>"Mechanic"</td><td>Someone capable of building and repairing simple to mid-complexity machines such as transport wagons.</td></tr>
+<tr><td>Gidwik</td><td>"Doctor"</td><td>A medical specialist, especially one skilled at preventing or treating infected wounds.</td></tr>
+<tr><td>Iizhwik</td><td>"Cloth-worker"</td><td>A clothier, weaves fabrics and clothing.</td></tr>
+<tr><td>Piingwik</td><td>"Magic-worker"</td><td>A magical specialist, capable of interpreting incantations or conjuring cantrips for the benefit of other servants or kholo.</td></tr>
+<tr><td>Siiviwik</td><td>"Fresh-worker"</td><td>A butcher or someone otherwise skilled at extracting meat.</td></tr>
+<tr><td>Yyiphho'ik</td><td>"Speak-smith"</td><td>A poet or wordsmith. Most commonly used for entertainment, though some kholo use them to record native stories or to<br />hear the stories of other peoples; academia being rare, but not unheard of in Kholo culture.</td></tr>
+</table>
+<br />
+<table>
+<thead>
+<th>Uurwik</th>
+<th>"Half-worker"</th>
+<th>Hard Laborers (8 types)<br />Chattel slaves belonging to a tribe or community as a whole</th>
+</thead>
+<tr><td>Gifowik</td><td>"Vein-worker"</td><td>A gatherer, responsible for either felling trees and/or mining stone, as well as less intensive tasks such as herb gathering.</td></tr>
+<tr><td>Ifrowik</td><td>"Treasure-worker"</td><td>A retainer, assists in the upkeep of stored food, armor, and weapons.</td></tr>
+<tr><td>Konadwik</td><td>"Road-worker"</td><td>A communal cleaner. Also constructs and cares for pathways around a settlement.</td></tr>
+<tr><td>Kromwik</td><td>"Animal-worker"</td><td>An animal handler; cares for livestock kept by a tribe as a whole.<br />As opposed to animals owned by a single kholo or family, which are cared for by mejowakh.</td></tr>
+<tr><td>Loyyawik</td><td>"City-worker"</td><td>"An undifferentiated worker valuable for their personal history or connections, such as a captive foreign noble.<br />Most commonly they are treated as currency to be exchanged between tribes or held as hostages."</td></tr>
+<tr><td>Orahho'ik</td><td>"Wood-smith"</td><td>A woodworker; constructs weapons and wooden tools, as well as lesser fortifications and scaffolding.</td></tr>
+<tr><td>Pundhho'ik</td><td>"Stone-smith"</td><td>A stoneworker, mostly used for engraving and to construct fortifications.</td></tr>
+<tr><td>Vuutawik</td><td>"Carry-worker"</td><td>A simple transporter or packmule. Carries raw materials from one place to another, sometimes between settlements.</td></tr>
+</table>
+<br />
+<table>
+<thead>
+<th>Tunfo</th>
+<th>"Low-soldier"</th>
+<th>Compelled Soldiers (5 types)</th>
+</thead>
+<tr>
+<td>Dantua</td><td>"Bow-rank"</td>
+<td rowspan="5"><i>Kholo rarely take captives as compelled soldiers.<br />Much more commonly, this caste is a punishment for slaves of a different type who rebelled or shirked their duties.<br />Those who fit here are always smaller and weaker than their kholo overseers, as even hyenafolk would not be stupid enough to hand a weapon to someone capable of killing them with it.<br />It would thus be more accurate to describe these as "cannon fodder".</i></td>
+</tr>
+<tr><td>Hhoratua</td><td>"Axe-rank"</td></tr>
+<tr><td>Iptua</td><td>"Spear-rank"</td></tr>
+<tr><td>Nhiitua</td><td>"Sword-rank"</td></tr>
+<tr><td>Sit'tua</td><td>"Mace-rank"</td></tr>
+</table>
+<br />
+<table>
+<thead>
+<th>Sikh</th>
+<th>"Meat"</th>
+<th>Farmed Meat (4 types)</th>
+</thead>
+<tr><td>Alimsikh</td><td>"Queen-meat"</td><td>High quality and fit to be fed to the most respected huntresses and bonecarvers.</td></tr>
+<tr><td>Tuunusikh</td><td>"Dark-meat"</td><td>Fit for the average kholo.</td></tr>
+<tr><td>Verensikh</td><td>"Shield-meat"</td><td>Fit to thicken or accent other food, but not to be eaten on its own.</td></tr>
+<tr><td>Kromsikh</td><td>"Waste-meat"</td><td>Fit only for animal feed or fertilizer.</td></tr>
+</table>
+
+</div>
+<div id="lexText"></div>
 </div>
 
 <div class="subdiv" id="excerpts">
