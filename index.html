@@ -7,6 +7,8 @@
 <link rel="icon" type="image/x-icon" href="favicon.ico">
 
 <script type="text/javascript">
+var lexDB = [];
+
 function readTextFile(file, callback) {
 var rawFile = new XMLHttpRequest();
 rawFile.overrideMimeType("application/json");
@@ -19,24 +21,9 @@ callback(rawFile.responseText);
 rawFile.send(null);
 }
 
-window.addEventListener("load", (event) => {
-readTextFile("https://api.github.com/repos/taicanium/HighKholo/commits?page=1&per_page=1", function(text){
-var data = JSON.parse(text);
-var time = data[0]['commit']['committer']['date'];
-var date = new Date(Date.parse(time));
-var dateString = date.toLocaleString();
-
-document.getElementById("gitRev").innerHTML += date.toLocaleString();
-});
-});
-
-function readDBWords(letter) {
-document.getElementById("lexText").innerHTML = "";
-
-readTextFile("https://raw.githubusercontent.com/Taicanium/HighKholo/refs/heads/main/hk_dict.json", function(text){
-var data = JSON.parse(text);
-var classes = data['classes'];
-var words = data['words'];
+function readWords(letter) {
+var classes = lexDB['classes'];
+var words = lexDB['words'];
 
 words.forEach(word => {
 if (word['e'].startsWith(letter)) {
@@ -49,7 +36,21 @@ document.getElementById("lexText").innerHTML += " &ndash; <span class=\"smalltex
 document.getElementById("lexText").innerHTML += "<br />";
 }
 });
+}
+
+function readDB(letter) {
+document.getElementById("lexText").innerHTML = "";
+
+if (lexDB.length == 0) {
+readTextFile("https://raw.githubusercontent.com/Taicanium/HighKholo/refs/heads/main/hk_dict.json", function(text){
+lexDB = JSON.parse(text);
+readWords(letter);
 });
+}
+else
+{
+readWords(letter);
+}
 }
 
 function showHappy() {
@@ -67,6 +68,17 @@ document.getElementById("happy").style.opacity = "0";
 document.getElementById("normal").style.zIndex = "2";
 document.getElementById("normal").style.opacity = "1";
 }
+
+window.addEventListener("load", (event) => {
+readTextFile("https://api.github.com/repos/taicanium/HighKholo/commits?page=1&per_page=1", function(text){
+var data = JSON.parse(text);
+var time = data[0]['commit']['committer']['date'];
+var date = new Date(Date.parse(time));
+var dateString = date.toLocaleString();
+
+document.getElementById("gitRev").innerHTML += date.toLocaleString();
+});
+});
 </script>
 </head>
 <body>
@@ -579,32 +591,32 @@ Ordinal numbers (i.e. 'first', 'second') are indicated with the suffix -jan ('-m
 <span class="smalltext">I'll migrate the infamous thirty-seven words for 'slave' over here when I can determine a proper layout for it that won't conflict with the rest of the site.<br />In the meantime, <a href="https://docs.google.com/spreadsheets/d/1U5Sn7E5-BVqLJewDYY0Bpa47cfGhc5YutI2XASZkZ-c/edit?usp=sharing" target="_blank">the old Google Sheet</a> still exists if you need access to the slave system. ...freaks.</span><br /><br /><br />
 <table id="lexRibbon">
 <thead>
-<th><a href="javascript:void(0);" onclick="readDBWords('a');">A</a></th>
-<th><a href="javascript:void(0);" onclick="readDBWords('b');">B</a></th>
-<th><a href="javascript:void(0);" onclick="readDBWords('c');">C</a></th>
-<th><a href="javascript:void(0);" onclick="readDBWords('d');">D</a></th>
-<th><a href="javascript:void(0);" onclick="readDBWords('e');">E</a></th>
-<th><a href="javascript:void(0);" onclick="readDBWords('f');">F</a></th>
-<th><a href="javascript:void(0);" onclick="readDBWords('g');">G</a></th>
-<th><a href="javascript:void(0);" onclick="readDBWords('h');">H</a></th>
-<th><a href="javascript:void(0);" onclick="readDBWords('i');">I</a></th>
-<th><a href="javascript:void(0);" onclick="readDBWords('j');">J</a></th>
-<th><a href="javascript:void(0);" onclick="readDBWords('k');">K</a></th>
-<th><a href="javascript:void(0);" onclick="readDBWords('l');">L</a></th>
-<th><a href="javascript:void(0);" onclick="readDBWords('m');">M</a></th>
-<th><a href="javascript:void(0);" onclick="readDBWords('n');">N</a></th>
-<th><a href="javascript:void(0);" onclick="readDBWords('o');">O</a></th>
-<th><a href="javascript:void(0);" onclick="readDBWords('p');">P</a></th>
-<th><a href="javascript:void(0);" onclick="readDBWords('q');">Q</a></th>
-<th><a href="javascript:void(0);" onclick="readDBWords('r');">R</a></th>
-<th><a href="javascript:void(0);" onclick="readDBWords('s');">S</a></th>
-<th><a href="javascript:void(0);" onclick="readDBWords('t');">T</a></th>
-<th><a href="javascript:void(0);" onclick="readDBWords('u');">U</a></th>
-<th><a href="javascript:void(0);" onclick="readDBWords('v');">V</a></th>
-<th><a href="javascript:void(0);" onclick="readDBWords('w');">W</a></th>
-<th><a href="javascript:void(0);" onclick="readDBWords('x');">X</a></th>
-<th><a href="javascript:void(0);" onclick="readDBWords('y');">Y</a></th>
-<th><a href="javascript:void(0);" onclick="readDBWords('z');">Z</a></th>
+<th><a href="javascript:void(0);" onclick="readDB('a');">A</a></th>
+<th><a href="javascript:void(0);" onclick="readDB('b');">B</a></th>
+<th><a href="javascript:void(0);" onclick="readDB('c');">C</a></th>
+<th><a href="javascript:void(0);" onclick="readDB('d');">D</a></th>
+<th><a href="javascript:void(0);" onclick="readDB('e');">E</a></th>
+<th><a href="javascript:void(0);" onclick="readDB('f');">F</a></th>
+<th><a href="javascript:void(0);" onclick="readDB('g');">G</a></th>
+<th><a href="javascript:void(0);" onclick="readDB('h');">H</a></th>
+<th><a href="javascript:void(0);" onclick="readDB('i');">I</a></th>
+<th><a href="javascript:void(0);" onclick="readDB('j');">J</a></th>
+<th><a href="javascript:void(0);" onclick="readDB('k');">K</a></th>
+<th><a href="javascript:void(0);" onclick="readDB('l');">L</a></th>
+<th><a href="javascript:void(0);" onclick="readDB('m');">M</a></th>
+<th><a href="javascript:void(0);" onclick="readDB('n');">N</a></th>
+<th><a href="javascript:void(0);" onclick="readDB('o');">O</a></th>
+<th><a href="javascript:void(0);" onclick="readDB('p');">P</a></th>
+<th><a href="javascript:void(0);" onclick="readDB('q');">Q</a></th>
+<th><a href="javascript:void(0);" onclick="readDB('r');">R</a></th>
+<th><a href="javascript:void(0);" onclick="readDB('s');">S</a></th>
+<th><a href="javascript:void(0);" onclick="readDB('t');">T</a></th>
+<th><a href="javascript:void(0);" onclick="readDB('u');">U</a></th>
+<th><a href="javascript:void(0);" onclick="readDB('v');">V</a></th>
+<th><a href="javascript:void(0);" onclick="readDB('w');">W</a></th>
+<th><a href="javascript:void(0);" onclick="readDB('x');">X</a></th>
+<th><a href="javascript:void(0);" onclick="readDB('y');">Y</a></th>
+<th><a href="javascript:void(0);" onclick="readDB('z');">Z</a></th>
 </thead>
 </table>
 <br /><br />
