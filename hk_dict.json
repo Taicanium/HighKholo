@@ -1,48 +1,20 @@
 {
-"classes": [
-{
-"adj": "adjective"
-},
-{
-"adv": "adverb"
-},
-{
-"art": "article"
-},
-{
-"col": "color"
-},
-{
-"con": "conjunction"
-},
-{
-"det": "determiner"
-},
-{
-"int": "interjection"
-},
-{
-"ipr": "interrogative pronoun"
-},
-{
-"n": "noun"
-},
-{
-"num": "cardinal number"
-},
-{
-"ord": "ordinal number"
-},
-{
-"prep": "preposition"
-},
-{
-"pron": "pronoun"
-},
-{
+"classes": {
+"adj": "adjective",
+"adv": "adverb",
+"art": "article",
+"col": "color",
+"con": "conjunction",
+"det": "determiner",
+"int": "interjection",
+"ipr": "interrogative pronoun",
+"n": "noun",
+"num": "cardinal number",
+"ord": "ordinal number",
+"prep": "preposition",
+"pron": "pronoun",
 "v": "verb"
-}
-],
+},
 "words": [
 {
 "e": "after",
