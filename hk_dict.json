@@ -61,8 +61,7 @@
 },
 {
 "e": "and",
-"k": "ez",
-"a": "-z",
+"k": "ez / -z",
 "c": "prep",
 "n": "typically omitted when a clausal relationship is obvious"
 },
@@ -1356,7 +1355,7 @@
 },
 {
 "e": "then",
-"k": "ez",
+"k": "ez / -z",
 "c": "prep",
 "n": "same as 'and'."
 },
