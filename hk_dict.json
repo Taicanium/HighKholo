@@ -148,6 +148,11 @@
 "c": "adv"
 },
 {
+"e": "big",
+"k": "hhwii",
+"c": "adj"
+},
+{
 "e": "birth",
 "k": "fiti",
 "c": "n"
@@ -568,6 +573,18 @@
 "e": "grace",
 "k": "fiia",
 "c": "n"
+},
+{
+"e": "great",
+"k": "al",
+"c": "adj",
+"n": "in the same sense as high or grand."
+},
+{
+"e": "great",
+"k": "hhwii",
+"c": "adj",
+"n": "in the sense of being physically large."
 },
 {
 "e": "green",
