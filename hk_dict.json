@@ -182,7 +182,7 @@
 "e": "book",
 "k": "tojm",
 "c": "n",
-"r": "possibly related to Common 'tome'."
+"n": "possibly related to Common 'tome'."
 },
 {
 "e": "bounty",
@@ -370,7 +370,7 @@
 "e": "earth",
 "k": "rosua",
 "c": "n",
-"r": "the planet."
+"n": "the planet."
 },
 {
 "e": "ease",
@@ -403,7 +403,7 @@
 "e": "energy",
 "k": "yhok",
 "c": "n",
-"r": "related to both kwo, fire; and yhotwe, soul."
+"n": "related to both kwo, fire; and yhotwe, soul."
 },
 {
 "e": "evil",
@@ -1242,13 +1242,13 @@
 "e": "sorcerer",
 "k": "nhipiirik",
 "c": "n",
-"r": "one who is born with innate magical talent."
+"n": "one who is born with innate magical talent."
 },
 {
 "e": "sorcery",
 "k": "nhipiira",
 "c": "n",
-"r": "blood-magic"
+"n": "blood-magic"
 },
 {
 "e": "sorrow",
@@ -1644,13 +1644,13 @@
 "e": "wizard",
 "k": "tojmpiirik",
 "c": "n",
-"r": "one who studies magic in academia."
+"n": "one who studies magic in academia."
 },
 {
 "e": "wizardry",
 "k": "tojmpiira",
 "c": "n",
-"r": "book-magic"
+"n": "book-magic"
 },
 {
 "e": "wood",
