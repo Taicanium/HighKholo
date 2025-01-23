@@ -123,7 +123,7 @@
 "e": "become",
 "k": "lusha",
 "c": "v",
-"n": "related to lu, be, as in common."
+"n": "related to lu, be, as in Common."
 },
 {
 "e": "before",
@@ -177,6 +177,12 @@
 "e": "bone",
 "k": "zhe",
 "c": "n"
+},
+{
+"e": "book",
+"k": "tojm",
+"c": "n",
+"r": "possibly related to Common 'tome'."
 },
 {
 "e": "bounty",
@@ -637,7 +643,7 @@
 "e": "hiss",
 "k": "iss",
 "c": "n",
-"n": "simulation of the sound, as in common."
+"n": "simulation of the sound, as in Common."
 },
 {
 "e": "hold",
@@ -861,7 +867,7 @@
 },
 {
 "e": "magic",
-"k": "piing",
+"k": "piira",
 "c": "n"
 },
 {
@@ -1037,6 +1043,11 @@
 {
 "e": "path",
 "k": "konat",
+"c": "n"
+},
+{
+"e": "pact",
+"k": "fenkh",
 "c": "n"
 },
 {
@@ -1226,6 +1237,18 @@
 "e": "son",
 "k": "shuu",
 "c": "n"
+},
+{
+"e": "sorcerer",
+"k": "nhipiirik",
+"c": "n",
+"r": "one who is born with innate magical talent."
+},
+{
+"e": "sorcery",
+"k": "nhipiira",
+"c": "n",
+"r": "blood-magic"
 },
 {
 "e": "sorrow",
@@ -1527,6 +1550,12 @@
 "c": "n"
 },
 {
+"e": "warlock",
+"k": "fenkhpiirik",
+"c": "n",
+"n": "one who obtains magical power through a demonic pact."
+},
+{
 "e": "warrior",
 "k": "zetik",
 "c": "n",
@@ -1601,9 +1630,27 @@
 "c": "n"
 },
 {
+"e": "witchcraft",
+"k": "fenkhpiira",
+"c": "n",
+"n": "pact-magic"
+},
+{
 "e": "with",
 "k": "-'ayi",
 "c": "prep"
+},
+{
+"e": "wizard",
+"k": "tojmpiirik",
+"c": "n"
+"r": "one who studies magic in academia."
+},
+{
+"e": "wizardry",
+"k": "tojmpiira",
+"c": "n"
+"r": "book-magic"
 },
 {
 "e": "wood",
