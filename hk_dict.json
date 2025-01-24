@@ -11,6 +11,7 @@
 "n": "noun",
 "num": "cardinal number",
 "ord": "ordinal number",
+"pn": "proper noun",
 "prep": "preposition",
 "pron": "pronoun",
 "v": "verb"
@@ -32,11 +33,6 @@
 "c": "n"
 },
 {
-"e": "ash",
-"k": "etwek",
-"c": "n"
-},
-{
 "e": "all",
 "k": "li",
 "c": "det"
@@ -55,8 +51,7 @@
 {
 "e": "ancestor",
 "k": "roba",
-"c": "n",
-"n": "old-me"
+"c": "n"
 },
 {
 "e": "ancient",
@@ -83,8 +78,18 @@
 "n": "krom also means waste."
 },
 {
+"e": "arm",
+"k": "krif",
+"c": "n"
+},
+{
 "e": "arrow",
 "k": "fea",
+"c": "n"
+},
+{
+"e": "ash",
+"k": "etwek",
 "c": "n"
 },
 {
@@ -137,6 +142,16 @@
 "c": "adv"
 },
 {
+"e": "belly",
+"k": "geret",
+"c": "n"
+},
+{
+"e": "bend",
+"k": "tek",
+"c": "v"
+},
+{
 "e": "best",
 "k": "ban/b'an",
 "c": "adj",
@@ -157,6 +172,11 @@
 "e": "big",
 "k": "hhwii",
 "c": "adj"
+},
+{
+"e": "bird",
+"k": "sowa",
+"c": "n"
 },
 {
 "e": "birth",
@@ -211,9 +231,29 @@
 "c": "v"
 },
 {
+"e": "breast",
+"k": "teme",
+"c": "n"
+},
+{
+"e": "breath",
+"k": "rohhoa",
+"c": "n"
+},
+{
+"e": "breathe",
+"k": "rohh",
+"c": "v"
+},
+{
 "e": "bright",
 "k": "tiighra",
 "c": "adj"
+},
+{
+"e": "bronze",
+"k": "kola",
+"c": "n"
 },
 {
 "e": "brother",
@@ -247,6 +287,12 @@
 "c": "v"
 },
 {
+"e": "cancer",
+"k": "venennuua",
+"c": "n",
+"n": "any disease involving cancerous growth. roughly means white death, referring to its tendency in late stages to cause one's fur to fall out in patches, revealing sickly pale skin underneath."
+},
+{
 "e": "carry",
 "k": "vuuta",
 "c": "v"
@@ -263,6 +309,11 @@
 "n": "highest warrior"
 },
 {
+"e": "chest",
+"k": "temta",
+"c": "n"
+},
+{
 "e": "chew",
 "k": "tilkh",
 "c": "v"
@@ -275,6 +326,11 @@
 {
 "e": "city",
 "k": "loyya",
+"c": "n"
+},
+{
+"e": "claw",
+"k": "risli",
 "c": "n"
 },
 {
@@ -298,6 +354,11 @@
 "k": "tunshuua/tunimo",
 "c": "n",
 "n": "low-male/low-female"
+},
+{
+"e": "copper",
+"k": "koshii",
+"c": "n"
 },
 {
 "e": "country",
@@ -400,6 +461,11 @@
 "c": "v"
 },
 {
+"e": "ear",
+"k": "fori",
+"c": "n"
+},
+{
 "e": "earth",
 "k": "rosua",
 "c": "n",
@@ -426,6 +492,12 @@
 "e": "eight",
 "k": "onje / on-",
 "c": "num"
+},
+{
+"e": "elbow",
+"k": "kriftek",
+"c": "n",
+"n": "arm-bend"
 },
 {
 "e": "end",
@@ -484,6 +556,11 @@
 "c": "n"
 },
 {
+"e": "fiber",
+"k": "setelte",
+"c": "n"
+},
+{
 "e": "fight",
 "k": "zet",
 "c": "v"
@@ -503,6 +580,12 @@
 "k": "ikjan",
 "c": "ord",
 "n": "see 'numerals' tab for more."
+},
+{
+"e": "fish",
+"k": "poka",
+"c": "n",
+"n": "clearly related to poa, water, but exactly how is etymologically unclear."
 },
 {
 "e": "five",
@@ -525,6 +608,12 @@
 "k": "er",
 "c": "prep",
 "n": "usually attached as a suffix, especially in more formal settings."
+},
+{
+"e": "forearm",
+"k": "kipkrif",
+"c": "n",
+"n": "small-arm"
 },
 {
 "e": "forward",
@@ -595,6 +684,12 @@
 "n": "etymology unclear. unlike many words of the mwangi dialect, it has no cognate in katapesh or osirion."
 },
 {
+"e": "gold",
+"k": "awoa",
+"c": "n",
+"n": "the metal."
+},
+{
 "e": "good",
 "k": "ben",
 "c": "adj"
@@ -610,6 +705,11 @@
 "c": "n"
 },
 {
+"e": "granddaughter",
+"k": "imashii",
+"c": "n"
+},
+{
 "e": "grandfather",
 "k": "alhhama",
 "c": "n",
@@ -620,6 +720,11 @@
 "k": "alyyiima",
 "c": "n",
 "n": "great-mother"
+},
+{
+"e": "grandson",
+"k": "shuushii",
+"c": "n"
 },
 {
 "e": "great",
@@ -721,13 +826,13 @@
 },
 {
 "e": "honor",
-"k": "kejro",
-"c": "n"
+"k": "kej",
+"c": "v"
 },
 {
 "e": "honor",
-"k": "kej",
-"c": "v"
+"k": "kejro",
+"c": "n"
 },
 {
 "e": "horizon",
@@ -782,20 +887,30 @@
 "c": "prep"
 },
 {
+"e": "ink",
+"k": "",
+"c": "n"
+},
+{
+"e": "invite",
+"k": "sejii",
+"c": "v"
+},
+{
 "e": "jewel",
 "k": "tova",
 "c": "n"
 },
 {
 "e": "judge",
-"k": "alkejro",
-"c": "n",
+"k": "alkej",
+"c": "v",
 "n": "high-honor"
 },
 {
 "e": "judge",
-"k": "alkej",
-"c": "v",
+"k": "alkejro",
+"c": "n",
 "n": "high-honor"
 },
 {
@@ -809,6 +924,11 @@
 "k": "sekh",
 "c": "adv",
 "n": "as in i just need or it just might."
+},
+{
+"e": "kidney",
+"k": "hhuruusi",
+"c": "n"
 },
 {
 "e": "kill",
@@ -837,15 +957,20 @@
 "c": "n"
 },
 {
+"e": "lamashtu",
+"k": "lamashtuu",
+"c": "pn"
+},
+{
+"e": "language",
+"k": "yyisii",
+"c": "n",
+"n": "related to yyip, speak."
+},
+{
 "e": "last",
 "k": "gom",
 "c": "adj"
-},
-{
-"e": "league",
-"k": "loyyaka",
-"c": "n",
-"n": "city-many"
 },
 {
 "e": "league",
@@ -854,9 +979,20 @@
 "n": "people-many"
 },
 {
+"e": "league",
+"k": "loyyaka",
+"c": "n",
+"n": "city-many"
+},
+{
 "e": "leave",
 "k": "mjon",
 "c": "v"
+},
+{
+"e": "leg",
+"k": "ehhot",
+"c": "n"
 },
 {
 "e": "legend",
@@ -928,6 +1064,11 @@
 {
 "e": "luck",
 "k": "sesta",
+"c": "n"
+},
+{
+"e": "lung",
+"k": "rohhet",
 "c": "n"
 },
 {
@@ -1010,6 +1151,11 @@
 "c": "v"
 },
 {
+"e": "muscle",
+"k": "setre",
+"c": "n"
+},
+{
 "e": "muzzle",
 "k": "benet",
 "c": "n"
@@ -1020,14 +1166,31 @@
 "c": "adj"
 },
 {
+"e": "neck",
+"k": "juuruhho",
+"c": "n"
+},
+{
 "e": "need",
 "k": "zhii",
 "c": "v"
 },
 {
+"e": "nephew",
+"k": "shente",
+"c": "n",
+"n": "only used if either the speaker is female or the listener is the son of one's blood sibling. if neither is true, the speaker is not considered a family member."
+},
+{
 "e": "new",
 "k": "zua",
 "c": "adj"
+},
+{
+"e": "niece",
+"k": "imete",
+"c": "n",
+"n": "only used if either the speaker is female or the listener is the daughter of one's blood sibling. if neither is true, the speaker is not considered a family member."
 },
 {
 "e": "nine",
@@ -1117,13 +1280,13 @@
 "c": "adv"
 },
 {
-"e": "path",
-"k": "konat",
+"e": "pact",
+"k": "fenkh",
 "c": "n"
 },
 {
-"e": "pact",
-"k": "fenkh",
+"e": "path",
+"k": "konat",
 "c": "n"
 },
 {
@@ -1151,6 +1314,12 @@
 "e": "place",
 "k": "tuu",
 "c": "n"
+},
+{
+"e": "platinum",
+"k": "alatoro",
+"c": "n",
+"n": "high-silver"
 },
 {
 "e": "predator",
@@ -1226,6 +1395,12 @@
 "c": "n"
 },
 {
+"e": "scale",
+"k": "sliihhe",
+"c": "n",
+"n": "the scales of a fish or lizard."
+},
+{
 "e": "see",
 "k": "pet",
 "c": "v"
@@ -1256,9 +1431,21 @@
 "c": "adj"
 },
 {
+"e": "silver",
+"k": "atoro",
+"c": "n",
+"n": "the metal."
+},
+{
 "e": "sing",
 "k": "hhja",
 "c": "v"
+},
+{
+"e": "sister",
+"k": "alima",
+"c": "n",
+"n": "high-daughter. conspicuously similar to alim, queen."
 },
 {
 "e": "six",
@@ -1266,10 +1453,9 @@
 "c": "num"
 },
 {
-"e": "sister",
-"k": "alima",
-"c": "n",
-"n": "high-daughter. conspicuously similar to alim, queen."
+"e": "skin",
+"k": "eriipet",
+"c": "n"
 },
 {
 "e": "skin",
@@ -1396,6 +1582,11 @@
 "n": "in the sense of not moving."
 },
 {
+"e": "stomach",
+"k": "folokh",
+"c": "n"
+},
+{
 "e": "stone",
 "k": "punt",
 "c": "n"
@@ -1446,6 +1637,11 @@
 {
 "e": "sword",
 "k": "nhii",
+"c": "n"
+},
+{
+"e": "tail",
+"k": "lirsi",
 "c": "n"
 },
 {
@@ -1503,6 +1699,11 @@
 "c": "adv"
 },
 {
+"e": "thigh",
+"k": "zeft",
+"c": "n"
+},
+{
 "e": "thing",
 "k": "mi",
 "c": "n"
@@ -1549,10 +1750,20 @@
 "c": "prep"
 },
 {
+"e": "toe",
+"k": "ipit",
+"c": "n"
+},
+{
 "e": "together",
 "k": "yhii'ayi",
 "c": "adj",
 "n": "them-with"
+},
+{
+"e": "tongue",
+"k": "yyop",
+"c": "n"
 },
 {
 "e": "tooth",
@@ -1763,15 +1974,15 @@
 },
 {
 "e": "work",
-"k": "wa",
-"c": "n",
-"n": "respectable work"
-},
-{
-"e": "work",
 "k": "triip",
 "c": "n",
 "n": "menial work"
+},
+{
+"e": "work",
+"k": "wa",
+"c": "n",
+"n": "respectable work"
 },
 {
 "e": "worker",
@@ -1782,6 +1993,11 @@
 {
 "e": "worship",
 "k": "khuje",
+"c": "n"
+},
+{
+"e": "wrist",
+"k": "retajto",
 "c": "n"
 },
 {
