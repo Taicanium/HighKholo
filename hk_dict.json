@@ -1,1 +1,1796 @@
-{"classes": {"adj": "adjective","adv": "adverb","art": "article","col": "color","con": "conjunction","det": "determiner","int": "interjection","ipr": "interrogative pronoun","n": "noun","num": "cardinal number","ord": "ordinal number","prep": "preposition","pron": "pronoun","v": "verb"},"words": [{"e": "after","k": "enkha","c": "prep"},{"e": "again","k": "shikh","c": "prep"},{"e": "air","k": "jol","c": "n"},{"e": "ash","k": "etwek","c": "n"},{"e": "all","k": "li","c": "det"},{"e": "allow","k": "vrit","c": "v"},{"e": "already","k": "okhik","c": "prep","n": "okha'ik, before-once"},{"e": "ancestor","k": "roba","c": "n","n": "old-me"},{"e": "ancient","k": "alro","c": "adj","n": "high-old"},{"e": "and","k": "ez / -z","c": "prep","n": "typically omitted when a clausal relationship is obvious"},{"e": "angel","k": "hhjik","c": "n","n": "one who sings"},{"e": "animal","k": "krom","c": "n","n": "krom also means waste."},{"e": "arrow","k": "fea","c": "n"},{"e": "ask","k": "fuur","c": "v"},{"e": "aunt","k": "hhesta","c": "n","n": "either a blood sister of one's father or mother, or by marriage."},{"e": "axe","k": "hhora","c": "n"},{"e": "backward","k": "hhekh","c": "adv"},{"e": "bad","k": "ginna","c": "adj","n": "gid'nna, hurt-you"},{"e": "bag","k": "wora","c": "n"},{"e": "be","k": "lu","c": "v","n": "rarely to never used; except to provide context or specificity, or to be poetic."},{"e": "become","k": "lusha","c": "v","n": "related to lu, be, as in Common."},{"e": "before","k": "okha","c": "adv"},{"e": "best","k": "ban/b'an","c": "adj","n": "benjan, good-most"},{"e": "between","k": "ko'ird","c": "adv","n": "in-two"},{"e": "beyond","k": "dinkh","c": "adv"},{"e": "big","k": "hhwii","c": "adj"},{"e": "birth","k": "fiti","c": "n"},{"e": "black","k": "tuunu","c": "col"},{"e": "blade","k": "kipnhii","c": "n","n": "smallsword"},{"e": "blood","k": "nhi","c": "n"},{"e": "blue","k": "fiir","c": "col"},{"e": "bone","k": "zhe","c": "n"},{"e": "book","k": "tojm","c": "n","n": "possibly related to Common 'tome'."},{"e": "bounty","k": "evri","c": "n"},{"e": "bow","k": "dan","c": "n"},{"e": "break","k": "khlit","c": "v"},{"e": "bright","k": "tiighra","c": "adj"},{"e": "brother","k": "alshuu","c": "","n": "high-son"},{"e": "brow","k": "viiwe","c": "n"},{"e": "burn","k": "souukh","c": ""},{"e": "but","k": "u","c": "prep"},{"e": "bye","k": "jii","c": "int"},{"e": "call","k": "gedat","c": "v"},{"e": "carry","k": "vuuta","c": "v"},{"e": "carve","k": "sera","c": "v"},{"e": "champion","k": "aljan zetik","c": "n","n": "highest warrior"},{"e": "chew","k": "tilkh","c": "v"},{"e": "choke","k": "korkh","c": "v"},{"e": "city","k": "loyya","c": "n"},{"e": "cloth","k": "iizh","c": "n"},{"e": "clothing","k": "iizhakh","c": "n","n": "cloth (plural)"},{"e": "come","k": "suu","c": "v"},{"e": "concubine","k": "tunshuua/tunimo","c": "n","n": "low-male/low-female"},{"e": "country","k": "toa","c": "n"},{"e": "cousin","k": "jakna","c": "n","n": "specifically a female child of one's aunt or uncle. male cousins are not considered important enough to label as such."},{"e": "cover","k": "hhem","c": "n"},{"e": "cower","k": "zajii","c": "v"},{"e": "dance","k": "pip","c": "v"},{"e": "danger","k": "hhiin","c": "n"},{"e": "dark","k": "tuunu","c": "n"},{"e": "daughter","k": "ima","c": "n"},{"e": "day","k": "jira","c": "n"},{"e": "death","k": "nnuu","c": "n"},{"e": "deep","k": "uuf","c": "adj"},{"e": "demon","k": "tanik/tunjanik","c": "n","n": "lowest-one"},{"e": "despair","k": "khorahhii","c": "n"},{"e": "dirt","k": "ot","c": "n"},{"e": "disgrace","k": "a'fiia","c": "n","n": "no-grace"},{"e": "do","k": "se","c": "v"},{"e": "doctor","k": "gidwik","c": "n","n": "hurt-worker"},{"e": "drink","k": "onf","c": "v","n": "seems to be roughly onomatopoeic."},{"e": "drop","k": "tont","c": "v"},{"e": "earth","k": "rosua","c": "n","n": "the planet; as in, golarion."},{"e": "ease","k": "zem","c": "n"},{"e": "easy","k": "zem'ayi","c": "adj","n": "ease-with"},{"e": "eat","k": "aol","c": "v","n": "possibly related to mwangi 'ali', eaten."},{"e": "eight","k": "onje / on-","c": "num"},{"e": "end","k": "ston","c": "n"},{"e": "energy","k": "yhok","c": "n","n": "related to both kwo, fire; and yhotwe, soul."},{"e": "evil","k": "ginn","c": "n"},{"e": "eye","k": "twa","c": "n"},{"e": "face","k": "sonaut","c": "n"},{"e": "fall","k": "wolu","c": "v"},{"e": "far","k": "oma","c": "adv"},{"e": "father","k": "hhama","c": "n"},{"e": "fear","k": "leme","c": "n"},{"e": "feel","k": "elm","c": "v"},{"e": "female","k": "imo","c": "n"},{"e": "fight","k": "zet","c": "v"},{"e": "finger","k": "poltop","c": "n"},{"e": "fire","k": "kwo","c": "n"},{"e": "first","k": "ikjan","c": "ord","n": "see 'numerals' tab for more."},{"e": "five","k": "nara / nar-","c": "num"},{"e": "flash","k": "tiilikh","c": "n"},{"e": "food","k": "sikh","c": "n","n": "sikh also means meat."},{"e": "for","k": "er","c": "prep","n": "usually attached as a suffix, especially in more formal settings."},{"e": "forward","k": "dakh","c": "adv"},{"e": "four","k": "nen","c": "num"},{"e": "fresh","k": "siivi","c": "adj"},{"e": "friend","k": "sil","c": "n"},{"e": "from","k": "ap","c": "prep"},{"e": "front","k": "lete","c": "n"},{"e": "fur","k": "emji","c": "n"},{"e": "get","k": "sim","c": "v"},{"e": "give","k": "per","c": "v"},{"e": "gnoll","k": "kholo","c": "n"},{"e": "go","k": "rii","c": "v"},{"e": "god","k": "aljanik","c": "n","n": "highest-one"},{"e": "golarion","k": "rosua","c": "n","n": "etymology unclear. unlike many words of the mwangi dialect, it has no cognate in katapesh or osirion."},{"e": "good","k": "ben","c": "adj"},{"e": "goodbye","k": "khajii","c": "int"},{"e": "grace","k": "fiia","c": "n"},{"e": "great","k": "al","c": "adj","n": "in the same sense as high or grand."},{"e": "great","k": "hhwii","c": "adj","n": "in the sense of being physically large."},{"e": "green","k": "mejo","c": "col"},{"e": "grey","k": "min","c": "col"},{"e": "half","k": "uur","c": "n"},{"e": "have","k": "rel","c": "v"},{"e": "hawk","k": "inso","c": "n"},{"e": "hear","k": "prika","c": "v"},{"e": "heart","k": "shava","c": "n"},{"e": "heaven","k": "meruua","c": "n"},{"e": "hello","k": "khaja","c": "int"},{"e": "help","k": "kral","c": "v"},{"e": "here","k": "hhet","c": "adv"},{"e": "hi","k": "ja","c": "int"},{"e": "hide","k": "iifit","c": "v"},{"e": "high","k": "al","c": "adj"},{"e": "hiss","k": "is's","c": "n","n": "simulation of the sound, as in Common."},{"e": "hold","k": "khurum","c": "v"},{"e": "home","k": "tuu","c": "n"},{"e": "honor","k": "kejro","c": "n"},{"e": "honor","k": "kej","c": "v"},{"e": "horizon","k": "enotwo","c": "n"},{"e": "horn","k": "ziji","c": "n"},{"e": "how","k": "iikha","c": "ipr"},{"e": "human","k": "kwea","c": "n"},{"e": "hundred","k": "wanut","c": "num"},{"e": "hunger","k": "yyuu","c": "n"},{"e": "hunt","k": "tej","c": "v","n": "hunting is honorable work, so niitriip - the trapping and hunting done by niiwakh, a type of slave - is viewed as distinct."},{"e": "huntress","k": "tejima","c": "n","n": "tejik would be the ungendered version, but the role huntresses play in matriarchal kholo society makes uttering that word extremely insulting."},{"e": "hurt","k": "gid","c": "v"},{"e": "in","k": "ko","c": "prep"},{"e": "jewel","k": "tova","c": "n"},{"e": "judge","k": "alkejro","c": "n","n": "high-honor"},{"e": "judge","k": "alkej","c": "v","n": "high-honor"},{"e": "jungle","k": "uufora","c": "n","n": "deep-wood"},{"e": "just","k": "sekh","c": "adv","n": "as in i just need or it just might."},{"e": "kill","k": "nii","c": "v"},{"e": "king","k": "aligha","c": "n","n": "high-lord"},{"e": "knee","k": "inkh","c": "n"},{"e": "know","k": "riile","c": "v"},{"e": "lady","k": "im","c": "n"},{"e": "last","k": "gom","c": "adj"},{"e": "league","k": "loyyaka","c": "n","n": "city-many"},{"e": "league","k": "alik'hha","c": "n","n": "people-many"},{"e": "leave","k": "mjon","c": "v"},{"e": "legend","k": "alkhit","c": "n","n": "high-story"},{"e": "less","k": "julkh","c": "adj"},{"e": "life","k": "yhag","c": "n"},{"e": "light","k": "tiikh","c": "n"},{"e": "like","k": "e'-","c": "adj"},{"e": "like","k": "sju","c": "v"},{"e": "live","k": "yha","c": "v"},{"e": "long","k": "tashikh","c": "adj","n": "in the sense of a long span of time."},{"e": "look","k": "jos","c": "v"},{"e": "lord","k": "igha","c": "n"},{"e": "lose","k": "nnim","c": "v"},{"e": "loss","k": "nnima","c": "n"},{"e": "low","k": "tun","c": "adj"},{"e": "luck","k": "sesta","c": "n"},{"e": "lynx","k": "khitsha","c": "n"},{"e": "mace","k": "sit","c": "n","n": "in the sense of a many-pointed weapon."},{"e": "magic","k": "piira","c": "n"},{"e": "make","k": "hho","c": "v"},{"e": "male","k": "shuua","c": "n"},{"e": "meat","k": "sikh","c": "n"},{"e": "mechanic","k": "bojawik","c": "n","n": "pearl-worker. possibly originates in that machines require tender care to work, as when polishing a pearl."},{"e": "medicine","k": "gidwa","c": "n","n": "hurt-work"},{"e": "memory","k": "wahhar","c": "n"},{"e": "mercy","k": "kraia","c": "n"},{"e": "moon","k": "tuntiikh","c": "n","n": "low-light"},{"e": "more","k": "shikh","c": "det"},{"e": "most","k": "-jan","c": "det"},{"e": "mother","k": "yyiima","c": "n"},{"e": "mourn","k": "nnomo","c": "v"},{"e": "muzzle","k": "benet","c": "n"},{"e": "near","k": "juuma","c": "adj"},{"e": "need","k": "zhii","c": "v"},{"e": "new","k": "zua","c": "adj"},{"e": "nine","k": "wen","c": "num"},{"e": "no","k": "a","c": "int"},{"e": "none","k": "oa","c": "pron"},{"e": "north","k": "ent","c": "n"},{"e": "not","k": "a'-","c": "prep"},{"e": "now","k": "ket","c": "adv"},{"e": "of","k": "ap","c": "prep"},{"e": "offer","k": "perre","c": "n","n": "related to per, give."},{"e": "okay","k": "iig","c": "int"},{"e": "old","k": "ro","c": "adj"},{"e": "on","k": "jogra","c": "adv"},{"e": "one","k": "ik","c": "num"},{"e": "or","k": "si","c": "prep"},{"e": "osirion","k": "zuatoa","c": "n","n": "new-country (roughly the meaning of osirion)"},{"e": "other","k": "folkha","c": "n"},{"e": "out","k": "ke","c": "adv"},{"e": "over","k": "jogra","c": "adv"},{"e": "path","k": "konat","c": "n"},{"e": "pact","k": "fenkh","c": "n"},{"e": "paw","k": "owja","c": "n"},{"e": "pearl","k": "boja","c": "n"},{"e": "person","k": "alik","c": "n","n": "high-one"},{"e": "pierce","k": "shtiip","c": "v"},{"e": "place","k": "tuu","c": "n"},{"e": "predator","k": "lo","c": "n"},{"e": "prey","k": "yyuumi","c": "n","n": "hunger-thing"},{"e": "problem","k": "hhara","c": "n"},{"e": "queen","k": "alim","c": "n","n": "high-lady"},{"e": "question","k": "[item]mi","c": "n","n": "where [item] is any of 'who', 'what', 'when', etc. the default, or fallback, is 'pajmi', 'what-thing'."},{"e": "rank","k": "tua","c": "n"},{"e": "reach","k": "veswe","c": "v"},{"e": "refuse","k": "arnh","c": "v"},{"e": "release","k": "tunke","c": "v"},{"e": "ride","k": "wilt","c": "v"},{"e": "rise","k": "nhis","c": "v"},{"e": "road","k": "konat","c": "n"},{"e": "rock","k": "zhet","c": "n"},{"e": "savanna","k": "mowan","c": "n"},{"e": "see","k": "pet","c": "v"},{"e": "seven","k": "mjo","c": "num"},{"e": "shield","k": "veren","c": "n"},{"e": "shoulder","k": "ghalmate","c": "n"},{"e": "shout","k": "ofrelet","c": "v"},{"e": "silent","k": "yohho","c": "adj"},{"e": "sing","k": "hhja","c": "v"},{"e": "six","k": "mon","c": "num"},{"e": "sister","k": "alima","c": "n","n": "high-daughter. conspicuously similar to alim, queen."},{"e": "skin","k": "suuli","c": "n"},{"e": "sky","k": "altuu","c": "n","n": "high-place"},{"e": "slaughter","k": "niika","c": "n","n": "kill-many"},{"e": "sleep","k": "desh","c": "v"},{"e": "small","k": "kip","c": "adj"},{"e": "smith","k": "hho'ik","c": "n","n": "make-one"},{"e": "sneer","k": "bintos","c": "n","n": "bint'jos, tooth-look"},{"e": "soldier","k": "fo","c": "n"},{"e": "son","k": "shuu","c": "n"},{"e": "sorcerer","k": "nhipiirik","c": "n","n": "one who is born with innate magical talent."},{"e": "sorcery","k": "nhipiira","c": "n","n": "blood-magic"},{"e": "sorrow","k": "hhiguu","c": "n"},{"e": "soul","k": "yhotwe","c": "n"},{"e": "sound","k": "voa","c": "n"},{"e": "sound","k": "voa","c": "v"},{"e": "speak","k": "yyip","c": "v","n": "note the single i."},{"e": "speaker","k": "yyipik","c": "n","n": "speak-one"},{"e": "spear","k": "ip","c": "n"},{"e": "spoil","k": "iklo","c": "v"},{"e": "staff","k": "duukh","c": "n"},{"e": "stand","k": "ura","c": "v"},{"e": "step","k": "owa","c": "v"},{"e": "still","k": "weten","c": "adj","n": "in the sense of not moving."},{"e": "stone","k": "punt","c": "n"},{"e": "stop","k": "hhap","c": "v"},{"e": "story","k": "khit","c": "n"},{"e": "strength","k": "kora","c": "n"},{"e": "strong","k": "korayi","c": "adj","n": "strength-with. the -'ayi suffix has fused with the root, suggesting this word is very old and/or not native."},{"e": "stuff","k": "mi'akh","c": "n","n": "things"},{"e": "sun","k": "jira","c": "n"},{"e": "surrender","k": "joyhot","c": "v"},{"e": "survivor","k": "tunyhag","c": "n","n": "low-life"},{"e": "sword","k": "nhii","c": "n"},{"e": "take","k": "ghep","c": "v"},{"e": "talk","k": "yyip","c": "v","n": "note the single i."},{"e": "tall","k": "retsa","c": "adj"},{"e": "tear","k": "shiiu","c": "n"},{"e": "ten","k": "wakh","c": "num"},{"e": "terror","k": "aleme","c": "n","n": "al'leme, high-fear"},{"e": "thanks (for...)","k": "a'ginna (ta...)","c": "int","n": "not-bad (when...)"},{"e": "that","k": "khuu","c": "con"},{"e": "then","k": "ez / -z","c": "prep","n": "same as 'and'."},{"e": "there","k": "hhata","c": "adv"},{"e": "thing","k": "mi","c": "n"},{"e": "think","k": "khrish","c": "v"},{"e": "this","k": "khe","c": "con"},{"e": "thorn","k": "yyii'ta","c": "n"},{"e": "thousand","k": "ghoro","c": "num"},{"e": "three","k": "jink","c": "num"},{"e": "through","k": "keko","c": "prep","n": "out-in"},{"e": "time","k": "ta","c": "n"},{"e": "to","k": "er","c": "prep"},{"e": "together","k": "yhii'ayi","c": "adj","n": "them-with"},{"e": "tooth","k": "bint","c": "n"},{"e": "touch","k": "firit","c": "v"},{"e": "treasure","k": "ifro","c": "n"},{"e": "tribe","k": "kho","c": "n"},{"e": "true","k": "iit'ayi","c": "adj","n": "truth-with"},{"e": "truth","k": "iit","c": "n"},{"e": "turn","k": "mobet","c": "v"},{"e": "twist","k": "kowtsh","c": "v"},{"e": "two","k": "ird","c": "num"},{"e": "uncle","k": "hhosha","c": "n","n": "only used for a blood brother of one's father or mother. an uncle by marriage is not considered a family member."},{"e": "under","k": "jogo","c": "prep"},{"e": "up","k": "ti","c": "prep"},{"e": "use","k": "gent","c": "v"},{"e": "vein","k": "gifo","c": "n","n": "in the sense of an ore deposit."},{"e": "voice","k": "yyiip","c": "n","n": "note the double i."},{"e": "walk","k": "mat","c": "v"},{"e": "want","k": "hhuu","c": "v"},{"e": "war","k": "zet","c": "n"},{"e": "warlock","k": "fenkhpiirik","c": "n","n": "one who obtains magical power through a demonic pact."},{"e": "warrior","k": "zetik","c": "n","n": "war-one"},{"e": "waste","k": "krom","c": "n"},{"e": "watch","k": "penet","c": "v"},{"e": "water","k": "poa","c": "n"},{"e": "weak","k": "fuu","c": "adj"},{"e": "weight","k": "onje","c": "n","n": "same as the word for the numeral eight, possibly deriving from an old system of measurement"},{"e": "what","k": "paj","c": "ipr"},{"e": "when","k": "pajda","c": "ipr","n": "what-time"},{"e": "where","k": "pajduu","c": "ipr","n": "what-place"},{"e": "white","k": "ven","c": "col"},{"e": "who","k": "pak","c": "ipr"},{"e": "why","k": "yyo'a","c": "ipr"},{"e": "wide","k": "ghint","c": "adj"},{"e": "wind","k": "majol","c": "n"},{"e": "witchcraft","k": "fenkhpiira","c": "n","n": "pact-magic"},{"e": "with","k": "-'ayi","c": "prep"},{"e": "wizard","k": "tojmpiirik","c": "n","n": "one who studies magic in academia."},{"e": "wizardry","k": "tojmpiira","c": "n","n": "book-magic"},{"e": "wood","k": "ora","c": "n"},{"e": "word","k": "bit","c": "n"},{"e": "work","k": "wa","c": "n","n": "respectable work"},{"e": "work","k": "triip","c": "n","n": "menial work"},{"e": "worker","k": "wik","c": "n","n": "wa'ik, work-one"},{"e": "worship","k": "khuje","c": "n"},{"e": "write","k": "nno","c": "v"},{"e": "yes","k": "uu","c": "int"},{"e": "young","k": "liivi","c": "adj"},{"e": "zero","k": "oa","c": "num"}]}
+{
+"classes": {
+"adj": "adjective",
+"adv": "adverb",
+"art": "article",
+"col": "color",
+"con": "conjunction",
+"det": "determiner",
+"int": "interjection",
+"ipr": "interrogative pronoun",
+"n": "noun",
+"num": "cardinal number",
+"ord": "ordinal number",
+"prep": "preposition",
+"pron": "pronoun",
+"v": "verb"
+},
+"words": [
+{
+"e": "after",
+"k": "enkha",
+"c": "prep"
+},
+{
+"e": "again",
+"k": "shikh",
+"c": "prep"
+},
+{
+"e": "air",
+"k": "jol",
+"c": "n"
+},
+{
+"e": "ash",
+"k": "etwek",
+"c": "n"
+},
+{
+"e": "all",
+"k": "li",
+"c": "det"
+},
+{
+"e": "allow",
+"k": "vrit",
+"c": "v"
+},
+{
+"e": "already",
+"k": "okhik",
+"c": "prep",
+"n": "okha'ik, before-once"
+},
+{
+"e": "ancestor",
+"k": "roba",
+"c": "n",
+"n": "old-me"
+},
+{
+"e": "ancient",
+"k": "alro",
+"c": "adj",
+"n": "high-old"
+},
+{
+"e": "and",
+"k": "ez / -z",
+"c": "prep",
+"n": "typically omitted when a clausal relationship is obvious"
+},
+{
+"e": "angel",
+"k": "hhjik",
+"c": "n",
+"n": "one who sings"
+},
+{
+"e": "animal",
+"k": "krom",
+"c": "n",
+"n": "krom also means waste."
+},
+{
+"e": "arrow",
+"k": "fea",
+"c": "n"
+},
+{
+"e": "ask",
+"k": "fuur",
+"c": "v"
+},
+{
+"e": "aunt",
+"k": "hhesta",
+"c": "n",
+"n": "either a blood sister of one's father or mother, or by marriage."
+},
+{
+"e": "axe",
+"k": "hhora",
+"c": "n"
+},
+{
+"e": "backward",
+"k": "hhekh",
+"c": "adv"
+},
+{
+"e": "bad",
+"k": "ginna",
+"c": "adj",
+"n": "gid'nna, hurt-you"
+},
+{
+"e": "bag",
+"k": "wora",
+"c": "n"
+},
+{
+"e": "be",
+"k": "lu",
+"c": "v",
+"n": "rarely to never used; except to provide context or specificity, or to be poetic."
+},
+{
+"e": "become",
+"k": "lusha",
+"c": "v",
+"n": "related to lu, be, as in Common."
+},
+{
+"e": "before",
+"k": "okha",
+"c": "adv"
+},
+{
+"e": "best",
+"k": "ban/b'an",
+"c": "adj",
+"n": "benjan, good-most"
+},
+{
+"e": "between",
+"k": "ko'ird",
+"c": "adv",
+"n": "in-two"
+},
+{
+"e": "beyond",
+"k": "dinkh",
+"c": "adv"
+},
+{
+"e": "big",
+"k": "hhwii",
+"c": "adj"
+},
+{
+"e": "birth",
+"k": "fiti",
+"c": "n"
+},
+{
+"e": "black",
+"k": "tuunu",
+"c": "col"
+},
+{
+"e": "blade",
+"k": "kipnhii",
+"c": "n",
+"n": "smallsword"
+},
+{
+"e": "blood",
+"k": "nhi",
+"c": "n"
+},
+{
+"e": "blue",
+"k": "fiir",
+"c": "col"
+},
+{
+"e": "bone",
+"k": "zhe",
+"c": "n"
+},
+{
+"e": "book",
+"k": "tojm",
+"c": "n",
+"n": "possibly related to Common 'tome'."
+},
+{
+"e": "bounty",
+"k": "evri",
+"c": "n"
+},
+{
+"e": "bow",
+"k": "dan",
+"c": "n"
+},
+{
+"e": "break",
+"k": "khlit",
+"c": "v"
+},
+{
+"e": "bright",
+"k": "tiighra",
+"c": "adj"
+},
+{
+"e": "brother",
+"k": "alshuu",
+"c": "",
+"n": "high-son"
+},
+{
+"e": "brow",
+"k": "viiwe",
+"c": "n"
+},
+{
+"e": "burn",
+"k": "souukh",
+"c": ""
+},
+{
+"e": "but",
+"k": "u",
+"c": "prep"
+},
+{
+"e": "bye",
+"k": "jii",
+"c": "int"
+},
+{
+"e": "call",
+"k": "gedat",
+"c": "v"
+},
+{
+"e": "carry",
+"k": "vuuta",
+"c": "v"
+},
+{
+"e": "carve",
+"k": "sera",
+"c": "v"
+},
+{
+"e": "champion",
+"k": "aljan zetik",
+"c": "n",
+"n": "highest warrior"
+},
+{
+"e": "chew",
+"k": "tilkh",
+"c": "v"
+},
+{
+"e": "choke",
+"k": "korkh",
+"c": "v"
+},
+{
+"e": "city",
+"k": "loyya",
+"c": "n"
+},
+{
+"e": "cloth",
+"k": "iizh",
+"c": "n"
+},
+{
+"e": "clothing",
+"k": "iizhakh",
+"c": "n",
+"n": "cloth (plural)"
+},
+{
+"e": "come",
+"k": "suu",
+"c": "v"
+},
+{
+"e": "concubine",
+"k": "tunshuua/tunimo",
+"c": "n",
+"n": "low-male/low-female"
+},
+{
+"e": "country",
+"k": "toa",
+"c": "n"
+},
+{
+"e": "cousin",
+"k": "jakna",
+"c": "n",
+"n": "specifically a female child of one's aunt or uncle. male cousins are not considered important enough to label as such."
+},
+{
+"e": "cover",
+"k": "hhem",
+"c": "n"
+},
+{
+"e": "cower",
+"k": "zajii",
+"c": "v"
+},
+{
+"e": "dance",
+"k": "pip",
+"c": "v"
+},
+{
+"e": "danger",
+"k": "hhiin",
+"c": "n"
+},
+{
+"e": "dark",
+"k": "tuunu",
+"c": "n"
+},
+{
+"e": "daughter",
+"k": "ima",
+"c": "n"
+},
+{
+"e": "day",
+"k": "jira",
+"c": "n"
+},
+{
+"e": "death",
+"k": "nnuu",
+"c": "n"
+},
+{
+"e": "deep",
+"k": "uuf",
+"c": "adj"
+},
+{
+"e": "demon",
+"k": "tanik/tunjanik",
+"c": "n",
+"n": "lowest-one"
+},
+{
+"e": "despair",
+"k": "khorahhii",
+"c": "n"
+},
+{
+"e": "dirt",
+"k": "ot",
+"c": "n"
+},
+{
+"e": "disgrace",
+"k": "a'fiia",
+"c": "n",
+"n": "no-grace"
+},
+{
+"e": "do",
+"k": "se",
+"c": "v"
+},
+{
+"e": "doctor",
+"k": "gidwik",
+"c": "n",
+"n": "hurt-worker"
+},
+{
+"e": "drink",
+"k": "onf",
+"c": "v",
+"n": "seems to be roughly onomatopoeic."
+},
+{
+"e": "drop",
+"k": "tont",
+"c": "v"
+},
+{
+"e": "earth",
+"k": "rosua",
+"c": "n",
+"n": "the planet; as in, golarion."
+},
+{
+"e": "ease",
+"k": "zem",
+"c": "n"
+},
+{
+"e": "easy",
+"k": "zem'ayi",
+"c": "adj",
+"n": "ease-with"
+},
+{
+"e": "eat",
+"k": "aol",
+"c": "v",
+"n": "possibly related to mwangi 'ali', eaten."
+},
+{
+"e": "eight",
+"k": "onje / on-",
+"c": "num"
+},
+{
+"e": "end",
+"k": "ston",
+"c": "n"
+},
+{
+"e": "energy",
+"k": "yhok",
+"c": "n",
+"n": "related to both kwo, fire; and yhotwe, soul."
+},
+{
+"e": "evil",
+"k": "ginn",
+"c": "n"
+},
+{
+"e": "eye",
+"k": "twa",
+"c": "n"
+},
+{
+"e": "face",
+"k": "sonaut",
+"c": "n"
+},
+{
+"e": "fall",
+"k": "wolu",
+"c": "v"
+},
+{
+"e": "far",
+"k": "oma",
+"c": "adv"
+},
+{
+"e": "father",
+"k": "hhama",
+"c": "n"
+},
+{
+"e": "fear",
+"k": "leme",
+"c": "n"
+},
+{
+"e": "feel",
+"k": "elm",
+"c": "v"
+},
+{
+"e": "female",
+"k": "imo",
+"c": "n"
+},
+{
+"e": "fight",
+"k": "zet",
+"c": "v"
+},
+{
+"e": "finger",
+"k": "poltop",
+"c": "n"
+},
+{
+"e": "fire",
+"k": "kwo",
+"c": "n"
+},
+{
+"e": "first",
+"k": "ikjan",
+"c": "ord",
+"n": "see 'numerals' tab for more."
+},
+{
+"e": "five",
+"k": "nara / nar-",
+"c": "num"
+},
+{
+"e": "flash",
+"k": "tiilikh",
+"c": "n"
+},
+{
+"e": "food",
+"k": "sikh",
+"c": "n",
+"n": "sikh also means meat."
+},
+{
+"e": "for",
+"k": "er",
+"c": "prep",
+"n": "usually attached as a suffix, especially in more formal settings."
+},
+{
+"e": "forward",
+"k": "dakh",
+"c": "adv"
+},
+{
+"e": "four",
+"k": "nen",
+"c": "num"
+},
+{
+"e": "fresh",
+"k": "siivi",
+"c": "adj"
+},
+{
+"e": "friend",
+"k": "sil",
+"c": "n"
+},
+{
+"e": "from",
+"k": "ap",
+"c": "prep"
+},
+{
+"e": "front",
+"k": "lete",
+"c": "n"
+},
+{
+"e": "fur",
+"k": "emji",
+"c": "n"
+},
+{
+"e": "get",
+"k": "sim",
+"c": "v"
+},
+{
+"e": "give",
+"k": "per",
+"c": "v"
+},
+{
+"e": "gnoll",
+"k": "kholo",
+"c": "n",
+"r": "kho, tribe + lo, predator."
+},
+{
+"e": "go",
+"k": "rii",
+"c": "v"
+},
+{
+"e": "god",
+"k": "aljanik",
+"c": "n",
+"n": "highest-one"
+},
+{
+"e": "golarion",
+"k": "rosua",
+"c": "n",
+"n": "etymology unclear. unlike many words of the mwangi dialect, it has no cognate in katapesh or osirion."
+},
+{
+"e": "good",
+"k": "ben",
+"c": "adj"
+},
+{
+"e": "goodbye",
+"k": "khajii",
+"c": "int"
+},
+{
+"e": "grace",
+"k": "fiia",
+"c": "n"
+},
+{
+"e": "great",
+"k": "al",
+"c": "adj",
+"n": "in the same sense as high or grand."
+},
+{
+"e": "great",
+"k": "hhwii",
+"c": "adj",
+"n": "in the sense of being physically large."
+},
+{
+"e": "green",
+"k": "mejo",
+"c": "col"
+},
+{
+"e": "grey",
+"k": "min",
+"c": "col"
+},
+{
+"e": "half",
+"k": "uur",
+"c": "n"
+},
+{
+"e": "have",
+"k": "rel",
+"c": "v"
+},
+{
+"e": "hawk",
+"k": "inso",
+"c": "n"
+},
+{
+"e": "hear",
+"k": "prika",
+"c": "v"
+},
+{
+"e": "heart",
+"k": "shava",
+"c": "n"
+},
+{
+"e": "heaven",
+"k": "meruua",
+"c": "n"
+},
+{
+"e": "hello",
+"k": "khaja",
+"c": "int"
+},
+{
+"e": "help",
+"k": "kral",
+"c": "v"
+},
+{
+"e": "here",
+"k": "hhet",
+"c": "adv"
+},
+{
+"e": "hi",
+"k": "ja",
+"c": "int"
+},
+{
+"e": "hide",
+"k": "iifit",
+"c": "v"
+},
+{
+"e": "high",
+"k": "al",
+"c": "adj"
+},
+{
+"e": "hiss",
+"k": "is's",
+"c": "n",
+"n": "simulation of the sound, as in Common."
+},
+{
+"e": "hold",
+"k": "khurum",
+"c": "v"
+},
+{
+"e": "home",
+"k": "tuu",
+"c": "n"
+},
+{
+"e": "honor",
+"k": "kejro",
+"c": "n"
+},
+{
+"e": "honor",
+"k": "kej",
+"c": "v"
+},
+{
+"e": "horizon",
+"k": "enotwo",
+"c": "n"
+},
+{
+"e": "horn",
+"k": "ziji",
+"c": "n"
+},
+{
+"e": "how",
+"k": "iikha",
+"c": "ipr"
+},
+{
+"e": "human",
+"k": "kwea",
+"c": "n"
+},
+{
+"e": "hundred",
+"k": "wanut",
+"c": "num"
+},
+{
+"e": "hunger",
+"k": "yyuu",
+"c": "n"
+},
+{
+"e": "hunt",
+"k": "tej",
+"c": "v",
+"n": "hunting is honorable work, so niitriip - the trapping and hunting done by niiwakh, a type of slave - is viewed as distinct."
+},
+{
+"e": "huntress",
+"k": "tejima",
+"c": "n",
+"n": "tejik would be the ungendered version, but the role huntresses play in matriarchal kholo society makes uttering that word extremely insulting."
+},
+{
+"e": "hurt",
+"k": "gid",
+"c": "v"
+},
+{
+"e": "in",
+"k": "ko",
+"c": "prep"
+},
+{
+"e": "jewel",
+"k": "tova",
+"c": "n"
+},
+{
+"e": "judge",
+"k": "alkejro",
+"c": "n",
+"n": "high-honor"
+},
+{
+"e": "judge",
+"k": "alkej",
+"c": "v",
+"n": "high-honor"
+},
+{
+"e": "jungle",
+"k": "uufora",
+"c": "n",
+"n": "deep-wood"
+},
+{
+"e": "just",
+"k": "sekh",
+"c": "adv",
+"n": "as in i just need or it just might."
+},
+{
+"e": "kill",
+"k": "nii",
+"c": "v"
+},
+{
+"e": "king",
+"k": "aligha",
+"c": "n",
+"n": "high-lord"
+},
+{
+"e": "knee",
+"k": "inkh",
+"c": "n"
+},
+{
+"e": "know",
+"k": "riile",
+"c": "v"
+},
+{
+"e": "lady",
+"k": "im",
+"c": "n"
+},
+{
+"e": "last",
+"k": "gom",
+"c": "adj"
+},
+{
+"e": "league",
+"k": "loyyaka",
+"c": "n",
+"n": "city-many"
+},
+{
+"e": "league",
+"k": "alik'hha",
+"c": "n",
+"n": "people-many"
+},
+{
+"e": "leave",
+"k": "mjon",
+"c": "v"
+},
+{
+"e": "legend",
+"k": "alkhit",
+"c": "n",
+"n": "high-story"
+},
+{
+"e": "less",
+"k": "julkh",
+"c": "adj"
+},
+{
+"e": "life",
+"k": "yhag",
+"c": "n"
+},
+{
+"e": "light",
+"k": "tiikh",
+"c": "n"
+},
+{
+"e": "like",
+"k": "e'-",
+"c": "adj"
+},
+{
+"e": "like",
+"k": "sju",
+"c": "v"
+},
+{
+"e": "live",
+"k": "yha",
+"c": "v"
+},
+{
+"e": "long",
+"k": "tashikh",
+"c": "adj",
+"n": "in the sense of a long span of time."
+},
+{
+"e": "look",
+"k": "jos",
+"c": "v"
+},
+{
+"e": "lord",
+"k": "igha",
+"c": "n"
+},
+{
+"e": "lose",
+"k": "nnim",
+"c": "v"
+},
+{
+"e": "loss",
+"k": "nnima",
+"c": "n"
+},
+{
+"e": "low",
+"k": "tun",
+"c": "adj"
+},
+{
+"e": "luck",
+"k": "sesta",
+"c": "n"
+},
+{
+"e": "lynx",
+"k": "khitsha",
+"c": "n"
+},
+{
+"e": "mace",
+"k": "sit",
+"c": "n",
+"n": "in the sense of a many-pointed weapon."
+},
+{
+"e": "magic",
+"k": "piira",
+"c": "n"
+},
+{
+"e": "make",
+"k": "hho",
+"c": "v"
+},
+{
+"e": "male",
+"k": "shuua",
+"c": "n"
+},
+{
+"e": "meat",
+"k": "sikh",
+"c": "n"
+},
+{
+"e": "mechanic",
+"k": "bojawik",
+"c": "n",
+"n": "pearl-worker. possibly originates in that machines require tender care to work, as when polishing a pearl."
+},
+{
+"e": "medicine",
+"k": "gidwa",
+"c": "n",
+"n": "hurt-work"
+},
+{
+"e": "memory",
+"k": "wahhar",
+"c": "n"
+},
+{
+"e": "mercy",
+"k": "kraia",
+"c": "n"
+},
+{
+"e": "moon",
+"k": "tuntiikh",
+"c": "n",
+"n": "low-light"
+},
+{
+"e": "more",
+"k": "shikh",
+"c": "det"
+},
+{
+"e": "most",
+"k": "-jan",
+"c": "det"
+},
+{
+"e": "mother",
+"k": "yyiima",
+"c": "n"
+},
+{
+"e": "mourn",
+"k": "nnomo",
+"c": "v"
+},
+{
+"e": "muzzle",
+"k": "benet",
+"c": "n"
+},
+{
+"e": "near",
+"k": "juuma",
+"c": "adj"
+},
+{
+"e": "need",
+"k": "zhii",
+"c": "v"
+},
+{
+"e": "new",
+"k": "zua",
+"c": "adj"
+},
+{
+"e": "nine",
+"k": "wen",
+"c": "num"
+},
+{
+"e": "no",
+"k": "a",
+"c": "int"
+},
+{
+"e": "none",
+"k": "oa",
+"c": "pron"
+},
+{
+"e": "north",
+"k": "ent",
+"c": "n"
+},
+{
+"e": "not",
+"k": "a'-",
+"c": "prep"
+},
+{
+"e": "now",
+"k": "ket",
+"c": "adv"
+},
+{
+"e": "of",
+"k": "ap",
+"c": "prep"
+},
+{
+"e": "offer",
+"k": "perre",
+"c": "n",
+"n": "related to per, give."
+},
+{
+"e": "okay",
+"k": "iig",
+"c": "int"
+},
+{
+"e": "old",
+"k": "ro",
+"c": "adj"
+},
+{
+"e": "on",
+"k": "jogra",
+"c": "adv"
+},
+{
+"e": "one",
+"k": "ik",
+"c": "num"
+},
+{
+"e": "or",
+"k": "si",
+"c": "prep"
+},
+{
+"e": "osirion",
+"k": "zuatoa",
+"c": "n",
+"n": "new-country (roughly the meaning of osirion)"
+},
+{
+"e": "other",
+"k": "folkha",
+"c": "n"
+},
+{
+"e": "out",
+"k": "ke",
+"c": "adv"
+},
+{
+"e": "over",
+"k": "jogra",
+"c": "adv"
+},
+{
+"e": "path",
+"k": "konat",
+"c": "n"
+},
+{
+"e": "pact",
+"k": "fenkh",
+"c": "n"
+},
+{
+"e": "paw",
+"k": "owja",
+"c": "n"
+},
+{
+"e": "pearl",
+"k": "boja",
+"c": "n"
+},
+{
+"e": "person",
+"k": "alik",
+"c": "n",
+"n": "high-one"
+},
+{
+"e": "pierce",
+"k": "shtiip",
+"c": "v"
+},
+{
+"e": "place",
+"k": "tuu",
+"c": "n"
+},
+{
+"e": "predator",
+"k": "lo",
+"c": "n"
+},
+{
+"e": "prey",
+"k": "yyuumi",
+"c": "n",
+"n": "hunger-thing"
+},
+{
+"e": "problem",
+"k": "hhara",
+"c": "n"
+},
+{
+"e": "queen",
+"k": "alim",
+"c": "n",
+"n": "high-lady"
+},
+{
+"e": "question",
+"k": "[item]mi",
+"c": "n",
+"n": "where [item] is any of 'who', 'what', 'when', etc. the default, or fallback, is 'pajmi', 'what-thing'."
+},
+{
+"e": "rank",
+"k": "tua",
+"c": "n"
+},
+{
+"e": "reach",
+"k": "veswe",
+"c": "v"
+},
+{
+"e": "refuse",
+"k": "arnh",
+"c": "v"
+},
+{
+"e": "release",
+"k": "tunke",
+"c": "v"
+},
+{
+"e": "ride",
+"k": "wilt",
+"c": "v"
+},
+{
+"e": "rise",
+"k": "nhis",
+"c": "v"
+},
+{
+"e": "road",
+"k": "konat",
+"c": "n"
+},
+{
+"e": "rock",
+"k": "zhet",
+"c": "n"
+},
+{
+"e": "savanna",
+"k": "mowan",
+"c": "n"
+},
+{
+"e": "see",
+"k": "pet",
+"c": "v"
+},
+{
+"e": "seven",
+"k": "mjo",
+"c": "num"
+},
+{
+"e": "shield",
+"k": "veren",
+"c": "n"
+},
+{
+"e": "shoulder",
+"k": "ghalmate",
+"c": "n"
+},
+{
+"e": "shout",
+"k": "ofrelet",
+"c": "v"
+},
+{
+"e": "silent",
+"k": "yohho",
+"c": "adj"
+},
+{
+"e": "sing",
+"k": "hhja",
+"c": "v"
+},
+{
+"e": "six",
+"k": "mon",
+"c": "num"
+},
+{
+"e": "sister",
+"k": "alima",
+"c": "n",
+"n": "high-daughter. conspicuously similar to alim, queen."
+},
+{
+"e": "skin",
+"k": "suuli",
+"c": "n"
+},
+{
+"e": "sky",
+"k": "altuu",
+"c": "n",
+"n": "high-place"
+},
+{
+"e": "slaughter",
+"k": "niika",
+"c": "n",
+"n": "kill-many"
+},
+{
+"e": "sleep",
+"k": "desh",
+"c": "v"
+},
+{
+"e": "small",
+"k": "kip",
+"c": "adj"
+},
+{
+"e": "smith",
+"k": "hho'ik",
+"c": "n",
+"n": "make-one"
+},
+{
+"e": "sneer",
+"k": "bintos",
+"c": "n",
+"n": "bint'jos, tooth-look"
+},
+{
+"e": "soldier",
+"k": "fo",
+"c": "n"
+},
+{
+"e": "son",
+"k": "shuu",
+"c": "n"
+},
+{
+"e": "sorcerer",
+"k": "nhipiirik",
+"c": "n",
+"n": "one who is born with innate magical talent."
+},
+{
+"e": "sorcery",
+"k": "nhipiira",
+"c": "n",
+"n": "blood-magic"
+},
+{
+"e": "sorrow",
+"k": "hhiguu",
+"c": "n"
+},
+{
+"e": "soul",
+"k": "yhotwe",
+"c": "n"
+},
+{
+"e": "sound",
+"k": "voa",
+"c": "n"
+},
+{
+"e": "sound",
+"k": "voa",
+"c": "v"
+},
+{
+"e": "speak",
+"k": "yyip",
+"c": "v",
+"n": "note the single i."
+},
+{
+"e": "speaker",
+"k": "yyipik",
+"c": "n",
+"n": "speak-one"
+},
+{
+"e": "spear",
+"k": "ip",
+"c": "n"
+},
+{
+"e": "spoil",
+"k": "iklo",
+"c": "v"
+},
+{
+"e": "staff",
+"k": "duukh",
+"c": "n"
+},
+{
+"e": "stand",
+"k": "ura",
+"c": "v"
+},
+{
+"e": "step",
+"k": "owa",
+"c": "v"
+},
+{
+"e": "still",
+"k": "weten",
+"c": "adj",
+"n": "in the sense of not moving."
+},
+{
+"e": "stone",
+"k": "punt",
+"c": "n"
+},
+{
+"e": "stop",
+"k": "hhap",
+"c": "v"
+},
+{
+"e": "story",
+"k": "khit",
+"c": "n"
+},
+{
+"e": "strength",
+"k": "kora",
+"c": "n"
+},
+{
+"e": "strong",
+"k": "korayi",
+"c": "adj",
+"n": "strength-with. the -'ayi suffix has fused with the root, suggesting this word is very old and/or not native."
+},
+{
+"e": "stuff",
+"k": "mi'akh",
+"c": "n",
+"n": "things"
+},
+{
+"e": "sun",
+"k": "jira",
+"c": "n"
+},
+{
+"e": "surrender",
+"k": "joyhot",
+"c": "v"
+},
+{
+"e": "survivor",
+"k": "tunyhag",
+"c": "n",
+"n": "low-life"
+},
+{
+"e": "sword",
+"k": "nhii",
+"c": "n"
+},
+{
+"e": "take",
+"k": "ghep",
+"c": "v"
+},
+{
+"e": "talk",
+"k": "yyip",
+"c": "v",
+"n": "note the single i."
+},
+{
+"e": "tall",
+"k": "retsa",
+"c": "adj"
+},
+{
+"e": "tear",
+"k": "shiiu",
+"c": "n"
+},
+{
+"e": "ten",
+"k": "wakh",
+"c": "num"
+},
+{
+"e": "terror",
+"k": "aleme",
+"c": "n",
+"n": "al'leme, high-fear"
+},
+{
+"e": "thanks (for...)",
+"k": "a'ginna (ta...)",
+"c": "int",
+"n": "not-bad (when...)"
+},
+{
+"e": "that",
+"k": "khuu",
+"c": "con"
+},
+{
+"e": "then",
+"k": "ez / -z",
+"c": "prep",
+"n": "same as 'and'."
+},
+{
+"e": "there",
+"k": "hhata",
+"c": "adv"
+},
+{
+"e": "thing",
+"k": "mi",
+"c": "n"
+},
+{
+"e": "think",
+"k": "khrish",
+"c": "v"
+},
+{
+"e": "this",
+"k": "khe",
+"c": "con"
+},
+{
+"e": "thorn",
+"k": "yyii'ta",
+"c": "n"
+},
+{
+"e": "thousand",
+"k": "ghoro",
+"c": "num"
+},
+{
+"e": "three",
+"k": "jink",
+"c": "num"
+},
+{
+"e": "through",
+"k": "keko",
+"c": "prep",
+"n": "out-in"
+},
+{
+"e": "time",
+"k": "ta",
+"c": "n"
+},
+{
+"e": "to",
+"k": "er",
+"c": "prep"
+},
+{
+"e": "together",
+"k": "yhii'ayi",
+"c": "adj",
+"n": "them-with"
+},
+{
+"e": "tooth",
+"k": "bint",
+"c": "n"
+},
+{
+"e": "touch",
+"k": "firit",
+"c": "v"
+},
+{
+"e": "treasure",
+"k": "ifro",
+"c": "n"
+},
+{
+"e": "tribe",
+"k": "kho",
+"c": "n"
+},
+{
+"e": "true",
+"k": "iit'ayi",
+"c": "adj",
+"n": "truth-with"
+},
+{
+"e": "truth",
+"k": "iit",
+"c": "n"
+},
+{
+"e": "turn",
+"k": "mobet",
+"c": "v"
+},
+{
+"e": "twist",
+"k": "kowtsh",
+"c": "v"
+},
+{
+"e": "two",
+"k": "ird",
+"c": "num"
+},
+{
+"e": "uncle",
+"k": "hhosha",
+"c": "n",
+"n": "only used for a blood brother of one's father or mother. an uncle by marriage is not considered a family member."
+},
+{
+"e": "under",
+"k": "jogo",
+"c": "prep"
+},
+{
+"e": "up",
+"k": "ti",
+"c": "prep"
+},
+{
+"e": "use",
+"k": "gent",
+"c": "v"
+},
+{
+"e": "vein",
+"k": "gifo",
+"c": "n",
+"n": "in the sense of an ore deposit."
+},
+{
+"e": "voice",
+"k": "yyiip",
+"c": "n",
+"n": "note the double i."
+},
+{
+"e": "walk",
+"k": "mat",
+"c": "v"
+},
+{
+"e": "want",
+"k": "hhuu",
+"c": "v"
+},
+{
+"e": "war",
+"k": "zet",
+"c": "n"
+},
+{
+"e": "warlock",
+"k": "fenkhpiirik",
+"c": "n",
+"n": "one who obtains magical power through a demonic pact."
+},
+{
+"e": "warrior",
+"k": "zetik",
+"c": "n",
+"n": "war-one"
+},
+{
+"e": "waste",
+"k": "krom",
+"c": "n"
+},
+{
+"e": "watch",
+"k": "penet",
+"c": "v"
+},
+{
+"e": "water",
+"k": "poa",
+"c": "n"
+},
+{
+"e": "weak",
+"k": "fuu",
+"c": "adj"
+},
+{
+"e": "weight",
+"k": "onje",
+"c": "n",
+"n": "same as the word for the numeral eight, possibly deriving from an old system of measurement"
+},
+{
+"e": "what",
+"k": "paj",
+"c": "ipr"
+},
+{
+"e": "when",
+"k": "pajda",
+"c": "ipr",
+"n": "what-time"
+},
+{
+"e": "where",
+"k": "pajduu",
+"c": "ipr",
+"n": "what-place"
+},
+{
+"e": "white",
+"k": "ven",
+"c": "col"
+},
+{
+"e": "who",
+"k": "pak",
+"c": "ipr"
+},
+{
+"e": "why",
+"k": "yyo'a",
+"c": "ipr"
+},
+{
+"e": "wide",
+"k": "ghint",
+"c": "adj"
+},
+{
+"e": "wind",
+"k": "majol",
+"c": "n"
+},
+{
+"e": "witchcraft",
+"k": "fenkhpiira",
+"c": "n",
+"n": "pact-magic"
+},
+{
+"e": "with",
+"k": "-'ayi",
+"c": "prep"
+},
+{
+"e": "wizard",
+"k": "tojmpiirik",
+"c": "n",
+"n": "one who studies magic in academia."
+},
+{
+"e": "wizardry",
+"k": "tojmpiira",
+"c": "n",
+"n": "book-magic"
+},
+{
+"e": "wood",
+"k": "ora",
+"c": "n"
+},
+{
+"e": "word",
+"k": "bit",
+"c": "n"
+},
+{
+"e": "work",
+"k": "wa",
+"c": "n",
+"n": "respectable work"
+},
+{
+"e": "work",
+"k": "triip",
+"c": "n",
+"n": "menial work"
+},
+{
+"e": "worker",
+"k": "wik",
+"c": "n",
+"n": "wa'ik, work-one"
+},
+{
+"e": "worship",
+"k": "khuje",
+"c": "n"
+},
+{
+"e": "write",
+"k": "nno",
+"c": "v"
+},
+{
+"e": "yes",
+"k": "uu",
+"c": "int"
+},
+{
+"e": "young",
+"k": "liivi",
+"c": "adj"
+},
+{
+"e": "zero",
+"k": "oa",
+"c": "num"
+}
+]
+}
