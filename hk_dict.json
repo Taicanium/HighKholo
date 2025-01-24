@@ -610,6 +610,18 @@
 "c": "n"
 },
 {
+"e": "grandfather",
+"k": "alhhama",
+"c": "n",
+"n": "great-father"
+},
+{
+"e": "grandmother",
+"k": "alyyiima",
+"c": "n",
+"n": "great-mother"
+},
+{
 "e": "great",
 "k": "al",
 "c": "adj",
