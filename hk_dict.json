@@ -93,6 +93,12 @@
 "c": "v"
 },
 {
+"e": "aunt",
+"k": "hhesta",
+"c": "n",
+"n": "either a blood sister of one's father or mother, or by marriage."
+},
+{
 "e": "axe",
 "k": "hhora",
 "c": "n"
@@ -246,10 +252,20 @@
 "c": "v"
 },
 {
+"e": "carve",
+"k": "sera",
+"c": "v"
+},
+{
 "e": "champion",
 "k": "aljan zetik",
 "c": "n",
 "n": "highest warrior"
+},
+{
+"e": "chew",
+"k": "tilkh",
+"c": "v"
 },
 {
 "e": "choke",
@@ -287,6 +303,12 @@
 "e": "country",
 "k": "toa",
 "c": "n"
+},
+{
+"e": "cousin",
+"k": "jakna",
+"c": "n",
+"n": "specifically a female child of one's aunt or uncle. male cousins are not considered important enough to label as such."
 },
 {
 "e": "cover",
@@ -365,6 +387,12 @@
 "k": "gidwik",
 "c": "n",
 "n": "hurt-worker"
+},
+{
+"e": "drink",
+"k": "onf",
+"c": "v",
+"n": "seems to be roughly onomatopoeic."
 },
 {
 "e": "drop",
@@ -560,6 +588,12 @@
 "n": "highest-one"
 },
 {
+"e": "golarion",
+"k": "rosua",
+"c": "n",
+"n": "etymology unclear. unlike many words of the mwangi dialect, it has no cognate in katapesh or osirion."
+},
+{
 "e": "good",
 "k": "ben",
 "c": "adj"
@@ -711,6 +745,18 @@
 "e": "hunger",
 "k": "yyuu",
 "c": "n"
+},
+{
+"e": "hunt",
+"k": "tej",
+"c": "v",
+"n": "hunting is honorable work, so niitriip - the trapping and hunting done by niiwakh, a type of slave - is viewed as distinct."
+},
+{
+"e": "huntress",
+"k": "tejima",
+"c": "n",
+"n": "tejik would be the ungendered version, but the role huntresses play in matriarchal kholo society makes uttering that word extremely insulting."
 },
 {
 "e": "hurt",
@@ -1207,6 +1253,12 @@
 "c": "num"
 },
 {
+"e": "sister",
+"k": "alima",
+"c": "n",
+"n": "high-daughter. conspicuously similar to alim, queen."
+},
+{
 "e": "skin",
 "k": "suuli",
 "c": "n"
@@ -1346,9 +1398,15 @@
 "c": "n"
 },
 {
-"e": "strong",
+"e": "strength",
 "k": "kora",
-"c": "adj"
+"c": "n"
+},
+{
+"e": "strong",
+"k": "korayi",
+"c": "adj",
+"n": "strength-with. the -'ayi suffix has fused with the root, suggesting this word is very old and/or not native."
 },
 {
 "e": "stuff",
@@ -1387,6 +1445,11 @@
 "k": "yyip",
 "c": "v",
 "n": "note the single i."
+},
+{
+"e": "tall",
+"k": "retsa",
+"c": "adj"
 },
 {
 "e": "tear",
@@ -1523,6 +1586,12 @@
 "e": "two",
 "k": "ird",
 "c": "num"
+},
+{
+"e": "uncle",
+"k": "hhosha",
+"c": "n",
+"n": "only used for a blood brother of one's father or mother. an uncle by marriage is not considered a family member."
 },
 {
 "e": "under",
