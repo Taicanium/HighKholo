@@ -24,7 +24,7 @@ border-bottom: none;
 z-index: 2;
 }
 
-li a {
+li a:not(.wikiLink) {
 display: block;
 color: #CECACA;
 padding: 8px 16px;
