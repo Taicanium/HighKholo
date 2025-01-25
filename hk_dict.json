@@ -350,6 +350,18 @@
 "c": "v"
 },
 {
+"e": "common",
+"k": "sotop",
+"c": "adj",
+"n": "in terms of rarity or novelty."
+},
+{
+"e": "common",
+"k": "mowanyyisii / yyisii mowan",
+"c": "pn",
+"n": "savannah-language. the common language of humans in the mwangi expanse."
+},
+{
 "e": "concubine",
 "k": "tunshuua/tunimo",
 "c": "n",
@@ -807,6 +819,12 @@
 "e": "high",
 "k": "al",
 "c": "adj"
+},
+{
+"e": "high kholo",
+"k": "kholoyyisii / yyisii kholo",
+"c": "pn",
+"n": "kholo-language. specifically the dialect spoken by kholo native to the mwangi expanse."
 },
 {
 "e": "hiss",
