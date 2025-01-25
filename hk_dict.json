@@ -6,6 +6,7 @@
 "col": "color",
 "con": "conjunction",
 "det": "determiner",
+"dir": "direction",
 "int": "interjection",
 "ipr": "interrogative pronoun",
 "n": "noun",
@@ -351,15 +352,15 @@
 },
 {
 "e": "common",
-"k": "sotop",
-"c": "adj",
-"n": "in terms of rarity or novelty."
-},
-{
-"e": "common",
 "k": "mowanyyisii / yyisii mowan",
 "c": "pn",
 "n": "savannah-language. the common language of humans in the mwangi expanse."
+},
+{
+"e": "common",
+"k": "sotop",
+"c": "adj",
+"n": "in terms of rarity or novelty."
 },
 {
 "e": "concubine",
@@ -487,6 +488,12 @@
 "e": "ease",
 "k": "zem",
 "c": "n"
+},
+{
+"e": "east",
+"k": "jirgha / jir-",
+"c": "dir",
+"n": "related to jira, sun."
 },
 {
 "e": "easy",
@@ -816,15 +823,15 @@
 "c": "v"
 },
 {
-"e": "high",
-"k": "al",
-"c": "adj"
-},
-{
 "e": "high kholo",
 "k": "kholoyyisii / yyisii kholo",
 "c": "pn",
 "n": "kholo-speech. specifically the dialect spoken by kholo native to the mwangi expanse."
+},
+{
+"e": "high",
+"k": "al",
+"c": "adj"
 },
 {
 "e": "hiss",
@@ -1228,7 +1235,19 @@
 {
 "e": "north",
 "k": "ent",
-"c": "n"
+"c": "dir"
+},
+{
+"e": "northeast",
+"k": "jirghent",
+"c": "dir",
+"n": "east-north"
+},
+{
+"e": "northwest",
+"k": "ajghent",
+"c": "dir",
+"n": "west-north"
 },
 {
 "e": "not",
@@ -1555,6 +1574,23 @@
 "e": "sound",
 "k": "voa",
 "c": "v"
+},
+{
+"e": "south",
+"k": "zuunt",
+"c": "dir"
+},
+{
+"e": "southeast",
+"k": "jirzuunt",
+"c": "dir",
+"n": "east-south"
+},
+{
+"e": "southwest",
+"k": "ajzuunt",
+"c": "dir",
+"n": "west-south"
 },
 {
 "e": "speak",
@@ -1920,6 +1956,11 @@
 "k": "onje",
 "c": "n",
 "n": "same as the word for the numeral eight, possibly deriving from an old system of measurement"
+},
+{
+"e": "west",
+"k": "ajgha / aj-",
+"c": "dir"
 },
 {
 "e": "what",
