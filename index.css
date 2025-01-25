@@ -19,7 +19,7 @@ min-width: 200px;
 background-color: rgba(18, 15, 20, 0.4);
 position: fixed;
 overflow: auto;
-border: 1px solid #555;
+border: 1px solid #555555;
 border-bottom: none;
 z-index: 2;
 }
@@ -30,7 +30,14 @@ color: #CECACA;
 padding: 8px 16px;
 text-decoration: none;
 text-align: center;
-border-bottom: 1px solid #555;
+border-bottom: 1px solid #555555;
+}
+
+.quoteBlock {
+display: block;
+font-style: italic;
+text-indent: 2em;
+line-height: 1.5;
 }
 
 li:last-child {
