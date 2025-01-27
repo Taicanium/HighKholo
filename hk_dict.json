@@ -354,11 +354,17 @@
 "e": "common",
 "k": "mowanyyisii / yyisii mowan",
 "c": "pn",
-"n": "savannah-language. the common language of humans in the mwangi expanse."
+"n": "savannah-language. that is, mwangi."
 },
 {
 "e": "common",
-"k": "sotop",
+"k": "kweayyisii / yyisii kwea",
+"c": "pn",
+"n": "human-language. any of the common human languages of a particular region. mwangi in western garund and the mwangi expanse; taldane in katapesh and osirion; etc."
+},
+{
+"e": "common",
+"k": "sezhe",
 "c": "adj",
 "n": "in terms of rarity or novelty."
 },
@@ -1185,6 +1191,18 @@
 "e": "muzzle",
 "k": "benet",
 "c": "n"
+},
+{
+"e": "mwangi",
+"k": "mowanyyisii / yyisii mowan",
+"c": "pn",
+"n": "savannah-language"
+},
+{
+"e": "mwangi expanse",
+"k": "mowan ghint",
+"c": "pn",
+"n": "wide savannah"
 },
 {
 "e": "near",
