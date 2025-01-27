@@ -651,6 +651,11 @@
 "c": "num"
 },
 {
+"e": "fox",
+"k": "hhwa",
+"c": "n"
+},
+{
 "e": "fresh",
 "k": "siivi",
 "c": "adj"
@@ -928,6 +933,12 @@
 "c": "v"
 },
 {
+"e": "illusion",
+"k": "minzin",
+"c": "n",
+"n": "grey-mist"
+},
+{
 "e": "jewel",
 "k": "tova",
 "c": "n"
@@ -1154,6 +1165,17 @@
 {
 "e": "mercy",
 "k": "kraia",
+"c": "n"
+},
+{
+"e": "mirage",
+"k": "minzin",
+"c": "n",
+"n": "grey-mist"
+},
+{
+"e": "mist",
+"k": "zin",
 "c": "n"
 },
 {
