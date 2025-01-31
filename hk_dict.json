@@ -99,6 +99,11 @@
 "c": "v"
 },
 {
+"e": "ass",
+"k": "krit",
+"c": "n"
+},
+{
 "e": "aunt",
 "k": "hhesta",
 "c": "n",
@@ -206,6 +211,12 @@
 "c": "col"
 },
 {
+"e": "body",
+"k": "nhisho",
+"c": "n",
+"n": "also means corpse."
+},
+{
 "e": "bone",
 "k": "zhe",
 "c": "n"
@@ -224,6 +235,11 @@
 {
 "e": "bow",
 "k": "dan",
+"c": "n"
+},
+{
+"e": "brain",
+"k": "torwat",
 "c": "n"
 },
 {
@@ -352,15 +368,15 @@
 },
 {
 "e": "common",
-"k": "mowanyyisii / yyisii mowan",
-"c": "pn",
-"n": "savannah-language. that is, mwangi."
-},
-{
-"e": "common",
 "k": "kweayyisii / yyisii kwea",
 "c": "pn",
 "n": "human-language. any of the common human languages of a particular region. mwangi in western garund and the mwangi expanse; taldane in katapesh and osirion; etc."
+},
+{
+"e": "common",
+"k": "mowanyyisii / yyisii mowan",
+"c": "pn",
+"n": "savannah-language. that is, mwangi."
 },
 {
 "e": "common",
@@ -378,6 +394,12 @@
 "e": "copper",
 "k": "koshii",
 "c": "n"
+},
+{
+"e": "corpse",
+"k": "nhisho",
+"c": "n",
+"n": "also means body, as in one that is still alive."
 },
 {
 "e": "country",
@@ -918,6 +940,12 @@
 "c": "v"
 },
 {
+"e": "illusion",
+"k": "minzin",
+"c": "n",
+"n": "grey-mist"
+},
+{
 "e": "in",
 "k": "ko",
 "c": "prep"
@@ -931,12 +959,6 @@
 "e": "invite",
 "k": "sejii",
 "c": "v"
-},
-{
-"e": "illusion",
-"k": "minzin",
-"c": "n",
-"n": "grey-mist"
 },
 {
 "e": "jewel",
@@ -1012,7 +1034,7 @@
 {
 "e": "last",
 "k": "gom",
-"c": "adj",
+"c": "det",
 "n": "the final element in a set."
 },
 {
@@ -1026,6 +1048,12 @@
 "k": "loyyaka",
 "c": "n",
 "n": "city-many"
+},
+{
+"e": "least",
+"k": "owan",
+"c": "det",
+"n": "related to both oa, zero; and jan, most. possibly a contraction of oajan, a compound of the two, meaning zeroth."
 },
 {
 "e": "leave",
@@ -1168,6 +1196,11 @@
 "c": "n"
 },
 {
+"e": "mind",
+"k": "rosho",
+"c": "n"
+},
+{
 "e": "mirage",
 "k": "minzin",
 "c": "n",
@@ -1215,16 +1248,16 @@
 "c": "n"
 },
 {
-"e": "mwangi",
-"k": "mowanyyisii / yyisii mowan",
-"c": "pn",
-"n": "savannah-language"
-},
-{
 "e": "mwangi expanse",
 "k": "mowan ghint",
 "c": "pn",
 "n": "wide savannah"
+},
+{
+"e": "mwangi",
+"k": "mowanyyisii / yyisii mowan",
+"c": "pn",
+"n": "savannah-language"
 },
 {
 "e": "near",
@@ -1335,6 +1368,11 @@
 "e": "or",
 "k": "si",
 "c": "prep"
+},
+{
+"e": "organ",
+"k": "iikrip",
+"c": "n"
 },
 {
 "e": "osirion",
@@ -1563,10 +1601,21 @@
 "c": "adj"
 },
 {
+"e": "smart",
+"k": "sadje",
+"c": "adj",
+"n": "possibly related to Common sage."
+},
+{
 "e": "smith",
 "k": "hho'ik",
 "c": "n",
 "n": "make-one"
+},
+{
+"e": "snake",
+"k": "seftez",
+"c": "n"
 },
 {
 "e": "sneer",
@@ -1718,6 +1767,11 @@
 "k": "mi'akh",
 "c": "n",
 "n": "things"
+},
+{
+"e": "stupid",
+"k": "opii",
+"c": "adj"
 },
 {
 "e": "sun",
@@ -2067,6 +2121,11 @@
 "k": "tojmpiira",
 "c": "n",
 "n": "book-magic"
+},
+{
+"e": "wolf",
+"k": "tejlo",
+"c": "n"
 },
 {
 "e": "wood",
