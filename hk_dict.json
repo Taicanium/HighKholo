@@ -73,6 +73,11 @@
 "n": "one who sings"
 },
 {
+"e": "anger",
+"k": "zekhon",
+"c": "n"
+},
+{
 "e": "animal",
 "k": "krom",
 "c": "n",
@@ -301,7 +306,8 @@
 {
 "e": "call",
 "k": "gedat",
-"c": "v"
+"c": "v",
+"n": "in the sense of calling to someone from far away. see 'name' for calling someone by a moniker"
 },
 {
 "e": "cancer",
@@ -1102,15 +1108,15 @@
 "c": "v"
 },
 {
-"e": "long",
-"k": "zedaj",
-"c": "adj"
-},
-{
 "e": "long time",
 "k": "tashikh",
 "c": "adj",
 "n": "time-again"
+},
+{
+"e": "long",
+"k": "zedaj",
+"c": "adj"
 },
 {
 "e": "look",
@@ -1263,6 +1269,30 @@
 "k": "mowanyyisii / yyisii mowan",
 "c": "pn",
 "n": "savannah-language"
+},
+{
+"e": "name",
+"k": "aljejta",
+"c": "n",
+"n": "high-name. the greater name of a kholo including all its adjectives and modifiers"
+},
+{
+"e": "name",
+"k": "jej",
+"c": "v",
+"n": "to call someone by an identifier, whether that be their actual name or an alias or nickname"
+},
+{
+"e": "name",
+"k": "jejta",
+"c": "n",
+"n": "the root-word of a kholo's name, the noun given to them at birth"
+},
+{
+"e": "name",
+"k": "shojta",
+"c": "n",
+"n": "the surname or given name of a non-kholo entity or foreigner"
 },
 {
 "e": "near",
