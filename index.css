@@ -52,7 +52,7 @@ li a:active {
 background-color: #8C2E3D;
 }
 
-tr *:not(i,sup,span,a) {
+tr *:not(i,sup,span,a,p) {
 border: 1px solid #555;
 text-align: center;
 }

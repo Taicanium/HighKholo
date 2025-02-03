@@ -29,11 +29,12 @@ document.getElementById("lexText").innerHTML = "";
 
 words.forEach(word => {
 if (word['e'].startsWith(letter)) {
-document.getElementById("lexText").innerHTML += "<i>".concat(word['e']).concat("</i> &mdash; ").concat(classes[word['c']]).concat(": <b>").concat(word['k']).concat("</b>");
+var toAdd = "<p><i>".concat(word['e']).concat("</i> &mdash; ").concat(classes[word['c']]).concat(": <b>").concat(word['k']).concat("</b>");
 if ('n' in word) {
-document.getElementById("lexText").innerHTML += " &ndash; <span class=\"smalltext\"><i>".concat(word['n']).concat("</i></span>");
+toAdd += " &ndash; <span class=\"smalltext\"><i>".concat(word['n']).concat("</i></span>");
 }
-document.getElementById("lexText").innerHTML += "<br />";
+toAdd += "</p>";
+document.getElementById("lexText").innerHTML += toAdd;
 }
 });
 }
@@ -109,12 +110,10 @@ document.getElementById("gitRev").innerHTML += date.toLocaleString();
 <span id="gitRev">Last modified:<br /><br /></span>
 
 <div class="subdiv" id="introduction">
-<span class="title2">Gnolls, and the Language Thereof</span><br /><br />
-This guide details the dialect most commonly spoken among <a href="https://pathfinderwiki.com/wiki/Kholo#tabber-2E">kholo</a> of the <a href="https://pathfinderwiki.com/wiki/Mwangi_Expanse" target="_blank">Mwangi Expanse</a>, as opposed to those dialects spoken in <a href="https://pathfinderwiki.com/wiki/Katapesh" target="_blank">Katapesh</a> or other areas.<br/>Commonly referred to as High Kholo, reflecting the Mwangi gnolls' greater (by comparison) penchant for civilized culture and trade.<br /><br />Natively, it is simply called Kholo, or <i>Kholoyyisii</i> ("Kholo-speech"). Notes are not kept on other dialects of Kholo, except as they directly relate to this one.
-<br /><br />
-<span class="smalltext">Remember: Kholo are not humans, and do not possess human mouth anatomy. This document takes a little "Okay so these guys have funny dog mouths" to follow. It's worth it, this is fun. I promise.</span>
-<br /><br /><br />
-<span class="smalltext">My name is Taica, and neither I nor this document nor any of its contents are directly affiliated with Rose-Winds LLC or Blake Davis.</span>
+<span class="title2">Gnolls, and the Language Thereof</span><br />
+<p>This guide details the dialect most commonly spoken among <a href="https://pathfinderwiki.com/wiki/Kholo#tabber-2E">kholo</a> of the <a href="https://pathfinderwiki.com/wiki/Mwangi_Expanse" target="_blank">Mwangi Expanse</a>, as opposed to those dialects spoken in <a href="https://pathfinderwiki.com/wiki/Katapesh" target="_blank">Katapesh</a> or other areas.<br/>Commonly referred to as High Kholo, reflecting the Mwangi gnolls' greater (by comparison) penchant for civilized culture and trade.<br /><br />Natively, it is simply called Kholo, or <i>Kholoyyisii</i> ("Kholo-speech"). Notes are not kept on other dialects of Kholo, except as they directly relate to this one.</p><br />
+<p class="smalltext">Remember: Kholo are not humans, and do not possess human mouth anatomy. This document takes a little "Okay so these guys have funny dog mouths" to follow. It's worth it, this is fun. I promise.</p><br />
+<p class="smalltext">My name is Taica, and neither I nor this document nor any of its contents are directly affiliated with Rose-Winds LLC or Blake Davis.</p>
 </div>
 
 <div class="subdiv" id="phonemes">
@@ -261,10 +260,11 @@ This guide details the dialect most commonly spoken among <a href="https://pathf
 
 <div class="subdiv" id="grammar">
 <span class="title2">Syntax</span><br />
-Kholo generally follows a subject-object-verb sentence structure: "Timmy the ball kicks".<br />The language is remarkably flexible, however. In most settings, the only strict requirement is that the object follow the subject.<br /><br />Verb-subject-object ("Kicks Timmy the ball") is a common format in flowery, poetic systems; but tends to be seen as archaic or eccentric in speech.<br />In more casual writing or conversation, subject-verb-object ("Timmy kicks the ball", as in Common) is seen as more formal than the norm, and this is usually sufficient.<br /><br />Adjectives follow the noun they modify, unless compounded or used as prefixes. There is no strict requirement for which form to use, though the prefix form is discouraged if the noun is already particularly long. (What counts as "particularly long" is up to personal taste.)
-<br /><br /><br />
+<p>Kholo generally follows a subject-object-verb sentence structure: "Timmy the ball kicks".<br />The language is remarkably flexible, however. In most settings, the only strict requirement is that the object follow the subject.</p>
+<p>Verb-subject-object ("Kicks Timmy the ball") is a common format in flowery, poetic systems; but tends to be seen as archaic or eccentric in speech.<br />In more casual writing or conversation, subject-verb-object ("Timmy kicks the ball", as in Common) is seen as more formal than the norm, and this is usually sufficient.</p>
+<p>Adjectives follow the noun they modify, unless compounded or used as prefixes. There is no strict requirement for which form to use, though the prefix form is discouraged if the noun is already particularly long. (What counts as "particularly long" is up to personal taste.)</p><br />
 <span class="title2">Declension</span><br />
-Kholo declines nouns, verbs, and adjectives according to a fusional suffix system. These suffixes indicate verb tense, the number of both the subject and object of a sentence, as well as the level of formality.<br /><br />
+<p>Kholo declines nouns, verbs, and adjectives according to a fusional suffix system. These suffixes indicate verb tense, the number of both the subject and object of a sentence, as well as the level of formality.</p><br />
 <span class="title3">Verb Suffixes</span><br />
 <table>
 <thead>
@@ -288,9 +288,7 @@ Kholo declines nouns, verbs, and adjectives according to a fusional suffix syste
 <td>-(w)ej</td>
 </tr>
 </table>
-<br /><br />
-Kholo does not natively distinguish a future tense. Indicating an action yet to be taken is done via context. When it must be made explicit, the closest equivalent is to prepend the word "ta-" ("Time") to the related verb as a prefix, though native speakers find this clunky.
-<br /><br /><br />
+<p>Kholo does not natively distinguish a future tense. Indicating an action yet to be taken is done via context. When it must be made explicit, the closest equivalent is to prepend the word "ta-" ("Time") to the related verb as a prefix, though native speakers find this clunky.</p><br />
 <span class="title3">Numerical Suffixes</span><br />
 <table>
 <tr>
@@ -319,13 +317,12 @@ Kholo does not natively distinguish a future tense. Indicating an action yet to 
 <td>-(w)el</td>
 </tr>
 </table>
-<br /><br />
+<br />
 <ol>
 <li>Members of other species, no matter how friendly or how high-ranking, are always non-kholo. Separate parts of a kholo's physical body (e.g. the arms, legs, or head) are also non-kholo.</li><br />
 <li>In contrast to body parts, metaphysical parts of a kholo &mdash; such as the soul or the (metaphorical) heart &mdash; are kholo.<br />A note is also made for monstrous offspring bred through reverence of <a class="wikiLink" href="https://pathfinderwiki.com/wiki/Lamashtu" target="_blank">Lamashtu, the Mother of Monsters</a>. These are always kholo, with one exception: Those incorporating humanlike features are non-kholo.</li><br />
 </ol>
-<br />
-The same word, if used more than once, can drop its numerical suffix following the first usage; unless the number or quality changes.<br /><br />
+<p>The same word, if used more than once, can drop its numerical suffix following the first usage; unless the number or quality changes.</p>
 <table>
 <tr>
 <th>Kholo</th>
@@ -341,7 +338,7 @@ The same word, if used more than once, can drop its numerical suffix following t
 <br /><br /><br />
 <span class="title2">Cases and Moods</span><br /><br />
 <span class="title3">Conditional</span><br />
-The conditional mood shows a potential or hypothetical action being taken, as in uses of the Common "if" or "would".<br />To indicate an action reliant on another (as in Common "if"), Kholo constructs a present-tense sentence, followed by the conditional action:<br /><br />
+<p>The conditional mood shows a potential or hypothetical action being taken, as in uses of the Common "if" or "would".<br />To indicate an action reliant on another (as in Common "if"), Kholo constructs a present-tense sentence, followed by the conditional action:</p>
 <table>
 <thead>
 <th>Kholo</th>
@@ -354,8 +351,8 @@ The conditional mood shows a potential or hypothetical action being taken, as in
 <td>"If my father dies, then I will feel despair."</td>
 </tr>
 </table>
-<br /><br />
-To indicate a hypothetical action (as in Common "would"), Kholo relies on making the action statement and then rejecting it:<br /><br />
+<br />
+<p>To indicate a hypothetical action (as in Common "would"), Kholo relies on making the action statement and then rejecting it:</p>
 <table>
 <thead>
 <th>Kholo</th>
@@ -368,11 +365,9 @@ To indicate a hypothetical action (as in Common "would"), Kholo relies on making
 <td>"I would break your paw."</td>
 </tr>
 </table>
-<br />
-Note the use of "uubasja", a contraction of "u ba se'a", meaning "but I do not".
-<br /><br /><br />
-<span class="title3">Genitive</span><br />
-The genitive case indicates ownership, possession, or association. In Common, this case is shown with the suffix 's, as in "Timmy's ball," or with the particle 'of,' as in "the Ides of March."<br /><br />Kholo follows a principle of attribution, whereby the genitive case is shown by treating the owner or possessor as an adjective of the owned noun:<br /><br />
+<p>Note the use of "uubasja", a contraction of "u ba se'a", meaning "but I do not".</p><br />
+<span class="title3">Genitive</span>
+<p>The genitive case indicates ownership, possession, or association. In Common, this case is shown with the suffix 's, as in "Timmy's ball," or with the particle 'of,' as in "the Ides of March."<br />Kholo follows a principle of attribution, whereby the genitive case is shown by treating the owner or possessor as an adjective of the owned noun:</p>
 <table>
 <thead>
 <th>Kholo</th>
@@ -387,9 +382,9 @@ The genitive case indicates ownership, possession, or association. In Common, th
 <td>"Your heart"</td>
 </tr>
 </table>
-<br /><br /><br />
-<span class="title3">Imperative</span><br />
-The imperative mood indicates a command or directive from the speaker to the listener. Common shows this case by constructing a present-tense, second-person sentence ("You take a left at this stop sign") and omitting the subject pronoun ("Take a left at this stop sign").<br /><br />Kholo imperatives follow a similar structure: The pronoun is omitted, and the verb is left unmodified if informal, or made present-tense if formal.<br /><br />
+<br /><br />
+<span class="title3">Imperative</span>
+<p>The imperative mood indicates a command or directive from the speaker to the listener. Common shows this case by constructing a present-tense, second-person sentence ("You take a left at this stop sign") and omitting the subject pronoun ("Take a left at this stop sign").<br />Kholo imperatives follow a similar structure: The pronoun is omitted, and the verb is left unmodified if informal, or made present-tense if formal.</p>
 <table>
 <thead>
 <th>Kholo</th>
@@ -412,7 +407,7 @@ The imperative mood indicates a command or directive from the speaker to the lis
 
 <div class="subdiv" id="morphology">
 <span class="title2">Non-Doubled Suffixes</span><br />
-A set of grammar rules exists for when to prevent accidental doubling of consonant and vowel sounds in Kholo, especially when applying suffixes.<br />When amended with suffixes for tense, number and formality: If a word already ends in the major consonant sound of the suffix, that sound should be removed before the suffix is applied.<br /><br />
+<p>A set of grammar rules exists for when to prevent accidental doubling of consonant and vowel sounds in Kholo, especially when applying suffixes.<br />When amended with suffixes for tense, number and formality: If a word already ends in the major consonant sound of the suffix, that sound should be removed before the suffix is applied.</p>
 <table>
 <thead>
 <th>Kholo</th>
@@ -427,8 +422,7 @@ A set of grammar rules exists for when to prevent accidental doubling of consona
 <td>Knees</td>
 </tr>
 </table>
-<br /><br />
-The rule is generally applied for very similar consonant sounds on a case-by-case basis. Non-native speakers may or may not struggle with deciding what counts as "similar", but aspirated consonants are the easiest to figure out.<br /><br />
+<p>The rule is generally applied for very similar consonant sounds on a case-by-case basis. Non-native speakers may or may not struggle with deciding what counts as "similar", but aspirated consonants are the easiest to figure out.</p>
 <table>
 <thead>
 <th>Kholo</th>
@@ -443,8 +437,7 @@ The rule is generally applied for very similar consonant sounds on a case-by-cas
 <td>Knees (many)</td>
 </tr>
 </table>
-<br /><br />
-Doubled vowel sounds are not removed in this way, but are instead distinguished with the addition of a glottal stop. The consonants involved are still treated according to the prior rule.<br /><br />
+<p>Doubled vowel sounds are not removed in this way, but are instead distinguished with the addition of a glottal stop. The consonants involved are still treated according to the prior rule.</p>
 <table>
 <thead>
 <th>Kholo</th>
@@ -463,9 +456,11 @@ Doubled vowel sounds are not removed in this way, but are instead distinguished 
 <td>My queens</td>
 </tr>
 </table>
-<br /><br /><br />
+<br /><br />
 <span class="title2">Sonorization</span><br />
-Kholo speech tends to sonorize (i.e. morph from voiceless to voiced) consonants which occur at the beginning of a word which was proceeded by a word ending in a voiceless consonant sound.<br />This change is formalized to the point that it is frequently glossed in writing, but not consistently.<br /><br />Formal texts will usually gloss sonorization in dialogue while preserving the original spelling in narration and other contexts. Highly formalized texts, such as ancestral codices or missives between cultures, are the most likely to gloss sonorization in all contexts.<br /><br />Informal texts, meanwhile, tend to ignore sonorized initial consonants entirely, using only the voiceless original spelling. In other words, for most Kholo, sonorization is a purely vocal phenomenon, and its display in writing is a dead giveaway that the writer is either a foreigner or an egghead.<br /><br />
+<p>Kholo speech tends to sonorize (i.e. morph from voiceless to voiced) consonants which occur at the beginning of a word which was proceeded by a word ending in a voiceless consonant sound.<br />This change is formalized to the point that it is frequently glossed in writing, but not consistently.</p>
+<p>Formal texts will usually gloss sonorization in dialogue while preserving the original spelling in narration and other contexts. Highly formalized texts, such as ancestral codices or missives between cultures, are the most likely to gloss sonorization in all contexts.</p>
+<p>Informal texts, meanwhile, tend to ignore sonorized initial consonants entirely, using only the voiceless original spelling. In other words, for most Kholo, sonorization is a purely vocal phenomenon, and its display in writing is a dead giveaway that the writer is either a foreigner or an egghead.</p>
 <table>
 <thead>
 <th>Kholo</th>
@@ -523,13 +518,12 @@ Kholo speech tends to sonorize (i.e. morph from voiceless to voiced) consonants 
 <td>Iikha</td>
 </tr>
 </table>
-<br /><br />
-As a rule, kholo address members of races they enslave or feed on exclusively in the third person.<br />This has given rise to the perception of kholo brutes as constantly yipping (notice the <i>yh</i> sound in the 3rd-person pronouns): They are shouting insults at their targets.
+<p>As a rule, kholo address members of races they enslave or feed on exclusively in the third person.<br />This has given rise to the perception of kholo brutes as constantly yipping (notice the <i>yh</i> sound in the 3rd-person pronouns): They are shouting insults at their targets.</p>
 </div>
 
 <div class="subdiv" id="numerals">
 <span class="title2">Numerals</span><br /><br />
-Ordinal numbers (i.e. first, second) are indicated with the suffix -jan ('-most').<br /><br />
+<p>Ordinal numbers (i.e. first, second) are indicated with the suffix -jan ('-most').</p>
 <table style="width: 250px;">
 <thead>
 <th>Kholo</th>
@@ -726,11 +720,8 @@ Ordinal numbers (i.e. first, second) are indicated with the suffix -jan ('-most'
 </table>
 </div>
 <div id="slave" style="display: none;">
-Kholo infamously features 37 words to distinguish between the types of slaves in their culture.<br />These are organized into six groups differing by their purpose and in harshness of their treatment.<br />Slaves in the two 'highest' groups, indentured and personal servants, are owned by single kholo or families, and further ranked according to the work they do.<br />Lower types are communally owned, and not differentiated in this way.
-<br /><br />
-"Wik" is a generic word referring to a worker of any type. When it appears as a suffix in the name of a servant type, it may be replaced with "wa"<br />("respectable work") or "triip" ("menial work") to refer to the labor itself.
-<br /><br />
-
+<p>Kholo infamously features 37 words to distinguish between the types of slaves in their culture.<br />These are organized into six groups differing by their purpose and in harshness of their treatment.<br />Slaves in the two 'highest' groups, indentured and personal servants, are owned by single kholo or families, and further ranked according to the work they do.<br />Lower types are communally owned, and not differentiated in this way.</p>
+<p>"Wik" is a generic word referring to a worker of any type. When it appears as a suffix in the name of a servant type, it may be replaced with "wa"<br />("respectable work") or "triip" ("menial work") to refer to the labor itself.</p>
 <table>
 <thead>
 <th>Venwik</th>
@@ -819,14 +810,19 @@ Kholo infamously features 37 words to distinguish between the types of slaves in
 
 <div class="subdiv" id="culture">
 <span class="title2">Naming</span><br /><br />
-From birth, kholo youths are given a 'root' for a name: A single word of natural origin, such as an animal, plant, or natural feature; or a part of such. As they age and gain notoriety, they may choose to add modifiers or adjectives to this root, symbolizing their growth and accomplishments.<br /><br />A kholo born with the root name 'Ash' may further name themselves 'Ash upon Ground' when reaching maturity. When slaying their first grave monstrosity, they may become 'Ash upon Arid Ground'. And so on and so forth.<br /><br />It is not common, but nor is it rare, for kholo to give each other such a naming element; some long-bonded parties practice this as a means of tying themselves to each other.<br /><br /><br />
+<p>From birth, kholo youths are given a 'root' for a name: A single word of natural origin, such as an animal, plant, or natural feature; or a part of such. As they age and gain notoriety, they may choose to add modifiers or adjectives to this root, symbolizing their growth and accomplishments.</p><p>A kholo born with the root name 'Ash' may further name themselves 'Ash upon Ground' when reaching maturity. When slaying their first grave monstrosity, they may become 'Ash upon Arid Ground'. And so on and so forth.</p><p>It is not common, but nor is it rare, for kholo to give each other such a naming element; some long-bonded parties practice this as a means of tying themselves to each other.</p><br />
 
 <span class="title2">Matriarchy</span><br /><br />
-Kholo society is famously matriarchal, whereby female huntresses &mdash; taller, stronger, and more naturally assertive than their male counterparts &mdash; play a dominant role in social ruling and organization.<br />There are aspects of the Kholo language that are either explicitly or implicitly gendered accordingly.<br /><br />
-Take as an example the singular formal suffix, '-(w)im'. It is derived from the native word for female, 'imo'. Likewise, the word for daughter, 'ima,' is also related.<br />Informal common nouns are not given a suffix. 'Kholo,' as a native word meaning 'tribal predator,' therefore technically refers to a male, while 'kholowim' would be used to address a female listener. In human society, this distinction would likely come across as othering the listener.<br /><br />Here, though, it is actually those without the suffix who are othered &mdash; the suffix is honorable, and is culturally treated like a noble title. It is important to remember that matriarchy is the default in kholo society, and assumptions are made by both speaker and listener accordingly.<br /><br />Male kholo are excluded from reference with formal suffixes under almost all circumstances; it would be easier to list the exceptions to that rule rather than elaborate on the rule directly. Namely:<br />Elderly males are entitled to formal reference by their grandchildren, but not by their adult children.<br />Furthermore, a bonecarver or storyteller is entitled to formality from other males and young females of his tribe; but not from adult females.<br /><br />Individual exceptions are rarely also made for highly accomplished warriors, but these may be as rare as once or twice in a generation.<br /><br /><br />
+<p>Kholo society is famously matriarchal, whereby female huntresses &mdash; taller, stronger, and more naturally assertive than their male counterparts &mdash; play a dominant role in social ruling and organization.<br />There are aspects of the Kholo language that are either explicitly or implicitly gendered accordingly.</p>
+<p>Take as an example the singular formal suffix, '-(w)im'. It is derived from the native word for female, 'imo'. Likewise, the word for daughter, 'ima,' is also related.<br />Informal common nouns are not given a suffix. 'Kholo,' as a native word meaning 'tribal predator,' therefore technically refers to a male, while 'kholowim' would be used to address a female listener. In human society, this distinction would likely come across as othering the listener.</p>
+<p>Here, though, it is actually those without the suffix who are othered &mdash; the suffix is honorable, and is culturally treated like a noble title. It is important to remember that matriarchy is the default in kholo society, and assumptions are made by both speaker and listener accordingly.</p>
+<p>Male kholo are excluded from reference with formal suffixes under almost all circumstances; it would be easier to list the exceptions to that rule rather than elaborate on the rule directly. Namely:<br />Elderly males are entitled to formal reference by their grandchildren, but not by their adult children.<br />Furthermore, a bonecarver or storyteller is entitled to formality from other males and young females of his tribe; but not from adult females.</p>
+<p>Individual exceptions are rarely also made for highly accomplished warriors, but these may be as rare as once or twice in a generation.</p><br />
 
 <span class="title3">Alkhitakh Hhama'ba</span><br />
-The <i>Alkhitakh Hhama'ba</i> is a collection of kholo folktales most comparable to Aesop's Fables or A Thousand and One Nights. As possibly the most comprehensive piece of native Kholo writing, its use is indispensable for outsiders in deciphering cultural norms and nuance in an otherwise profoundly bellicose species.<br /><br />Its stories mostly center around a male kholo named Thorn, whose growth from youth to elder bonecarver is traced via exploits as a slaver, a brief reformist for the latter system, and a servant to a huntress whom eventually married him. Thorn has long been interpreted as a symbol of virtue for male kholo youths. His characterization as a level-headed, pragmatic, yet unflinchingly bloodthirsty warrior and a friend to outside peoples (as friendly as a kholo can reasonably be called) suggests a model for males to follow in a strongly female-dominated society.<br /><br />Its name means "Legends of my Father", or "Stories of my Father", making its use as a teaching tool for male kholo even more obvious.
+<p>The <i>Alkhitakh Hhama'ba</i> is a collection of kholo folktales most comparable to Aesop's Fables or A Thousand and One Nights. As possibly the most comprehensive piece of native Kholo writing, its use is indispensable for outsiders in deciphering cultural norms and nuance in an otherwise profoundly bellicose species.</p>
+<p>Its stories mostly center around a male kholo named Thorn, whose growth from youth to elder bonecarver is traced via exploits as a slaver, a brief reformist for the latter system, and a servant to a huntress whom eventually married him. Thorn has long been interpreted as a symbol of virtue for male kholo youths. His characterization as a level-headed, pragmatic, yet unflinchingly bloodthirsty warrior and a friend to outside peoples (as friendly as a kholo can reasonably be called) suggests a model for males to follow in a strongly female-dominated society.</p>
+<p>Its name means "Legends of my Father", or "Stories of my Father", making its use as a teaching tool for male kholo even more obvious.</p>
 </div>
 
 <div class="subdiv" id="excerpts">
@@ -838,9 +834,9 @@ The <i>Alkhitakh Hhama'ba</i> is a collection of kholo folktales most comparable
 <th>Common (proper)</th>
 </thead>
 <tr>
-<td>Shava'nha a'lo'nha. Gida er'a fuu hho'nha.<br />Gida er korayi lushajo'nha. Er nnima onje vuutajo'nha;<br />er khorahhii jogo, a'khlito'nha;<br />er jira tuunujan jogo, nhiso'nha.<br /><br />Er zijika meruua voajo, ez zetikel wilto;<br />er rosua jogra, aljan zetik yhii'a zet'lete khurumo.<br /><br />Er tuama'ayi yhii'a, sil'nha woluto vuutajo al veren'yhii,<br />ez pero shiiukh a'shikh, ez elmo hhiguu a'shikh.</td>
-<td>Heart-you not-predator-you. Hurts for-not make weak-you.<br />Hurts for strong becomes-you. For loss weight carries-you;<br />for despair under, not-breaks-you;<br />for sun darkest under, rises-you.<br /><br />For horns-many heaven sounding, and warriors-many ride;<br />for Earth over, champion they war-front holds.<br /><br />For ranks-with they, friend-you fallen carries high shield-they,<br />and gives tears not-more, and feels sorrow not-more.</td>
-<td>Your heart is not your predator. It does not ache to weaken you.<br />It aches so that you may grow strong. So that you may bear the weight of loss;<br />that amidst despair, you may not break;<br />that under the dimmest sun, you may yet rise.<br /><br />That the horns of Heaven may yet be sounded, and its warriors ride;<br />for their champion on Earth may yet hold the front.<br /><br />For among their ranks, your fallen friend bears his shield high,<br />and sheds no more tears, and feels no more sorrow.</td>
+<td><p>Shava'nha a'lo'nha. Gida er'a fuu hho'nha.<br />Gida er korayi lushajo'nha. Er nnima onje vuutajo'nha;<br />er khorahhii jogo, a'khlito'nha;<br />er jira tuunujan jogo, nhiso'nha.</p><p>Er zijika meruua voajo, ez zetikel wilto;<br />er rosua jogra, aljan zetik yhii'a zet'lete khurumo.</p><p>Er tuama'ayi yhii'a, sil'nha woluto vuutajo al veren'yhii,<br />ez pero shiiukh a'shikh, ez elmo hhiguu a'shikh.</p></td>
+<td><p>Heart-you not-predator-you. Hurts for-not make weak-you.<br />Hurts for strong becomes-you. For loss weight carries-you;<br />for despair under, not-breaks-you;<br />for sun darkest under, rises-you.</p><p>For horns-many heaven sounding, and warriors-many ride;<br />for Earth over, champion they war-front holds.</p><p>For ranks-with they, friend-you fallen carries high shield-they,<br />and gives tears not-more, and feels sorrow not-more.</p></td>
+<td><p>Your heart is not your predator. It does not ache to weaken you.<br />It aches so that you may grow strong. So that you may bear the weight of loss;<br />that amidst despair, you may not break;<br />that under the dimmest sun, you may yet rise.</p><p>That the horns of Heaven may yet be sounded, and its warriors ride;<br />for their champion on Earth may yet hold the front.</p><p>For among their ranks, your fallen friend bears his shield high,<br />and sheds no more tears, and feels no more sorrow.</p></td>
 </tr>
 <tr>
 <td colspan="3"> -- <i>Alkhitakh Hhama'ba</i> ("Stories of my Father"), collection of traditional Kholo folktales.<br />Ch. 3, <i>Yhaz Nnim</i> ("To Live and to Lose"). pp. 97.</td>
@@ -854,9 +850,9 @@ The <i>Alkhitakh Hhama'ba</i> is a collection of kholo folktales most comparable
 <th>Common (proper)</th>
 </thead>
 <tr>
-<td>Owja Yyii'ta ghalmate alshuu yhii firita.<br />"A'ba'alkejo niika'nha. U ba'fuur paj gent'nha, tunyhakh ghe."<br /><br />Inso bintosa.<br />"Verensikh. Rel'i sestaz tuunusikh."<br /><br />Yyii'ta josa Zuato'ik ez yyiima yhii.<br />Yyo'ami elma viiwe jogra.<br />"Liivi yhii'a. Gent'rel. Er sikh, nha triip gromo?"<br /><br />Kipnhiikh Inso tiilikha, u mobeta'a sonaut Yyii'ta.<br />"Sikh grom'a. A'pajda siiviz evri'ayi."<br /><br />Yyii'ta owaja dakh, sonaut tun'pet.<br />"Kipik zhekh ez suuli. Ro'ik ben a'shikh.<br />Alshuu, ba'ayi yyip iit. Paj'hhuu nha?"<br /><br />Inso bintaka keko issa. Twakh souukha.<br />"Yyii'ta, nha pet'a? Mowan tunimokh bera'i.<br />Nha yhii'a ko ghep'a—"<br /><br />Gom'bit Inso korkha, er kipnhii Yyii'ta shtiipa ghalmatekh.<br />Owja Yyii'ta hhema benet Inso, hhapa ofrelet kral'er.<br />Kowtsha fuu, ez woluja inakh'er, twakh aleme'ayi.<br />Yyii'ta yhii tunkeja, ez woluja ot'er.<br /><br />Yyii'ta hhekh owaja ez tonta kipnhii. Peneta nhi tonto poltopakh ap.<br />Weten, yohho e'punt. Joso er Zuatoakh zajii.<br /><br />Yyii'ta tunshikh uraja ez iifita owja.<br />Folkha'ayi, vesweja wora yhii'a ez perreja.<br />"Yhii a'fiia pera'i tashikh'er."<br />Yyiip hhiguu woluja'ayi.<br />"U tashikh dinkh, alshuu'ba luja."</td>
-<td>Paw-Thorn shoulder-brother-he touched.<br />"Not-I-judges slaughter-you. But I ask what use-you, survivors this."<br /><br />Hawk sneered.<br />"Shieldmeat. We-have luck, and darkmeat."<br /><br />Thorn looked Osirion-one and mother-she.<br />Why-thing felt brow over.<br />"Young-they. Use-have. For meat, you labor waste?"<br /><br />Blades-Hawk flashed, but turned-not face Thorn.<br />"Meat waste-not. Not-when fresh and bounty-with."<br /><br />Thorn stepped forward, face low-see.<br />"Small-one bones and skin. Old-one good not-more.<br />Brother, me-with speak truth. What-want you?"<br /><br />Hawk tooth-many through hissed. Eyes burned.<br />"Thorn, you see-not? Savannah concubines we-given.<br />You they in take-not—"<br /><br />Word-last Hawk choked, for blade-Thorn pierced shoulders.<br />Paw-Thorn covered muzzle-Hawk, stopped shout help-for.<br />Twisted weak, and fell knees-to, eyes terror-with.<br />Thorn he released, and fell dirt-to.<br /><br />Thorn backward stepped and dropped blade. Watched blood drip fingers from.<br />Still, silent like-stone. Looked to Osirians cowering.<br /><br />Thorn lower bent and hid paw.<br />Other-with, reached bag their and offered.<br />"He disgrace we-given long-for."<br />Voice sorrow fell-with.<br />"But long before, brother-me was."</td>
-<td>Thorn placed a paw upon his brother's shoulder.<br />"I judge not your slaughter, but I ask what use you have for these survivors."<br /><br />Hawk sneered.<br />"Shield-meat. Dark-meat if we're lucky."<br /><br />Thorn looked upon the Osirian and her mother.<br />A question wrinkled his brow.<br />"They are youthful. Useful. You're wasting their labor in favor of meat?"<br /><br />Hawk's blades flashed, but he did not turn to face Thorn.<br />"Meat is not waste. Not when fresh and fruitful."<br /><br />Thorn stepped forward, his face turned low.<br />"The small one is bones and skin. The elder is no better.<br />Speak to me truly, brother. What is it you want?"<br /><br />Hawk hissed through his teeth, his eyes burning.<br />"Do you not see, Thorn? The savannah has delivered us each a concubine.<br />Would you not partake in them—"<br /><br />Hawk's last word was choked, for Thorn's blade had already pierced between his shoulders.<br />Thorn's paw covered Hawk's muzzle and stopped him from shouting for help.<br />He twisted weakly, and fell to his knees, eyes wide with terror.<br />Only then did Thorn release him and allow him to fall to the dirt.<br /><br />Thorn stepped backward and dropped his blade, sternly watching the blood drip from his fingers.<br />He was still and silent as a stone. And he looked to the cowering Osirians.<br /><br />Thorn bent lower and hid his paw.<br />With his other, he reached for their bag and offered it to them.<br />"He has long disgraced us."<br />His voice fell with sorrow.<br />"Yet long ago, he once was my brother."</td>
+<td><p>Owja Yyii'ta ghalmate alshuu yhii firita.<br />"A'ba'alkejo niika'nha. U ba'fuur paj gent'nha, tunyhakh ghe."</p><p>Inso bintosa.<br />"Verensikh. Rel'i sestaz tuunusikh."</p><p>Yyii'ta josa Zuato'ik ez yyiima yhii.<br />Yyo'ami elma viiwe jogra.<br />"Liivi yhii'a. Gent'rel. Er sikh, nha triip gromo?"</p><p>Kipnhiikh Inso tiilikha, u mobeta'a sonaut Yyii'ta.<br />"Sikh grom'a. A'pajda siiviz evri'ayi."</p><p>Yyii'ta owaja dakh, sonaut tun'pet.<br />"Kipik zhekh ez suuli. Ro'ik ben a'shikh.<br />Alshuu, ba'ayi yyip iit. Paj'hhuu nha?"</p><p>Inso bintaka keko issa. Twakh souukha.<br />"Yyii'ta, nha pet'a? Mowan tunimokh bera'i.<br />Nha yhii'a ko ghep'a—"</p><p>Gom'bit Inso korkha, er kipnhii Yyii'ta shtiipa ghalmatekh.<br />Owja Yyii'ta hhema benet Inso, hhapa ofrelet kral'er.<br />Kowtsha fuu, ez woluja inakh'er, twakh aleme'ayi.<br />Yyii'ta yhii tunkeja, ez woluja ot'er.</p><p>Yyii'ta hhekh owaja ez tonta kipnhii. Peneta nhi tonto poltopakh ap.<br />Weten, yohho e'punt. Joso er Zuatoakh zajii.</p><p>Yyii'ta tunshikh uraja ez iifita owja.<br />Folkha'ayi, vesweja wora yhii'a ez perreja.<br />"Yhii a'fiia pera'i tashikh'er."<br />Yyiip hhiguu woluja'ayi.<br />"U tashikh dinkh, alshuu'ba luja."</p></td>
+<td><p>Paw-Thorn shoulder-brother-he touched.<br />"Not-I-judges slaughter-you. But I ask what use-you, survivors this."</p><p>Hawk sneered.<br />"Shieldmeat. We-have luck, and darkmeat."</p><p>Thorn looked Osirion-one and mother-she.<br />Why-thing felt brow over.<br />"Young-they. Use-have. For meat, you labor waste?"</p><p>Blades-Hawk flashed, but turned-not face Thorn.<br />"Meat waste-not. Not-when fresh and bounty-with."</p><p>Thorn stepped forward, face low-see.<br />"Small-one bones and skin. Old-one good not-more.<br />Brother, me-with speak truth. What-want you?"</p><p>Hawk tooth-many through hissed. Eyes burned.<br />"Thorn, you see-not? Savannah concubines we-given.<br />You they in take-not—"</p><p>Word-last Hawk choked, for blade-Thorn pierced shoulders.<br />Paw-Thorn covered muzzle-Hawk, stopped shout help-for.<br />Twisted weak, and fell knees-to, eyes terror-with.<br />Thorn he released, and fell dirt-to.</p><p>Thorn backward stepped and dropped blade. Watched blood drip fingers from.<br />Still, silent like-stone. Looked to Osirians cowering.</p><p>Thorn lower bent and hid paw.<br />Other-with, reached bag their and offered.<br />"He disgrace we-given long-for."<br />Voice sorrow fell-with.<br />"But long before, brother-me was."</p></td>
+<td><p>Thorn placed a paw upon his brother's shoulder.<br />"I judge not your slaughter, but I ask what use you have for these survivors."</p><p>Hawk sneered.<br />"Shield-meat. Dark-meat if we're lucky."</p><p>Thorn looked upon the Osirian and her mother.<br />A question wrinkled his brow.<br />"They are youthful. Useful. You're wasting their labor in favor of meat?"</p><p>Hawk's blades flashed, but he did not turn to face Thorn.<br />"Meat is not waste. Not when fresh and fruitful."</p><p>Thorn stepped forward, his face turned low.<br />"The small one is bones and skin. The elder is no better.<br />Speak to me truly, brother. What is it you want?"</p><p>Hawk hissed through his teeth, his eyes burning.<br />"Do you not see, Thorn? The savannah has delivered us each a concubine.<br />Would you not partake in them—"</p><p>Hawk's last word was choked, for Thorn's blade had already pierced between his shoulders.<br />Thorn's paw covered Hawk's muzzle and stopped him from shouting for help.<br />He twisted weakly, and fell to his knees, eyes wide with terror.<br />Only then did Thorn release him and allow him to fall to the dirt.</p><p>Thorn stepped backward and dropped his blade, sternly watching the blood drip from his fingers.<br />He was still and silent as a stone. And he looked to the cowering Osirians.</p><p>Thorn bent lower and hid his paw.<br />With his other, he reached for their bag and offered it to them.<br />"He has long disgraced us."<br />His voice fell with sorrow.<br />"Yet long ago, he once was my brother."</p></td>
 </tr>
 <tr>
 <td colspan="3"> -- <i>Alkhitakh Hhama'ba</i> ("Stories of my Father"), collection of traditional Kholo folktales.<br />Ch. 7, <i>Nnomoja Paja</i> ("Mourning What Was"). pp. 201-202.</td>

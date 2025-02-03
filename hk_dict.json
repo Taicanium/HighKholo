@@ -76,7 +76,7 @@
 "e": "animal",
 "k": "krom",
 "c": "n",
-"n": "krom also means waste."
+"n": "krom also means 'waste'"
 },
 {
 "e": "arm",
@@ -107,7 +107,7 @@
 "e": "aunt",
 "k": "hhesta",
 "c": "n",
-"n": "either a blood sister of one's father or mother, or by marriage."
+"n": "either a blood sister of one's father or mother, or by marriage"
 },
 {
 "e": "axe",
@@ -134,13 +134,13 @@
 "e": "be",
 "k": "lu",
 "c": "v",
-"n": "rarely to never used; except to provide context or specificity, or to be poetic."
+"n": "rarely to never used; except to provide context or specificity, or to be poetic"
 },
 {
 "e": "become",
 "k": "lusha",
 "c": "v",
-"n": "related to lu, be, as in Common."
+"n": "related to lu, 'be', as in Common"
 },
 {
 "e": "before",
@@ -214,7 +214,7 @@
 "e": "body",
 "k": "nhisho",
 "c": "n",
-"n": "also means corpse."
+"n": "also means corpse"
 },
 {
 "e": "bone",
@@ -225,7 +225,7 @@
 "e": "book",
 "k": "tojm",
 "c": "n",
-"n": "possibly related to Common 'tome'."
+"n": "possibly related to Common 'tome'"
 },
 {
 "e": "bounty",
@@ -307,7 +307,7 @@
 "e": "cancer",
 "k": "venennuua",
 "c": "n",
-"n": "any disease involving cancerous growth. roughly means white death, referring to its tendency in late stages to cause one's fur to fall out in patches, revealing sickly pale skin underneath."
+"n": "any disease involving cancerous growth. roughly means 'white death', referring to the tendency for afflicted kholo to lose their fur, revealing sickly pale skin underneath"
 },
 {
 "e": "carry",
@@ -370,19 +370,19 @@
 "e": "common",
 "k": "kweayyisii / yyisii kwea",
 "c": "pn",
-"n": "human-language. any of the common human languages of a particular region. mwangi in western garund and the mwangi expanse; taldane in katapesh and osirion; etc."
+"n": "human-language. any of the common human languages of a particular region. mwangi in western garund and the mwangi expanse; taldane in katapesh and osirion; etc"
 },
 {
 "e": "common",
 "k": "mowanyyisii / yyisii mowan",
 "c": "pn",
-"n": "savannah-language. that is, mwangi."
+"n": "savannah-language. that is, mwangi"
 },
 {
 "e": "common",
 "k": "sezhe",
 "c": "adj",
-"n": "in terms of rarity or novelty."
+"n": "in terms of rarity or novelty"
 },
 {
 "e": "concubine",
@@ -399,7 +399,7 @@
 "e": "corpse",
 "k": "nhisho",
 "c": "n",
-"n": "also means body, as in one that is still alive."
+"n": "also means body, as in one that is still alive"
 },
 {
 "e": "country",
@@ -410,7 +410,7 @@
 "e": "cousin",
 "k": "jakna",
 "c": "n",
-"n": "specifically a female child of one's aunt or uncle. male cousins are not considered important enough to label as such."
+"n": "specifically a female child of one's aunt or uncle. male cousins are not considered important enough to label as such"
 },
 {
 "e": "cover",
@@ -494,7 +494,7 @@
 "e": "drink",
 "k": "onf",
 "c": "v",
-"n": "seems to be roughly onomatopoeic."
+"n": "seems to be roughly onomatopoeic"
 },
 {
 "e": "drop",
@@ -510,7 +510,7 @@
 "e": "earth",
 "k": "rosua",
 "c": "n",
-"n": "the planet; as in, golarion."
+"n": "the planet; as in, golarion"
 },
 {
 "e": "ease",
@@ -521,7 +521,7 @@
 "e": "east",
 "k": "jirgha / jir-",
 "c": "dir",
-"n": "related to jira, sun."
+"n": "related to jira, 'sun'"
 },
 {
 "e": "easy",
@@ -533,7 +533,7 @@
 "e": "eat",
 "k": "aol",
 "c": "v",
-"n": "possibly related to mwangi 'ali', eaten."
+"n": "possibly related to mwangi 'ali', 'eaten'"
 },
 {
 "e": "eight",
@@ -555,7 +555,7 @@
 "e": "energy",
 "k": "yhok",
 "c": "n",
-"n": "related to both kwo, fire; and yhotwe, soul."
+"n": "related to both kwo, 'fire'; and yhotwe, 'soul'"
 },
 {
 "e": "evil",
@@ -626,13 +626,13 @@
 "e": "first",
 "k": "ikjan",
 "c": "ord",
-"n": "see 'numerals' tab for more."
+"n": "see 'numerals' tab for more"
 },
 {
 "e": "fish",
 "k": "poka",
 "c": "n",
-"n": "clearly related to poa, water, but exactly how is etymologically unclear."
+"n": "clearly related to poa, 'water', but exactly how is etymologically unclear"
 },
 {
 "e": "five",
@@ -648,13 +648,13 @@
 "e": "food",
 "k": "sikh",
 "c": "n",
-"n": "sikh also means meat."
+"n": "sikh also means 'meat'"
 },
 {
 "e": "for",
 "k": "er",
 "c": "prep",
-"n": "usually attached as a suffix, especially in more formal settings."
+"n": "usually attached as a suffix, especially in more formal settings"
 },
 {
 "e": "forearm",
@@ -716,7 +716,7 @@
 "e": "gnoll",
 "k": "kholo",
 "c": "n",
-"r": "kho, tribe + lo, predator."
+"r": "kho, 'tribe' + lo, 'predator'"
 },
 {
 "e": "go",
@@ -733,13 +733,13 @@
 "e": "golarion",
 "k": "rosua",
 "c": "n",
-"n": "etymology unclear. unlike many words of the mwangi dialect, it has no cognate in katapesh or osirion."
+"n": "etymology unclear. unlike many words of the mwangi dialect, it has no cognate in katapesh or osirion"
 },
 {
 "e": "gold",
 "k": "awoa",
 "c": "n",
-"n": "the metal."
+"n": "the metal"
 },
 {
 "e": "good",
@@ -782,13 +782,13 @@
 "e": "great",
 "k": "al",
 "c": "adj",
-"n": "in the same sense as high or grand."
+"n": "in the same sense as high or grand"
 },
 {
 "e": "great",
 "k": "hhwii",
 "c": "adj",
-"n": "in the sense of being physically large."
+"n": "in the sense of being physically large"
 },
 {
 "e": "green",
@@ -859,7 +859,7 @@
 "e": "high kholo",
 "k": "kholoyyisii / yyisii kholo",
 "c": "pn",
-"n": "kholo-speech. specifically the dialect spoken by kholo native to the mwangi expanse."
+"n": "kholo-speech. specifically the dialect spoken by kholo native to the mwangi expanse"
 },
 {
 "e": "high",
@@ -870,7 +870,7 @@
 "e": "hiss",
 "k": "is's",
 "c": "n",
-"n": "simulation of the sound, as in Common."
+"n": "simulation of the sound, as in Common"
 },
 {
 "e": "hold",
@@ -926,13 +926,13 @@
 "e": "hunt",
 "k": "tej",
 "c": "v",
-"n": "hunting is honorable work, so niitriip - the trapping and hunting done by niiwakh, a type of slave - is viewed as distinct."
+"n": "hunting is honorable work, so niitriip - the trapping and hunting done by niiwakh, a type of slave - is viewed as distinct"
 },
 {
 "e": "huntress",
 "k": "tejima",
 "c": "n",
-"n": "tejik would be the ungendered version, but the role huntresses play in matriarchal kholo society makes uttering that word extremely insulting."
+"n": "tejik would be the ungendered version, but the role huntresses play in matriarchal kholo society makes uttering that word extremely insulting"
 },
 {
 "e": "hurt",
@@ -987,7 +987,7 @@
 "e": "just",
 "k": "sekh",
 "c": "adv",
-"n": "as in i just need or it just might."
+"n": "as in 'i just need' or 'it just might'"
 },
 {
 "e": "kidney",
@@ -1029,13 +1029,13 @@
 "e": "language",
 "k": "yyisii",
 "c": "n",
-"n": "related to yyip, speak."
+"n": "related to yyip, 'speak'"
 },
 {
 "e": "last",
 "k": "gom",
 "c": "det",
-"n": "the final element in a set."
+"n": "the final element in a set"
 },
 {
 "e": "league",
@@ -1053,7 +1053,7 @@
 "e": "least",
 "k": "owan",
 "c": "det",
-"n": "related to both oa, zero; and jan, most. possibly a contraction of oajan, a compound of the two, meaning zeroth."
+"n": "related to both oa, zero; and jan, most. possibly a contraction of oajan, a compound of the two, meaning zeroth"
 },
 {
 "e": "leave",
@@ -1103,9 +1103,14 @@
 },
 {
 "e": "long",
+"k": "zedaj",
+"c": "adj"
+},
+{
+"e": "long time",
 "k": "tashikh",
 "c": "adj",
-"n": "in the sense of a long span of time."
+"n": "time-again"
 },
 {
 "e": "look",
@@ -1151,7 +1156,7 @@
 "e": "mace",
 "k": "sit",
 "c": "n",
-"n": "in the sense of a many-pointed weapon."
+"n": "in the sense of a many-pointed weapon"
 },
 {
 "e": "magic",
@@ -1177,7 +1182,7 @@
 "e": "mechanic",
 "k": "bojawik",
 "c": "n",
-"n": "pearl-worker. possibly originates in that machines require tender care to work, as when polishing a pearl."
+"n": "pearl-worker. possibly originates in that machines require tender care to work, as when polishing a pearl"
 },
 {
 "e": "medicine",
@@ -1278,7 +1283,7 @@
 "e": "nephew",
 "k": "shente",
 "c": "n",
-"n": "only used if either the speaker is female or the listener is the son of one's blood sibling. if neither is true, the speaker is not considered a family member."
+"n": "only used if either the speaker is female or the listener is the son of one's blood sibling. if neither is true, the speaker is not considered a family member"
 },
 {
 "e": "new",
@@ -1289,7 +1294,7 @@
 "e": "niece",
 "k": "imete",
 "c": "n",
-"n": "only used if either the speaker is female or the listener is the daughter of one's blood sibling. if neither is true, the speaker is not considered a family member."
+"n": "only used if either the speaker is female or the listener is the daughter of one's blood sibling. if neither is true, the speaker is not considered a family member"
 },
 {
 "e": "nine",
@@ -1342,7 +1347,7 @@
 "e": "offer",
 "k": "perre",
 "c": "n",
-"n": "related to per, give."
+"n": "related to per, give"
 },
 {
 "e": "okay",
@@ -1463,7 +1468,7 @@
 "e": "question",
 "k": "[item]mi",
 "c": "n",
-"n": "where [item] is any of 'who', 'what', 'when', etc. the default, or fallback, is 'pajmi', 'what-thing'."
+"n": "where [item] is any of 'who', 'what', 'when', etc. the default, or fallback, is pajmi, 'what-thing'"
 },
 {
 "e": "rank",
@@ -1514,7 +1519,7 @@
 "e": "scale",
 "k": "sliihhe",
 "c": "n",
-"n": "the scales of a fish or lizard."
+"n": "the scales of a fish or lizard"
 },
 {
 "e": "see",
@@ -1550,7 +1555,7 @@
 "e": "silver",
 "k": "atoro",
 "c": "n",
-"n": "the metal."
+"n": "the metal"
 },
 {
 "e": "sing",
@@ -1561,7 +1566,7 @@
 "e": "sister",
 "k": "alima",
 "c": "n",
-"n": "high-daughter. conspicuously similar to alim, queen."
+"n": "high-daughter. conspicuously similar to alim, 'queen'"
 },
 {
 "e": "six",
@@ -1604,7 +1609,7 @@
 "e": "smart",
 "k": "sadje",
 "c": "adj",
-"n": "possibly related to Common sage."
+"n": "possibly related to Common 'sage'"
 },
 {
 "e": "smith",
@@ -1637,7 +1642,7 @@
 "e": "sorcerer",
 "k": "nhipiirik",
 "c": "n",
-"n": "one who is born with innate magical talent."
+"n": "one who is born with innate magical talent"
 },
 {
 "e": "sorcery",
@@ -1686,7 +1691,7 @@
 "e": "speak",
 "k": "yyip",
 "c": "v",
-"n": "note the single i."
+"n": "note the single i"
 },
 {
 "e": "speaker",
@@ -1703,7 +1708,7 @@
 "e": "speech",
 "k": "yyisii",
 "c": "n",
-"n": "related to yyip, speak."
+"n": "related to yyip, speak"
 },
 {
 "e": "spoil",
@@ -1729,7 +1734,7 @@
 "e": "still",
 "k": "weten",
 "c": "adj",
-"n": "in the sense of not moving."
+"n": "in the sense of not moving"
 },
 {
 "e": "stomach",
@@ -1760,7 +1765,7 @@
 "e": "strong",
 "k": "korayi",
 "c": "adj",
-"n": "strength-with. the -'ayi suffix has fused with the root, suggesting this word is very old and/or not native."
+"n": "strength-with. the -'ayi suffix has fused with the root, suggesting this word is very old and/or not native"
 },
 {
 "e": "stuff",
@@ -1808,7 +1813,7 @@
 "e": "talk",
 "k": "yyip",
 "c": "v",
-"n": "note the single i."
+"n": "note the single i"
 },
 {
 "e": "tall",
@@ -1846,7 +1851,7 @@
 "e": "then",
 "k": "ez / -z",
 "c": "prep",
-"n": "same as 'and'."
+"n": "same as 'and'"
 },
 {
 "e": "there",
@@ -1970,7 +1975,7 @@
 "e": "uncle",
 "k": "hhosha",
 "c": "n",
-"n": "only used for a blood brother of one's father or mother. an uncle by marriage is not considered a family member."
+"n": "only used for a blood brother of one's father or mother. an uncle by marriage is not considered a family member"
 },
 {
 "e": "under",
@@ -1991,13 +1996,13 @@
 "e": "vein",
 "k": "gifo",
 "c": "n",
-"n": "in the sense of an ore deposit."
+"n": "in the sense of an ore deposit"
 },
 {
 "e": "voice",
 "k": "yyiip",
 "c": "n",
-"n": "note the double i."
+"n": "note the double i"
 },
 {
 "e": "walk",
@@ -2018,7 +2023,7 @@
 "e": "warlock",
 "k": "fenkhpiirik",
 "c": "n",
-"n": "one who obtains magical power through a demonic pact."
+"n": "one who obtains magical power through a demonic pact"
 },
 {
 "e": "warrior",
@@ -2114,7 +2119,7 @@
 "e": "wizard",
 "k": "tojmpiirik",
 "c": "n",
-"n": "one who studies magic in academia."
+"n": "one who studies magic in academia"
 },
 {
 "e": "wizardry",
