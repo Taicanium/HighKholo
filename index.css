@@ -2,7 +2,7 @@
 
 body {
 font-family: "Calibri", serif;
-background-color: #1A1A2A;
+background-color: #1E0D0D;
 color: #CECACA;
 }
 
@@ -16,7 +16,7 @@ margin: 0;
 padding: 0;
 width: 10%;
 min-width: 200px;
-background-color: rgba(18, 15, 20, 0.4);
+background-color: rgba(17, 6, 6, 0.4);
 position: fixed;
 overflow: auto;
 border: 1px solid #555555;
@@ -66,7 +66,7 @@ background-color: #262633;
 }
 
 .title1 {
-background-color: #1A1A2A;
+background-color: #1E0D0D;
 font-family: "Playfair Display", serif;
 font-optical-sizing: auto;
 font-size: 48pt;
