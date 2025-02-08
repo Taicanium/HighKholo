@@ -334,7 +334,8 @@
 {
 "e": "chest",
 "k": "temta",
-"c": "n"
+"c": "n",
+"r": "a container with a hinged lid"
 },
 {
 "e": "chew",
@@ -1451,6 +1452,11 @@
 "c": "n"
 },
 {
+"e": "penis",
+"k": "tiztii",
+"c": "n"
+},
+{
 "e": "person",
 "k": "alik",
 "c": "n",
@@ -1756,6 +1762,12 @@
 "c": "v"
 },
 {
+"e": "state",
+"k": "khovaj",
+"c": "n",
+"n": "an administrative union of tribes; a tribal government"
+},
+{
 "e": "step",
 "k": "owa",
 "c": "v"
@@ -1958,6 +1970,11 @@
 {
 "e": "tooth",
 "k": "bint",
+"c": "n"
+},
+{
+"e": "torso",
+"k": "pejtje",
 "c": "n"
 },
 {
