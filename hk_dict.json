@@ -240,7 +240,8 @@
 {
 "e": "bow",
 "k": "dan",
-"c": "n"
+"c": "n",
+"n": "the weapon that fires arrows"
 },
 {
 "e": "brain",
@@ -652,6 +653,12 @@
 "c": "n"
 },
 {
+"e": "flute",
+"k": "siisha",
+"c": "n",
+"n": "or any woodwind instrument of similar make"
+},
+{
 "e": "food",
 "k": "sikh",
 "c": "n",
@@ -683,6 +690,11 @@
 "e": "fox",
 "k": "hhwa",
 "c": "n"
+},
+{
+"e": "free",
+"k": "lome",
+"c": "adj"
 },
 {
 "e": "fresh",
@@ -813,6 +825,11 @@
 "c": "n"
 },
 {
+"e": "hammer",
+"k": "towan",
+"c": "n"
+},
+{
 "e": "have",
 "k": "rel",
 "c": "v"
@@ -939,7 +956,7 @@
 "e": "huntress",
 "k": "tejima",
 "c": "n",
-"n": "tejik would be the ungendered version, but the role huntresses play in matriarchal kholo society makes uttering that word extremely insulting"
+"n": "'tejik' would be the ungendered version, but the role huntresses play in matriarchal kholo society makes uttering that word extremely insulting"
 },
 {
 "e": "hurt",
@@ -1030,7 +1047,8 @@
 {
 "e": "lamashtu",
 "k": "lamashtuu",
-"c": "pn"
+"c": "pn",
+"n": "goddess of monstrosities worshipped by katapeshi kholo, and as a goddess of last resort by mwangi kholo"
 },
 {
 "e": "language",
@@ -1082,6 +1100,24 @@
 "e": "less",
 "k": "julkh",
 "c": "adj"
+},
+{
+"e": "lie",
+"k": "buuto",
+"c": "v",
+"n": "to rest upon a horizontal surface"
+},
+{
+"e": "lie",
+"k": "ilii",
+"c": "v",
+"n": "to make a false statement"
+},
+{
+"e": "lie",
+"k": "iliit",
+"c": "n",
+"n": "a false statement"
 },
 {
 "e": "life",
@@ -1160,10 +1196,16 @@
 "c": "n"
 },
 {
+"e": "lyre",
+"k": "tolwa",
+"c": "n",
+"n": "or any strummed instrument of similar make"
+},
+{
 "e": "mace",
 "k": "sit",
 "c": "n",
-"n": "in the sense of a many-pointed weapon"
+"n": "a weapon consisting of a metal sphere mounted on a hilt and studded with spikes"
 },
 {
 "e": "magic",
@@ -1205,6 +1247,11 @@
 {
 "e": "mercy",
 "k": "kraia",
+"c": "n"
+},
+{
+"e": "metal",
+"k": "lojo",
 "c": "n"
 },
 {
@@ -1253,6 +1300,12 @@
 "e": "muscle",
 "k": "setre",
 "c": "n"
+},
+{
+"e": "music",
+"k": "shel",
+"c": "n",
+"n": "clearly derived from shelyn, the goddess of music"
 },
 {
 "e": "muzzle",
@@ -1568,6 +1621,12 @@
 "c": "num"
 },
 {
+"e": "shelyn",
+"k": "shelin",
+"c": "pn",
+"n": "goddess of art and music worshipped among bards of the mwangi expanse"
+},
+{
 "e": "shield",
 "k": "veren",
 "c": "n"
@@ -1596,7 +1655,8 @@
 {
 "e": "sing",
 "k": "hhja",
-"c": "v"
+"c": "v",
+"n": "strangely, not etymologically related to vest, 'song'"
 },
 {
 "e": "sister",
@@ -1673,6 +1733,12 @@
 "e": "son",
 "k": "shuu",
 "c": "n"
+},
+{
+"e": "song",
+"k": "vest",
+"c": "n",
+"n": "possible distant relation to voa, voice"
 },
 {
 "e": "sorcerer",
@@ -1988,6 +2054,11 @@
 "c": "n"
 },
 {
+"e": "tree",
+"k": "le",
+"c": "n"
+},
+{
 "e": "tribe",
 "k": "kho",
 "c": "n"
@@ -2161,6 +2232,12 @@
 "e": "with",
 "k": "-'ayi",
 "c": "prep"
+},
+{
+"e": "without",
+"k": "-(')wi",
+"c": "prep",
+"n": "lacking. the opposite of with"
 },
 {
 "e": "wizard",

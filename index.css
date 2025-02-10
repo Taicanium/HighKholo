@@ -108,8 +108,7 @@ display: none;
 opacity: 0;
 position: absolute;
 left: 25%;
-bottom: 5%;
-height: 77.5%;
+top: 22.5%;
 width: 70%;
 z-index: -1;
 }
