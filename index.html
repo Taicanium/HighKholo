@@ -28,7 +28,7 @@ var words = lexDB['words'];
 document.getElementById("lexText").innerHTML = "";
 
 words.forEach(word => {
-if (word['e'].startsWith(letter)) {
+if (word['e'].toLowerCase().startsWith(letter)) {
 var toAdd = "<p><i>".concat(word['e']).concat("</i> &mdash; ").concat(classes[word['c']]).concat(": <b>").concat(word['k']).concat("</b>");
 if ('n' in word) {
 toAdd += " &ndash; <span class=\"smalltext\"><i>".concat(word['n']).concat("</i></span>");
