@@ -10,6 +10,16 @@ a {
 color: #BCB8D8;
 }
 
+button {
+background-color: transparent;
+color: #BCB8D8;
+cursor: pointer;
+text-decoration: underline;
+font-weight: bold;
+font-size: 12pt;
+border: none;
+}
+
 ul {
 list-style-type: none;
 margin: 0;
@@ -52,8 +62,8 @@ li a:active {
 background-color: #8C2E3D;
 }
 
-tr *:not(a,i,p,span,sup) {
-border: 1px solid #555;
+tr *:not(a,button,i,p,span,sup) {
+border: 1px solid #555555;
 text-align: center;
 }
 
