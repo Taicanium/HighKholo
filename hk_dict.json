@@ -375,14 +375,14 @@
 "c": "v"
 },
 {
-"e": "common",
-"k": "kweayyisii / yyisii kwea",
+"e": "Common",
+"k": "Kweayyisii / yyisii kwea",
 "c": "pn",
 "n": "human-language. any of the common human languages of a particular region. mwangi in western garund and the mwangi expanse; taldane in katapesh and osirion; etc"
 },
 {
-"e": "common",
-"k": "mowanyyisii / yyisii mowan",
+"e": "Common",
+"k": "Mowanyyisii / yyisii mowan",
 "c": "pn",
 "n": "savannah-language. that is, mwangi"
 },
@@ -886,7 +886,7 @@
 },
 {
 "e": "high kholo",
-"k": "kholoyyisii / yyisii kholo",
+"k": "Kholoyyisii / yyisii kholo",
 "c": "pn",
 "n": "kholo-speech. specifically the dialect spoken by kholo native to the mwangi expanse"
 },
@@ -1050,8 +1050,8 @@
 "c": "n"
 },
 {
-"e": "lamashtu",
-"k": "lamashtuu",
+"e": "Lamashtu",
+"k": "Lamashtuu",
 "c": "pn",
 "n": "goddess of monstrosities worshipped by katapeshi kholo, and as a goddess of last resort by mwangi kholo"
 },
@@ -1335,7 +1335,7 @@
 },
 {
 "e": "mwangi",
-"k": "mowanyyisii / yyisii mowan",
+"k": "Mowanyyisii / yyisii mowan",
 "c": "pn",
 "n": "savannah-language"
 },
@@ -1636,8 +1636,8 @@
 "c": "num"
 },
 {
-"e": "shelyn",
-"k": "shelin",
+"e": "Shelyn",
+"k": "Shelin",
 "c": "pn",
 "n": "goddess of art and music worshipped among bards of the mwangi expanse"
 },
