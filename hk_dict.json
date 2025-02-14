@@ -164,7 +164,7 @@
 },
 {
 "e": "best",
-"k": "ban/b'an",
+"k": "ban",
 "c": "adj",
 "n": "benjan, good-most"
 },
@@ -336,7 +336,7 @@
 "e": "chest",
 "k": "temta",
 "c": "n",
-"r": "a container with a hinged lid"
+"n": "a container with a hinged lid"
 },
 {
 "e": "chew",
@@ -1479,10 +1479,10 @@
 "c": "n"
 },
 {
-"e": "osirion",
-"k": "zuatoa",
-"c": "n",
-"n": "new-country (roughly the meaning of osirion)"
+"e": "Osirion",
+"k": "Zuatoa",
+"c": "pn",
+"n": "new-country (roughly the meaning of Osirion)"
 },
 {
 "e": "other",
