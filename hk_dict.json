@@ -84,6 +84,11 @@
 "n": "krom also means 'waste'"
 },
 {
+"e": "any",
+"k": "jil",
+"c": "det"
+},
+{
 "e": "arm",
 "k": "krif",
 "c": "n"
@@ -113,6 +118,11 @@
 "k": "hhesta",
 "c": "n",
 "n": "either a blood sister of one's father or mother, or by marriage"
+},
+{
+"e": "away",
+"k": "janghwa",
+"c": "adj"
 },
 {
 "e": "axe",
@@ -272,6 +282,11 @@
 "e": "bright",
 "k": "tiighra",
 "c": "adj"
+},
+{
+"e": "bring",
+"k": "siipro",
+"c": "v"
 },
 {
 "e": "bronze",
@@ -616,6 +631,11 @@
 "c": "n"
 },
 {
+"e": "few",
+"k": "ewa",
+"c": "det"
+},
+{
 "e": "fiber",
 "k": "setelte",
 "c": "n"
@@ -651,6 +671,11 @@
 "e": "five",
 "k": "nara / nar-",
 "c": "num"
+},
+{
+"e": "fix",
+"k": "setswe",
+"c": "v"
 },
 {
 "e": "flash",
@@ -1080,6 +1105,11 @@
 "n": "city-many"
 },
 {
+"e": "learn",
+"k": "vora",
+"c": "v"
+},
+{
 "e": "least",
 "k": "owan",
 "c": "det",
@@ -1438,6 +1468,12 @@
 "c": "adv"
 },
 {
+"e": "number",
+"k": "polo",
+"c": "n",
+"n": "obvious relation to poltop, finger; the proto-word is uncertain"
+},
+{
 "e": "of",
 "k": "ap",
 "c": "prep"
@@ -1628,6 +1664,11 @@
 {
 "e": "see",
 "k": "pet",
+"c": "v"
+},
+{
+"e": "send",
+"k": "sakhpro",
 "c": "v"
 },
 {
@@ -1857,6 +1898,12 @@
 "e": "step",
 "k": "owa",
 "c": "v"
+},
+{
+"e": "still",
+"k": "mit",
+"c": "prep",
+"n": "indicating a continuous action, as in 'i still need it'"
 },
 {
 "e": "still",
@@ -2093,6 +2140,11 @@
 "e": "truth",
 "k": "iit",
 "c": "n"
+},
+{
+"e": "try",
+"k": "fiiyyi",
+"c": "v"
 },
 {
 "e": "turn",
