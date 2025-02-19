@@ -373,6 +373,11 @@
 "c": "n"
 },
 {
+"e": "clean",
+"k": "metii",
+"c": "adj"
+},
+{
 "e": "cloth",
 "k": "iizh",
 "c": "n"
@@ -627,7 +632,7 @@
 {
 "e": "female",
 "k": "imo",
-"c": "n"
+"c": "adj"
 },
 {
 "e": "few",
@@ -1164,6 +1169,12 @@
 "c": "n"
 },
 {
+"e": "lightning",
+"k": "yhok",
+"c": "n",
+"n": "same as the word for energy"
+},
+{
 "e": "like",
 "k": "e'-",
 "c": "adj"
@@ -1264,7 +1275,7 @@
 {
 "e": "male",
 "k": "shuua",
-"c": "n"
+"c": "adj"
 },
 {
 "e": "meat",
@@ -1598,6 +1609,11 @@
 "c": "n"
 },
 {
+"e": "pure",
+"k": "metarii",
+"c": "adj"
+},
+{
 "e": "queen",
 "k": "alim",
 "c": "n",
@@ -1723,11 +1739,6 @@
 "e": "six",
 "k": "mon",
 "c": "num"
-},
-{
-"e": "skin",
-"k": "eriipet",
-"c": "n"
 },
 {
 "e": "skin",
@@ -2186,6 +2197,11 @@
 "k": "gifo",
 "c": "n",
 "n": "in the sense of an ore deposit"
+},
+{
+"e": "virgin",
+"k": "medwi",
+"c": "n"
 },
 {
 "e": "voice",
