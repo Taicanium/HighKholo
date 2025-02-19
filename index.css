@@ -6,6 +6,17 @@ background-color: #1E0D0D;
 color: #CECACA;
 }
 
+#bgimg {
+display: block;
+position: fixed;
+overflow: auto;
+left: 25%;
+width: 50%;
+height: auto;
+opacity: 0.3;
+z-index: -100;
+}
+
 a {
 color: #BCB8D8;
 }
@@ -137,6 +148,20 @@ height: 7%;
 max-height: 130px;
 width: auto;
 border: 0;
+}
+
+.letter {
+display: block;
+margin: auto;
+width: 60px;
+height: auto;
+}
+
+.sample {
+display: block;
+margin: auto;
+height: 120px;
+width: auto;
 }
 
 #gitRev {

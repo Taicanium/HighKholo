@@ -89,6 +89,8 @@ document.getElementById("gitRev").innerHTML += date.toLocaleString();
 </script>
 </head>
 <body>
+<img src="images/bg.png" id="bgimg" />
+
 <ul>
 <li><a href="#introduction">I.<br />Introduction</a></li>
 <li><a href="#phonemes">II.<br />Phonemes</a></li>
@@ -255,7 +257,153 @@ document.getElementById("gitRev").innerHTML += date.toLocaleString();
 </div>
 
 <div class="subdiv" id="orthography">
-<span class="smalltext">A writing system exists, but I'm still unsure how to best present it in HTML. Check back for updates; or, if you're very impatient, <a href="alf_notes.png" target="_blank">my personal notes are available.</a></span>
+<p><span class="title2">Symbols</span></p>
+<p><span class="title3">Consonants</span></p>
+<p><span class="smalltext">These were derived from a set of hieroglyphs representing the rough position of a kholo's mouth and teeth when making the related sounds.</span></p><br />
+<table>
+<tr>
+<th>B</th>
+<th>D</th>
+<th>F</th>
+<th>G</th>
+<th>Gh</th>
+<th>Hh</th>
+</tr>
+<tr>
+<th><img class="letter" src="images/b.png" /></td>
+<td><img class="letter" src="images/d.png" /></td>
+<td><img class="letter" src="images/f.png" /></td>
+<td><img class="letter" src="images/g.png" /></td>
+<td><img class="letter" src="images/gh.png" /></td>
+<td><img class="letter" src="images/hh.png" /></td>
+</tr>
+<tr>
+<th>J</th>
+<th>Jh</th>
+<th>K</th>
+<th>Kh</th>
+<th>L</th>
+<th>M</th>
+</tr>
+<tr>
+<td><img class="letter" src="images/j.png" /></td>
+<td><img class="letter" src="images/jh.png" /></td>
+<td><img class="letter" src="images/k.png" /></td>
+<td><img class="letter" src="images/kh.png" /></td>
+<td><img class="letter" src="images/l.png" /></td>
+<td><img class="letter" src="images/m.png" /></td>
+</tr>
+<tr>
+<th>N</th>
+<th>Nh</th>
+<th>Nn</th>
+<th>P</th>
+<th>R</th>
+<th>S</th>
+</tr>
+<tr>
+<td><img class="letter" src="images/n.png" /></td>
+<td><img class="letter" src="images/nh.png" /></td>
+<td><img class="letter" src="images/nn.png" /></td>
+<td><img class="letter" src="images/p.png" /></td>
+<td><img class="letter" src="images/r.png" /></td>
+<td><img class="letter" src="images/s.png" /></td>
+</tr>
+<tr>
+<th>Sh</th>
+<th>T</th>
+<th>V</th>
+<th>W</th>
+<th>Y</th>
+<th>Yh</th>
+</tr>
+<tr>
+<td><img class="letter" src="images/sh.png" /></td>
+<td><img class="letter" src="images/t.png" /></td>
+<td><img class="letter" src="images/v.png" /></td>
+<td><img class="letter" src="images/w.png" /></td>
+<td><img class="letter" src="images/y.png" /></td>
+<td><img class="letter" src="images/yh.png" /></td>
+</tr>
+<tr>
+<th>Yy</th>
+<th>Z</th>
+<th>Zh</th>
+<th>(')</th>
+</tr>
+<tr>
+<td><img class="letter" src="images/yy.png" /></td>
+<td><img class="letter" src="images/z.png" /></td>
+<td><img class="letter" src="images/zh.png" /></td>
+<td><img class="letter" src="images/'.png" /></td>
+</tr>
+</table>
+<br /> <br />
+<p><span class="title3">Vowels</span></p>
+<p><span class="smalltext">Vowels, meanwhile, were derived from pictograms of animals that make similar noises.</span></p>
+<p>Vowels are written as diacritic (small) marks above the consonant that came before them. If a vowel appears at the start of a word, or preceded by another vowel, it is written full-size on its own like a consonant.</p><br />
+<table>
+<tr>
+<th>A<br /><span class="smalltext">Crow</span></th>
+<th>E<br /><span class="smalltext">Fox</span></th>
+<th>I<br /><span class="smalltext">Pig</span></th>
+<th>Ii<br /><span class="smalltext">Rat</span></th>
+<th>O<br /><span class="smalltext">Monkey</span></th>
+<th>U<br /><span class="smalltext">Dragon</span></th>
+<th>Uu<br /><span class="smalltext">Ox</span></th>
+</tr>
+<tr>
+<td><img class="letter" src="images/a.png" /></td>
+<td><img class="letter" src="images/e.png" /></td>
+<td><img class="letter" src="images/i.png" /></td>
+<td><img class="letter" src="images/ii.png" /></td>
+<td><img class="letter" src="images/o.png" /></td>
+<td><img class="letter" src="images/u.png" /></td>
+<td><img class="letter" src="images/uu.png" /></td>
+</tr>
+</table>
+<br /> <br />
+<p><span class="title3">Punctuation</span></p>
+<table>
+<tr>
+<th>Comma</th>
+<th>Period (full stop)</th>
+<th>Exclamation</th>
+<th>Question</th>
+<th>Quotation</th>
+</tr>
+<tr>
+<td><img class="letter" src="images/comma.png" /></td>
+<td><img class="letter" src="images/period.png" /></td>
+<td><img class="letter" src="images/exclamation.png" /></td>
+<td><img class="letter" src="images/question.png" /></td>
+<td><img class="letter" src="images/quotation.png" /></td>
+</tr>
+</table>
+<br /><br /><br />
+<p><span class="title2">Samples</span></p>
+<p>Kholo is written in one of two modes: The normal style, with each letter separate; and the "semi-cursive" style, where each letter is horizontally connected to the next.</p>
+<p>The normal style is used in printing, and the semi-cursive style is more common in handwriting (making it by far more common in general). Semi-cursive is more socially formal than normal style; the latter tends to appear more childish.</p>
+<p>In semi-cursive style, vowels written at the start of a word (see above) are not connected.</p><br />
+<p><span class="title3">Normal</span></p>
+<table>
+<tr><td>Bansil<br /><span class="smalltext">"Best friend"</span></td></tr>
+<tr><td><img class="sample" src="images/bansil.png" /></td></tr>
+</table>
+<table>
+<tr><td>Fenkhpiira<br /><span class="smalltext">"Witchcraft"</span></td></tr>
+<tr><td><img class="sample" src="images/fenkhpiira.png" /></td></tr>
+</table>
+<br /><br />
+<p><span class="title3">Semi-cursive</span></p>
+<table>
+<tr><td>Kholo</td></tr>
+<tr><td><img class="sample" src="images/kholo.png" /></td></tr>
+</table>
+<table>
+<tr><td>Aljan zetik<br /><span class="smalltext">"Champion"</span></td></tr>
+<tr><td><img class="sample" src="images/aljan_zetik.png" /></td></tr>
+</table>
 </div>
 
 <div class="subdiv" id="grammar">
@@ -647,7 +795,7 @@ document.getElementById("gitRev").innerHTML += date.toLocaleString();
 </tr>
 <tr>
 <td>Aston</td>
-<td>Infinity</td>
+<td>Endless</td>
 </tr>
 </table>
 </div>
@@ -887,8 +1035,8 @@ document.getElementById("gitRev").innerHTML += date.toLocaleString();
 <th>Common (proper)</th>
 </thead>
 <tr>
-<td><p>Shava'nha a'lo'nha. Gida er'a fuu hho'nha.<br />Gida er korayi lushajo'nha. Er nnima onje vuutajo'nha;<br />er khorahhii jogo, a'khlito'nha;<br />er jira tuunujan jogo, nhiso'nha.</p><p>Er zijika meruua voajo, ez zetikel wilto;<br />er rosua jogra, aljan zetik yhii'a zet'lete khurumo.</p><p>Er tuama'ayi yhii'a, sil'nha woluto vuutajo al veren'yhii,<br />ez pero shiiukh a'shikh, ez elmo hhiguu a'shikh.</p></td>
-<td><p>Heart-you not-predator-you. Hurts for-not make weak-you.<br />Hurts for strong becomes-you. For loss weight carries-you;<br />for despair under, not-breaks-you;<br />for sun darkest under, rises-you.</p><p>For horns-many heaven sounding, and warriors-many ride;<br />for Earth over, champion they war-front holds.</p><p>For ranks-with they, friend-you fallen carries high shield-they,<br />and gives tears not-more, and feels sorrow not-more.</p></td>
+<td><p>Shava'nha a'lo'nha. Gida er'a fuu hho'nha.<br />Gida er korayi lushajo'nha. Er nnima onje vuutajo'nha.<br />Er khorahhii jogo, a'khlito'nha.<br />Er jira tuunujan jogo, nhiso'nha.</p><p>Er zijika meruua voajo, ez zetikel wilto.<br />Er rosua jogra, aljan zetik yhii'a zet'lete khurumo.</p><p>Er tuama'ayi yhii'a, sil'nha woluto vuutajo al veren'yhii,<br />ez pero shiiukh a'shikh, ez elmo hhiguu a'shikh.</p></td>
+<td><p>Heart-you not-predator-you. Hurts for-not make weak-you.<br />Hurts for strong becomes-you. For loss weight carries-you.<br />For despair under, not-breaks-you.<br />For sun darkest under, rises-you.</p><p>For horns-many heaven sounding, and warriors-many ride.<br />For Earth over, champion they war-front holds.</p><p>For ranks-with they, friend-you fallen carries high shield-they,<br />and gives tears not-more, and feels sorrow not-more.</p></td>
 <td><p>Your heart is not your predator. It does not ache to weaken you.<br />It aches so that you may grow strong. So that you may bear the weight of loss;<br />that amidst despair, you may not break;<br />that under the dimmest sun, you may yet rise.</p><p>That the horns of Heaven may yet be sounded, and its warriors ride;<br />for their champion on Earth may yet hold the front.</p><p>For among their ranks, your fallen friend bears his shield high,<br />and sheds no more tears, and feels no more sorrow.</p></td>
 </tr>
 <tr>
