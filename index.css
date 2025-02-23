@@ -157,6 +157,13 @@ width: 60px;
 height: auto;
 }
 
+.number {
+display: block;
+margin: auto;
+width: auto;
+height: 60px;
+}
+
 .sample {
 display: block;
 margin: auto;
