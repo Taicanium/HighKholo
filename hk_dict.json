@@ -591,6 +591,12 @@
 "n": "(kholo) king of kings"
 },
 {
+"e": "empire",
+"k": "aljanimvaj",
+"c": "n",
+"n": "highest queen-state"
+},
+{
 "e": "empress",
 "k": "alimakh alim",
 "c": "n",
@@ -1086,6 +1092,12 @@
 "k": "aligha",
 "c": "n",
 "n": "high-lord"
+},
+{
+"e": "kingdom",
+"k": "alimvaj",
+"c": "n",
+"n": "queen-state"
 },
 {
 "e": "knee",
@@ -1926,7 +1938,13 @@
 "e": "state",
 "k": "khovaj",
 "c": "n",
-"n": "an administrative union of tribes; a tribal government"
+"n": "an administrative union of kholo tribes; a tribal government"
+},
+{
+"e": "state",
+"k": "vaj",
+"c": "n",
+"n": "any authority over a civil group, kholo or otherwise. a more general term than khovaj"
 },
 {
 "e": "step",
