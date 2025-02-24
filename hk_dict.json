@@ -579,6 +579,30 @@
 "n": "arm-bend"
 },
 {
+"e": "emperor",
+"k": "alighakh aligha",
+"c": "n",
+"n": "(non-kholo) king of kings"
+},
+{
+"e": "emperor",
+"k": "alighahha aligha",
+"c": "n",
+"n": "(kholo) king of kings"
+},
+{
+"e": "empress",
+"k": "alimakh alim",
+"c": "n",
+"n": "(non-kholo) queen of queens"
+},
+{
+"e": "empress",
+"k": "alima alim",
+"c": "n",
+"n": "(kholo) queen of queens"
+},
+{
 "e": "end",
 "k": "ston",
 "c": "n"
