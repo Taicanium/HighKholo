@@ -49,6 +49,17 @@
 "n": "okha'ik, before-once"
 },
 {
+"e": "also",
+"k": "ez / -z",
+"c": "prep"
+},
+{
+"e": "always",
+"k": "lita",
+"c": "n",
+"n": "all-time"
+},
+{
 "e": "ancestor",
 "k": "roba",
 "c": "n"
@@ -202,6 +213,11 @@
 "e": "birth",
 "k": "fiti",
 "c": "n"
+},
+{
+"e": "bite",
+"k": "tet",
+"c": "v"
 },
 {
 "e": "black",
@@ -429,6 +445,11 @@
 "n": "also means body, as in one that is still alive"
 },
 {
+"e": "cough",
+"k": "kheke",
+"c": "n"
+},
+{
 "e": "country",
 "k": "toa",
 "c": "n"
@@ -577,6 +598,12 @@
 "k": "kriftek",
 "c": "n",
 "n": "arm-bend"
+},
+{
+"e": "elf",
+"k": "forip",
+"c": "n",
+"n": "ear-spear"
 },
 {
 "e": "emperor",
@@ -781,6 +808,11 @@
 "c": "n"
 },
 {
+"e": "frustrate",
+"k": "zetjar",
+"c": "v",
+},
+{
 "e": "fur",
 "k": "emji",
 "c": "n"
@@ -794,6 +826,11 @@
 "e": "give",
 "k": "per",
 "c": "v"
+},
+{
+"e": "glass",
+"k": "ghemnen",
+"c": "n"
 },
 {
 "e": "gnoll",
@@ -862,6 +899,11 @@
 "c": "n"
 },
 {
+"e": "grass",
+"k": "sheg",
+"c": "n"
+},
+{
 "e": "great",
 "k": "al",
 "c": "adj",
@@ -884,6 +926,11 @@
 "c": "col"
 },
 {
+"e": "growl",
+"k": "sotoii",
+"c": "v"
+},
+{
 "e": "half",
 "k": "uur",
 "c": "n"
@@ -902,6 +949,12 @@
 "e": "hawk",
 "k": "inso",
 "c": "n"
+},
+{
+"e": "head",
+"k": "satwo",
+"c": "n",
+"n": "the body part above the torso."
 },
 {
 "e": "hear",
@@ -1551,6 +1604,11 @@
 "c": "num"
 },
 {
+"e": "open",
+"k": "mets",
+"c": "v"
+},
+{
 "e": "or",
 "k": "si",
 "c": "prep"
@@ -1627,6 +1685,21 @@
 "k": "alatoro",
 "c": "n",
 "n": "high-silver"
+},
+{
+"e": "plea",
+"k": "miilii",
+"c": "n"
+},
+{
+"e": "plead",
+"k": "miil",
+"c": "v"
+},
+{
+"e": "please",
+"k": "mii",
+"c": "int"
 },
 {
 "e": "predator",
@@ -1728,6 +1801,11 @@
 "c": "num"
 },
 {
+"e": "shake",
+"k": "wesk",
+"c": "v"
+},
+{
 "e": "Shelyn",
 "k": "Shelin",
 "c": "pn",
@@ -1752,6 +1830,12 @@
 "e": "silent",
 "k": "yohho",
 "c": "adj"
+},
+{
+"e": "sick",
+"k": "kiizh",
+"c": "adj",
+"n": "ill from disease"
 },
 {
 "e": "silver",
