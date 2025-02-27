@@ -4,11 +4,9 @@
 <meta charset="utf-8" />
 <title>High Kholo — Conlang by Taica</title>
 <link rel="stylesheet" href="index.css" />
-<link rel="icon" type="image/x-icon" href="favicon.ico">
-
+<link rel="icon" type="image/x-icon" href="favicon.ico" />
 <script type="text/javascript">
 var lexDB = [];
-
 function readTextFile(file, callback) {
 var rawFile = new XMLHttpRequest();
 rawFile.overrideMimeType("application/json");
@@ -16,17 +14,13 @@ rawFile.open("GET", file, true);
 rawFile.onreadystatechange = function() {
 if (rawFile.readyState === 4 && rawFile.status == "200") {
 callback(rawFile.responseText);
-}
-}
+}}
 rawFile.send(null);
 }
-
 function readWords(letter) {
 var classes = lexDB['classes'];
 var words = lexDB['words'];
-
 document.getElementById("lexText").innerHTML = "";
-
 words.forEach(word => {
 if (word['e'].toLowerCase().startsWith(letter)) {
 var toAdd = "<p><i>".concat(word['e']).concat("</i> &mdash; ").concat(classes[word['c']]).concat(": <b>").concat(word['k']).concat("</b>");
@@ -35,10 +29,8 @@ toAdd += " &ndash; <span class=\"smalltext\"><i>".concat(word['n']).concat("</i>
 }
 toAdd += "</p>";
 document.getElementById("lexText").innerHTML += toAdd;
+}});
 }
-});
-}
-
 function readDB(letter) {
 if (letter === "*S") {
 document.getElementById("lexText").innerHTML = document.getElementById("slave").innerHTML;
@@ -52,37 +44,15 @@ readTextFile("https://raw.githubusercontent.com/Taicanium/HighKholo/refs/heads/m
 lexDB = JSON.parse(text);
 readWords(letter);
 });
-}
-else
-{
+} else {
 readWords(letter);
-}
-}
-}
-
-function showHappy() {
-document.getElementById("happy").style.zIndex = "2";
-document.getElementById("happy").style.opacity = "1";
-
-document.getElementById("normal").style.zIndex = "1";
-document.getElementById("normal").style.opacity = "0";
-}
-
-function showNormal() {
-document.getElementById("happy").style.zIndex = "1";
-document.getElementById("happy").style.opacity = "0";
-
-document.getElementById("normal").style.zIndex = "2";
-document.getElementById("normal").style.opacity = "1";
-}
-
+}}}
 window.addEventListener("load", (event) => {
 readTextFile("https://api.github.com/repos/taicanium/HighKholo/commits?page=1&per_page=1", function(text){
 var data = JSON.parse(text);
 var time = data[0]['commit']['committer']['date'];
 var date = new Date(Date.parse(time));
 var dateString = date.toLocaleString();
-
 document.getElementById("gitRev").innerHTML += date.toLocaleString();
 });
 });
@@ -104,26 +74,27 @@ document.getElementById("gitRev").innerHTML += date.toLocaleString();
 <li><a href="#excerpts">X.<br />Excerpts</a></li>
 </ul>
 
-<span class="title1">High Kholo</span>
+<h1>High Kholo</h1>
 
-<a href="https://taicanium.github.io/" target="_blank"><img class="icon" id="happy" src="https://i.ibb.co/fnvbrfg/Rhian-Happy.png" alt="Rhian-Happy" onmouseleave="showNormal()" /></a>
-<a href="https://taicanium.github.io/" target="_blank"><img class="icon" id="normal" src="https://i.ibb.co/xhFCWhs/Rhian-Normal.png" alt="Rhian-Normal" onmouseenter="showHappy()" /></a>
+<a href="https://taicanium.github.io/" target="_blank">
+<img class="icon" id="happy" src="https://i.ibb.co/fnvbrfg/Rhian-Happy.png" alt="Rhian-Happy" />
+<img class="icon" id="normal" src="https://i.ibb.co/xhFCWhs/Rhian-Normal.png" alt="Rhian-Normal" />
+</a>
 
 <span id="gitRev">Last modified:<br /><br /></span>
 
 <div class="subdiv" id="introduction">
-<span class="title2">Gnolls, and the Language Thereof</span><br />
+<h2>Gnolls, and the Language Thereof</h2>
 <p>This guide details the dialect most commonly spoken among <a href="https://pathfinderwiki.com/wiki/Kholo#tabber-2E" target="_blank">kholo</a> of the <a href="https://pathfinderwiki.com/wiki/Mwangi_Expanse" target="_blank">Mwangi Expanse</a>, as opposed to those dialects spoken in <a href="https://pathfinderwiki.com/wiki/Katapesh" target="_blank">Katapesh</a> or other areas.<br/>Commonly referred to as High Kholo, reflecting the Mwangi gnolls' greater (by comparison) penchant for civilized culture and trade.<br /><br />Natively, it is simply called Kholo, or <i>Kholoyyisii</i> ("Kholo-speech"). Notes are not kept on other dialects of Kholo, except as they directly relate to this one.</p><br />
 <p class="smalltext">Remember: Kholo are not humans, and do not possess human mouth anatomy. This document takes a little "Okay so these guys have funny dog mouths" to follow. It's worth it, this is fun. I promise.</p><br />
 <p class="smalltext">My name is Taica, and neither I nor this document nor any of its contents are directly affiliated with Rose-Winds LLC or Blake Davis.</p>
 </div>
 
 <div class="subdiv" id="phonemes">
-<span class="title2">Consonants</span>
+<h2>Consonants</h2>
 <table>
-<thead>
 <tr>
-<th />
+<th></th>
 <th>Bilabial</th>
 <th>Bidental<sup>1</sup></th>
 <th>Dental</th>
@@ -132,12 +103,11 @@ document.getElementById("gitRev").innerHTML += date.toLocaleString();
 <th>Velar</th>
 <th>Glottal</th>
 </tr>
-</thead>
 <tr>
 <th>Plosive (stop)</th>
 <td>p b</td>
-<td />
-<td />
+<td></td>
+<td></td>
 <td>t d</td>
 <td>kh gh</td>
 <td>k g</td>
@@ -147,103 +117,101 @@ document.getElementById("gitRev").innerHTML += date.toLocaleString();
 <th>Nasal</th>
 <td>m</td>
 <td>nn</td>
-<td />
+<td></td>
 <td colspan="2">n</td>
-<td />
-<td />
+<td></td>
+<td></td>
 </tr>
 <tr>
 <th>Tap</th>
-<td />
-<td />
-<td />
+<td></td>
+<td></td>
+<td></td>
 <td>r</td>
-<td />
-<td />
-<td />
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <th>Fricative</th>
 <td>f v</td>
 <td>nh</td>
-<td />
+<td></td>
 <td>s z</td>
 <td>sh zh</td>
-<td />
+<td></td>
 <td>hh</td>
 </tr>
 <tr>
 <th>Approximant</th>
 <td>w</td>
 <td style="background-color: #121216; color: #898989;">(jh)<sup style="color: #CECACA;">4</sup></td>
-<td />
+<td></td>
 <td>l</td>
 <td>j</td>
-<td />
-<td />
+<td></td>
+<td></td>
 </tr>
 <tr>
 <th>Yip<sup>5</sup></th>
-<td />
-<td />
+<td></td>
+<td></td>
 <td>y</td>
 <td>yy</td>
 <td colspan="2">yh</td>
-<td />
+<td></td>
 </tr>
 </table>
 <br /><br />
-<span class="title2">Vowels</span>
+<h2>Vowels</h2>
 <table>
-<thead>
 <tr>
-<th style="width: 50px;" />
+<th style="width: 50px;"></th>
 <th style="width: 50px;">Front</th>
-<th style="width: 50px;" />
+<th style="width: 50px;"></th>
 <th style="width: 50px;">Central</th>
-<th style="width: 50px;" />
+<th style="width: 50px;"></th>
 <th style="width: 50px;">Back</th>
 </tr>
-</thead>
 <tr>
 <th>Close</th>
 <td>i (ii)</td>
-<td />
-<td />
-<td />
+<td></td>
+<td></td>
+<td></td>
 <td>u (uu)</td>
 </tr>
 <tr>
-<th />
+<th></th>
 <td>e</td>
 <td>ɪ (i)</td>
-<td />
-<td />
-<td />
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <th>Mid</th>
-<td />
-<td />
-<td />
+<td></td>
+<td></td>
+<td></td>
 <td>o</td>
-<td />
+<td></td>
 </tr>
 <tr>
-<th />
-<td />
-<td />
-<td />
-<td />
+<th></th>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 <td>ʌ (u)</td>
 </tr>
 <tr>
 <th>Open</th>
-<td />
-<td />
+<td></td>
+<td></td>
 <td>ä (a)</td>
-<td />
-<td />
+<td></td>
+<td></td>
 </tr>
 </table>
 <br /><br />
@@ -257,8 +225,8 @@ document.getElementById("gitRev").innerHTML += date.toLocaleString();
 </div>
 
 <div class="subdiv" id="orthography">
-<p><span class="title2">Symbols</span></p>
-<p><span class="title3">Consonants</span></p>
+<h2>Symbols</h2>
+<h3>Consonants</h3>
 <p><span class="smalltext">These were derived from a set of hieroglyphs representing the rough position of a kholo's mouth and teeth when making the related sounds.</span></p><br />
 <table>
 <tr>
@@ -270,7 +238,7 @@ document.getElementById("gitRev").innerHTML += date.toLocaleString();
 <th>Hh</th>
 </tr>
 <tr>
-<th><img class="letter" src="images/b.png" /></td>
+<td><img class="letter" src="images/b.png" /></td>
 <td><img class="letter" src="images/d.png" /></td>
 <td><img class="letter" src="images/f.png" /></td>
 <td><img class="letter" src="images/g.png" /></td>
@@ -339,7 +307,7 @@ document.getElementById("gitRev").innerHTML += date.toLocaleString();
 </tr>
 </table>
 <br /> <br />
-<p><span class="title3">Vowels</span></p>
+<h3>Vowels</h3>
 <p><span class="smalltext">Vowels, meanwhile, were derived from pictograms of animals that make similar noises.</span></p>
 <p>Vowels are written as diacritic (small) marks above the consonant that came before them. If a vowel appears at the start of a word, or preceded by another vowel, it is written full-size on its own like a consonant.</p><br />
 <table>
@@ -363,7 +331,7 @@ document.getElementById("gitRev").innerHTML += date.toLocaleString();
 </tr>
 </table>
 <br /> <br />
-<p><span class="title3">Punctuation</span></p>
+<h3>Punctuation</h3>
 <table>
 <tr>
 <th>Comma</th>
@@ -381,11 +349,11 @@ document.getElementById("gitRev").innerHTML += date.toLocaleString();
 </tr>
 </table>
 <br /><br /><br />
-<p><span class="title2">Samples</span></p>
+<h2>Samples</h2>
 <p>Kholo is written in one of two modes: The normal style, with each letter separate; and the "semi-cursive" style, where each letter is horizontally connected to the next.</p>
 <p>The normal style is used in printing, and the semi-cursive style is more common in handwriting (making it by far more common in general). Semi-cursive is more socially formal than normal style; the latter tends to appear more childish.</p>
 <p>In semi-cursive style, vowels written at the start of a word (see above) are not connected.</p><br />
-<p><span class="title3">Normal</span></p>
+<h3>Normal</h3>
 <table>
 <tr><td>Bansil<br /><span class="smalltext">"Best friend"</span></td></tr>
 <tr><td><img class="sample" src="images/bansil.png" /></td></tr>
@@ -395,7 +363,7 @@ document.getElementById("gitRev").innerHTML += date.toLocaleString();
 <tr><td><img class="sample" src="images/fenkhpiira.png" /></td></tr>
 </table>
 <br /><br />
-<p><span class="title3">Semi-cursive</span></p>
+<h3>Semi-cursive</h3>
 <table>
 <tr><td>Kholo</td></tr>
 <tr><td><img class="sample" src="images/kholo.png" /></td></tr>
@@ -407,19 +375,19 @@ document.getElementById("gitRev").innerHTML += date.toLocaleString();
 </div>
 
 <div class="subdiv" id="grammar">
-<span class="title2">Syntax</span><br />
+<h2>Syntax</h2>
 <p>Kholo generally follows a subject-object-verb sentence structure: "Timmy the ball kicks".<br />The language is remarkably flexible, however. In most settings, the only strict requirement is that the object follow the subject.</p>
 <p>Verb-subject-object ("Kicks Timmy the ball") is a common format in flowery, poetic systems; but tends to be seen as archaic or eccentric in speech.<br />In more casual writing or conversation, subject-verb-object ("Timmy kicks the ball", as in Common) is seen as more formal than the norm, and this is usually sufficient.</p>
 <p>Adjectives follow the noun they modify, unless compounded or used as prefixes. There is no strict requirement for which form to use, though the prefix form is discouraged if the noun is already particularly long. (What counts as "particularly long" is up to personal taste.)</p><br />
-<span class="title2">Declension</span><br />
+<h2>Declension</h2>
 <p>Kholo declines nouns, verbs, and adjectives according to a fusional suffix system. These suffixes indicate verb tense, the number of both the subject and object of a sentence, as well as the level of formality.</p><br />
-<span class="title3">Verb Suffixes</span><br />
+<h3>Verb Suffixes</h3>
 <table>
-<thead>
-<th colspan="2" />
+<tr>
+<th colspan="2"></th>
 <th style="width: 100px;">Informal</th>
 <th style="width: 70px;">Formal</th>
-</thead>
+</tr>
 <tr>
 <th colspan="2">Past</th>
 <td rowspan="2">-(j)a</td>
@@ -437,10 +405,10 @@ document.getElementById("gitRev").innerHTML += date.toLocaleString();
 </tr>
 </table>
 <p>Kholo does not natively distinguish a future tense. Indicating an action yet to be taken is done via context. When it must be made explicit, the closest equivalent is to prepend the word "ta-" ("Time") to the related verb as a prefix, though native speakers find this clunky.</p><br />
-<span class="title3">Numerical Suffixes</span><br />
+<h3>Numerical Suffixes</h3>
 <table>
 <tr>
-<th rowspan="2" />
+<th rowspan="2"></th>
 <th colspan="2">Informal</th>
 <th rowspan="2" style="width: 60px;">Formal</th>
 </tr>
@@ -484,15 +452,15 @@ document.getElementById("gitRev").innerHTML += date.toLocaleString();
 </tr>
 </table>
 <br /><br /><br />
-<span class="title2">Cases and Moods</span><br /><br />
-<span class="title3">Conditional</span><br />
+<h2>Cases and Moods</h2>
+<h3>Conditional</h3>
 <p>The conditional mood shows a potential or hypothetical action being taken, as in uses of the Common "if" or "would".<br />To indicate an action reliant on another (as in Common "if"), Kholo constructs a present-tense sentence, followed by the conditional action:</p>
 <table>
-<thead>
+<tr>
 <th>Kholo</th>
 <th>Common (literal)</th>
 <th>Common (proper)</th>
-</thead>
+</tr>
 <tr>
 <td>"Hhama'ba nnuu rela, ez khorahhii ba'elma."</td>
 <td>"My father has death, and despair I feel."</td>
@@ -502,11 +470,11 @@ document.getElementById("gitRev").innerHTML += date.toLocaleString();
 <br />
 <p>To indicate a hypothetical action (as in Common "would"), Kholo relies on making the action statement and then rejecting it:</p>
 <table>
-<thead>
+<tr>
 <th>Kholo</th>
 <th>Common (literal)</th>
 <th>Common (proper)</th>
-</thead>
+</tr>
 <tr>
 <td>"Ba owja'nha khlita, uubasja."</td>
 <td>"I break your paw, but I do not."</td>
@@ -514,13 +482,13 @@ document.getElementById("gitRev").innerHTML += date.toLocaleString();
 </tr>
 </table>
 <p>Note the use of "uubasja", a contraction of "u ba se'a", meaning "but I do not".</p><br />
-<span class="title3">Genitive</span>
+<h3>Genitive</h3>
 <p>The genitive case indicates ownership, possession, or association. In Common, this case is shown with the suffix 's, as in "Timmy's ball," or with the particle 'of,' as in "the Ides of March."<br />Kholo follows a principle of attribution, whereby the owner or possessor is treated as an adjective of the owned noun:</p>
 <table>
-<thead>
+<tr>
 <th>Kholo</th>
 <th>Common</th>
-</thead>
+</tr>
 <tr>
 <td>"Yyuumi Yyii'ta"</td>
 <td>"Thorn's prey"</td>
@@ -535,13 +503,13 @@ document.getElementById("gitRev").innerHTML += date.toLocaleString();
 </tr>
 </table>
 <br /><br />
-<span class="title3">Imperative</span>
+<h3>Imperative</h3>
 <p>The imperative mood indicates a command or directive from the speaker to the listener. Common shows this case by constructing a present-tense, second-person sentence ("You take a left at this stop sign") and omitting the subject pronoun ("Take a left at this stop sign").<br />Kholo imperatives follow a similar structure: The pronoun is omitted, and the verb is left unmodified if informal, or made present-tense if formal.</p>
 <table>
-<thead>
+<tr>
 <th>Kholo</th>
 <th>Common</th>
-</thead>
+</tr>
 <tr>
 <td>"Nno alkhit'ba."</td>
 <td>"Write my legend."</td>
@@ -556,16 +524,16 @@ document.getElementById("gitRev").innerHTML += date.toLocaleString();
 </tr>
 </table>
 <br /><br />
-<span class="title3">Potential</span>
+<h3>Potential</h3>
 <p>The potential case corresponds to the Common verb phrase "to be able" and its conjugations, such as "I can" and "I could".</p>
 <p>Among the grammatical cases shown so far, the potential is by far the simplest: Attach the suffix -wa to the relevant pronoun, and decline the verb (if the sentence has one) as normal.</p>
 <p>To negate the potential, as in "I could not" or "He cannot", apply the -'a suffix in addition.</p>
 <table>
-<thead>
+<tr>
 <th>Kholo</th>
 <th>Common (literal)</th>
 <th>Common (proper)</th>
-</thead>
+</tr>
 <tr>
 <td>"Yhiiwa ba'nii."</td>
 <td>"He-can me-kill."</td>
@@ -576,11 +544,12 @@ document.getElementById("gitRev").innerHTML += date.toLocaleString();
 <td>"I-can him killed."</td>
 <td>"I could have killed him."</td>
 </tr>
+<tr>
 <td>"Bawa'a!"</td>
 <td>"I-can-not!"</td>
 <td>"I can't!"</td>
 </tr>
-</tr>
+<tr>
 <td>"Khewa'a!"</td>
 <td>"This-can-not!"</td>
 <td>"This can't be!"</td>
@@ -589,13 +558,13 @@ document.getElementById("gitRev").innerHTML += date.toLocaleString();
 </div>
 
 <div class="subdiv" id="morphology">
-<span class="title2">Non-Doubled Suffixes</span><br />
+<h2>Non-Doubled Suffixes</h2>
 <p>A set of grammar rules exists for when to prevent accidental doubling of consonant and vowel sounds in Kholo, especially when applying suffixes.<br />When amended with suffixes for tense, number and formality: If a word already ends in the major consonant sound of the suffix, that sound should be removed before the suffix is applied.</p>
 <table>
-<thead>
+<tr>
 <th>Kholo</th>
 <th>Common</th>
-</thead>
+</tr>
 <tr>
 <td>Inkh</td>
 <td>Knee</td>
@@ -607,10 +576,10 @@ document.getElementById("gitRev").innerHTML += date.toLocaleString();
 </table>
 <p>The rule is generally applied for very similar consonant sounds on a case-by-case basis. Non-native speakers may or may not struggle with deciding what counts as "similar", but aspirated consonants are the easiest to figure out.</p>
 <table>
-<thead>
+<tr>
 <th>Kholo</th>
 <th>Common</th>
-</thead>
+</tr>
 <tr>
 <td>Inkh</td>
 <td>Knee</td>
@@ -622,10 +591,10 @@ document.getElementById("gitRev").innerHTML += date.toLocaleString();
 </table>
 <p>There are rare instances in which a root word ends with a cluster identical to a suffix. These are often words which incorporate some level of inherent formality, such as <i>alim</i> (queen). In these cases, the suffix is omitted entirely rather than altered or doubled.</p>
 <table>
-<thead>
+<tr>
 <th>Kholo</th>
 <th>Common</th>
-</thead>
+</tr>
 <tr>
 <td>Alim</td>
 <td>Queen</td>
@@ -636,15 +605,15 @@ document.getElementById("gitRev").innerHTML += date.toLocaleString();
 </tr>
 </table>
 <br /><br />
-<span class="title2">Sonorization</span><br />
+<h2>Sonorization</h2>
 <p>Kholo speech tends to sonorize (i.e. morph from voiceless to voiced) consonants which occur at the beginning of a word which was proceeded by a word ending in a voiceless consonant sound.<br />This change is formalized to the point that it is frequently glossed in writing, but not consistently.</p>
 <p>Formal texts will usually gloss sonorization in dialogue while preserving the original spelling in narration and other contexts. Highly formalized texts, such as ancestral codices or missives between cultures, are the most likely to gloss sonorization in all contexts.</p>
 <p>Informal texts, meanwhile, tend to ignore sonorized initial consonants entirely, using only the voiceless original spelling. In other words, for most Kholo, sonorization is a purely vocal phenomenon, and its display in writing is a dead giveaway that the writer is either a foreigner or an egghead.</p>
 <table>
-<thead>
+<tr>
 <th>Kholo</th>
 <th>Common</th>
-</thead>
+</tr>
 <tr>
 <td><i>Tashikh suuja'ba</i> -> Tashikh zuuja'ba</td>
 <td>Before I came</td>
@@ -653,15 +622,15 @@ document.getElementById("gitRev").innerHTML += date.toLocaleString();
 </div>
 
 <div class="subdiv" id="pronouns">
-<span class="title2">Pronouns</span><br /><br />
+<h2>Pronouns</h2>
 <table style="width: 450px;">
-<thead>
-<th />
+<tr>
+<th></th>
 <th>1st</th>
 <th>2nd (informal)</th>
 <th>2nd (formal)</th>
 <th>3rd</th>
-</thead>
+</tr>
 <tr>
 <th>Singular</th>
 <td>Ba</td>
@@ -679,16 +648,16 @@ document.getElementById("gitRev").innerHTML += date.toLocaleString();
 </table>
 <p>Repetition of proper names is more common than in English, given the relative lack of distinctions available when using third-person pronouns. The lack of gender distinction especially causes relative references to be less frequent.</p>
 <br />
-<span class="title2">Interrogatives</span><br /><br />
+<h2>Interrogatives</h2>
 <table style="width: 450px;">
-<thead>
+<tr>
 <th>Who</th>
 <th>What</th>
 <th>When</th>
 <th>Where</th>
 <th>Why</th>
 <th>How</th>
-</thead>
+</tr>
 <tr>
 <td>Pak</td>
 <td>Paj</td>
@@ -702,14 +671,14 @@ document.getElementById("gitRev").innerHTML += date.toLocaleString();
 </div>
 
 <div class="subdiv" id="numerals">
-<span class="title2">Numerals</span><br /><br />
+<h2>Numerals</h2>
 <p>Ordinal numbers (i.e. first, second) are indicated with the suffix -jan ('-most').</p>
 <table style="width: 250px; float: left;">
-<thead>
+<tr>
 <th>Common</th>
 <th>Kholo</th>
 <th>Numeral</th>
-</thead>
+</tr>
 <tr>
 <td>Zero</td>
 <td>Oa</td>
@@ -729,11 +698,11 @@ document.getElementById("gitRev").innerHTML += date.toLocaleString();
 </tr>
 </table>
 <table style="width: 250px; float: left;">
-<thead>
+<tr>
 <th>Common</th>
 <th>Kholo</th>
 <th>Numeral</th>
-</thead>
+</tr>
 <tr>
 <td>One</td>
 <td>Ik</td>
@@ -786,11 +755,11 @@ document.getElementById("gitRev").innerHTML += date.toLocaleString();
 </tr>
 </table>
 <table style="width: 250px; float: left;">
-<thead>
+<tr>
 <th>Common</th>
 <th>Kholo</th>
 <th>Numeral</th>
-</thead>
+</tr>
 <tr>
 <td>Eleven</td>
 <td>Wakh ik</td>
@@ -843,11 +812,11 @@ document.getElementById("gitRev").innerHTML += date.toLocaleString();
 </tr>
 </table>
 <table style="width: 250px;">
-<thead>
+<tr>
 <th>Common</th>
 <th>Kholo</th>
 <th>Numeral</th>
-</thead>
+</tr>
 <tr>
 <td>Hundred</td>
 <td>Wanut</td>
@@ -887,7 +856,7 @@ document.getElementById("gitRev").innerHTML += date.toLocaleString();
 </div>
 
 <div class="subdiv" id="lexicon">
-<span class="title2">Lexicon</span><br /><br />
+<h2>Lexicon</h2>
 <table id="lexRibbon">
 <tr style="font-size: 16pt;">
 <th><button onclick="readDB('a');">A</button></th>
@@ -926,11 +895,11 @@ document.getElementById("gitRev").innerHTML += date.toLocaleString();
 <noscript>Your browser does not support JavaScript. The lexicon cannot be displayed.</noscript>
 <div id="phrases" style="display: none;">
 <table>
-<thead>
+<tr>
 <th>Common</th>
 <th>French</th>
 <th>Kholo</th>
-</thead>
+</tr>
 <tr>
 <td>Hello<br />Hi</td>
 <td>Bonjour<br />Salut</td>
@@ -1002,11 +971,11 @@ document.getElementById("gitRev").innerHTML += date.toLocaleString();
 <p>Kholo infamously features 37 words to distinguish between the types of slaves in their culture.<br />These are organized into six groups differing by their purpose and in harshness of their treatment.<br />Slaves in the two 'highest' groups, indentured and personal servants, are owned by single kholo or families, and further ranked according to the work they do.<br />Lower types are communally owned, and not differentiated in this way.</p>
 <p>"Wik" is a generic word referring to a worker of any type. When it appears as a suffix in the name of a servant type, it may be replaced with "wa"<br />("respectable work") or "triip" ("menial work") to refer to the labor itself.</p>
 <table>
-<thead>
+<tr>
 <th>Venwik</th>
 <th>"White-worker"</th>
 <th>Indentured Servants (4 types, hierarchical)<br />Personal homeworkers</th>
-</thead>
+</tr>
 <tr><td>Silwik</td><td>"Friend-worker"</td><td>Performs "respectable" work around a kholo's home, including acting as a face similar to a butler.<br />Usually trusted to care for their master's most treasured valuables.<br />In addition, they often speak candidly with the master, and may even be on casually friendly terms.<br />The silwik is much like a personal aid or private escort, or more bluntly a lap-dog.<br />Among all kholo slaves who are ever willingly freed, the overwhelming majority are silwakh.</td></tr>
 <tr><td>Alwik</td><td>"High-worker"</td><td>Oversees and organizes the lower servants, both indentured and personal, as a supervisor of sorts.<br />Their work is easily performed by a silwik, so to own an alwik is a mark of highly conspicuous luxury.</td></tr>
 <tr><td>Tovawik</td><td>"Jewel-worker"</td><td>An indentured apprentice in a kholo's trade. Despite their name, the trade need not necessarily be gemsmithing.<br />The tovawik is taught much like a student in addition to their duties as a servant.<br />Tovawakh are rarely freed, rather kept as assistants in the trade. Sometimes, an elderly master may free them on his deathbed.<br />They may be sold to other kholo once their skills are sufficiently honed or are no longer needed.</td></tr>
@@ -1014,11 +983,11 @@ document.getElementById("gitRev").innerHTML += date.toLocaleString();
 </table>
 <br />
 <table>
-<thead>
+<tr>
 <th>Minwik</th>
 <th>"Grey-worker"</th>
 <th>Indentured Servants (4 types, hierarchical)<br />Personal homeworkers</th>
-</thead>
+</tr>
 <tr><td>Yyipwik</td><td>"Speak-worker"</td><td>A correspondent; carries orders to and from other servants and messages to other kholo.<br />Frequently an assistant to a silwik or alwik.</td></tr>
 <tr><td>Niiwik</td><td>"Kill-worker"</td><td>A personal gatherer or hunter.</td></tr>
 <tr><td>Owjawik</td><td>"Paw-worker"</td><td>A personal groomer.</td></tr>
@@ -1026,11 +995,11 @@ document.getElementById("gitRev").innerHTML += date.toLocaleString();
 </table>
 <br />
 <table>
-<thead>
+<tr>
 <th>Zijiwik</th>
 <th>"Horn-worker"</th>
 <th>Caste Laborers (6 types)<br />Have a skill or talent that saves them from being treated like ordinary chattel slaves</th>
-</thead>
+</tr>
 <tr><td>Bojawik</td><td>"Mechanic"</td><td>Someone capable of building and repairing simple to mid-complexity machines such as transport wagons.</td></tr>
 <tr><td>Gidwik</td><td>"Doctor"</td><td>A medical specialist, especially one skilled at preventing or treating infected wounds.</td></tr>
 <tr><td>Iizhwik</td><td>"Cloth-worker"</td><td>A clothier, weaves fabrics and clothing.</td></tr>
@@ -1040,11 +1009,11 @@ document.getElementById("gitRev").innerHTML += date.toLocaleString();
 </table>
 <br />
 <table>
-<thead>
+<tr>
 <th>Uurwik</th>
 <th>"Half-worker"</th>
 <th>Hard Laborers (8 types)<br />Chattel slaves belonging to a tribe or community as a whole</th>
-</thead>
+</tr>
 <tr><td>Gifowik</td><td>"Vein-worker"</td><td>A gatherer, responsible for either felling trees and/or mining stone, as well as less intensive tasks such as herb gathering.</td></tr>
 <tr><td>Ifrowik</td><td>"Treasure-worker"</td><td>A retainer, assists in the upkeep of stored food, armor, and weapons.</td></tr>
 <tr><td>Konadwik</td><td>"Road-worker"</td><td>A communal cleaner. Also constructs and cares for pathways around a settlement.</td></tr>
@@ -1056,11 +1025,11 @@ document.getElementById("gitRev").innerHTML += date.toLocaleString();
 </table>
 <br />
 <table>
-<thead>
+<tr>
 <th>Tunfo</th>
 <th>"Low-soldier"</th>
 <th>Compelled Soldiers (5 types)</th>
-</thead>
+</tr>
 <tr>
 <td>Dantua</td><td>"Bow-rank"</td>
 <td rowspan="5"><i>Kholo rarely take captives as compelled soldiers.<br />Much more commonly, this caste is a punishment for slaves of a different type who rebelled or shirked their duties.<br />Those who fit here are always smaller and weaker than their kholo overseers, as even hyenafolk would not be stupid enough to hand a weapon to someone capable of killing them with it.<br />It would thus be more accurate to describe these as "cannon fodder".</i></td>
@@ -1072,11 +1041,11 @@ document.getElementById("gitRev").innerHTML += date.toLocaleString();
 </table>
 <br />
 <table>
-<thead>
+<tr>
 <th>Sikh</th>
 <th>"Meat"</th>
 <th>Farmed Meat (4 types)</th>
-</thead>
+</tr>
 <tr><td>Alimsikh</td><td>"Queen-meat"</td><td>High quality and fit to be fed to the most respected huntresses and bonecarvers.</td></tr>
 <tr><td>Tuunusikh</td><td>"Dark-meat"</td><td>Fit for the average kholo.</td></tr>
 <tr><td>Verensikh</td><td>"Shield-meat"</td><td>Fit to thicken or accent other food, but not to be eaten on its own.</td></tr>
@@ -1088,25 +1057,25 @@ document.getElementById("gitRev").innerHTML += date.toLocaleString();
 </div>
 
 <div class="subdiv" id="culture">
-<span class="title2">Naming</span><br /><br />
+<h2>Naming</h2>
 <p>From birth, kholo youths are given a 'root' for a name: A single word of natural origin, such as an animal, plant, or natural feature; or a part of such. As they age and gain notoriety, they may choose to add modifiers or adjectives to this root, symbolizing their growth and accomplishments.</p>
 <p>A kholo born with the root name 'Ash' may further name themselves 'Ash upon Ground' when reaching maturity. When slaying their first grave monstrosity, they may become 'Ash upon Arid Ground'. And so on and so forth.</p>
 <p>It is not common, but nor is it rare, for kholo to give each other such a naming element; some long-bonded parties practice this as a means of tying themselves to each other.</p><br /><br />
 
-<span class="title2">Matriarchy</span><br /><br />
+<h2>Matriarchy</h2>
 <p>Kholo society is famously matriarchal, whereby female huntresses &mdash; taller, stronger, and more naturally assertive than their male counterparts &mdash; play a dominant role in social ruling and organization.<br />There are aspects of the Kholo language that are either explicitly or implicitly gendered accordingly.</p>
 <p>Take as an example the singular formal suffix, '-(w)im'. It is derived from the native word for female, 'imo'. Likewise, the word for daughter, 'ima,' is also related.<br />Informal common nouns are not given a suffix. 'Kholo,' as a native word meaning 'tribal predator,' therefore technically refers to a male, while 'kholowim' would be used to address a female listener. In human society, this distinction would likely come across as othering the listener.</p>
 <p>Here, though, it is actually those without the suffix who are othered &mdash; the suffix is honorable, and is culturally treated like a noble title. It is important to remember that matriarchy is the default in kholo society, and assumptions are made by both speaker and listener accordingly.</p>
 <p>Male kholo are excluded from reference with formal suffixes under almost all circumstances; it would be easier to list the exceptions to that rule rather than elaborate on the rule directly. Namely:<br />Elderly males are entitled to formal reference by their grandchildren, but not by their adult children.<br />Furthermore, a bonecarver or storyteller is entitled to formality from other males and young females of his tribe; but not from adult females.</p>
 <p>Individual exceptions are rarely also made for highly accomplished warriors, but these may be as rare as once or twice in a generation.</p><br /><br />
 
-<span class="title2">Literature</span><br /><br />
-<span class="title3">Alkhitakh Hhama'ba</span><br />
+<h2>Literature</h2>
+<h3>Alkhitakh Hhama'ba</h3>
 <p>The <i>Alkhitakh Hhama'ba</i> is a collection of kholo folktales most comparable to Aesop's Fables or A Thousand and One Nights. As possibly the most comprehensive piece of native Kholo writing, its use is indispensable for outsiders in understanding cultural norms and nuance in an otherwise profoundly bellicose species.</p>
 <p>Its stories mostly center around a male kholo named Thorn, whose growth from youth to elder bonecarver is traced via exploits as a slaver, a brief reformist for the latter system, and a servant to a huntress whom eventually married him. Thorn has long been interpreted as a symbol of virtue for male kholo youths. His characterization as a level-headed, pragmatic, yet unflinchingly bloodthirsty warrior and a friend to outside peoples (as friendly as a kholo can reasonably be called) suggests a model for males to follow in a strongly female-dominated society.</p>
 <p>Its name means "Legends of my Father", or "Stories of my Father", making its use as a teaching tool for male kholo even more obvious.</p><br />
 
-<span class="title3">Tejalima</span><br />
+<h3>Tejalima</h3>
 <p>The <i>Tejalima</i> ("Huntress-queen") is a lyrical work handed down across generations by adventuring kholo minstrels, both inside and outside of the Mwangi Expanse. Its exact verses are as diverse as the bards who recite it, but at its core the <i>Tejalima</i> follows Lynx, a kholo huntress of ancient days who befriended a human settler from what would one day become Osirion. The settler, whose name is never given, was wounded in a civil conflict and left for dead on the savannah; Lynx, intending to turn a profit against a slaver, captured the settler, but grew fond of him during their extended return deeper into the Expanse.</p>
 <p>Friendship between kholo and humans is a not-uncommon plot device of traditional Kholo literature, but the <i>Tejalima</i> is unique in presenting Lynx's affection for the settler as inherently and dramatically doomed: Tribal and uncivilized, she is able to patch his wounds but cannot aid him when they become infected. Through multiple stanzas spanning months of travel, the settler attempts to hide his affliction from Lynx, but becomes progressively weaker. He loses his will and dies shortly before reaching their destination, never knowing that Lynx had resolved to spare him from slavery.</p>
 <p>The lyricism concludes by returning to its initial praise of the freedom in life on the Expanse, though now cast in a colder light. Lynx is said to have faded into the savannah, her life as a huntress irrevocably coloured by her encounter with the settler. Interpretations vary as to whether she had developed romantic feelings for the settler; those that favour this perception ironically tend to be more cynical, casting all attachment with outside peoples as doomed from the start.</p>
@@ -1114,14 +1083,14 @@ document.getElementById("gitRev").innerHTML += date.toLocaleString();
 </div>
 
 <div class="subdiv" id="excerpts">
-<span class="title2">Writing Excerpts</span><br /><br /><br />
-<span class="title3">From the <i>Alkhitakh Hhama'ba</i></span><br /><br />
+<h2>Writing Excerpts</h2>
+<h3>From the <i>Alkhitakh Hhama'ba</i></h3>
 <table style="width: 95%;">
-<thead>
+<tr>
 <th>Kholo</th>
 <th>Common (literal)</th>
 <th>Common (proper)</th>
-</thead>
+</tr>
 <tr>
 <td><p>Shava'nha a'lo'nha. Gida er'a fuu hho'nha.<br />Gida er korayi lushajo'nha. Er nnima onje vuutajo'nha.<br />Er khorahhii jogo, a'khlito'nha.<br />Er jira tuunujan jogo, nhiso'nha.</p>
 <p>Er zijika meruua voajo, ez zetikel wilto.<br />Er rosua jogra, aljan zetik yhii'a zet'lete khurumo.</p>
@@ -1139,11 +1108,11 @@ document.getElementById("gitRev").innerHTML += date.toLocaleString();
 </table>
 <br /><br /><br />
 <table style="width: 95%;">
-<thead>
+<tr>
 <th>Kholo</th>
 <th>Common (literal)</th>
 <th>Common (proper)</th>
-</thead>
+</tr>
 <tr>
 <td><p>Owja Yyii'ta ghalmate alshuu yhii firita.<br />"A'ba'alkejo niika'nha. U ba'fuur paj gent'nha, tunyhakh ghe."</p>
 <p>Inso bintosa.<br />"Verensikh. Rel'i sestaz tuunusikh."</p>
@@ -1178,13 +1147,13 @@ document.getElementById("gitRev").innerHTML += date.toLocaleString();
 </tr>
 </table>
 <br /><br /><br />
-<span class="title3">From the <i>Tejalima</i></span><br /><br />
+<h3>From the <i>Tejalima</i></h3>
 <table style="width: 95%;">
-<thead>
+<tr>
 <th>Kholo</th>
 <th>Common (literal)</th>
 <th>Common (proper)</th>
-</thead>
+</tr>
 <tr>
 <td><p>Tuunukh suuja viiwe jogra, kheke khurumja yhii.<br />Khitsha buutoja yhii, a'hhiin ez sheg jogra.<br />Tontakh nhi sonaut jogra, u yyiip Khitsha uura.<br />"Yyo'a nhisho yhii khlita e'ghemnen roz fuu?"<br />Lita mit yyiip Khitsha rela fiia, u zekhon ez.<br />Metsa shava Khitsha, ket yhii riia janghwa.</p>
 <p>"Im'ba, kiizh'baz fuu. Tet'a retajto'nna."<br />Mejokh sonaut jogra, nhisho weska e'zhet.<br />"Reltowa'ba vest, si relto yyiip forip.<br />Kwokh forikh'nna ko, hhojo'er khrishama zua."<br />Khitsha hhuuja owja sonaut jogra.<br />Khitsha riileto shikh, pajda emji firito.</p>

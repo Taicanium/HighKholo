@@ -86,21 +86,24 @@ td {
 background-color: #262633;
 }
 
-.title1 {
+h1 {
 background-color: #1E0D0D;
 font-family: "Playfair Display", serif;
 font-optical-sizing: auto;
 font-size: 48pt;
 font-style: normal;
 font-weight: 500;
-position: absolute;
-z-index: 1;
+position: fixed;
 left: 0%;
+top: -72px;
 width: 100%;
+padding-top: 64px;
+padding-bottom: 24px;
 text-align: center;
+z-index: 1;
 }
 
-.title2 {
+h2 {
 font-family: "Playfair Display", serif;
 font-optical-sizing: auto;
 font-size: 32pt;
@@ -108,7 +111,7 @@ font-style: normal;
 font-weight: 400;
 }
 
-.title3 {
+h3 {
 font-family: "Montserrat", serif;
 font-optical-sizing: auto;
 font-size: 18pt;
@@ -125,19 +128,18 @@ font-weight: 400;
 }
 
 .subdiv {
+position: absolute;
+overflow: auto;
+left: 25%;
+width: 70%;
+padding-top: 12.5%;
 display: none;
 opacity: 0;
-position: absolute;
-left: 25%;
-top: 22.5%;
-width: 70%;
-z-index: -1;
 }
 
 .subdiv:target {
 display: block;
 opacity: 1;
-z-index: 0;
 }
 
 .icon {
@@ -187,19 +189,18 @@ width: 24px;
 }
 
 #happy {
--webkit-transition: all 0.5s ease;
--moz-transition: all 0.5s ease;
--o-transition: all 0.5s ease;
-transition: all 0.5s ease;
-opacity: 0;
 z-index: 1;
 }
 
 #normal {
--webkit-transition: all 0.5s ease;
--moz-transition: all 0.5s ease;
--o-transition: all 0.5s ease;
-transition: all 0.5s ease;
+-webkit-transition: opacity 0.5s ease;
+-moz-transition: opacity 0.5s ease;
+-o-transition: opacity 0.5s ease;
+transition: opacity 0.5s ease;
 opacity: 1;
 z-index: 2;
+}
+
+#normal:hover {
+opacity: 0;
 }
