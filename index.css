@@ -97,10 +97,10 @@ font-style: normal;
 font-weight: 500;
 position: fixed;
 left: 0%;
-top: -5%;
+top: -72px;
 width: 100%;
-padding-top: 5%;
-padding-bottom: 2.5%;
+padding-top: 72px;
+padding-bottom: 48px;
 text-align: center;
 z-index: 1;
 }
@@ -134,7 +134,7 @@ position: absolute;
 overflow: auto;
 left: 17.5%;
 width: 80%;
-padding-top: 12.5%;
+padding-top: 144px;
 display: none;
 opacity: 0;
 }
