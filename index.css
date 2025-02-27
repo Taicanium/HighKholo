@@ -31,7 +31,7 @@ font-size: 12pt;
 border: none;
 }
 
-ul {
+#navBar {
 list-style-type: none;
 margin: 0;
 padding: 0;
@@ -45,7 +45,7 @@ border-bottom: none;
 z-index: 2;
 }
 
-li a:not(.wikiLink) {
+#navBar a {
 display: block;
 color: #CECACA;
 padding: 8px 16px;
@@ -61,15 +61,15 @@ text-indent: 2em;
 line-height: 1.5;
 }
 
-li:last-child {
+#navBar:last-child {
 border-bottom: none;
 }
 
-li a:hover {
+#navBar a:hover {
 background-color: #5A3754;
 }
 
-li a:active {
+#navBar a:active {
 background-color: #8C2E3D;
 }
 
