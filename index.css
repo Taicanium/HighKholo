@@ -3,19 +3,13 @@
 body {
 font-family: "Calibri", serif;
 font-size: 12pt;
+background-image: url('images/bg.png');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
+background-size: 35%;
 background-color: #1E0D0D;
 color: #CECACA;
-}
-
-#bgimg {
-display: block;
-position: fixed;
-overflow: auto;
-left: 25%;
-width: 50%;
-height: auto;
-opacity: 0.3;
-z-index: -100;
 }
 
 a {
