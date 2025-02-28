@@ -53,7 +53,7 @@ var data = JSON.parse(text);
 var time = data[0]['commit']['committer']['date'];
 var date = new Date(Date.parse(time));
 var dateString = date.toLocaleString();
-document.getElementById("gitRev").innerHTML += date.toLocaleString();
+document.getElementById("gitStamp").innerHTML = date.toLocaleString();
 });
 });
 </script>
@@ -66,7 +66,7 @@ document.getElementById("gitRev").innerHTML += date.toLocaleString();
 <img class="icon" id="normal" src="https://i.ibb.co/xhFCWhs/Rhian-Normal.png" alt="Rhian-Normal" />
 </a>
 
-<span id="gitRev">Last modified:<br /><br /></span>
+<div id="gitRev"><p>Last modified:</p><p id="gitStamp">--/--/----</p></div>
 
 <ul id="navBar">
 <li><a href="#introduction">I.<br />Introduction</a></li>
