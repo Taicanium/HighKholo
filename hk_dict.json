@@ -416,12 +416,6 @@
 "n": "human-language. any of the common human languages of a particular region. mwangi in western garund and the mwangi expanse; taldane in katapesh and osirion; etc"
 },
 {
-"e": "Common",
-"k": "Mowanyyisii / yyisii mowan",
-"c": "pn",
-"n": "savannah-language. that is, mwangi"
-},
-{
 "e": "common",
 "k": "sezhe",
 "c": "adj",
@@ -1004,9 +998,10 @@
 },
 {
 "e": "high kholo",
-"k": "Kholoyyisii / yyisii kholo",
+"k": "Kholoyyisii",
+"f": "Orajhakh",
 "c": "pn",
-"n": "kholo-speech. specifically the dialect spoken by kholo native to the mwangi expanse"
+"n": "kholo-speech (Katapeshi: wood-speech). specifically the prestige dialect spoken by kholo native to the mwangi expanse"
 },
 {
 "e": "high",
@@ -1141,14 +1136,14 @@
 "k": "Awoloyya",
 "f": "Awolojha",
 "c": "pn",
-"n": "gold-city. loanword into Katapeshi from Common, and then into Mwangi from there"
+"n": "gold-city. loanword into Katapeshi Kholo from Common, and then from there into High Kholo"
 },
 {
 "e": "Katapeshi",
 "k": "Awoloyyisii",
-"f": "Awolojhakh",
+"f": "Tefejhakh",
 "c": "pn",
-"n": "gold-city-speech"
+"n": "gold-city-speech (Katapeshi: sand-speech). the Kholo dialect spoken in Katapesh"
 },
 {
 "e": "kidney",
@@ -1190,6 +1185,7 @@
 {
 "e": "Lamashtu",
 "k": "Lamashtuu",
+"f": "Lamashto",
 "c": "pn",
 "n": "goddess of monstrosities worshipped by katapeshi kholo, and as a goddess of last resort by mwangi kholo"
 },
@@ -1495,7 +1491,7 @@
 "k": "Mowanyyisii",
 "f": "Mowanjhakh",
 "c": "pn",
-"n": "savannah-speech"
+"n": "savannah-speech. the Common human language of the Mwangi Expanse"
 },
 {
 "e": "name",
