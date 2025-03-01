@@ -24,6 +24,9 @@ document.getElementById("lexText").innerHTML = "";
 words.forEach(word => {
 if (word['e'].toLowerCase().startsWith(letter)) {
 var toAdd = "<p><i>".concat(word['e']).concat("</i> &mdash; ").concat(classes[word['c']]).concat(": <b>").concat(word['k']).concat("</b>");
+if ('f' in word) {
+toAdd += " &vert; <span class=\"kataText\">".concat(word['f']).concat("</span>");
+}
 if ('n' in word) {
 toAdd += " &ndash; <span class=\"smalltext\"><i>".concat(word['n']).concat("</i></span>");
 }
@@ -853,6 +856,7 @@ document.getElementById("gitStamp").innerHTML = date.toLocaleString();
 
 <div class="subdiv" id="lexicon">
 <h2>Lexicon</h2>
+<p style="font-style: italic;"><span class="smalltext">Katapeshi words are written in</span> <span class="kataText">pink.</span></p>
 <table id="lexRibbon">
 <tr style="font-size: 16pt;">
 <th><button onclick="readDB('a');">A</button></th>
