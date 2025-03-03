@@ -335,6 +335,18 @@
 "c": "int"
 },
 {
+"e": "Calistria",
+"k": "Kalistriia",
+"c": "pn",
+"n": "goddess of lust, vengeance, and trickery worshipped by the majority of Mwangi kholo"
+},
+{
+"e": "Calistria",
+"k": "Alimawim Ro",
+"c": "pn",
+"n": "Elder Sister. poetic name for the goddess, Shelyn being the Younger Sister"
+},
+{
 "e": "call",
 "k": "gedat",
 "c": "v",
@@ -1539,6 +1551,18 @@
 "n": "only used if either the speaker is female or the listener is the son of one's blood sibling. if neither is true, the speaker is not considered a family member"
 },
 {
+"e": "Nethys",
+"k": "Netos",
+"c": "pn",
+"n": "Garundi god of magic, worshipped by most kholo bonecarvers"
+},
+{
+"e": "Nethys",
+"k": "Alshuuwim",
+"c": "pn",
+"n": "Brother. poetic name for the god"
+},
+{
 "e": "new",
 "k": "zua",
 "c": "adj"
@@ -1840,6 +1864,12 @@
 "k": "Shelin",
 "c": "pn",
 "n": "goddess of art and music worshipped among bards of the mwangi expanse"
+},
+{
+"e": "Shelyn",
+"k": "Alimawim Liivi",
+"c": "pn",
+"n": "Younger Sister. religious name for the goddess, Calistria being the Elder Sister"
 },
 {
 "e": "shield",
