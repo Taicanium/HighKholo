@@ -1840,6 +1840,12 @@
 "n": "the scales of a fish or lizard"
 },
 {
+"e": "sea",
+"k": "alboa",
+"c": "n",
+"n": "great-water"
+},
+{
 "e": "see",
 "k": "pet",
 "c": "v"
@@ -2179,6 +2185,13 @@
 "e": "take",
 "k": "ghep",
 "c": "v"
+},
+{
+"e": "Taldane",
+"k": "Alboyyisii",
+"f": "Albojhakh",
+"c": "pn",
+"n": "sea-speech. Common human language spoken in Katapesh, Avistan, and most of Garund"
 },
 {
 "e": "talk",
