@@ -1220,6 +1220,11 @@
 "n": "queen-state"
 },
 {
+"e": "kiss",
+"k": "piikh",
+"c": "v"
+},
+{
 "e": "knee",
 "k": "inkh",
 "c": "n"
@@ -1301,6 +1306,11 @@
 "e": "less",
 "k": "julkh",
 "c": "adj"
+},
+{
+"e": "lick",
+"k": "sloshi",
+"c": "v"
 },
 {
 "e": "lie",
@@ -2230,6 +2240,11 @@
 "c": "adj"
 },
 {
+"e": "suck",
+"k": "shohhuu",
+"c": "v"
+},
+{
 "e": "summer",
 "k": "mejosiik",
 "c": "n",
@@ -2271,7 +2286,7 @@
 "k": "Alboyyisii",
 "f": "Albojhakh",
 "c": "pn",
-"n": "sea-speech. Common human language spoken in Katapesh, Avistan, and most of Garund"
+"n": "sea-speech. Common human language spoken in Katapesh, Avistan, and most of Garund outside of the Mwangi Expanse"
 },
 {
 "e": "talk",
@@ -2622,7 +2637,7 @@
 },
 {
 "e": "without",
-"k": "-(')wi",
+"k": "-wi",
 "c": "prep",
 "n": "lacking. the opposite of with"
 },
