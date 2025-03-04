@@ -1499,6 +1499,11 @@
 },
 {
 "e": "moon",
+"k": "jeska",
+"c": "n"
+},
+{
+"e": "moonlight",
 "k": "tuntiikh",
 "c": "n",
 "n": "low-light"
@@ -2167,6 +2172,11 @@
 "e": "stand",
 "k": "ura",
 "c": "v"
+},
+{
+"e": "star",
+"k": "hhea",
+"c": "n"
 },
 {
 "e": "state",
