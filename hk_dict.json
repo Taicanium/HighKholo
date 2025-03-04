@@ -130,6 +130,12 @@
 "n": "either a blood sister of one's father or mother, or by marriage"
 },
 {
+"e": "autumn",
+"k": "wolusiik",
+"c": "n",
+"n": "fall-leaf"
+},
+{
 "e": "away",
 "k": "janghwa",
 "c": "adj"
@@ -336,15 +342,15 @@
 },
 {
 "e": "Calistria",
-"k": "Kalistriia",
-"c": "pn",
-"n": "goddess of lust, vengeance, and trickery worshipped by the majority of Mwangi kholo"
-},
-{
-"e": "Calistria",
 "k": "Alimawim Ro",
 "c": "pn",
 "n": "Elder Sister. poetic name for the goddess, Shelyn being the Younger Sister"
+},
+{
+"e": "Calistria",
+"k": "Kalistriia",
+"c": "pn",
+"n": "goddess of lust, vengeance, and trickery worshipped by the majority of Mwangi kholo"
 },
 {
 "e": "call",
@@ -417,6 +423,11 @@
 "n": "cloth (plural)"
 },
 {
+"e": "cold",
+"k": "fiiset",
+"c": "n"
+},
+{
 "e": "come",
 "k": "suu",
 "c": "v"
@@ -461,6 +472,12 @@
 "c": "n"
 },
 {
+"e": "court",
+"k": "seneta",
+"c": "n",
+"n": "the group of officials surrounding a political leader"
+},
+{
 "e": "cousin",
 "k": "jakna",
 "c": "n",
@@ -475,6 +492,12 @@
 "e": "cower",
 "k": "zajii",
 "c": "v"
+},
+{
+"e": "crystal",
+"k": "ghemerje",
+"c": "n",
+"n": "related to ghemnen, 'glass'"
 },
 {
 "e": "dance",
@@ -516,6 +539,18 @@
 "k": "tanik/tunjanik",
 "c": "n",
 "n": "lowest-one"
+},
+{
+"e": "desert",
+"k": "sotreskh",
+"c": "v",
+"n": "to flee from a post or an obligation"
+},
+{
+"e": "desert",
+"k": "tefloa",
+"c": "n",
+"n": "arid region filled with sand"
 },
 {
 "e": "despair",
@@ -863,15 +898,15 @@
 },
 {
 "e": "gold",
-"k": "awoa",
-"c": "n",
-"n": "the metal"
-},
-{
-"e": "gold",
 "k": "awo",
 "c": "adj",
 "n": "relating to the metal"
+},
+{
+"e": "gold",
+"k": "awoa",
+"c": "n",
+"n": "the metal"
 },
 {
 "e": "good",
@@ -1094,6 +1129,11 @@
 "c": "v"
 },
 {
+"e": "ice",
+"k": "fiisoa",
+"c": "n"
+},
+{
 "e": "illusion",
 "k": "minzin",
 "c": "n",
@@ -1212,6 +1252,11 @@
 "k": "gom",
 "c": "det",
 "n": "the final element in a set"
+},
+{
+"e": "leaf",
+"k": "siik",
+"c": "n"
 },
 {
 "e": "league",
@@ -1552,15 +1597,15 @@
 },
 {
 "e": "Nethys",
-"k": "Netos",
-"c": "pn",
-"n": "Garundi god of magic, worshipped by most kholo bonecarvers"
-},
-{
-"e": "Nethys",
 "k": "Alshuuwim",
 "c": "pn",
 "n": "Brother. poetic name for the god"
+},
+{
+"e": "Nethys",
+"k": "Netos",
+"c": "pn",
+"n": "Garundi god of magic, worshipped by most kholo bonecarvers"
 },
 {
 "e": "never",
@@ -1768,6 +1813,18 @@
 "n": "hunger-thing"
 },
 {
+"e": "prince",
+"k": "khoshuu",
+"c": "n",
+"n": "son of the tribe"
+},
+{
+"e": "princess",
+"k": "khoima",
+"c": "n",
+"n": "daughter of the tribe"
+},
+{
 "e": "problem",
 "k": "hhara",
 "c": "n"
@@ -1873,15 +1930,15 @@
 },
 {
 "e": "Shelyn",
-"k": "Shelin",
-"c": "pn",
-"n": "goddess of art and music worshipped among bards of the mwangi expanse"
-},
-{
-"e": "Shelyn",
 "k": "Alimawim Liivi",
 "c": "pn",
 "n": "Younger Sister. religious name for the goddess, Calistria being the Elder Sister"
+},
+{
+"e": "Shelyn",
+"k": "Shelin",
+"c": "pn",
+"n": "goddess of art and music worshipped among bards of the mwangi expanse"
 },
 {
 "e": "shield",
@@ -1988,6 +2045,11 @@
 "n": "bint'jos, tooth-look"
 },
 {
+"e": "snow",
+"k": "khomo",
+"c": "n"
+},
+{
 "e": "soldier",
 "k": "fo",
 "c": "n"
@@ -2081,6 +2143,12 @@
 "c": "v"
 },
 {
+"e": "spring",
+"k": "zuasiik",
+"c": "n",
+"n": "new-leaf"
+},
+{
 "e": "staff",
 "k": "duukh",
 "c": "n"
@@ -2160,6 +2228,12 @@
 "e": "stupid",
 "k": "opii",
 "c": "adj"
+},
+{
+"e": "summer",
+"k": "mejosiik",
+"c": "n",
+"n": "green-leaf"
 },
 {
 "e": "sun",
@@ -2528,6 +2602,12 @@
 "e": "wind",
 "k": "majol",
 "c": "n"
+},
+{
+"e": "winter",
+"k": "khomosiik",
+"c": "n",
+"n": "snow-leaf"
 },
 {
 "e": "witchcraft",
