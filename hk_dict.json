@@ -146,6 +146,12 @@
 "c": "n"
 },
 {
+"e": "aye",
+"k": "e",
+"c": "int",
+"n": "verbal tic comparable to 'yeah?', 'aye?', or similar queries at the end of a statement"
+},
+{
 "e": "backward",
 "k": "hhekh",
 "c": "adv"
@@ -686,6 +692,12 @@
 "k": "yhok",
 "c": "n",
 "n": "related to both kwo, 'fire'; and yhotwe, 'soul'"
+},
+{
+"e": "enough",
+"k": "shiko",
+"c": "det",
+"": "a sufficient quantity"
 },
 {
 "e": "evil",
