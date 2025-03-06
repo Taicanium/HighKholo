@@ -122,6 +122,11 @@ font-size: 9pt;
 font-weight: 400;
 }
 
+.quoteBlock {
+display: inline-block;
+margin-left: 4em;
+}
+
 .kataText {
 font-family: "Montserrat", serif;
 font-optical-sizing: auto;
