@@ -18,6 +18,11 @@
 },
 "words": [
 {
+"e": "above",
+"k": "tise",
+"c": "adj"
+},
+{
 "e": "after",
 "k": "enkha",
 "c": "prep"
@@ -188,6 +193,11 @@
 "e": "belly",
 "k": "geret",
 "c": "n"
+},
+{
+"e": "below",
+"k": "tojse",
+"c": "adj"
 },
 {
 "e": "bend",
@@ -462,6 +472,13 @@
 "n": "low-male/low-female"
 },
 {
+"e": "consort",
+"k": "lensil",
+"f": "lensala",
+"c": "n",
+"n": "never, ever, ever refer to any female kholo with this word. 'what if it is accurate' you ask, I did not say 'never ever ever unless it is accurate' now did I?"
+},
+{
 "e": "copper",
 "k": "koshii",
 "c": "n"
@@ -582,13 +599,19 @@
 {
 "e": "do",
 "k": "se",
-"c": "v"
+"c": "v",
+"n": "homograph of se, 'side'"
 },
 {
 "e": "doctor",
 "k": "gidwik",
 "c": "n",
 "n": "hurt-worker"
+},
+{
+"e": "down",
+"k": "toj",
+"c": "dir"
 },
 {
 "e": "drink",
@@ -739,6 +762,17 @@
 "e": "father",
 "k": "hhama",
 "c": "n"
+},
+{
+"e": "favor",
+"k": "len",
+"c": "n",
+"n": "someone's good graces"
+},
+{
+"e": "favorite",
+"k": "lena",
+"c": "adj"
 },
 {
 "e": "fear",
@@ -1332,6 +1366,11 @@
 "c": "v"
 },
 {
+"e": "left",
+"k": "ose",
+"c": "dir"
+},
+{
 "e": "leg",
 "k": "ehhot",
 "c": "n"
@@ -1882,7 +1921,7 @@
 },
 {
 "e": "princess",
-"k": "khoima",
+"k": "khowima",
 "c": "n",
 "n": "daughter of the tribe"
 },
@@ -1932,6 +1971,11 @@
 "e": "ride",
 "k": "wilt",
 "c": "v"
+},
+{
+"e": "right",
+"k": "iise",
+"c": "dir"
 },
 {
 "e": "rise",
@@ -2022,6 +2066,12 @@
 "k": "kiizh",
 "c": "adj",
 "n": "ill from disease"
+},
+{
+"e": "side",
+"k": "se",
+"c": "n",
+"n": "homograph of se, 'do'"
 },
 {
 "e": "silent",
