@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="index.css" />
 <link rel="icon" type="image/x-icon" href="favicon.ico" />
 <script type="text/javascript">
-var lexDB = [];
+var hk_lexDB = [];
 function readTextFile(file, callback) {
 var rawFile = new XMLHttpRequest();
 rawFile.overrideMimeType("application/json");
@@ -18,8 +18,8 @@ callback(rawFile.responseText);
 rawFile.send(null);
 }
 function readWords(letter) {
-var classes = lexDB['classes'];
-var words = lexDB['words'];
+var classes = hk_lexDB['classes'];
+var words = hk_lexDB['words'];
 document.getElementById("lexText").innerHTML = "";
 words.forEach(word => {
 if (word['e'].toLowerCase().startsWith(letter)) {
@@ -40,9 +40,9 @@ document.getElementById("lexText").innerHTML = document.getElementById("slave").
 } else if (letter === "*P") {
 document.getElementById("lexText").innerHTML = document.getElementById("phrases").innerHTML;
 } else {
-if (lexDB.length == 0) {
+if (hk_lexDB.length == 0) {
 readTextFile("https://raw.githubusercontent.com/Taicanium/HighKholo/refs/heads/main/hk_dict.json", function(text){
-lexDB = JSON.parse(text);
+hk_lexDB = JSON.parse(text);
 readWords(letter);
 });
 } else {

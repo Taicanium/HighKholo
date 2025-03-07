@@ -217,6 +217,11 @@
 "c": "adj"
 },
 {
+"e": "bind",
+"k": "natsh",
+"c": "v"
+},
+{
 "e": "bird",
 "k": "sowa",
 "c": "n"
@@ -597,6 +602,12 @@
 "c": "v"
 },
 {
+"e": "drum",
+"k": "iisto",
+"c": "n",
+"n": "an instrument played by banging with the hands"
+},
+{
 "e": "dry",
 "k": "kofo",
 "c": "adj"
@@ -732,6 +743,11 @@
 {
 "e": "fear",
 "k": "leme",
+"c": "n"
+},
+{
+"e": "feather",
+"k": "jonaj",
 "c": "n"
 },
 {
@@ -1175,11 +1191,23 @@
 "e": "judge",
 "k": "alkej",
 "c": "v",
-"n": "high-honor"
+"n": "to pass judgment"
 },
 {
 "e": "judge",
 "k": "alkejro",
+"c": "n",
+"n": "one who passes judgment"
+},
+{
+"e": "judge",
+"k": "wuutse",
+"c": "v",
+"n": "negative synonym. to judge when it is not one's station to do so. contains wuu, 'obsess'"
+},
+{
+"e": "judgment",
+"k": "alkej",
 "c": "n",
 "n": "high-honor"
 },
@@ -1615,7 +1643,7 @@
 "e": "need",
 "k": "-t-",
 "c": "v",
-"n": "applied as a suffix or interfix to the related object, as in desht, 'need sleep'"
+"n": "see grammar notes on aspirational mood"
 },
 {
 "e": "nephew",
@@ -1699,6 +1727,12 @@
 "k": "polo",
 "c": "n",
 "n": "obvious relation to poltop, finger; the proto-word is uncertain"
+},
+{
+"e": "obsess",
+"k": "wuu",
+"c": "v",
+"n": "see grammar notes on aspirational mood"
 },
 {
 "e": "of",
@@ -2539,7 +2573,8 @@
 {
 "e": "want",
 "k": "hhuu",
-"c": "v"
+"c": "v",
+"n": "see grammar notes on aspirational mood"
 },
 {
 "e": "war",
