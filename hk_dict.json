@@ -2104,7 +2104,7 @@
 "e": "sneer",
 "k": "bintos",
 "c": "n",
-"n": "bint'jos, tooth-look"
+"n": "bint'jos, 'tooth-look'"
 },
 {
 "e": "snow",
@@ -2117,6 +2117,12 @@
 "c": "n"
 },
 {
+"e": "sole",
+"k": "tosk",
+"c": "adj",
+"n": "a member of a set containing only itself"
+},
+{
 "e": "son",
 "k": "shuu",
 "c": "n"
@@ -2125,7 +2131,7 @@
 "e": "song",
 "k": "vest",
 "c": "n",
-"n": "possible distant relation to voa, voice"
+"n": "possible distant relation to voa, 'voice'"
 },
 {
 "e": "sorcerer",
