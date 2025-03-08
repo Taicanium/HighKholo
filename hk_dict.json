@@ -38,6 +38,16 @@
 "c": "n"
 },
 {
+"e": "alcohol",
+"k": "onfam",
+"c": "n"
+},
+{
+"e": "ale",
+"k": "etstem",
+"c": "n"
+},
+{
 "e": "all",
 "k": "li",
 "c": "det"
@@ -173,6 +183,16 @@
 "c": "n"
 },
 {
+"e": "bake",
+"k": "kokase",
+"c": "v"
+},
+{
+"e": "barley",
+"k": "etamam",
+"c": "n"
+},
+{
 "e": "be",
 "k": "lu",
 "c": "v",
@@ -183,6 +203,16 @@
 "k": "lusha",
 "c": "v",
 "n": "related to lu, 'be', as in Common"
+},
+{
+"e": "bee",
+"k": "iidi",
+"c": "n"
+},
+{
+"e": "beer",
+"k": "etso",
+"c": "n"
 },
 {
 "e": "before",
@@ -230,6 +260,11 @@
 "e": "bind",
 "k": "natsh",
 "c": "v"
+},
+{
+"e": "bird",
+"k": "sowa",
+"c": "n"
 },
 {
 "e": "bird",
@@ -298,6 +333,11 @@
 {
 "e": "brain",
 "k": "torwat",
+"c": "n"
+},
+{
+"e": "bread",
+"k": "eskram",
 "c": "n"
 },
 {
@@ -433,6 +473,11 @@
 "c": "adj"
 },
 {
+"e": "close",
+"k": "matsha",
+"c": "v"
+},
+{
 "e": "cloth",
 "k": "iizh",
 "c": "n"
@@ -479,8 +524,18 @@
 "n": "never, ever, ever refer to any female kholo with this word. 'what if it is accurate' you ask, I did not say 'never ever ever unless it is accurate' now did I?"
 },
 {
+"e": "cook",
+"k": "koswe",
+"c": "v"
+},
+{
 "e": "copper",
 "k": "koshii",
+"c": "n"
+},
+{
+"e": "corn",
+"k": "setsam",
 "c": "n"
 },
 {
@@ -986,6 +1041,11 @@
 "c": "n"
 },
 {
+"e": "grain",
+"k": "eswe",
+"c": "n"
+},
+{
 "e": "granddaughter",
 "k": "imashii",
 "c": "n"
@@ -1005,6 +1065,11 @@
 {
 "e": "grandson",
 "k": "shuushii",
+"c": "n"
+},
+{
+"e": "grape",
+"k": "sizrii",
 "c": "n"
 },
 {
@@ -1131,6 +1196,11 @@
 {
 "e": "home",
 "k": "tuu",
+"c": "n"
+},
+{
+"e": "honey",
+"k": "iidel",
 "c": "n"
 },
 {
@@ -1529,6 +1599,11 @@
 "c": "adj"
 },
 {
+"e": "mead",
+"k": "iidelam",
+"c": "n"
+},
+{
 "e": "meat",
 "k": "sikh",
 "c": "n"
@@ -1882,6 +1957,11 @@
 "c": "n"
 },
 {
+"e": "plant",
+"k": "sete",
+"c": "n"
+},
+{
 "e": "platinum",
 "k": "alatoro",
 "c": "n",
@@ -1996,6 +2076,11 @@
 {
 "e": "rock",
 "k": "zhet",
+"c": "n"
+},
+{
+"e": "rye",
+"k": "metam",
 "c": "n"
 },
 {
@@ -2300,6 +2385,11 @@
 "n": "any authority over a civil group, kholo or otherwise. a more general term than khovaj"
 },
 {
+"e": "stay",
+"k": "rejwa",
+"c": "v"
+},
+{
 "e": "step",
 "k": "owa",
 "c": "v"
@@ -2420,6 +2510,12 @@
 },
 {
 "e": "tear",
+"k": "ghi",
+"c": "n",
+"n": "a teardrop"
+},
+{
+"e": "tear",
 "k": "khri",
 "c": "n",
 "n": "a gap or wound caused by ripping or tearing"
@@ -2429,12 +2525,6 @@
 "k": "khrim",
 "c": "v",
 "n": "to split something by shear force"
-},
-{
-"e": "tear",
-"k": "ghi",
-"c": "n",
-"n": "a teardrop"
 },
 {
 "e": "ten",
@@ -2710,6 +2800,11 @@
 "c": "ipr"
 },
 {
+"e": "wheat",
+"k": "moltam",
+"c": "n"
+},
+{
 "e": "when",
 "k": "pajda",
 "c": "ipr",
@@ -2725,6 +2820,11 @@
 "e": "whine",
 "k": "iirii",
 "c": "v"
+},
+{
+"e": "whiskey",
+"k": "kosam",
+"c": "n"
 },
 {
 "e": "white",
@@ -2749,6 +2849,11 @@
 {
 "e": "wind",
 "k": "majol",
+"c": "n"
+},
+{
+"e": "wine",
+"k": "sizam",
 "c": "n"
 },
 {
