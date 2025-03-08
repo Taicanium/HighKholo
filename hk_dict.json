@@ -1978,6 +1978,12 @@
 "c": "dir"
 },
 {
+"e": "rip",
+"k": "khisil",
+"c": "v",
+"n": "to split something by tensile force"
+},
+{
 "e": "rise",
 "k": "nhis",
 "c": "v"
@@ -2414,8 +2420,21 @@
 },
 {
 "e": "tear",
+"k": "khri",
+"c": "n",
+"n": "a gap or wound caused by ripping or tearing"
+},
+{
+"e": "tear",
+"k": "khrim",
+"c": "v",
+"n": "to split something by shear force"
+},
+{
+"e": "tear",
 "k": "shiiu",
-"c": "n"
+"c": "n",
+"n": "a teardrop"
 },
 {
 "e": "ten",
