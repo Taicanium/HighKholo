@@ -277,6 +277,11 @@
 "c": "n"
 },
 {
+"e": "birth",
+"k": "fitat",
+"c": "v"
+},
+{
 "e": "bite",
 "k": "tet",
 "c": "v"
@@ -519,7 +524,7 @@
 {
 "e": "consort",
 "k": "lensil",
-"f": "lensala",
+"f": "lensal",
 "c": "n",
 "n": "never, ever, ever refer to any female kholo with this word. 'what if it is accurate' you ask, I did not say 'never ever ever unless it is accurate' now did I?"
 },
@@ -1171,7 +1176,7 @@
 "c": "v"
 },
 {
-"e": "high kholo",
+"e": "High Kholo",
 "k": "Kholoyyisii",
 "f": "Orajhakh",
 "c": "pn",
@@ -2322,6 +2327,12 @@
 "k": "ajzuunt",
 "c": "dir",
 "n": "west-south"
+},
+{
+"e": "spark",
+"k": "ziiz",
+"c": "n",
+"n": "onomatopoeia of a static discharge"
 },
 {
 "e": "speak",

@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8" />
 <title>High Kholo: Conlang by Taica</title>
-<link rel="stylesheet" href="index.css" />
 <link rel="icon" type="image/x-icon" href="favicon.ico" />
+<link rel="stylesheet" href="index.css" />
 <script type="text/javascript">
 var hk_lexDB = [];
 function readTextFile(file, callback) {
@@ -18,12 +18,10 @@ callback(rawFile.responseText);
 rawFile.send(null);
 }
 function readWords(letter) {
-var classes = hk_lexDB['classes'];
-var words = hk_lexDB['words'];
 document.getElementById("lexText").innerHTML = "";
-words.forEach(word => {
+hk_lexDB['words'].forEach(word => {
 if (word['e'].toLowerCase().startsWith(letter)) {
-var toAdd = "<p><i>".concat(word['e']).concat("</i> &mdash; ").concat(classes[word['c']]).concat(": <b>").concat(word['k']).concat("</b>");
+var toAdd = "<p><i>".concat(word['e']).concat("</i> &mdash; ").concat(hk_lexDB['classes'][word['c']]).concat(": <b>").concat(word['k']).concat("</b>");
 if ('f' in word) {
 toAdd += " &vert; <span class=\"kataText\">".concat(word['f']).concat("</span>");
 }
@@ -50,11 +48,7 @@ readWords(letter);
 }}}
 window.addEventListener("load", (event) => {
 readTextFile("https://api.github.com/repos/taicanium/HighKholo/commits?page=1&per_page=1", function(text){
-var data = JSON.parse(text);
-var time = data[0]['commit']['committer']['date'];
-var date = new Date(Date.parse(time));
-var dateString = date.toLocaleString();
-document.getElementById("gitStamp").innerHTML = date.toLocaleString();
+document.getElementById("gitStamp").innerHTML = new Date(Date.parse(JSON.parse(text)[0]['commit']['committer']['date'])).toLocaleString();
 });
 });
 </script>
@@ -1120,7 +1114,7 @@ document.getElementById("gitStamp").innerHTML = date.toLocaleString();
 <tr>
 <th>Zijiwik</th>
 <th>"Horn-worker"</th>
-<th>Caste Laborers (6 types)<br />Have a skill or talent that saves them from being treated like ordinary chattel slaves</th>
+<th>Caste Laborers (6 types)<br />Those with a skill or talent that saves them from being treated like ordinary chattel slaves</th>
 </tr>
 <tr><td>Bojawik</td><td>"Mechanic"</td><td>Someone capable of building and repairing simple to mid-complexity machines such as transport wagons.</td></tr>
 <tr><td>Gidwik</td><td>"Doctor"</td><td>A medical specialist, especially one skilled at preventing or treating infected wounds.</td></tr>
@@ -1173,7 +1167,6 @@ document.getElementById("gitStamp").innerHTML = date.toLocaleString();
 <tr><td>Verensikh</td><td>"Shield-meat"</td><td>Fit to thicken or accent other food, but not to be eaten on its own.</td></tr>
 <tr><td>Kromsikh</td><td>"Waste-meat"</td><td>Fit only for animal feed or fertilizer.</td></tr>
 </table>
-
 </div>
 <div id="lexText"></div>
 </div>
