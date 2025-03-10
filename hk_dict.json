@@ -38,6 +38,12 @@
 "c": "n"
 },
 {
+"e": "alchemist",
+"k": "ghostansa",
+"c": "n",
+"n": "potion-master"
+},
+{
 "e": "alcohol",
 "k": "onfam",
 "c": "n"
@@ -124,6 +130,12 @@
 "c": "n"
 },
 {
+"e": "artificer",
+"k": "yhoktansa",
+"c": "n",
+"n": "energy-master"
+},
+{
 "e": "ash",
 "k": "etwek",
 "c": "n"
@@ -186,6 +198,18 @@
 "e": "bake",
 "k": "kokase",
 "c": "v"
+},
+{
+"e": "barbarian",
+"k": "konzan",
+"c": "n",
+"n": "corrupted compound of konte, 'hard', and zetik, 'warrior'"
+},
+{
+"e": "bard",
+"k": "shelik",
+"c": "n",
+"n": "one who is of Shelyn"
 },
 {
 "e": "barley",
@@ -267,19 +291,14 @@
 "c": "n"
 },
 {
-"e": "bird",
-"k": "sowa",
-"c": "n"
+"e": "birth",
+"k": "fitat",
+"c": "v"
 },
 {
 "e": "birth",
 "k": "fiti",
 "c": "n"
-},
-{
-"e": "birth",
-"k": "fitat",
-"c": "v"
 },
 {
 "e": "bite",
@@ -478,6 +497,12 @@
 "c": "adj"
 },
 {
+"e": "cleric",
+"k": "aljoryyik",
+"c": "n",
+"n": "aljor yyipik, 'holy speaker'"
+},
+{
 "e": "close",
 "k": "matsha",
 "c": "v"
@@ -609,7 +634,7 @@
 },
 {
 "e": "day",
-"k": "jira",
+"k": "jiro",
 "c": "n"
 },
 {
@@ -674,6 +699,11 @@
 "c": "dir"
 },
 {
+"e": "dream",
+"k": "sola",
+"c": "n"
+},
+{
 "e": "drink",
 "k": "onf",
 "c": "v",
@@ -683,6 +713,12 @@
 "e": "drop",
 "k": "tont",
 "c": "v"
+},
+{
+"e": "druid",
+"k": "toskrumik",
+"c": "n",
+"n": "land-shepherd"
 },
 {
 "e": "drum",
@@ -747,6 +783,11 @@
 "n": "ear-spear"
 },
 {
+"e": "embrace",
+"k": "besiil",
+"c": "v"
+},
+{
 "e": "emperor",
 "k": "alighahha aligha",
 "c": "n",
@@ -792,6 +833,21 @@
 "k": "shiko",
 "c": "det",
 "": "a sufficient quantity"
+},
+{
+"e": "every",
+"k": "li",
+"c": "det"
+},
+{
+"e": "everyone",
+"k": "laka",
+"c": "adv"
+},
+{
+"e": "everywhere",
+"k": "tuuli",
+"c": "adv"
 },
 {
 "e": "evil",
@@ -870,6 +926,12 @@
 "c": "v"
 },
 {
+"e": "fighter",
+"k": "zetik",
+"c": "n",
+"n": "same as the word for warrior"
+},
+{
 "e": "finger",
 "k": "poltop",
 "c": "n"
@@ -904,6 +966,11 @@
 {
 "e": "flash",
 "k": "tiilikh",
+"c": "n"
+},
+{
+"e": "flight",
+"k": "sowsa",
 "c": "n"
 },
 {
@@ -1105,9 +1172,27 @@
 "c": "col"
 },
 {
+"e": "grief",
+"k": "nnimos",
+"c": "n",
+"n": "the empty sadness associated with a great loss"
+},
+{
 "e": "growl",
 "k": "sotoii",
 "c": "v"
+},
+{
+"e": "gun",
+"k": "sovwa",
+"c": "n",
+"n": "a firearm"
+},
+{
+"e": "gunslinger",
+"k": "sovwansil",
+"c": "n",
+"n": "sovwa sensil, 'gun-patron'"
 },
 {
 "e": "half",
@@ -1118,6 +1203,16 @@
 "e": "hammer",
 "k": "towan",
 "c": "n"
+},
+{
+"e": "hard",
+"k": "konte",
+"c": "adj"
+},
+{
+"e": "hate",
+"k": "hhoma",
+"c": "v"
 },
 {
 "e": "have",
@@ -1199,6 +1294,11 @@
 "c": "v"
 },
 {
+"e": "holy",
+"k": "aljor",
+"c": "adj"
+},
+{
 "e": "home",
 "k": "tuu",
 "c": "n"
@@ -1232,6 +1332,11 @@
 "e": "how",
 "k": "iikha",
 "c": "ipr"
+},
+{
+"e": "hug",
+"k": "biis",
+"c": "v"
 },
 {
 "e": "human",
@@ -1321,6 +1426,11 @@
 "n": "high-honor"
 },
 {
+"e": "jump",
+"k": "gosash",
+"c": "v"
+},
+{
 "e": "jungle",
 "k": "uufora",
 "c": "n",
@@ -1357,6 +1467,12 @@
 "c": "v"
 },
 {
+"e": "kineticist",
+"k": "yhogretansa",
+"c": "n",
+"n": "yhogare tansa, 'storm-master'"
+},
+{
 "e": "king",
 "k": "aligha",
 "c": "n",
@@ -1379,6 +1495,12 @@
 "c": "n"
 },
 {
+"e": "knight",
+"k": "lojoztik",
+"c": "n",
+"n": "lojo zetik, 'metal warrior'"
+},
+{
 "e": "know",
 "k": "riile",
 "c": "v"
@@ -1394,6 +1516,18 @@
 "f": "Lamashto",
 "c": "pn",
 "n": "goddess of monstrosities worshipped by katapeshi kholo, and as a goddess of last resort by mwangi kholo"
+},
+{
+"e": "land",
+"k": "leso",
+"c": "v",
+"n": "to stop falling"
+},
+{
+"e": "land",
+"k": "tos",
+"c": "n",
+"n": "a particular region of the world"
 },
 {
 "e": "language",
@@ -1589,6 +1723,11 @@
 "n": "a weapon consisting of a metal sphere mounted on a hilt and studded with spikes"
 },
 {
+"e": "machine",
+"k": "yhodanje",
+"c": "n"
+},
+{
 "e": "magic",
 "k": "piira",
 "c": "n"
@@ -1602,6 +1741,24 @@
 "e": "male",
 "k": "shuua",
 "c": "adj"
+},
+{
+"e": "master",
+"k": "hhemik",
+"c": "n",
+"n": "one who owns a slave"
+},
+{
+"e": "master",
+"k": "tansa",
+"c": "n",
+"n": "one who is supremely skilled or talented"
+},
+{
+"e": "master",
+"k": "tansot",
+"c": "v",
+"n": "to become supremely skilled"
 },
 {
 "e": "mead",
@@ -1628,7 +1785,14 @@
 {
 "e": "memory",
 "k": "wahhar",
-"c": "n"
+"c": "n",
+"n": "the capacity to recall past events"
+},
+{
+"e": "memory",
+"k": "wahhja",
+"c": "n",
+"n": "a past event that has been recalled"
 },
 {
 "e": "mercy",
@@ -1655,6 +1819,19 @@
 "e": "mist",
 "k": "zin",
 "c": "n"
+},
+{
+"e": "money",
+"k": "toka",
+"f": "sazna",
+"c": "n",
+"n": "related to Common 'token'. The Katapeshi word is more traditional, and is sometimes used outside of Katapesh to refer to bartered items as currency"
+},
+{
+"e": "monk",
+"k": "tosensil",
+"c": "n",
+"n": "tos'sensil, 'land-patron'"
 },
 {
 "e": "moon",
@@ -1800,6 +1977,11 @@
 "n": "only used if either the speaker is female or the listener is the daughter of one's blood sibling. if neither is true, the speaker is not considered a family member"
 },
 {
+"e": "night",
+"k": "jesko",
+"c": "n"
+},
+{
 "e": "nine",
 "k": "wen",
 "c": "num"
@@ -1926,9 +2108,21 @@
 "c": "n"
 },
 {
+"e": "paladin",
+"k": "aljorztik",
+"c": "n",
+"n": "aljor zetik, 'holy warrior'"
+},
+{
 "e": "path",
 "k": "konat",
 "c": "n"
+},
+{
+"e": "patron",
+"k": "sensil",
+"c": "n",
+"n": "one who is favoured by someone of a higher station"
 },
 {
 "e": "paw",
@@ -1988,6 +2182,11 @@
 "c": "int"
 },
 {
+"e": "potion",
+"k": "ghos",
+"c": "n"
+},
+{
 "e": "predator",
 "k": "lo",
 "c": "n"
@@ -2016,6 +2215,12 @@
 "c": "n"
 },
 {
+"e": "psychic",
+"k": "soltansa",
+"c": "n",
+"n": "sola tansa, 'dream-master'"
+},
+{
 "e": "pure",
 "k": "metarii",
 "c": "adj"
@@ -2031,6 +2236,12 @@
 "k": "[item]mi",
 "c": "n",
 "n": "where [item] is any of 'who', 'what', 'when', etc. the default, or fallback, is pajmi, 'what-thing'"
+},
+{
+"e": "ranger",
+"k": "dantansa",
+"c": "n",
+"n": "bow-master"
 },
 {
 "e": "rank",
@@ -2074,6 +2285,11 @@
 "c": "v"
 },
 {
+"e": "river",
+"k": "posen",
+"c": "n"
+},
+{
 "e": "road",
 "k": "konat",
 "c": "n"
@@ -2082,6 +2298,12 @@
 "e": "rock",
 "k": "zhet",
 "c": "n"
+},
+{
+"e": "rogue",
+"k": "jeskre",
+"c": "n",
+"n": "related to jesko, 'night'"
 },
 {
 "e": "rye",
@@ -2103,6 +2325,12 @@
 "k": "sliihhe",
 "c": "n",
 "n": "the scales of a fish or lizard"
+},
+{
+"e": "scholar",
+"k": "tojmtansa",
+"c": "n",
+"n": "book-master"
 },
 {
 "e": "sea",
@@ -2141,6 +2369,12 @@
 "k": "Shelin",
 "c": "pn",
 "n": "goddess of art and music worshipped among bards of the mwangi expanse"
+},
+{
+"e": "shepherd",
+"k": "krumik",
+"c": "n",
+"n": "shortening of khurumik, 'one who holds'"
 },
 {
 "e": "shield",
@@ -2256,6 +2490,11 @@
 "e": "snow",
 "k": "khomo",
 "c": "n"
+},
+{
+"e": "soft",
+"k": "mente",
+"c": "adj"
 },
 {
 "e": "soldier",
@@ -2375,7 +2614,7 @@
 },
 {
 "e": "stand",
-"k": "ura",
+"k": "ulra",
 "c": "v"
 },
 {
@@ -2431,6 +2670,11 @@
 "e": "stop",
 "k": "hhap",
 "c": "v"
+},
+{
+"e": "storm",
+"k": "yhogare",
+"c": "n"
 },
 {
 "e": "story",
@@ -2612,6 +2856,11 @@
 "n": "out-in"
 },
 {
+"e": "tight",
+"k": "kiit",
+"c": "adj"
+},
+{
 "e": "time",
 "k": "ta",
 "c": "n"
@@ -2742,6 +2991,11 @@
 "c": "v"
 },
 {
+"e": "wake",
+"k": "iplii",
+"c": "v"
+},
+{
 "e": "walk",
 "k": "mat",
 "c": "v"
@@ -2788,6 +3042,12 @@
 "e": "weak",
 "k": "fuu",
 "c": "adj"
+},
+{
+"e": "wealth",
+"k": "sazen",
+"c": "n",
+"n": "one's whole assets, as opposed to (and including) just money and currency"
 },
 {
 "e": "weight",
