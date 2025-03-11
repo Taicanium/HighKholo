@@ -33,6 +33,18 @@
 "c": "prep"
 },
 {
+"e": "age",
+"k": "alta",
+"c": "n",
+"n": "a grand measure of time"
+},
+{
+"e": "age",
+"k": "tashii",
+"c": "n",
+"n": "a measure of one's living years"
+},
+{
 "e": "air",
 "k": "jol",
 "c": "n"
@@ -730,6 +742,12 @@
 "e": "dry",
 "k": "kofo",
 "c": "adj"
+},
+{
+"e": "dumb",
+"k": "yyisiiwi",
+"c": "adj",
+"n": "without speech"
 },
 {
 "e": "ear",
@@ -1761,9 +1779,24 @@
 "n": "to become supremely skilled"
 },
 {
+"e": "mastery",
+"k": "tanso",
+"c": "n"
+},
+{
 "e": "mead",
 "k": "iidelam",
 "c": "n"
+},
+{
+"e": "measure",
+"k": "elest",
+"c": "n"
+},
+{
+"e": "measure",
+"k": "elesta",
+"c": "v"
 },
 {
 "e": "meat",
@@ -1832,6 +1865,11 @@
 "k": "tosensil",
 "c": "n",
 "n": "tos'sensil, 'land-patron'"
+},
+{
+"e": "month",
+"k": "etel",
+"c": "n"
 },
 {
 "e": "moon",
@@ -2339,6 +2377,12 @@
 "n": "great-water"
 },
 {
+"e": "season",
+"k": "etask",
+"c": "n",
+"n": "a segment of the year with a unique set of weather patterns"
+},
+{
 "e": "see",
 "k": "pet",
 "c": "v"
@@ -2704,6 +2748,12 @@
 "c": "adj"
 },
 {
+"e": "stupid",
+"k": "torwawi",
+"c": "adj",
+"n": "without brain"
+},
+{
 "e": "suck",
 "k": "shohhuu",
 "c": "v"
@@ -3050,6 +3100,12 @@
 "n": "one's whole assets, as opposed to (and including) just money and currency"
 },
 {
+"e": "week",
+"k": "onjiro",
+"c": "n",
+"n": "eight-day. ancient kholo once measured weeks as periods of eight days. some still do"
+},
+{
 "e": "weight",
 "k": "onje",
 "c": "n",
@@ -3134,6 +3190,16 @@
 "n": "snow-leaf"
 },
 {
+"e": "wisdom",
+"k": "tansakh",
+"c": "n"
+},
+{
+"e": "wise",
+"k": "altare",
+"c": "adj"
+},
+{
 "e": "witchcraft",
 "k": "fenkhpiira",
 "c": "n",
@@ -3209,6 +3275,12 @@
 "e": "write",
 "k": "nno",
 "c": "v"
+},
+{
+"e": "year",
+"k": "hheol",
+"c": "n",
+"n": "an orbit of the planet around its star"
 },
 {
 "e": "yes",
