@@ -3,20 +3,13 @@
 <head>
 <meta charset="utf-8" />
 <title>High Kholo: Conlang by Taica</title>
+<link rel="author" href="https://taicanium.github.io/" />
 <link rel="icon" type="image/x-icon" href="favicon.ico" />
+<link rel="license" href="https://paizo.com/licenses/communityuse" />
+<link rel="preload" as="fetch" href="hk_dict.json" type="application/json" crossorigin />
 <link rel="stylesheet" href="index.css" />
 <script type="text/javascript">
 var hk_lexDB = [];
-function readTextFile(file, callback) {
-var rawFile = new XMLHttpRequest();
-rawFile.overrideMimeType("application/json");
-rawFile.open("GET", file, true);
-rawFile.onreadystatechange = function() {
-if (rawFile.readyState === 4 && rawFile.status == "200") {
-callback(rawFile.responseText);
-}}
-rawFile.send(null);
-}
 function readWords(letter) {
 document.getElementById("lexText").innerHTML = "";
 hk_lexDB['words'].forEach(word => {
@@ -39,16 +32,16 @@ document.getElementById("lexText").innerHTML = document.getElementById("slave").
 document.getElementById("lexText").innerHTML = document.getElementById("phrases").innerHTML;
 } else {
 if (hk_lexDB.length == 0) {
-readTextFile("https://raw.githubusercontent.com/Taicanium/HighKholo/refs/heads/main/hk_dict.json", function(text){
-hk_lexDB = JSON.parse(text);
+fetch("hk_dict.json").then((text) => text.json()).then((data) => {
+hk_lexDB = data;
 readWords(letter);
 });
 } else {
 readWords(letter);
 }}}
 window.addEventListener("load", (event) => {
-readTextFile("https://api.github.com/repos/taicanium/HighKholo/commits?page=1&per_page=1", function(text){
-document.getElementById("gitStamp").innerHTML = new Date(Date.parse(JSON.parse(text)[0]['commit']['committer']['date'])).toLocaleString();
+fetch("https://api.github.com/repos/taicanium/HighKholo/commits?page=1&per_page=1").then((text) => text.json()).then((data) => {
+document.getElementById("gitStamp").innerHTML = new Date(Date.parse(data[0]['commit']['committer']['date'])).toLocaleString();
 });
 });
 </script>
