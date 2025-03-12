@@ -100,7 +100,7 @@
 "e":"clothing","k":"iizhakh","c":"n","n":"Cloth (plural)"},{
 "e":"cold","k":"fiiset","c":"n"},{
 "e":"come","k":"suu","c":"v"},{
-"e":"Common","k":"Kweayyisii / yyisii kwea","c":"pn","n":"Human-language. Any of the common human languages of a particular region. Mwangi in western garund and the Mwangi expanse; taldane in katapesh and osirion; etc"},{
+"e":"Common","k":"Kweayyisii / yyisii kwea","c":"pn","n":"Human-language. Any of the common human languages of a particular region. Mwangi in western garund and the Mwangi Expanse; taldane in Katapesh and Osirion; etc"},{
 "e":"common","k":"sezhe","c":"adj","n":"In terms of rarity or novelty"},{
 "e":"concubine","k":"tunshuua/tunimo","c":"n","n":"Low-male/low-female"},{
 "e":"consort","k":"lensil","f":"lensal","c":"n","n":"Never, ever, ever refer to any female kholo with this word. 'what if it is accurate' you ask, I did not say 'never ever ever unless it is accurate' now did I?"},{
@@ -139,7 +139,7 @@
 "e":"dry","k":"kofo","c":"adj"},{
 "e":"dumb","k":"yyisiiwi","c":"adj","n":"Without speech"},{
 "e":"ear","k":"fori","c":"n"},{
-"e":"earth","k":"rosua","c":"n","n":"The planet; as in, golarion"},{
+"e":"earth","k":"rosua","c":"n","n":"The planet; as in, Golarion"},{
 "e":"ease","k":"zem","c":"n"},{
 "e":"east","k":"jirgha / jir-","c":"dir","n":"Related to jira, 'sun'"},{
 "e":"easy","k":"zem'ayi","c":"adj","n":"Ease-with"},{
@@ -204,7 +204,7 @@
 "e":"gnoll","k":"kholo","c":"n","n":"Kho, 'tribe' + lo, 'predator'"},{
 "e":"go","k":"rii","c":"v"},{
 "e":"god","k":"aljanik","c":"n","n":"Highest-one"},{
-"e":"golarion","k":"rosua","c":"n","n":"Etymology unclear. Unlike many words of the Mwangi dialect, it has no cognate in katapesh or osirion"},{
+"e":"Golarion","k":"rosua","c":"n","n":"Etymology unclear. Unlike many words of the Mwangi dialect, it has no cognate in Katapesh or Osirion"},{
 "e":"gold","k":"awo","c":"adj","n":"Relating to the metal"},{
 "e":"gold","k":"awoa","c":"n","n":"The metal"},{
 "e":"good","k":"ben","c":"adj"},{
@@ -240,7 +240,7 @@
 "e":"here","k":"hhet","c":"adv"},{
 "e":"hi","k":"ja","c":"int"},{
 "e":"hide","k":"iifit","c":"v"},{
-"e":"High Kholo","k":"Kholoyyisii","f":"Orajhakh","c":"pn","n":"Kholo-speech (Katapeshi: Wood-speech). Specifically the prestige dialect spoken by kholo native to the Mwangi expanse"},{
+"e":"High Kholo","k":"Kholoyyisii","f":"Orajhakh","c":"pn","n":"Kholo-speech (Katapeshi: Wood-speech). Specifically the prestige dialect spoken by kholo native to the Mwangi Expanse"},{
 "e":"high","k":"al","c":"adj"},{
 "e":"hiss","k":"is's","c":"n","n":"Simulation of the sound, as in Common"},{
 "e":"hold","k":"khurum","c":"v"},{
@@ -271,7 +271,7 @@
 "e":"judgment","k":"alkej","c":"n","n":"High-honor"},{
 "e":"jump","k":"gosash","c":"v"},{
 "e":"jungle","k":"uufora","c":"n","n":"Deep-wood"},{
-"e":"just","k":"sekh","c":"adv","n":"As in 'i just need' or 'it just might'"},{
+"e":"just","k":"sekh","c":"adv","n":"As in 'I just need' or 'it just might'"},{
 "e":"Katapesh","k":"Awoloyya","f":"Awolojha","c":"pn","n":"Gold-city. Loanword into Katapeshi Kholo from Common, and then from there into High Kholo"},{
 "e":"Katapeshi","k":"Awoloyyisii","f":"Tefejhakh","c":"pn","n":"Gold-city-speech (Katapeshi: Sand-speech). The Kholo dialect spoken in Katapesh"},{
 "e":"kidney","k":"hhuruusi","c":"n"},{
@@ -284,7 +284,7 @@
 "e":"knight","k":"lojoztik","c":"n","n":"Lojo zetik, 'metal warrior'"},{
 "e":"know","k":"riile","c":"v"},{
 "e":"lady","k":"im","c":"n"},{
-"e":"Lamashtu","k":"Lamashtuu","f":"Lamashto","c":"pn","n":"Goddess of monstrosities worshipped by katapeshi kholo, and as a goddess of last resort by Mwangi kholo"},{
+"e":"Lamashtu","k":"Lamashtuu","f":"Lamashto","c":"pn","n":"Goddess of monstrosities worshipped by Katapeshi kholo, and as a goddess of last resort by Mwangi kholo"},{
 "e":"land","k":"leso","c":"v","n":"To stop falling"},{
 "e":"land","k":"tos","c":"n","n":"A particular region of the world"},{
 "e":"language","k":"yyisii","c":"n","n":"Related to yyip, 'speak'"},{
@@ -357,7 +357,7 @@
 "e":"muscle","k":"setre","c":"n"},{
 "e":"music","k":"shel","c":"n","n":"Clearly derived from shelyn, the goddess of music"},{
 "e":"muzzle","k":"benet","c":"n"},{
-"e":"Mwangi Expanse","k":"Mowan Ghint","f":"Mowan Gofo","c":"pn","n":"Wide savannah (Katapeshi: Dry savannah). Most of Mwangi is home to the densest jungle on golarion. But the language treats the drier border region between Katapesh and the expanse <a target=\"_blank\" href=\"https://en.wikipedia.org/wiki/Linguistic_homeland\">as if it refers to the whole region.</a>"},{
+"e":"Mwangi Expanse","k":"Mowan Ghint","f":"Mowan Gofo","c":"pn","n":"Wide savannah (Katapeshi: Dry savannah). Most of Mwangi is home to the densest jungle on Golarion. But the language treats the drier border region between Katapesh and the Expanse <a target=\"_blank\" href=\"https://en.wikipedia.org/wiki/Linguistic_homeland\">as if it refers to the whole region.</a>"},{
 "e":"Mwangi Jungle","k":"Uufora Ghint","f":"Mowan Boso","c":"pn","n":"Wide jungle (Katapeshi: Wet savannah)"},{
 "e":"Mwangi","k":"Mowanyyisii","f":"Mowanjhakh","c":"pn","n":"Savannah-speech. The Common human language of the Mwangi Expanse"},{
 "e":"name","k":"aljejta","c":"n","n":"High-name. The greater name of a kholo including all its adjectives and modifiers"},{
@@ -447,7 +447,7 @@
 "e":"seven","k":"mjo","c":"num"},{
 "e":"shake","k":"wesk","c":"v"},{
 "e":"Shelyn","k":"Alimawim Liivi","c":"pn","n":"Younger Sister. Religious name for the goddess, Calistria being the Elder Sister"},{
-"e":"Shelyn","k":"Shelin","c":"pn","n":"Goddess of art and music worshipped among bards of the Mwangi expanse"},{
+"e":"Shelyn","k":"Shelin","c":"pn","n":"Goddess of art and music worshipped among bards of the Mwangi Expanse"},{
 "e":"shepherd","k":"krumik","c":"n","n":"Shortening of khurumik, 'one who holds'"},{
 "e":"shield","k":"veren","c":"n"},{
 "e":"shoulder","k":"ghalmate","c":"n"},{
@@ -485,7 +485,7 @@
 "e":"southeast","k":"jirzuunt","c":"dir","n":"East-south"},{
 "e":"southwest","k":"ajzuunt","c":"dir","n":"West-south"},{
 "e":"spark","k":"ziiz","c":"n","n":"Onomatopoeia of a static discharge"},{
-"e":"speak","k":"yyip","c":"v","n":"Note the single i"},{
+"e":"speak","k":"yyip","c":"v","n":"Note the single I"},{
 "e":"speaker","k":"yyipik","c":"n","n":"Speak-one"},{
 "e":"spear","k":"ip","c":"n"},{
 "e":"speech","k":"yyisii","c":"n","n":"Related to yyip, speak"},{
@@ -498,7 +498,7 @@
 "e":"state","k":"vaj","c":"n","n":"Any authority over a civil group, kholo or otherwise. A more general term than khovaj"},{
 "e":"stay","k":"rejwa","c":"v"},{
 "e":"step","k":"owa","c":"v"},{
-"e":"still","k":"mit","c":"adv","n":"Indicating a continuous action, as in 'i still need it'"},{
+"e":"still","k":"mit","c":"adv","n":"Indicating a continuous action, as in 'I still need it'"},{
 "e":"still","k":"weten","c":"adj","n":"In the sense of not moving"},{
 "e":"stomach","k":"folokh","c":"n"},{
 "e":"stone","k":"punt","c":"n"},{
@@ -519,7 +519,7 @@
 "e":"tail","k":"lirsi","c":"n"},{
 "e":"take","k":"ghep","c":"v"},{
 "e":"Taldane","k":"Alboyyisii","f":"Albojhakh","c":"pn","n":"Sea-speech. Common human language spoken in Katapesh, Avistan, and most of Garund outside of the Mwangi Expanse"},{
-"e":"talk","k":"yyip","c":"v","n":"Note the single i"},{
+"e":"talk","k":"yyip","c":"v","n":"Note the single I"},{
 "e":"tall","k":"retsa","c":"adj"},{
 "e":"tear","k":"ghi","c":"n","n":"A teardrop"},{
 "e":"tear","k":"khri","c":"n","n":"A gap or wound caused by ripping or tearing"},{
@@ -562,7 +562,7 @@
 "e":"use","k":"gent","c":"v"},{
 "e":"vein","k":"gifo","c":"n","n":"In the sense of an ore deposit"},{
 "e":"virgin","k":"medwi","c":"n"},{
-"e":"voice","k":"yyiip","c":"n","n":"Note the double i"},{
+"e":"voice","k":"yyiip","c":"n","n":"Note the double I"},{
 "e":"wait","k":"jebo","c":"v"},{
 "e":"wake","k":"iplii","c":"v"},{
 "e":"walk","k":"mat","c":"v"},{
