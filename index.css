@@ -9,6 +9,7 @@ background-attachment: fixed;
 background-position: center;
 background-color: #1E0D0D;
 color: #CECACA;
+overflow-y: scroll;
 }
 
 a {
@@ -31,9 +32,8 @@ border: 1px solid #555555;
 border-bottom: none;
 list-style-type: none;
 position: fixed;
-overflow: auto;
--ms-overflow-style: none;
-scrollbar-width: none;
+overflow-x: hidden;
+overflow-y: auto;
 margin: 0;
 padding: 0;
 right: 85%;
@@ -41,10 +41,6 @@ top: 2.5%;
 max-height: 70%;
 width: 12.5%;
 z-index: 2;
-}
-
-#navBar::-webkit-scrollbar {
-display: none;
 }
 
 #navBar a {
@@ -188,7 +184,7 @@ font-style: normal;
 font-weight: 400;
 position: fixed;
 left: 3%;
-bottom: 18%;
+bottom: 15%;
 }
 
 #lexRibbon th {
