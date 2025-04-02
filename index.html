@@ -10,7 +10,7 @@
 <link rel="preload" as="fetch" href="hk_dict.json" type="application/json" crossorigin />
 <link rel="stylesheet" href="index.css" />
 <script type="text/javascript">
-var hk_lexDB=[],d=document.getElementById.bind(document);function readWords(e){var n="";d("lexText").innerHTML="",hk_lexDB.words.forEach(function(t){t.e.toLowerCase().startsWith(e)&&(n=`<p><i>${t.e}</i> &mdash; ${hk_lexDB.classes[t.c]}: <b>${t.k}</b>`,t.hasOwnProperty("f")&&(n+=` &vert; <span class="kataText">${t.f}</span>`),t.hasOwnProperty("n")&&(n+=` &ndash; <span class="smalltext"><i>${t.n}</i></span>`),n+="</p>",d("lexText").innerHTML+=n)})}function rdb(e){"*S"===e?d("lexText").innerHTML=d("slave").innerHTML:"*P"===e?d("lexText").innerHTML=d("phrases").innerHTML:readWords(e)}window.addEventListener("load",function(e){fetch("//api.github.com/repos/taicanium/HighKholo/commits?page=1&per_page=1").then(e=>e.json()).then(function(e){d("gitStamp").innerHTML=new Date(Date.parse(e[0].commit.committer.date)).toLocaleString()}),fetch("hk_dict.json").then(e=>e.json()).then(function(e){hk_lexDB=e})});
+var hk_lexDB=[],d=document.getElementById.bind(document);function w(e){var n="";d("lexText").innerHTML="",hk_lexDB.words.forEach(function(t){t.e.toLowerCase().startsWith(e)&&(n=`<p><i>${t.e}</i> &mdash; ${hk_lexDB.classes[t.c]}: <b>${t.k}</b>`,t.hasOwnProperty("f")&&(n+=` &vert; <span class="kataText">${t.f}</span>`),t.hasOwnProperty("n")&&(n+=` &ndash; <span class="smalltext"><i>${t.n}</i></span>`),n+="</p>",d("lexText").innerHTML+=n)})}function rdb(e){"*S"===e?d("lexText").innerHTML=d("slave").innerHTML:"*P"===e?d("lexText").innerHTML=d("phrases").innerHTML:w(e)}window.addEventListener("load",function(e){fetch("//api.github.com/repos/taicanium/HighKholo/commits?page=1&per_page=1").then(e=>e.json()).then(function(e){d("gitStamp").innerHTML=new Date(Date.parse(e[0].commit.committer.date)).toLocaleString()}),fetch("hk_dict.json").then(e=>e.json()).then(function(e){hk_lexDB=e})});
 </script>
 </head>
 <body>
@@ -475,14 +475,14 @@ var hk_lexDB=[],d=document.getElementById.bind(document);function readWords(e){v
 <tr>
 <th rowspan="2">Third aspiration</th>
 <th>Wish</th>
-<td>A state of being that the speaker can achieve, outside of which they will not suffer, but which would benefit them.</td>
+<td>An action the speaker can take or a state of being that they can achieve, outside of which they will not suffer.</td>
 <td>-hhon-</td>
 <td>Retsahhon!</td>
 <td>I wish to be tall!</td>
 </tr>
 <tr>
 <th>Want</th>
-<td>A physical object which the speaker can obtain, without which the speaker will not suffer, but which would be a boon to them.</td>
+<td>A physical object which the speaker can obtain, without which the speaker will not suffer.</td>
 <td>-hhuu-</td>
 <td>Nhiihhuu zua!</td>
 <td>I want a new sword!</td>
