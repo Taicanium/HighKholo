@@ -3,45 +3,18 @@
 <head>
 <meta charset="utf-8" />
 <title>High Kholo: Conlang by Taica</title>
-<link rel="author" href="https://taicanium.github.io/" />
+<link rel="author" href="//taicanium.github.io/" />
 <link rel="icon" type="image/x-icon" href="favicon.ico" />
-<link rel="license" href="https://paizo.com/licenses/communityuse" />
-<link rel="preload" as="fetch" href="https://api.github.com/repos/taicanium/HighKholo/commits?page=1&per_page=1" type="application/json" crossorigin />
+<link rel="license" href="//paizo.com/licenses/communityuse" />
+<link rel="preload" as="fetch" href="//api.github.com/repos/taicanium/HighKholo/commits?page=1&per_page=1" type="application/json" crossorigin />
 <link rel="preload" as="fetch" href="hk_dict.json" type="application/json" crossorigin />
 <link rel="stylesheet" href="index.css" />
 <script type="text/javascript">
-var hk_lexDB = [];
-function readWords(letter) {
-document.getElementById("lexText").innerHTML = "";
-hk_lexDB['words'].forEach(word => {
-if (word['e'].toLowerCase().startsWith(letter)) {
-var toAdd = "<p><i>".concat(word['e']).concat("</i> &mdash; ").concat(hk_lexDB['classes'][word['c']]).concat(": <b>").concat(word['k']).concat("</b>");
-if ('f' in word) {
-toAdd += " &vert; <span class=\"kataText\">".concat(word['f']).concat("</span>");
-}
-if ('n' in word) {
-toAdd += " &ndash; <span class=\"smalltext\"><i>".concat(word['n']).concat("</i></span>");
-}
-toAdd += "</p>";
-document.getElementById("lexText").innerHTML += toAdd;
-}});
-}
-function readDB(letter) {
-if (letter === "*S") {
-document.getElementById("lexText").innerHTML = document.getElementById("slave").innerHTML;
-} else if (letter === "*P") {
-document.getElementById("lexText").innerHTML = document.getElementById("phrases").innerHTML;
-} else {
-readWords(letter);
-}}
-window.addEventListener("load", (event) => {
-fetch("https://api.github.com/repos/taicanium/HighKholo/commits?page=1&per_page=1").then((text) => text.json()).then((data) => document.getElementById("gitStamp").innerHTML = new Date(Date.parse(data[0]['commit']['committer']['date'])).toLocaleString());
-fetch("hk_dict.json").then((text) => text.json()).then((data) => hk_lexDB = data);
-});
+var hk_lexDB=[];function readWords(e){var n="";document.getElementById("lexText").innerHTML="",hk_lexDB.words.forEach(function(t){t.e.toLowerCase().startsWith(e)&&(n=`<p><i>${t.e}</i> &mdash; ${hk_lexDB.classes[t.c]}: <b>${t.k}</b>`,t.hasOwnProperty("f")&&(n+=` &vert; <span class="kataText">${t.f}</span>`),t.hasOwnProperty("n")&&(n+=` &ndash; <span class="smalltext"><i>${t.n}</i></span>`),n+="</p>",document.getElementById("lexText").innerHTML+=n)})}function readDB(e){"*S"===e?document.getElementById("lexText").innerHTML=document.getElementById("slave").innerHTML:"*P"===e?document.getElementById("lexText").innerHTML=document.getElementById("phrases").innerHTML:readWords(e)}window.addEventListener("load",function(e){fetch("//api.github.com/repos/taicanium/HighKholo/commits?page=1&per_page=1").then(e=>e.json()).then(function(e){document.getElementById("gitStamp").innerHTML=new Date(Date.parse(e[0].commit.committer.date)).toLocaleString()}),fetch("hk_dict.json").then(e=>e.json()).then(function(e){hk_lexDB=e})});
 </script>
 </head>
 <body>
-<a href="https://taicanium.github.io/" target="_blank">
+<a href="//taicanium.github.io/" target="_blank">
 <img class="icon" id="happy" src="images/Rhian-Happy.png" alt="Rhian-Happy" />
 <img class="icon" id="normal" src="images/Rhian-Normal.png" alt="Rhian-Normal" />
 </a>
@@ -65,10 +38,10 @@ fetch("hk_dict.json").then((text) => text.json()).then((data) => hk_lexDB = data
 
 <div class="subdiv" id="introduction">
 <h2>Gnolls, and the Language Thereof</h2>
-<p>This guide details the dialect most commonly spoken among <a href="https://pathfinderwiki.com/wiki/Kholo#tabber-2E" target="_blank">kholo</a> of the <a href="https://pathfinderwiki.com/wiki/Mwangi_Expanse" target="_blank">Mwangi Expanse</a>, as opposed to those dialects spoken in <a href="https://pathfinderwiki.com/wiki/Katapesh" target="_blank">Katapesh</a> or other areas.<br/>Commonly referred to as High Kholo, reflecting the Mwangi gnolls' greater (by comparison) penchant for civilized culture and trade.</p>
+<p>This guide details the dialect most commonly spoken among <a href="//pathfinderwiki.com/wiki/Kholo#tabber-2E" target="_blank">kholo</a> of the <a href="//pathfinderwiki.com/wiki/Mwangi_Expanse" target="_blank">Mwangi Expanse</a>, as opposed to those dialects spoken in <a href="//pathfinderwiki.com/wiki/Katapesh" target="_blank">Katapesh</a> or other areas.<br/>Commonly referred to as High Kholo, reflecting the Mwangi gnolls' greater (by comparison) penchant for civilized culture and trade.</p>
 <p>Natively, it is simply called Kholo, or <i>Kholoyyisii</i> ("Kholo-speech"). Notes are not kept on other dialects of Kholo, except as they directly relate to this one.</p>
 <p class="smalltext">Remember: Kholo are not humans, and do not possess human mouth anatomy. This document takes a little "Okay so these guys have funny dog mouths" to follow. It's worth it, this is fun. I promise.</p><br />
-<p class="smalltext"><b>High Kholo</b> uses trademarks and/or copyrights owned by Paizo Inc., used under Paizo's Community Use Policy (<a target="_blank" href="https://paizo.com/licenses/communityuse">paizo.com/licenses/communityuse</a>). I am expressly prohibited from charging you to use or access this content. <b>High Kholo</b> is not published, endorsed, or specifically approved by Paizo. For more information about Paizo Inc. and Paizo products, visit <a target="_blank" href="https://paizo.com">paizo.com</a>.</p>
+<p class="smalltext"><b>High Kholo</b> uses trademarks and/or copyrights owned by Paizo Inc., used under Paizo's Community Use Policy (<a target="_blank" href="//paizo.com/licenses/communityuse">paizo.com/licenses/communityuse</a>). I am expressly prohibited from charging you to use or access this content. <b>High Kholo</b> is not published, endorsed, or specifically approved by Paizo. For more information about Paizo Inc. and Paizo products, visit <a target="_blank" href="//paizo.com">paizo.com</a>.</p>
 </div>
 
 <div class="subdiv" id="phonemes">
@@ -430,7 +403,7 @@ fetch("hk_dict.json").then((text) => text.json()).then((data) => hk_lexDB = data
 <br />
 <ol>
 <li>Members of other species, no matter how friendly or how high-ranking, are always non-kholo. Separate parts of a kholo's physical body (e.g. the arms, legs, or head) are also non-kholo.</li><br />
-<li>In contrast to body parts, metaphysical parts of a kholo &mdash; such as the soul, thoughts, feelings, or the (metaphorical) heart &mdash; are kholo.<br />A note is also made for monstrous offspring bred through reverence of <a href="https://pathfinderwiki.com/wiki/Lamashtu" target="_blank">Lamashtu, the Mother of Monsters</a>. These are always kholo, with one exception: Those incorporating humanlike features are non-kholo.</li><br />
+<li>In contrast to body parts, metaphysical parts of a kholo &mdash; such as the soul, thoughts, feelings, or the (metaphorical) heart &mdash; are kholo.<br />A note is also made for monstrous offspring bred through reverence of <a href="//pathfinderwiki.com/wiki/Lamashtu" target="_blank">Lamashtu, the Mother of Monsters</a>. These are always kholo, with one exception: Those incorporating humanlike features are non-kholo.</li><br />
 </ol>
 <h3>Verbal Suffixes</h3>
 <p>Kholo does not natively distinguish a future tense. Indicating an action yet to be taken is done via context. When it must be made explicit, the closest equivalent is to prepend the word "ta-" ("Time") to the related verb as a prefix, though native speakers find this clunky.</p>
