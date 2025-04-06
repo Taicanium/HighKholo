@@ -49,7 +49,7 @@
 "e":"belly","k":"geret","c":"n"},{
 "e":"below","k":"tojse","c":"adj"},{
 "e":"bend","k":"tek","c":"v"},{
-"e":"best","k":"ban","c":"adj","n":"Benjan, good-most"},{
+"e":"best","k":"ban","c":"adj","n":"Benjan, 'good-most'"},{
 "e":"between","k":"ko'ird","c":"adv","n":"In-two"},{
 "e":"beyond","k":"dinkh","c":"adv"},{
 "e":"big","k":"hhwii","c":"adj"},{
@@ -100,10 +100,10 @@
 "e":"clothing","k":"iizhakh","c":"n","n":"Cloth (plural)"},{
 "e":"cold","k":"fiiset","c":"n"},{
 "e":"come","k":"suu","c":"v"},{
-"e":"Common","k":"Kweayyisii / yyisii kwea","c":"pn","n":"Human-language. Any of the common human languages of a particular region. Mwangi in western garund and the Mwangi Expanse; taldane in Katapesh and Osirion; etc"},{
+"e":"Common","k":"Kweayyisii / yyisii kwea","c":"pn","n":"Human-language. Any of the common human languages of a particular region. Mwangi in western Garund and the Mwangi Expanse; Taldane in Katapesh and Osirion; etc"},{
 "e":"common","k":"sezhe","c":"adj","n":"In terms of rarity or novelty"},{
 "e":"concubine","k":"tunshuua/tunimo","c":"n","n":"Low-male/low-female"},{
-"e":"consort","k":"lensil","f":"lensal","c":"n","n":"Never, ever, ever refer to any female kholo with this word. 'what if it is accurate' you ask, I did not say 'never ever ever unless it is accurate' now did I?"},{
+"e":"consort","k":"lensil","f":"lensal","c":"n","n":"Never, ever, ever refer to any female kholo with this word. 'Concubine' is less offensive."},{
 "e":"cook","k":"koswe","c":"v"},{
 "e":"copper","k":"koshii","c":"n"},{
 "e":"corn","k":"setsam","c":"n"},{
@@ -402,7 +402,8 @@
 "e":"pact","k":"fenkh","c":"n"},{
 "e":"paladin","k":"aljorztik","c":"n","n":"Aljor zetik, 'holy warrior'"},{
 "e":"path","k":"konat","c":"n"},{
-"e":"patron","k":"sensil","c":"n","n":"One who is favoured by someone of a higher station"},{
+"e":"client","k":"sestasil","c":"n","n":"One who is favoured by someone of a higher station"},{
+"e":"patron","k":"sensil","c":"n","n":"One who favours someone of a lower station"},{
 "e":"paw","k":"owja","c":"n"},{
 "e":"pearl","k":"boja","c":"n"},{
 "e":"penis","k":"tiztii","c":"n"},{
