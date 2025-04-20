@@ -40,6 +40,7 @@
 "e":"bake","k":"kokase","c":"v"},{
 "e":"barbarian","k":"konzan","c":"n","n":"Corrupted compound of konte, 'hard', and zetik, 'warrior'"},{
 "e":"bard","k":"shelik","c":"n","n":"One who is of Shelyn"},{
+"e":"bark","k":"yhep","c":"v"},{
 "e":"barley","k":"etamam","c":"n"},{
 "e":"be","k":"lu","c":"v","n":"Rarely to never used; except to provide context or specificity, or to be poetic"},{
 "e":"become","k":"lusha","c":"v","n":"Related to lu, 'be', as in Common"},{
@@ -88,13 +89,16 @@
 "e":"carry","k":"vuuta","c":"v"},{
 "e":"carve","k":"sera","c":"v"},{
 "e":"champion","k":"aljan zetik","c":"n","n":"Highest warrior"},{
+"e":"cheese","k":"ghoshol","c":"n"},{
 "e":"chest","k":"temta","c":"n","n":"A container with a hinged lid"},{
 "e":"chew","k":"tilkh","c":"v"},{
+"e":"chicken","k":"lokros","c":"n"},{
 "e":"choke","k":"korkh","c":"v"},{
 "e":"city","k":"loyya","c":"n"},{
 "e":"claw","k":"risli","c":"n"},{
 "e":"clean","k":"metii","c":"adj"},{
 "e":"cleric","k":"aljoryyik","c":"n","n":"Aljor yyipik, 'holy speaker'"},{
+"e":"client","k":"sestasil","c":"n","n":"One who is favoured by someone of a higher station"},{
 "e":"close","k":"matsha","c":"v"},{
 "e":"cloth","k":"iizh","c":"n"},{
 "e":"clothing","k":"iizhakh","c":"n","n":"Cloth (plural)"},{
@@ -113,7 +117,9 @@
 "e":"court","k":"seneta","c":"n","n":"The group of officials surrounding a political leader"},{
 "e":"cousin","k":"jakna","c":"n","n":"Specifically a female child of one's aunt or uncle. Male cousins are not considered important enough to label as such"},{
 "e":"cover","k":"hhem","c":"n"},{
+"e":"cow","k":"gherkos","c":"n"},{
 "e":"cower","k":"zajii","c":"v"},{
+"e":"cream","k":"gheshme","c":"n"},{
 "e":"crystal","k":"ghemerje","c":"n","n":"Related to ghemnen, 'glass'"},{
 "e":"dance","k":"pip","c":"v"},{
 "e":"danger","k":"hhiin","c":"n"},{
@@ -145,6 +151,7 @@
 "e":"east","k":"jirgha / jir-","c":"dir","n":"Related to jira, 'sun'"},{
 "e":"easy","k":"zem'ayi","c":"adj","n":"Ease-with"},{
 "e":"eat","k":"aol","c":"v","n":"Possibly related to Mwangi 'ali', 'eaten'"},{
+"e":"egg","k":"lokre","c":"n"},{
 "e":"eight","k":"onje / on-","c":"num"},{
 "e":"elbow","k":"kriftek","c":"n","n":"Arm-bend"},{
 "e":"elf","k":"forip","c":"n","n":"Ear-spear. A derogatory term"},{
@@ -166,6 +173,7 @@
 "e":"face","k":"sonaut","c":"n"},{
 "e":"fall","k":"wolu","c":"v"},{
 "e":"far","k":"oma","c":"adv"},{
+"e":"farm","k":"khostuul","c":"n"},{
 "e":"father","k":"hhama","c":"n"},{
 "e":"favor","k":"len","c":"n","n":"Someone's good graces"},{
 "e":"favorite","k":"lena","c":"adj"},{
@@ -185,6 +193,7 @@
 "e":"fix","k":"setswe","c":"v"},{
 "e":"flash","k":"tiilikh","c":"n"},{
 "e":"flight","k":"sowsa","c":"n"},{
+"e":"flow","k":"fetri","c":"v"},{
 "e":"flute","k":"siisha","c":"n","n":"Or any woodwind instrument of similar make"},{
 "e":"food","k":"sikh","c":"n","n":"Sikh also means 'meat'"},{
 "e":"for","k":"er","c":"prep","n":"Usually attached as a suffix, especially in more formal settings"},{
@@ -204,6 +213,7 @@
 "e":"glass","k":"ghemnen","c":"n"},{
 "e":"gnoll","k":"kholo","c":"n","n":"Kho, 'tribe' + lo, 'predator'"},{
 "e":"go","k":"rii","c":"v"},{
+"e":"goat","k":"ghetos","c":"n"},{
 "e":"god","k":"aljanik","c":"n","n":"Highest-one"},{
 "e":"Golarion","k":"rosua","c":"n","n":"Etymology unclear. Unlike many words of the Mwangi dialect, it has no cognate in Katapesh or Osirion"},{
 "e":"gold","k":"awo","c":"adj","n":"Relating to the metal"},{
@@ -228,7 +238,9 @@
 "e":"gunslinger","k":"sovwansil","c":"n","n":"Sovwa sensil, 'gun-patron'"},{
 "e":"half","k":"uur","c":"n"},{
 "e":"hammer","k":"towan","c":"n"},{
+"e":"hand","k":"porte","c":"n"},{
 "e":"hard","k":"konte","c":"adj"},{
+"e":"hat","k":"hhoj","c":"n"},{
 "e":"hate","k":"hhoma","c":"v"},{
 "e":"have","k":"rel","c":"v"},{
 "e":"hawk","k":"inso","c":"n"},{
@@ -252,6 +264,8 @@
 "e":"honor","k":"kejro","c":"n"},{
 "e":"horizon","k":"enotwo","c":"n"},{
 "e":"horn","k":"ziji","c":"n"},{
+"e":"horse","k":"khrios","c":"n"},{
+"e":"house","k":"tol","c":"n"},{
 "e":"how","k":"iikha","c":"ipr"},{
 "e":"hug","k":"biis","c":"v"},{
 "e":"human","k":"kwea","c":"n"},{
@@ -284,6 +298,7 @@
 "e":"knee","k":"inkh","c":"n"},{
 "e":"knight","k":"lojoztik","c":"n","n":"Lojo zetik, 'metal warrior'"},{
 "e":"know","k":"riile","c":"v"},{
+"e":"ladder","k":"nhisik","c":"n","n":"'Riser'"},{
 "e":"lady","k":"im","c":"n"},{
 "e":"Lamashtu","k":"Lamashtuu","f":"Lamashto","c":"pn","n":"Goddess of monstrosities worshipped by Katapeshi kholo, and as a goddess of last resort by Mwangi kholo"},{
 "e":"land","k":"leso","c":"v","n":"To stop falling"},{
@@ -300,6 +315,7 @@
 "e":"leg","k":"ehhot","c":"n"},{
 "e":"legend","k":"alkhit","c":"n","n":"High-story"},{
 "e":"less","k":"julkh","c":"adj"},{
+"e":"library","k":"tojmtol","c":"n","n":"Book-house"},{
 "e":"lick","k":"sloshi","c":"v"},{
 "e":"lie","k":"buuto","c":"v","n":"To rest upon a horizontal surface"},{
 "e":"lie","k":"ilii","c":"v","n":"To make a false statement"},{
@@ -329,8 +345,8 @@
 "e":"make","k":"hho","c":"v"},{
 "e":"male","k":"shuua","c":"adj"},{
 "e":"master","k":"hhemik","c":"n","n":"One who owns a slave"},{
-"e":"master","k":"tansa","c":"n","n":"One who is supremely skilled or talented"},{
 "e":"master","k":"tans","c":"v","n":"To become supremely skilled"},{
+"e":"master","k":"tansa","c":"n","n":"One who is supremely skilled or talented"},{
 "e":"mastery","k":"tanso","c":"n"},{
 "e":"mate","k":"sofii","c":"n","n":"The second parent of one's children"},{
 "e":"mead","k":"iidelam","c":"n"},{
@@ -357,6 +373,7 @@
 "e":"mother","k":"yyiima","c":"n"},{
 "e":"mourn","k":"nnomo","c":"v"},{
 "e":"muscle","k":"setre","c":"n"},{
+"e":"mushroom","k":"sizant","c":"n","n":"Sizam punt, 'wine stone'"},{
 "e":"music","k":"shel","c":"n","n":"Clearly derived from shelyn, the goddess of music"},{
 "e":"muzzle","k":"benet","c":"n"},{
 "e":"Mwangi Expanse","k":"Mowan Ghint","f":"Mowan Gofo","c":"pn","n":"Wide savannah (Katapeshi: Dry savannah). Most of Mwangi is home to the densest jungle on Golarion. But the language treats the drier border region between Katapesh and the Expanse <a target=\"_blank\" href=\"https://en.wikipedia.org/wiki/Linguistic_homeland\">as if it refers to the whole region.</a>"},{
@@ -401,14 +418,16 @@
 "e":"over","k":"jogra","c":"adv"},{
 "e":"pact","k":"fenkh","c":"n"},{
 "e":"paladin","k":"aljorztik","c":"n","n":"Aljor zetik, 'holy warrior'"},{
+"e":"pants","k":"tiimakh","c":"n"},{
 "e":"path","k":"konat","c":"n"},{
-"e":"client","k":"sestasil","c":"n","n":"One who is favoured by someone of a higher station"},{
 "e":"patron","k":"sensil","c":"n","n":"One who favours someone of a lower station"},{
 "e":"paw","k":"owja","c":"n"},{
 "e":"pearl","k":"boja","c":"n"},{
 "e":"penis","k":"tiztii","c":"n"},{
 "e":"person","k":"alik","c":"n","n":"High-one"},{
 "e":"pierce","k":"shtiip","c":"v"},{
+"e":"pig","k":"krosh","c":"n"},{
+"e":"pink","k":"venkwis","c":"col","n":"White-red"},{
 "e":"place","k":"tuu","c":"n"},{
 "e":"plant","k":"sete","c":"n"},{
 "e":"platinum","k":"alatoro","c":"n","n":"High-silver"},{
@@ -423,11 +442,13 @@
 "e":"problem","k":"hhara","c":"n"},{
 "e":"psychic","k":"soltansa","c":"n","n":"Sola tansa, 'dream-master'"},{
 "e":"pure","k":"metarii","c":"adj"},{
+"e":"purple","k":"sejka","c":"col"},{
 "e":"queen","k":"alim","c":"n","n":"High-lady"},{
 "e":"question","k":"[item]mi","c":"n","n":"Where [item] is any of 'who', 'what', 'when', etc. The default, or fallback, is pajmi, 'what-thing'"},{
 "e":"ranger","k":"dantansa","c":"n","n":"Bow-master"},{
 "e":"rank","k":"tua","c":"n"},{
 "e":"reach","k":"veswe","c":"v"},{
+"e":"red","k":"kwis","c":"col"},{
 "e":"refuse","k":"arnh","c":"v"},{
 "e":"release","k":"tunke","c":"v"},{
 "e":"ride","k":"wilt","c":"v"},{
@@ -443,16 +464,20 @@
 "e":"savanna","k":"mowan","c":"n"},{
 "e":"scale","k":"sliihhe","c":"n","n":"The scales of a fish or lizard"},{
 "e":"scholar","k":"tojmtansa","c":"n","n":"Book-master"},{
+"e":"scout","k":"detont","c":"v"},{
 "e":"sea","k":"alboa","c":"n","n":"Great-water"},{
 "e":"season","k":"etask","c":"n","n":"A segment of the year with a unique set of weather patterns"},{
 "e":"see","k":"pet","c":"v"},{
 "e":"send","k":"sakhpro","c":"v"},{
 "e":"seven","k":"mjo","c":"num"},{
 "e":"shake","k":"wesk","c":"v"},{
+"e":"sheep","k":"iizos","c":"n"},{
 "e":"Shelyn","k":"Alima Liivi","c":"pn","n":"Younger Sister. Religious name for the goddess, Calistria being the Elder Sister"},{
 "e":"Shelyn","k":"Shelin","c":"pn","n":"Goddess of art and music worshipped among bards of the Mwangi Expanse"},{
 "e":"shepherd","k":"krumik","c":"n","n":"Shortening of khurumik, 'one who holds'"},{
 "e":"shield","k":"veren","c":"n"},{
+"e":"shirt","k":"fiistis","c":"n"},{
+"e":"shoe","k":"klip","c":"n"},{
 "e":"shoulder","k":"ghalmate","c":"n"},{
 "e":"shout","k":"ofrelet","c":"v"},{
 "e":"sick","k":"kiizh","c":"adj","n":"Ill from disease"},{
@@ -501,6 +526,7 @@
 "e":"state","k":"vaj","c":"n","n":"Any authority over a civil group, kholo or otherwise. A more generic term than khovaj"},{
 "e":"stay","k":"rejwa","c":"v"},{
 "e":"step","k":"owa","c":"v"},{
+"e":"stick","k":"piisis","c":"n"},{
 "e":"still","k":"mit","c":"adv","n":"Indicating a continuous action, as in 'I still need it'"},{
 "e":"still","k":"weten","c":"adj","n":"In the sense of not moving"},{
 "e":"stomach","k":"folokh","c":"n"},{
@@ -524,6 +550,7 @@
 "e":"Taldane","k":"Alboyyisii","f":"Albojhakh","c":"pn","n":"Sea-speech. Common human language spoken in Katapesh, Avistan, and most of Garund outside of the Mwangi Expanse"},{
 "e":"talk","k":"yyip","c":"v","n":"Note the single I"},{
 "e":"tall","k":"retsa","c":"adj"},{
+"e":"tavern","k":"etstemtol","c":"n","n":"Wine-house"},{
 "e":"tear","k":"ghi","c":"n","n":"A teardrop"},{
 "e":"tear","k":"khri","c":"n","n":"A gap or wound caused by ripping or tearing"},{
 "e":"tear","k":"khrim","c":"v","n":"To split something by shear force"},{
@@ -533,7 +560,9 @@
 "e":"that","k":"khuu","c":"con"},{
 "e":"then","k":"ez / -z","c":"prep","n":"Same as 'and'"},{
 "e":"there","k":"hhata","c":"adv"},{
+"e":"thick","k":"oshke","c":"adj"},{
 "e":"thigh","k":"zeft","c":"n"},{
+"e":"thin","k":"osho","c":"adj"},{
 "e":"thing","k":"mi","c":"n"},{
 "e":"think","k":"khrish","c":"v"},{
 "e":"this","k":"khe","c":"con"},{
@@ -569,6 +598,7 @@
 "e":"wait","k":"jebo","c":"v"},{
 "e":"wake","k":"iplii","c":"v"},{
 "e":"walk","k":"mat","c":"v"},{
+"e":"wand","k":"piirokh","c":"n"},{
 "e":"want","k":"hhuu","c":"v","n":"See grammar notes on aspirational mood"},{
 "e":"war","k":"zet","c":"n"},{
 "e":"warlock","k":"fenkhpiirik","c":"n","n":"One who obtains magical power through a demonic pact"},{
@@ -605,6 +635,7 @@
 "e":"wizardry","k":"tojmpiira","c":"n","n":"Book-magic"},{
 "e":"wolf","k":"tejlo","c":"n"},{
 "e":"wood","k":"ora","c":"n"},{
+"e":"wool","k":"iize","c":"n"},{
 "e":"word","k":"bit","c":"n"},{
 "e":"work","k":"triip","c":"n","n":"Menial work"},{
 "e":"work","k":"wa","c":"n","n":"Respectable work"},{
