@@ -40,6 +40,8 @@
 "e":"bake","k":"kokase","c":"v"},{
 "e":"barbarian","k":"konzan","c":"n","n":"Corrupted compound of konte, 'hard', and zetik, 'warrior'"},{
 "e":"bard","k":"shelik","c":"n","n":"One who is of Shelyn"},{
+"e":"bare","k":"wetse","c":"v"},{
+"e":"bare","k":"wetseja","c":"adj"},{
 "e":"bark","k":"yhep","c":"v"},{
 "e":"barley","k":"etamam","c":"n"},{
 "e":"be","k":"lu","c":"v","n":"Rarely to never used; except to provide context or specificity, or to be poetic"},{
@@ -61,6 +63,7 @@
 "e":"bite","k":"tet","c":"v"},{
 "e":"black","k":"tuunu","c":"col"},{
 "e":"blade","k":"kipnhii","c":"n","n":"Smallsword"},{
+"e":"blind","k":"rezwi","c":"adj","n":"Sight-without"},{
 "e":"blood","k":"nhi","c":"n"},{
 "e":"blue","k":"fiir","c":"col"},{
 "e":"body","k":"nhisho","c":"n","n":"Also means corpse"},{
@@ -89,6 +92,7 @@
 "e":"carry","k":"vuuta","c":"v"},{
 "e":"carve","k":"sera","c":"v"},{
 "e":"champion","k":"aljan zetik","c":"n","n":"Highest warrior"},{
+"e":"chaos","k":"bitwi","c":"n","n":"Word-without"},{
 "e":"cheese","k":"ghoshol","c":"n"},{
 "e":"chest","k":"temta","c":"n","n":"A container with a hinged lid"},{
 "e":"chew","k":"tilkh","c":"v"},{
@@ -165,12 +169,16 @@
 "e":"end","k":"ston","c":"n"},{
 "e":"energy","k":"yhok","c":"n","n":"Related to both kwo, 'fire'; and yhotwe, 'soul'"},{
 "e":"enough","k":"shiko","c":"det","n":"A sufficient quantity"},{
+"e":"envy","k":"gewa","c":"n"},{
 "e":"every","k":"li","c":"det"},{
 "e":"everyone","k":"laka","c":"adv"},{
 "e":"everywhere","k":"tuuli","c":"adv"},{
 "e":"evil","k":"ginn","c":"n"},{
+"e":"exile","k":"sotreskh","c":"v"},{
+"e":"exile","k":"sotreskha","c":"n"},{
 "e":"eye","k":"twa","c":"n"},{
 "e":"face","k":"sonaut","c":"n"},{
+"e":"fair","k":"bezhe","c":"adj"},{
 "e":"fall","k":"wolu","c":"v"},{
 "e":"far","k":"oma","c":"adv"},{
 "e":"farm","k":"khostuul","c":"n"},{
@@ -199,13 +207,16 @@
 "e":"for","k":"er","c":"prep","n":"Usually attached as a suffix, especially in more formal settings"},{
 "e":"forearm","k":"kipkrif","c":"n","n":"Small-arm"},{
 "e":"forward","k":"dakh","c":"adv"},{
+"e":"foul","k":"ohhoza","c":"adj"},{
 "e":"four","k":"nen","c":"num"},{
 "e":"fox","k":"hhwa","c":"n"},{
+"e":"fray","k":"","c":"v","n":"To split something, especially a rope or cable, by twisting"},{
 "e":"free","k":"lome","c":"adj"},{
 "e":"fresh","k":"siivi","c":"adj"},{
 "e":"friend","k":"sil","c":"n"},{
 "e":"from","k":"ap","c":"prep"},{
 "e":"front","k":"lete","c":"n"},{
+"e":"fruit","k":"pisot","c":"n"},{
 "e":"frustrate","k":"zetjar","c":"v"},{
 "e":"fur","k":"emji","c":"n"},{
 "e":"get","k":"sim","c":"v"},{
@@ -230,10 +241,14 @@
 "e":"grass","k":"sheg","c":"n"},{
 "e":"great","k":"al","c":"adj","n":"In the abstract sense, as in high or grand"},{
 "e":"great","k":"hhwii","c":"adj","n":"In the sense of being physically large"},{
+"e":"greed","k":"soza","c":"n"},{
 "e":"green","k":"mejo","c":"col"},{
 "e":"grey","k":"min","c":"col"},{
 "e":"grief","k":"nnimos","c":"n","n":"The empty sadness associated with a great loss"},{
 "e":"growl","k":"sotoii","c":"v"},{
+"e":"guide","k":"bola","c":"v"},{
+"e":"guide","k":"bolik","c":"n"},{
+"e":"guilt","k":"oskii","c":"n"},{
 "e":"gun","k":"sovwa","c":"n","n":"A firearm"},{
 "e":"gunslinger","k":"sovwansil","c":"n","n":"Sovwa sensil, 'gun-patron'"},{
 "e":"half","k":"uur","c":"n"},{
@@ -278,8 +293,10 @@
 "e":"illusion","k":"minzin","c":"n","n":"Grey-mist"},{
 "e":"in","k":"ko","c":"prep"},{
 "e":"ink","k":"begla","c":"n"},{
+"e":"innocence","k":"jorii","c":"n"},{
 "e":"invite","k":"sejii","c":"v"},{
 "e":"jewel","k":"tova","c":"n"},{
+"e":"journey","k":"ofora","c":"n"},{
 "e":"judge","k":"alkej","c":"v","n":"To pass judgment"},{
 "e":"judge","k":"alkejro","c":"n","n":"One who passes judgment"},{
 "e":"judge","k":"wuutse","c":"v","n":"Negative synonym. To judge when it is not one's station to do so. Contains wuu, 'obsess'"},{
@@ -305,6 +322,8 @@
 "e":"land","k":"tos","c":"n","n":"A particular region of the world"},{
 "e":"language","k":"yyisii","c":"n","n":"Related to yyip, 'speak'"},{
 "e":"last","k":"gom","c":"det","n":"The final element in a set"},{
+"e":"law","k":"albit","c":"n","n":"High-word"},{
+"e":"lazy","k":"fejii","c":"adj"},{
 "e":"leaf","k":"siik","c":"n"},{
 "e":"league","k":"alik'hha","c":"n","n":"People-many"},{
 "e":"league","k":"loyyaka","c":"n","n":"City-many"},{
@@ -337,6 +356,7 @@
 "e":"low","k":"tun","c":"adj"},{
 "e":"luck","k":"sesta","c":"n"},{
 "e":"lung","k":"rohhet","c":"n"},{
+"e":"lust","k":"tizi","c":"n"},{
 "e":"lynx","k":"khitsha","c":"n"},{
 "e":"lyre","k":"tolwa","c":"n","n":"Or any strummed instrument of similar make"},{
 "e":"mace","k":"sit","c":"n","n":"A weapon consisting of a metal sphere mounted on a hilt and studded with spikes"},{
@@ -375,6 +395,7 @@
 "e":"muscle","k":"setre","c":"n"},{
 "e":"mushroom","k":"sizant","c":"n","n":"Sizam punt, 'wine stone'"},{
 "e":"music","k":"shel","c":"n","n":"Clearly derived from shelyn, the goddess of music"},{
+"e":"mute","k":"yyisiiwi","c":"adj"},{
 "e":"muzzle","k":"benet","c":"n"},{
 "e":"Mwangi Expanse","k":"Mowan Ghint","f":"Mowan Gofo","c":"pn","n":"Wide savannah (Katapeshi: Dry savannah). Most of Mwangi is home to the densest jungle on Golarion. But the language treats the drier border region between Katapesh and the Expanse <a target=\"_blank\" href=\"https://en.wikipedia.org/wiki/Linguistic_homeland\">as if it refers to the whole region.</a>"},{
 "e":"Mwangi Jungle","k":"Uufora Ghint","f":"Mowan Boso","c":"pn","n":"Wide jungle (Katapeshi: Wet savannah)"},{
@@ -383,6 +404,7 @@
 "e":"name","k":"jej","c":"v","n":"To call someone by an identifier, whether that be their actual name or an alias or nickname"},{
 "e":"name","k":"jejta","c":"n","n":"The root-word of a kholo's name, the noun given to them at birth"},{
 "e":"name","k":"shojta","c":"n","n":"The surname or given name of a non-kholo entity or foreigner"},{
+"e":"nature","k":"tosrohhoa","c":"n","n":"Land-breath"},{
 "e":"near","k":"juuma","c":"adj"},{
 "e":"neck","k":"juuruhho","c":"n"},{
 "e":"need","k":"-t-","c":"v","n":"See grammar notes on aspirational mood"},{
@@ -424,6 +446,7 @@
 "e":"paw","k":"owja","c":"n"},{
 "e":"pearl","k":"boja","c":"n"},{
 "e":"penis","k":"tiztii","c":"n"},{
+"e":"perfect","k":"hhawa","c":"adj"},{
 "e":"person","k":"alik","c":"n","n":"High-one"},{
 "e":"pierce","k":"shtiip","c":"v"},{
 "e":"pig","k":"krosh","c":"n"},{
@@ -437,6 +460,7 @@
 "e":"potion","k":"ghos","c":"n"},{
 "e":"predator","k":"lo","c":"n"},{
 "e":"prey","k":"yyuumi","c":"n","n":"Hunger-thing"},{
+"e":"pride","k":"alsi","c":"n"},{
 "e":"prince","k":"khoshuu","c":"n","n":"Son of the tribe"},{
 "e":"princess","k":"khowima","c":"n","n":"Daughter of the tribe"},{
 "e":"problem","k":"hhara","c":"n"},{
@@ -463,11 +487,15 @@
 "e":"sand","k":"tefle","c":"n"},{
 "e":"savanna","k":"mowan","c":"n"},{
 "e":"scale","k":"sliihhe","c":"n","n":"The scales of a fish or lizard"},{
+"e":"scent","k":"fiso","c":"n"},{
 "e":"scholar","k":"tojmtansa","c":"n","n":"Book-master"},{
 "e":"scout","k":"detont","c":"v"},{
 "e":"sea","k":"alboa","c":"n","n":"Great-water"},{
 "e":"season","k":"etask","c":"n","n":"A segment of the year with a unique set of weather patterns"},{
+"e":"secret","k":"eget","c":"adj"},{
 "e":"see","k":"pet","c":"v"},{
+"e":"see","k":"reza","c":"v"},{
+"e":"seed","k":"pist","c":"n"},{},{
 "e":"send","k":"sakhpro","c":"v"},{
 "e":"seven","k":"mjo","c":"num"},{
 "e":"shake","k":"wesk","c":"v"},{
@@ -482,6 +510,7 @@
 "e":"shout","k":"ofrelet","c":"v"},{
 "e":"sick","k":"kiizh","c":"adj","n":"Ill from disease"},{
 "e":"side","k":"se","c":"n","n":"Homograph of se, 'do'"},{
+"e":"sight","k":"rezwa","c":"n"},{
 "e":"silent","k":"yohho","c":"adj"},{
 "e":"silver","k":"atoro","c":"n","n":"The metal"},{
 "e":"sing","k":"hhja","c":"v","n":"Strangely, not etymologically related to vest, 'song'"},{
@@ -491,9 +520,12 @@
 "e":"sky","k":"altuu","c":"n","n":"High-place"},{
 "e":"slaughter","k":"niika","c":"n","n":"Kill-many"},{
 "e":"sleep","k":"desh","c":"v"},{
+"e":"sloth","k":"feja","c":"n"},{
 "e":"slow","k":"wek","c":"adj"},{
 "e":"small","k":"kip","c":"adj"},{
 "e":"smart","k":"sadje","c":"adj","n":"Possibly related to Common 'sage'"},{
+"e":"smell","k":"fisii","c":"v"},{
+"e":"smell","k":"fiso","c":"n"},{
 "e":"smith","k":"hho'ik","c":"n","n":"Make-one"},{
 "e":"snake","k":"seftez","c":"n"},{
 "e":"sneer","k":"bintos","c":"n","n":"Bint'jos, 'tooth-look'"},{
@@ -550,6 +582,7 @@
 "e":"Taldane","k":"Alboyyisii","f":"Albojhakh","c":"pn","n":"Sea-speech. Common human language spoken in Katapesh, Avistan, and most of Garund outside of the Mwangi Expanse"},{
 "e":"talk","k":"yyip","c":"v","n":"Note the single I"},{
 "e":"tall","k":"retsa","c":"adj"},{
+"e":"taste","k":"solop","c":"v"},{
 "e":"tavern","k":"etstemtol","c":"n","n":"Wine-house"},{
 "e":"tear","k":"ghi","c":"n","n":"A teardrop"},{
 "e":"tear","k":"khri","c":"n","n":"A gap or wound caused by ripping or tearing"},{
@@ -592,6 +625,7 @@
 "e":"under","k":"jogo","c":"prep"},{
 "e":"up","k":"ti","c":"dir"},{
 "e":"use","k":"gent","c":"v"},{
+"e":"vegetable","k":"peshi","c":"n"},{
 "e":"vein","k":"gifo","c":"n","n":"In the sense of an ore deposit"},{
 "e":"virgin","k":"medwi","c":"n"},{
 "e":"voice","k":"yyiip","c":"n","n":"Note the double I"},{
@@ -641,6 +675,7 @@
 "e":"work","k":"wa","c":"n","n":"Respectable work"},{
 "e":"worker","k":"wik","c":"n","n":"Wa'ik, work-one"},{
 "e":"worship","k":"khuje","c":"n"},{
+"e":"wrath","k":"nhoa","c":"n"},{
 "e":"wrist","k":"retajto","c":"n"},{
 "e":"write","k":"nno","c":"v"},{
 "e":"year","k":"hhol","c":"n","n":"An orbit of the planet around its star"},{
