@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat&display=swap');
 
 body {
-font-family: "Arial";
+font-family: "National Park";
 font-size: 12pt;
 background-image: url('images/bg.png');
 background-repeat: no-repeat;
@@ -79,7 +79,7 @@ background-color: #262633;
 
 h1 {
 background-color: #1E0D0D;
-font-family: "Garamond";
+font-family: "Playfair Display";
 font-optical-sizing: auto;
 font-size: 48pt;
 font-style: normal;
@@ -95,7 +95,7 @@ z-index: 1;
 }
 
 h2 {
-font-family: "Garamond";
+font-family: "Playfair Display";
 font-optical-sizing: auto;
 font-size: 32pt;
 font-style: normal;
