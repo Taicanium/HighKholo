@@ -24,7 +24,7 @@ button {
 background-color: transparent;
 color: #BCB8D8;
 cursor: pointer;
-text-decoration: underline;
+text-decoration: none;
 font-weight: bold;
 font-size: 12pt;
 border: none;
