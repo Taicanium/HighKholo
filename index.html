@@ -1,46 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="utf-8"/>
+<meta charset="utf-8">
 <title>High Kholo: Conlang by Taica</title>
-<link rel="author" href="//taicanium.github.io/"/>
-<link rel="icon" type="image/x-icon" href="favicon.ico"/>
-<link rel="license" href="//paizo.com/licenses/communityuse"/>
-<link rel="preload" as="fetch" href="//api.github.com/repos/taicanium/HighKholo/commits?page=1&per_page=1" type="application/json" crossorigin/>
-<link rel="preload" as="fetch" href="hk_dict.json" type="application/json" crossorigin/>
-<link rel="stylesheet" href="index.css"/>
-<script type="text/javascript">
-var hk_lexDB=[],d=document.getElementById.bind(document);function w(e){var n="";d("lexText").innerHTML="",hk_lexDB.words.forEach(function(t){t.e.toLowerCase().startsWith(e)&&(n=`<p><i>${t.e}</i> &mdash; ${hk_lexDB.classes[t.c]}: <b>${t.k}</b>`,t.hasOwnProperty("f")&&(n+=` &vert; <span class="kataText">${t.f}</span>`),t.hasOwnProperty("n")&&(n+=` &ndash; <span class="smalltext"><i>${t.n}</i></span>`),n+="</p>",d("lexText").innerHTML+=n)})}function rdb(e){"*S"===e?d("lexText").innerHTML=d("slave").innerHTML:"*P"===e?d("lexText").innerHTML=d("phrases").innerHTML:w(e)}window.addEventListener("load",function(e){fetch("//api.github.com/repos/taicanium/HighKholo/commits?page=1&per_page=1").then(e=>e.json()).then(function(e){d("gitStamp").innerHTML=new Date(Date.parse(e[0].commit.committer.date)).toLocaleString()}),fetch("hk_dict.json").then(e=>e.json()).then(function(e){hk_lexDB=e})});
+<link rel="author" href="//taicanium.github.io/">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="license" href="//paizo.com/licenses/communityuse">
+<link rel="preload" as="fetch" href="//api.github.com/repos/taicanium/HighKholo/commits?page=1&per_page=1" type="application/json" crossorigin>
+<link rel="preload" as="fetch" href="hk_dict.json" type="application/json" crossorigin>
+<link rel="stylesheet" href="index.css">
+<script>
+var hk_lexDB_e=[],hk_lexDB_k=[],d=document.getElementById.bind(document);function w(e){var t="";d("lexText").innerHTML="",hk_lexDB_e.words.forEach(function(s){s.e.toLowerCase().startsWith(e)&&(t=`<p><i>${s.e}</i> &mdash; ${hk_lexDB_e.classes[s.c]}: <b>${s.k}</b>`,s.hasOwnProperty("f")&&(t+=` &vert; <span class="kataText">${s.f}</span>`),s.hasOwnProperty("n")&&(t+=` &ndash; <span class="smalltext"><i>${s.n}</i></span>`),t+="</p>",d("lexText").innerHTML+=t)})}function rdb(e){"*S"===e?d("lexText").innerHTML=d("slave").innerHTML:"*P"===e?d("lexText").innerHTML=d("phrases").innerHTML:w(e)}function sdb(){var e=d("khsearch").value.toLowerCase();d("lexText").innerHTML="",hk_lexDB_k.words.forEach(function(t){(t.hasOwnProperty("e")&&t.e.toLowerCase().includes(e)||t.hasOwnProperty("k")&&t.k.toLowerCase().includes(e)||t.hasOwnProperty("f")&&t.f.toLowerCase().includes(e))&&(n=`<p><b>${t.k}</b> `,t.hasOwnProperty("f")&&(n+=`&vert; <span class="kataText">${t.f}</span> `),n+=`&mdash; ${hk_lexDB_k.classes[t.c]}: `,t.hasOwnProperty("e")&&(n+=`<i>${t.e}</i> `),t.hasOwnProperty("n")&&(n+=`&ndash; <span class="smalltext"><i>${t.n}</i></span>`),n+="</p>",d("lexText").innerHTML+=n)})}window.addEventListener("load",function(e){fetch("//api.github.com/repos/taicanium/HighKholo/commits?page=1&per_page=1").then(e=>e.json()).then(function(e){d("gitStamp").innerHTML=new Date(Date.parse(e[0].commit.committer.date)).toLocaleString()}),fetch("hk_dict.json").then(e=>e.json()).then(function(e){hk_lexDB_e=e,(hk_lexDB_k=e).words.sort((e,t)=>{let s=e.k.toLowerCase(),a=t.k.toLowerCase();return s<a?-1:s>a?1:0})})});
 </script>
 </head>
 <body>
 <a href="//taicanium.github.io/" target="_blank">
-<img class="icon" id="happy" src="images/Rhian-Happy.png" alt="Rhian-Happy"/>
-<img class="icon" id="normal" src="images/Rhian-Normal.png" alt="Rhian-Normal"/>
+<img class="icon" id="happy" src="images/Rhian-Happy.png" alt="Rhian-Happy">
+<img class="icon" id="normal" src="images/Rhian-Normal.png" alt="Rhian-Normal">
 </a>
 
 <div id="gitRev"><p>Last modified:</p><p id="gitStamp">--/--/----</p></div>
 
 <ul id="navBar">
-<li><a href="#introduction">I.<br/>Introduction</a></li>
-<li><a href="#phonemes">II.<br/>Phonemes</a></li>
-<li><a href="#orthography">III.<br/>Orthography</a></li>
-<li><a href="#grammar">IV.<br/>Grammar</a></li>
-<li><a href="#morphology">V.<br/>Morphology</a></li>
-<li><a href="#pronouns">VI.<br/>Pronouns</a></li>
-<li><a href="#numerals">VII.<br/>Numerals</a></li>
-<li><a href="#lexicon">VIII.<br/>Lexicon</a></li>
-<li><a href="#culture">IX.<br/>Culture</a></li>
-<li><a href="#excerpts">X.<br/>Excerpts</a></li>
+<li><a href="#introduction">I.<br>Introduction</a></li>
+<li><a href="#phonemes">II.<br>Phonemes</a></li>
+<li><a href="#orthography">III.<br>Orthography</a></li>
+<li><a href="#grammar">IV.<br>Grammar</a></li>
+<li><a href="#morphology">V.<br>Morphology</a></li>
+<li><a href="#pronouns">VI.<br>Pronouns</a></li>
+<li><a href="#numerals">VII.<br>Numerals</a></li>
+<li><a href="#lexicon">VIII.<br>Lexicon</a></li>
+<li><a href="#culture">IX.<br>Culture</a></li>
+<li><a href="#excerpts">X.<br>Excerpts</a></li>
 </ul>
 
 <h1>High Kholo</h1>
 
 <div class="subdiv" id="introduction">
 <h2>Gnolls, and the Language Thereof</h2>
-<p>This guide details the dialect most commonly spoken among <a href="//pathfinderwiki.com/wiki/Kholo#tabber-2E" target="_blank">kholo</a> of the <a href="//pathfinderwiki.com/wiki/Mwangi_Expanse" target="_blank">Mwangi Expanse</a>, as opposed to those dialects spoken in <a href="//pathfinderwiki.com/wiki/Katapesh" target="_blank">Katapesh</a> or other areas.<br/>Commonly referred to as High Kholo, reflecting the Mwangi gnolls' greater (by comparison) penchant for civilized culture and trade.</p>
+<p>This guide details the dialect most commonly spoken among <a href="//pathfinderwiki.com/wiki/Kholo#tabber-2E" target="_blank">kholo</a> of the <a href="//pathfinderwiki.com/wiki/Mwangi_Expanse" target="_blank">Mwangi Expanse</a>, as opposed to those dialects spoken in <a href="//pathfinderwiki.com/wiki/Katapesh" target="_blank">Katapesh</a> or other areas.<br>Commonly referred to as High Kholo, reflecting the Mwangi gnolls' greater (by comparison) penchant for civilized culture and trade.</p>
 <p>Natively, it is simply called Kholo, or <i>Kholoyyisii</i> ("Kholo-speech"). Notes are not kept on other dialects of Kholo, except as they directly relate to this one.</p>
-<p class="smalltext">Remember: Kholo are not humans, and do not possess human mouth anatomy. This document takes a little "Okay so these guys have funny dog mouths" to follow. It's worth it, this is fun. I promise.</p><br/>
+<p class="smalltext">Remember: Kholo are not humans, and do not possess human mouth anatomy. This document takes a little "Okay so these guys have funny dog mouths" to follow. It's worth it, this is fun. I promise.</p><br>
 <p class="smalltext"><b>High Kholo</b> uses trademarks and/or copyrights owned by Paizo Inc., used under Paizo's Community Use Policy (<a target="_blank" href="//paizo.com/licenses/communityuse">paizo.com/licenses/communityuse</a>). I am expressly prohibited from charging you to use or access this content. <b>High Kholo</b> is not published, endorsed, or specifically approved by Paizo. For more information about Paizo Inc. and Paizo products, visit <a target="_blank" href="//paizo.com">paizo.com</a>.</p>
 </div>
 
@@ -117,7 +117,7 @@ var hk_lexDB=[],d=document.getElementById.bind(document);function w(e){var n="";
 <td></td>
 </tr>
 </table>
-<br/>
+<br>
 <h3>Vowels</h3>
 <table>
 <tr>
@@ -169,44 +169,44 @@ var hk_lexDB=[],d=document.getElementById.bind(document);function w(e){var n="";
 <td></td>
 </tr>
 </table>
-<br/>
+<br>
 <h2>Sound Guide</h2>
 <p>High Kholo, being a language of hyenafolk, is designed at its core with sounds pronounceable by the muzzle of a hyena. Its phonemes can all be approximated by a human, and many are identical to human sounds.</p>
-<p>In the consonant inventory above, each letter in a grid cell corresponds roughly to a human phoneme.<br/>Not all are direct translations, however. Follow below for a guide on the unique sounds exclusive to Kholo, and information on how to best approximate those sounds as a human.</p><br/>
+<p>In the consonant inventory above, each letter in a grid cell corresponds roughly to a human phoneme.<br>Not all are direct translations, however. Follow below for a guide on the unique sounds exclusive to Kholo, and information on how to best approximate those sounds as a human.</p><br>
 <h3>Bidentals</h3>
 <p>Made with the jaws clenched and the teeth bared.</p>
 <ul>
-<li><b>Fricative &lt;<i>nh</i>&gt;</b>: This sound is essentially the linguistic rendition of a growl. Functionally speaking, it consists of gritting the teeth and loudly exhaling between them.<br/>Two approximations exist. The first is closer to the real sound, consisting of gritting your teeth and exhaling. The second is more comfortable for human speakers at the cost of being a looser interpretation: Press your tongue to the back of your teeth and loudly exhale around it, similar to the 'll' sound of Welsh.</li><br/>
-<li><b>Nasal &lt;<i>nn</i>&gt;</b>: In contrast to the fricative, this sound is closer to a hiss or a whine. The teeth are gritted as before, but the speaker exhales through their nose instead of between their teeth.<br/>This sound also has two human interpretations. The looser one is to make an 'enye' sound, as &ntilde;.</li><br/>
-<li><b>Approximant &lt;<i>jh</i>&gt;</b>: This sound existed in prior ages, but fell out around the time paper-based writing was introduced through contact with the Osirians. It persists in other dialects, and is preserved in writing for that purpose.<br/>To make it, open your mouth wide, bring your teeth together quickly, then exhale as you bring them apart again; like you're making a 'y' sound but with your teeth instead of your tongue.</li><br/>
+<li><b>Fricative &lt;<i>nh</i>&gt;</b>: This sound is essentially the linguistic rendition of a growl. Functionally speaking, it consists of gritting the teeth and loudly exhaling between them.<br>Two approximations exist. The first is closer to the real sound, consisting of gritting your teeth and exhaling. The second is more comfortable for human speakers at the cost of being a looser interpretation: Press your tongue to the back of your teeth and loudly exhale around it, similar to the 'll' sound of Welsh.</li>
+<li><b>Nasal &lt;<i>nn</i>&gt;</b>: In contrast to the fricative, this sound is closer to a hiss or a whine. The teeth are gritted as before, but the speaker exhales through their nose instead of between their teeth.<br>This sound also has two human interpretations. The looser one is to make an 'enye' sound, as &ntilde;.</li>
+<li><b>Approximant &lt;<i>jh</i>&gt;</b>: This sound existed in prior ages, but fell out around the time paper-based writing was introduced through contact with the Osirians. It persists in other dialects, and is preserved in writing for that purpose.<br>To make it, open your mouth wide, bring your teeth together quickly, then exhale as you bring them apart again; like you're making a 'y' sound but with your teeth instead of your tongue.</li>
 </ul>
-<br/>
+<br>
 <h3>Interdentals</h3>
 <p>Made with the tongue pressed adjacent to the fangs. In humans this position would be equivalent to behind the incisors but ahead of the canines, if such a space existed.</p>
 <p>These sounds all roughly correspond to ordinary human consonants, and no special notes are needed for them. The one exception is the interdental latrant, which is covered below.</p>
-<br/>
+<br>
 <h3>Glottals</h3>
 <p>These are sounds made using the throat as the primary articulator, rather than the tongue or teeth. There are two, the plosive and the fricative; both of which directly correspond to human sounds.</p>
 <p>The glottal fricative is the classic 'h' sound. It is doubled in Kholo writing to help distinguish it from numerous other sounds that use 'h' as a modifier instead of a letter &mdash; 'nh,' 'sh,' among others.</p>
 <p>The glottal plosive, written with an apostrophe ('), indicates that the speaker should briefly interrupt their flow of air before resuming it. "Ah-ah-ah!" is a common human saying that uses this sound.</p>
-<br/>
+<br>
 <h3>Latrants</h3>
-<p>From an older Common word meaning 'barking,' latrant consonants are made with the tongue starting slack and rapidly accelerating towards the target position. These are the language's famous yips and barks that outsiders associate with the hyenafolk, and arguably the hardest for outsiders to pronounce.<br/>There are three distinct latrant consonants in High Kholo:</p>
+<p>From an older Common word meaning 'barking,' latrant consonants are made with the tongue starting slack and rapidly accelerating towards the target position. These are the language's famous yips and barks that outsiders associate with the hyenafolk, and arguably the hardest for outsiders to pronounce.<br>There are three distinct latrant consonants in High Kholo:</p>
 <ul>
-<li><b>Dental &lt;<i>y</i>&gt;</b>: The classic yipping sound. The tip of the tongue touches behind the front fangs of the muzzle, usually forcing a front (high-pitched) vowel sound.<br/>Make a fast 'y' sound, but end it with your tongue barely touching your upper teeth, sort of like you're making a cross between a 'y' and an 'l' sound.<br/><i>This is not the same as the English 'y'!</i> That sound is called a palatal approximant, and it's written with a 'j' in Kholo.</li><br/>
-<li><b>Interdental &lt;<i>yy</i>&gt;</b>: The tongue comes to rest between the middle fangs.<br/>Make a fast, exaggerated 'y' sound with your tongue curling up towards the front of your mouth. Try saying 'giddy-up' very, very quickly, and you'll have the idea.</li><br/>
-<li><b>Palatal &lt;<i>yh</i>&gt;</b>: The classic barking sound. The tongue curls up to the roof of the mouth, and the jaws part wider during vocalization.<br/>Curl your tongue like in the interdental, but further upward - towards the back of your mouth instead of the front. Your mouth will want to open wider when you do this; let it. This sound takes some practice, and may be uncomfortable the first few tries. It's easier if you imagine yourself literally barking.</li><br/>
+<li><b>Dental &lt;<i>y</i>&gt;</b>: The classic yipping sound. The tip of the tongue touches behind the front fangs of the muzzle, usually forcing a front (high-pitched) vowel sound.<br>Make a fast 'y' sound, but end it with your tongue barely touching your upper teeth, sort of like you're making a cross between a 'y' and an 'l' sound.<br><i>This is not the same as the English 'y'!</i> That sound is called a palatal approximant, and it's written with a 'j' in Kholo.</li>
+<li><b>Interdental &lt;<i>yy</i>&gt;</b>: The tongue comes to rest between the middle fangs.<br>Make a fast, exaggerated 'y' sound with your tongue curling up towards the front of your mouth. Try saying 'giddy-up' very, very quickly, and you'll have the idea.</li>
+<li><b>Palatal &lt;<i>yh</i>&gt;</b>: The classic barking sound. The tongue curls up to the roof of the mouth, and the jaws part wider during vocalization.<br>Curl your tongue like in the interdental, but further upward - towards the back of your mouth instead of the front. Your mouth will want to open wider when you do this; let it. This sound takes some practice, and may be uncomfortable the first few tries. It's easier if you imagine yourself literally barking.</li>
 </ul>
-<br/>
+<br>
 <h3>Vowels</h3>
 <p>Kholo contains seven core vowel sounds, notably fewer than Common. It also contains fewer diphthongs (such as the 'oy' or 'aye' sounds in English), a product of its speakers who readily prefer articulated consonants. The diphthongs that Kholo does contain are often written with a vowel-consonant group, such as 'oj,' rather than as two vowels.</p>
 <ul>
-<li><b>A &lt;ɑː&gt;</b>: the 'a' in British English 'f<b>a</b>ther'.</li><br/>
-<li><b>E &lt;ɛ&gt;</b>: 'e' as in North American English 'b<b>e</b>d' or 'w<b>e</b>t'.</li><br/>
-<li><b>I &lt;ɪ&gt;</b>: 'i' as in 'f<b>i</b>ckle' or 'b<b>i</b>gger'.</li><br/>
-<li><b>Ii &lt;iː&gt;</b>: Long 'ee' sound as in 'fr<b>ee</b>'.</li><br/>
-<li><b>O</b>: No universal equivalent. It follows the mid-vowel sound seen, e.g. in the word 'pl<b>u</b>s' spoken in the Philadelphia and Norfolk accents, or in the word 'Camb<b>o</b>dia' as spoken in Yorkshire or the General American accent.<br/>The simplest analogy would be to take the standard 'Oh' sound, and remove the narrowing to a 'u' that commonly follows at the end.</li><br/>
-<li><b>U &lt;ʌ&gt;</b>: Soft 'uh' sound as in 'b<b>u</b>n' or 'M<b>o</b>nday'.</li><br/>
+<li><b>A &lt;ɑː&gt;</b>: the 'a' in British English 'f<b>a</b>ther'.</li>
+<li><b>E &lt;ɛ&gt;</b>: 'e' as in North American English 'b<b>e</b>d' or 'w<b>e</b>t'.</li>
+<li><b>I &lt;ɪ&gt;</b>: 'i' as in 'f<b>i</b>ckle' or 'b<b>i</b>gger'.</li>
+<li><b>Ii &lt;iː&gt;</b>: Long 'ee' sound as in 'fr<b>ee</b>'.</li>
+<li><b>O</b>: No universal equivalent. It follows the mid-vowel sound seen, e.g. in the word 'pl<b>u</b>s' spoken in the Philadelphia and Norfolk accents, or in the word 'Camb<b>o</b>dia' as spoken in Yorkshire or the General American accent.<br>The simplest analogy would be to take the standard 'Oh' sound, and remove the narrowing to a 'u' that commonly follows at the end.</li>
+<li><b>U &lt;ʌ&gt;</b>: Soft 'uh' sound as in 'b<b>u</b>n' or 'M<b>o</b>nday'.</li>
 <li><b>Uu &lt;uː&gt;</b>: Long 'oo' sound as in North American English 'cart<b>oo</b>n' or 's<b>oo</b>n'.</li>
 </ul>
 </div>
@@ -214,110 +214,119 @@ var hk_lexDB=[],d=document.getElementById.bind(document);function w(e){var n="";
 <div class="subdiv" id="orthography">
 <h2>Symbols</h2>
 <h3>Consonants</h3>
-<p><span class="smalltext">These were derived from a set of hieroglyphs representing the rough position of a kholo's mouth and teeth when making the related sounds.</span></p><br/>
+<p><span class="smalltext">These were derived from a set of hieroglyphs representing the rough position of a kholo's mouth and teeth when making the related sounds.</span></p><br>
 <table>
+<tr>
+<th>P</th>
+<th>T</th>
+<th>F</th>
+<th>K</th>
+<th>Kh</th>
+<th>S</th>
+<th>Sh</th>
+</tr>
+<tr>
+<td><img alt="P" class="letter" src="images/letters/p.png"></td>
+<td><img alt="T" class="letter" src="images/letters/t.png"></td>
+<td><img alt="F" class="letter" src="images/letters/f.png"></td>
+<td><img alt="K" class="letter" src="images/letters/k.png"></td>
+<td><img alt="KH" class="letter" src="images/letters/kh.png"></td>
+<td><img alt="S" class="letter" src="images/letters/s.png"></td>
+<td><img alt="SH" class="letter" src="images/letters/sh.png"></td>
+</tr>
 <tr>
 <th>B</th>
 <th>D</th>
-<th>F</th>
+<th>V</th>
 <th>G</th>
 <th>Gh</th>
-<th>Hh</th>
-</tr>
-<tr>
-<td><img class="letter" src="images/letters/b.png"/></td>
-<td><img class="letter" src="images/letters/d.png"/></td>
-<td><img class="letter" src="images/letters/f.png"/></td>
-<td><img class="letter" src="images/letters/g.png"/></td>
-<td><img class="letter" src="images/letters/gh.png"/></td>
-<td><img class="letter" src="images/letters/hh.png"/></td>
-</tr>
-<tr>
-<th>J</th>
-<th>Jh</th>
-<th>K</th>
-<th>Kh</th>
-<th>L</th>
-<th>M</th>
-</tr>
-<tr>
-<td><img class="letter" src="images/letters/j.png"/></td>
-<td><img class="letter" src="images/letters/jh.png"/></td>
-<td><img class="letter" src="images/letters/k.png"/></td>
-<td><img class="letter" src="images/letters/kh.png"/></td>
-<td><img class="letter" src="images/letters/l.png"/></td>
-<td><img class="letter" src="images/letters/m.png"/></td>
-</tr>
-<tr>
-<th>N</th>
-<th>Nh</th>
-<th>Nn</th>
-<th>P</th>
-<th>R</th>
-<th>S</th>
-</tr>
-<tr>
-<td><img class="letter" src="images/letters/n.png"/></td>
-<td><img class="letter" src="images/letters/nh.png"/></td>
-<td><img class="letter" src="images/letters/nn.png"/></td>
-<td><img class="letter" src="images/letters/p.png"/></td>
-<td><img class="letter" src="images/letters/r.png"/></td>
-<td><img class="letter" src="images/letters/s.png"/></td>
-</tr>
-<tr>
-<th>Sh</th>
-<th>T</th>
-<th>V</th>
-<th>W</th>
-<th>Y</th>
-<th>Yh</th>
-</tr>
-<tr>
-<td><img class="letter" src="images/letters/sh.png"/></td>
-<td><img class="letter" src="images/letters/t.png"/></td>
-<td><img class="letter" src="images/letters/v.png"/></td>
-<td><img class="letter" src="images/letters/w.png"/></td>
-<td><img class="letter" src="images/letters/y.png"/></td>
-<td><img class="letter" src="images/letters/yh.png"/></td>
-</tr>
-<tr>
-<th>Yy</th>
 <th>Z</th>
 <th>Zh</th>
-<th>(')</th>
 </tr>
 <tr>
-<td><img class="letter" src="images/letters/yy.png"/></td>
-<td><img class="letter" src="images/letters/z.png"/></td>
-<td><img class="letter" src="images/letters/zh.png"/></td>
-<td><img class="letter" src="images/letters/'.png"/></td>
+<td><img alt="B" class="letter" src="images/letters/b.png"></td>
+<td><img alt="D" class="letter" src="images/letters/d.png"></td>
+<td><img alt="V" class="letter" src="images/letters/v.png"></td>
+<td><img alt="G" class="letter" src="images/letters/g.png"></td>
+<td><img alt="GH" class="letter" src="images/letters/gh.png"></td>
+<td><img alt="Z" class="letter" src="images/letters/z.png"></td>
+<td><img alt="ZH" class="letter" src="images/letters/zh.png"></td>
 </tr>
 </table>
-<br/> <br/>
-<h3>Vowels</h3>
-<p><span class="smalltext">Vowels, meanwhile, were derived from pictograms of animals that make similar noises.</span></p>
-<p>Vowels are written as diacritic (small) marks above the consonant that came before them. If a vowel appears at the start of a word, or preceded by another vowel, it is written full-size on its own like a consonant.</p><br/>
+<br>
 <table>
 <tr>
-<th>A<br/><span class="smalltext">Crow</span></th>
-<th>E<br/><span class="smalltext">Fox</span></th>
-<th>I<br/><span class="smalltext">Pig</span></th>
-<th>Ii<br/><span class="smalltext">Rat</span></th>
-<th>O<br/><span class="smalltext">Monkey</span></th>
-<th>U<br/><span class="smalltext">Dragon</span></th>
-<th>Uu<br/><span class="smalltext">Ox</span></th>
+<th>(')</th>
+<th>J</th>
+<th>N</th>
+<th>Y</th>
+<th>L</th>
+<th>M</th>
+<th>R</th>
 </tr>
 <tr>
-<td><img class="letter" src="images/letters/a.png"/></td>
-<td><img class="letter" src="images/letters/e.png"/></td>
-<td><img class="letter" src="images/letters/i.png"/></td>
-<td><img class="letter" src="images/letters/ii.png"/></td>
-<td><img class="letter" src="images/letters/o.png"/></td>
-<td><img class="letter" src="images/letters/u.png"/></td>
-<td><img class="letter" src="images/letters/uu.png"/></td>
+<td><img alt="Glottal stop" class="letter" src="images/letters/'.png"></td>
+<td><img alt="J" class="letter" src="images/letters/j.png"></td>
+<td><img alt="N" class="letter" src="images/letters/n.png"></td>
+<td><img alt="Y" class="letter" src="images/letters/y.png"></td>
+<td><img alt="L" class="letter" src="images/letters/l.png"></td>
+<td><img alt="M" class="letter" src="images/letters/m.png"></td>
+<td><img alt="R" class="letter" src="images/letters/r.png"></td>
+</tr>
+<tr>
+<th>Hh</th>
+<th>Jh</th>
+<th>Nh</th>
+<th>Yh</th>
+<th colspan="3"></th>
+</tr>
+<tr>
+<td><img alt="HH" class="letter" src="images/letters/hh.png"></td>
+<td><img alt="JH" class="letter" src="images/letters/jh.png"></td>
+<td><img alt="NH" class="letter" src="images/letters/nh.png"></td>
+<td><img alt="YH" class="letter" src="images/letters/yh.png"></td>
+<td colspan="3"></td>
+</tr>
+<tr>
+<th></th>
+<th>W</th>
+<th>Nn</th>
+<th>Yy</th>
+<th colspan="3"></th>
+</tr>
+<tr>
+<td></td>
+<td><img alt="W" class="letter" src="images/letters/w.png"></td>
+<td><img alt="NN" class="letter" src="images/letters/nn.png"></td>
+<td><img alt="YY" class="letter" src="images/letters/yy.png"></td>
+<td colspan="3"></td>
 </tr>
 </table>
-<br/><br/>
+<br> <br>
+<h3>Vowels</h3>
+<p><span class="smalltext">Vowels, meanwhile, were derived from pictograms of animals that make similar noises.</span></p>
+<p>Vowels are written as diacritic (small) marks above the consonant that came before them. If a vowel appears at the start of a word, or preceded by another vowel, it is written full-size on its own like a consonant.</p><br>
+<table>
+<tr>
+<th>A<br><span class="smalltext">Crow</span></th>
+<th>E<br><span class="smalltext">Fox</span></th>
+<th>I<br><span class="smalltext">Pig</span></th>
+<th>Ii<br><span class="smalltext">Rat</span></th>
+<th>O<br><span class="smalltext">Monkey</span></th>
+<th>U<br><span class="smalltext">Dragon</span></th>
+<th>Uu<br><span class="smalltext">Ox</span></th>
+</tr>
+<tr>
+<td><img alt="A" class="letter" src="images/letters/a.png"></td>
+<td><img alt="E" class="letter" src="images/letters/e.png"></td>
+<td><img alt="I" class="letter" src="images/letters/i.png"></td>
+<td><img alt="Double I" class="letter" src="images/letters/ii.png"></td>
+<td><img alt="O" class="letter" src="images/letters/o.png"></td>
+<td><img alt="U" class="letter" src="images/letters/u.png"></td>
+<td><img alt="Double U (two U's, not to be confused with the letter W)" class="letter" src="images/letters/uu.png"></td>
+</tr>
+</table>
+<br><br>
 <h3>Punctuation</h3>
 <table>
 <tr>
@@ -328,50 +337,50 @@ var hk_lexDB=[],d=document.getElementById.bind(document);function w(e){var n="";
 <th>Quotation</th>
 </tr>
 <tr>
-<td><img class="letter" src="images/punc/comma.png"/></td>
-<td><img class="letter" src="images/punc/period.png"/></td>
-<td><img class="letter" src="images/punc/exclamation.png"/></td>
-<td><img class="letter" src="images/punc/question.png"/></td>
-<td><img class="letter" src="images/punc/quotation.png"/></td>
+<td><img alt="Comma" class="letter" src="images/punc/comma.png"></td>
+<td><img alt="Period/Full Stop" class="letter" src="images/punc/period.png"></td>
+<td><img alt="Exclamation Mark" class="letter" src="images/punc/exclamation.png"></td>
+<td><img alt="Question Mark" class="letter" src="images/punc/question.png"></td>
+<td><img alt="Quotation Mark" class="letter" src="images/punc/quotation.png"></td>
 </tr>
 </table>
-<br/>
+<br>
 <h2>Samples</h2>
 <p>Kholo is written in one of two modes: The normal style, with each letter separate; and the "semi-cursive" style, where each letter is horizontally connected to the next.</p>
 <p>The normal style is used in printing, and the semi-cursive style is more common in handwriting (making it by far more common in general). Semi-cursive is more socially formal than normal style; the latter tends to appear more childish.</p>
-<p>In semi-cursive style, vowels written at the start of a word (see above) are not connected.</p><br/>
+<p>In semi-cursive style, vowels written at the start of a word (see above) are not connected.</p><br>
 <h3>Normal</h3>
 <table>
-<tr><td>Bansil<br/><span class="smalltext">"Best friend"</span></td></tr>
-<tr><td><img class="sample" src="images/bansil.png"/></td></tr>
+<tr><td>Bansil<br><span class="smalltext">"Best friend"</span></td></tr>
+<tr><td><img alt="Bansil" class="sample" src="images/bansil.png"></td></tr>
 </table>
 <table>
-<tr><td>Fenkhpiira<br/><span class="smalltext">"Witchcraft"</span></td></tr>
-<tr><td><img class="sample" src="images/fenkhpiira.png"/></td></tr>
+<tr><td>Fenkhpiira<br><span class="smalltext">"Witchcraft"</span></td></tr>
+<tr><td><img alt="Fenkhpiira" class="sample" src="images/fenkhpiira.png"></td></tr>
 </table>
-<br/>
+<br>
 <h3>Semi-cursive</h3>
 <table>
 <tr><td>Kholo</td></tr>
-<tr><td><img class="sample" src="images/kholo.png"/></td></tr>
+<tr><td><img alt="Kholo" class="sample" src="images/kholo.png"></td></tr>
 </table>
 <table>
-<tr><td>Aljan zetik<br/><span class="smalltext">"Champion"</span></td></tr>
-<tr><td><img class="sample" src="images/aljan_zetik.png"/></td></tr>
+<tr><td>Aljan zetik<br><span class="smalltext">"Champion"</span></td></tr>
+<tr><td><img alt="Aljan Zetik" class="sample" src="images/aljan_zetik.png"></td></tr>
 </table>
 <table>
-<tr><td>Khoshuu seneta mejosiik<br/><span class="smalltext">"Prince of the summer court"</span></td></tr>
-<tr><td><img class="sample" src="images/khoshuu_seneta_mejosiik.png"/></td></tr>
+<tr><td>Khoshuu seneta mejosiik<br><span class="smalltext">"Prince of the summer court"</span></td></tr>
+<tr><td><img alt="Khoshuu Seneta Mejosiik" class="sample" src="images/khoshuu_seneta_mejosiik.png"></td></tr>
 </table>
 </div>
 
 <div class="subdiv" id="grammar">
 <h2>Syntax</h2>
-<p>Kholo generally follows a subject-object-verb sentence structure: "Timmy the ball kicks".<br/>The language is remarkably flexible, however. In most settings, the only strict requirement is that the object follow the subject.</p>
-<p>Verb-subject-object ("Kicks Timmy the ball") is a common format in flowery, poetic systems; but tends to be seen as archaic or eccentric in speech.<br/>In more casual writing or conversation, subject-verb-object ("Timmy kicks the ball," as in Common) is seen as more formal than the norm, and this is usually sufficient.</p>
-<p>Adjectives follow the noun they modify, unless compounded or used as prefixes. There is no strict requirement for which form to use, though the prefix form is discouraged if the noun is already particularly long. (What counts as "particularly long" is up to personal taste.)</p><br/>
+<p>Kholo generally follows a subject-object-verb sentence structure: "Timmy the ball kicks".<br>The language is remarkably flexible, however. In most settings, the only strict requirement is that the object follow the subject.</p>
+<p>Verb-subject-object ("Kicks Timmy the ball") is a common format in flowery, poetic systems; but tends to be seen as archaic or eccentric in speech.<br>In more casual writing or conversation, subject-verb-object ("Timmy kicks the ball," as in Common) is seen as more formal than the norm, and this is usually sufficient.</p>
+<p>Adjectives follow the noun they modify, unless compounded or used as prefixes. There is no strict requirement for which form to use, though the prefix form is discouraged if the noun is already particularly long. (What counts as "particularly long" is up to personal taste.)</p><br>
 <h2>Declension</h2>
-<p>Kholo declines nouns and verbs according to a fusional suffix system. These suffixes indicate tense, the number of both the subject and object of a sentence, as well as the level of formality.</p><br/>
+<p>Kholo declines nouns and verbs according to a fusional suffix system. These suffixes indicate tense, the number of both the subject and object of a sentence, as well as the level of formality.</p><br>
 <h3>Nominal Suffixes</h3>
 <p>As the name implies, in most cases only the noun declines for number and formality; its adjectives are left alone.</p>
 <p>The same word, if used more than once, can drop its nominal suffix following the first usage; unless the number or quality changes.</p>
@@ -402,10 +411,10 @@ var hk_lexDB=[],d=document.getElementById.bind(document);function w(e){var n="";
 <td>-(w)el</td>
 </tr>
 </table>
-<br/>
+<br>
 <ol>
-<li>Members of other species, no matter how friendly or how high-ranking, are always non-kholo (with one exception: See grammar notes on the mandatory mood). Separate parts of a kholo's physical body (e.g. the arms, legs, or head) are also non-kholo.</li><br/>
-<li>In contrast to body parts, metaphysical parts of a kholo &mdash; such as the soul, thoughts, feelings, or the (metaphorical) heart &mdash; are kholo.<br/>A note is also made for monstrous offspring bred through reverence of <a href="//pathfinderwiki.com/wiki/Lamashtu" target="_blank">Lamashtu, the Mother of Monsters</a>. These are always kholo, with one exception: Those incorporating humanlike features are non-kholo.</li><br/>
+<li>Members of other species, no matter how friendly or how high-ranking, are always non-kholo (with one exception: See grammar notes on the mandatory mood). Separate parts of a kholo's physical body (e.g. the arms, legs, or head) are also non-kholo.</li>
+<li>In contrast to body parts, metaphysical parts of a kholo &mdash; such as the soul, thoughts, feelings, or the (metaphorical) heart &mdash; are kholo.<br>A note is also made for monstrous offspring bred through reverence of <a href="//pathfinderwiki.com/wiki/Lamashtu" target="_blank">Lamashtu, the Mother of Monsters</a>. These are always kholo, with one exception: Those incorporating humanlike features are non-kholo.</li>
 </ol>
 <h3>Verbal Suffixes</h3>
 <p>Kholo does not natively distinguish a future tense. Indicating an action yet to be taken is done via context. When it must be made explicit, the closest equivalent is to prepend the word "ta-" ("Time") to the related verb as a prefix, though native speakers find this clunky.</p>
@@ -431,7 +440,7 @@ var hk_lexDB=[],d=document.getElementById.bind(document);function w(e){var n="";
 <td>-(w)ej</td>
 </tr>
 </table>
-<br/>
+<br>
 <h2>Cases and Moods</h2>
 <h3>Aspirational</h3>
 <p>The aspirational mood generalizes showing a desire, a want, a need, or a wish. In the simplest case, it takes the form of a standard "I want" statement; but Kholo is unique in having a formal system for the nuance of different levels of a desire, and the target of that desire.</p>
@@ -512,11 +521,11 @@ var hk_lexDB=[],d=document.getElementById.bind(document);function w(e){var n="";
 <td>I want to go home!</td>
 </tr>
 </table>
-<br/>
-<span class="smalltext quoteBlock">"Grief is a special case. It's certainly a type of longing, but it's a longing that persists in spite of knowing that what we desire is only a dream.<br/>[...] The point of this system is to illustrate how we <i>feel</i>. And in grief, we <i>feel</i> as though we can be with loved ones again - it may take living the rest of our lives and dying of old age, but we nonetheless believe reunion to be a possibility. And we believe in it so strongly that the academic question of 'is it physically possible?' ceases to be relevant."<br/><span style="margin-left: 4em;"> &mdash; Grove of Narrow Elm; assoc. prof. emeritus of Theology, University of Lepidstadt</span></span>
-<br/>
+<br>
+<span class="smalltext quoteBlock">"Grief is a special case. It's certainly a type of longing, but it's a longing that persists in spite of knowing that what we desire is only a dream.<br>[...] The point of this system is to illustrate how we <i>feel</i>. And in grief, we <i>feel</i> as though we can be with loved ones again - it may take living the rest of our lives and dying of old age, but we nonetheless believe reunion to be a possibility. And we believe in it so strongly that the academic question of 'is it physically possible?' ceases to be relevant."<br><span style="margin-left: 4em;"> &mdash; Grove of Narrow Elm; assoc. prof. emeritus of Theology, University of Lepidstadt</span></span>
+<br>
 <h3>Conditional</h3>
-<p>The conditional mood shows a potential or hypothetical action being taken, as in uses of the Common "if" or "would".<br/>To indicate an action reliant on another (as in Common "if"), Kholo constructs a present-tense sentence, followed by the conditional action:</p>
+<p>The conditional mood shows a potential or hypothetical action being taken, as in uses of the Common "if" or "would".<br>To indicate an action reliant on another (as in Common "if"), Kholo constructs a present-tense sentence, followed by the conditional action:</p>
 <table>
 <tr>
 <th>Kholo</th>
@@ -529,7 +538,7 @@ var hk_lexDB=[],d=document.getElementById.bind(document);function w(e){var n="";
 <td>"If my father dies, then I will feel despair."</td>
 </tr>
 </table>
-<br/>
+<br>
 <p>To indicate a hypothetical action (as in Common "would"), Kholo relies on making the action statement and then rejecting it:</p>
 <table>
 <tr>
@@ -543,9 +552,9 @@ var hk_lexDB=[],d=document.getElementById.bind(document);function w(e){var n="";
 <td>"I would break your paw."</td>
 </tr>
 </table>
-<p>Note the use of "uubasja," a contraction of "u ba se'a," meaning "but I do not".</p><br/>
+<p>Note the use of "uubasja," a contraction of "u ba se'a," meaning "but I do not".</p><br>
 <h3>Genitive</h3>
-<p>The genitive case indicates ownership, possession, or association. In Common, this case is shown with the suffix 's, as in "Timmy's ball," or with the particle 'of,' as in "the Ides of March."<br/>Kholo follows a principle of attribution, whereby the owner or possessor is treated as an adjective of the owned noun:</p>
+<p>The genitive case indicates ownership, possession, or association. In Common, this case is shown with the suffix 's, as in "Timmy's ball," or with the particle 'of,' as in "the Ides of March."<br>Kholo follows a principle of attribution, whereby the owner or possessor is treated as an adjective of the owned noun:</p>
 <table>
 <tr>
 <th>Kholo</th>
@@ -564,9 +573,9 @@ var hk_lexDB=[],d=document.getElementById.bind(document);function w(e){var n="";
 <td>"The god of gold"</td>
 </tr>
 </table>
-<br/>
+<br>
 <h3>Imperative</h3>
-<p>The imperative mood indicates an instruction or directive from the speaker to the listener. Common shows this case by constructing a present-tense, second-person sentence ("You take a left at this stop sign") and omitting the subject pronoun ("Take a left at this stop sign").<br/>Kholo imperatives follow a similar structure: The pronoun is omitted, and the verb is left unmodified if informal, or made present-tense if formal.</p>
+<p>The imperative mood indicates an instruction or directive from the speaker to the listener. Common shows this case by constructing a present-tense, second-person sentence ("You take a left at this stop sign") and omitting the subject pronoun ("Take a left at this stop sign").<br>Kholo imperatives follow a similar structure: The pronoun is omitted, and the verb is left unmodified if informal, or made present-tense if formal.</p>
 <p>The imperative mood differs from the mandatory mood in that an imperative is a request or otherwise informational, whereas a mandate is a direct command or order.</p>
 <table>
 <tr>
@@ -586,9 +595,9 @@ var hk_lexDB=[],d=document.getElementById.bind(document);function w(e){var n="";
 <td>"Allow me to sing for you."</td>
 </tr>
 </table>
-<br/>
+<br>
 <h3>Mandatory</h3>
-<p>Corresponding roughly to the Common 'must,' the mandatory mood is a more specific version of the imperative; it shows a requirement for the listener to perform a command or directive.<br/>In Common this mood is extremely simple to the point of barely differing from the imperative in terms of grammar. In Kholo, however, distinct grammatical rules and levels of formality are used to avoid giving offense through commanding another member of the pack.</p>
+<p>Corresponding roughly to the Common 'must,' the mandatory mood is a more specific version of the imperative; it shows a requirement for the listener to perform a command or directive.<br>In Common this mood is extremely simple to the point of barely differing from the imperative in terms of grammar. In Kholo, however, distinct grammatical rules and levels of formality are used to avoid giving offense through commanding another member of the pack.</p>
 <p>The mandatory mood follows a vocabulary structure like that of the imperative. However, unlike other moods, a mandate is not merely a set of vocabulary and declension rules, but a full set of behavioral observations that sentences must adhere to.</p>
 <p>The rules of the mandatory mood are strictly observed; in the harshest of packs, to deviate is to instantly invite exile upon oneself, a fate often considered worse than death.</p>
 <table>
@@ -600,30 +609,30 @@ var hk_lexDB=[],d=document.getElementById.bind(document);function w(e){var n="";
 <th>Very high</th>
 <th>High</th>
 <th>Equal</th>
-<th width="75px">Low</th>
+<th style="min-width: 75px">Low</th>
 <th>Very low</th>
 </tr>
 <tr>
 <th rowspan="2">Listener's Race</th>
 <th>Kholo</th>
-<td>SVO<sup>1</sup> word order<br/>Formal suffixes<br/>Bow head at all times</td>
-<td>No set word order<br/>Formal suffixes<br/>Bow head if supplicating</td>
-<td colspan="2">No set word order<br/>Informal suffixes<br/>Do not bow head</td>
-<td>SOV<sup>2</sup> word order<br/>Informal suffixes<br/>Raise chin</td>
+<td>SVO<sup>1</sup> word order<br>Formal suffixes<br>Bow head at all times</td>
+<td>No set word order<br>Formal suffixes<br>Bow head if supplicating</td>
+<td colspan="2">No set word order<br>Informal suffixes<br>Do not bow head</td>
+<td>SOV<sup>2</sup> word order<br>Informal suffixes<br>Raise chin</td>
 </tr>
 <tr>
 <th>Non-kholo<sup>3</sup></th>
-<td colspan="2">No set word order<br/>Informal suffixes<br/>Bow head if threatened</td>
-<td>No set word order<br/>Non-kholo suffixes<br/>Do not bow head</td>
-<td colspan="2">SOV word order<br/>Non-kholo suffixes<br/>Raise chin</td>
+<td colspan="2">No set word order<br>Informal suffixes<br>Bow head if threatened</td>
+<td>No set word order<br>Non-kholo suffixes<br>Do not bow head</td>
+<td colspan="2">SOV word order<br>Non-kholo suffixes<br>Raise chin</td>
 </tr>
 </table>
 <ol>
-<li>Subject-verb-object: "Grab a hammer for me," as in Common.</li><br/>
-<li>Subject-object-verb: "A hammer for me grab."</li><br/>
-<li>Physical strength and intimidation define non-kholo who are of 'higher rank' than kholo. Actual social rank is irrelevant in this specific instance; note the need to bow one's head if the listener is threatening the speaker.<br/>This is the sole exception to the standard rule of non-kholo suffixes.</li><br/>
+<li>Subject-verb-object: "Grab a hammer for me," as in Common.</li>
+<li>Subject-object-verb: "A hammer for me grab."</li>
+<li>Physical strength and intimidation define non-kholo who are of 'higher rank' than kholo. Actual social rank is irrelevant in this specific instance; note the need to bow one's head if the listener is threatening the speaker.<br>This is the sole exception to the standard rule of non-kholo suffixes.</li>
 </ol>
-<br/>
+<br>
 <h3>Potential</h3>
 <p>The potential case corresponds to the Common verb phrase "to be able" and its conjugations, such as "I can" and "I could".</p>
 <p>Among the grammatical cases shown so far, the potential is by far the simplest: Attach the suffix -wa to the relevant pronoun, and decline the verb (if the sentence has one) as normal.</p>
@@ -659,7 +668,7 @@ var hk_lexDB=[],d=document.getElementById.bind(document);function w(e){var n="";
 
 <div class="subdiv" id="morphology">
 <h2>Non-Doubled Suffixes</h2>
-<p>A set of grammar rules exists for when to prevent accidental doubling of consonant and vowel sounds in Kholo, especially when applying suffixes.<br/>When amended with suffixes for tense, number and formality: If a word already ends in the major consonant sound of the suffix, that sound should be removed before the suffix is applied.</p>
+<p>A set of grammar rules exists for when to prevent accidental doubling of consonant and vowel sounds in Kholo, especially when applying suffixes.<br>When amended with suffixes for tense, number and formality: If a word already ends in the major consonant sound of the suffix, that sound should be removed before the suffix is applied.</p>
 <table>
 <tr>
 <th>Kholo</th>
@@ -674,7 +683,7 @@ var hk_lexDB=[],d=document.getElementById.bind(document);function w(e){var n="";
 <td>Knees</td>
 </tr>
 </table>
-<br/>
+<br>
 <p>The rule is generally applied for very similar consonant sounds on a case-by-case basis. Non-native speakers may or may not struggle with deciding what counts as "similar," but aspirated consonants are the easiest to figure out.</p>
 <table>
 <tr>
@@ -690,7 +699,7 @@ var hk_lexDB=[],d=document.getElementById.bind(document);function w(e){var n="";
 <td>Knees (many)</td>
 </tr>
 </table>
-<br/>
+<br>
 <table>
 <tr>
 <th>Kholo</th>
@@ -705,7 +714,7 @@ var hk_lexDB=[],d=document.getElementById.bind(document);function w(e){var n="";
 <td>Scales (many)</td>
 </tr>
 </table>
-<br/>
+<br>
 <p>There are rare instances in which a root word ends with a cluster identical to a suffix. These are often, though not always, words which incorporate some level of inherent formality; such as <i>alim</i> (queen). In these cases, the suffix is omitted entirely rather than altered or doubled.</p>
 <table>
 <tr>
@@ -721,12 +730,13 @@ var hk_lexDB=[],d=document.getElementById.bind(document);function w(e){var n="";
 <td>My queen</td>
 </tr>
 </table>
-<br/>
+<br>
 <table>
 <tr>
 <th>Kholo</th>
 <th>Common</th>
 </tr>
+<tr>
 <td>Tuunorja</td>
 <td>Shadow</td>
 </tr>
@@ -735,9 +745,9 @@ var hk_lexDB=[],d=document.getElementById.bind(document);function w(e){var n="";
 <td>Shadowed</td>
 </tr>
 </table>
-<br/>
+<br>
 <h2>Sonorization</h2>
-<p>Kholo speech tends to sonorize (i.e. morph from voiceless to voiced) consonants which occur at the beginning of a word preceded by an ending voiceless consonant.<br/>This change is formalized to the point that it is frequently glossed in writing, but not consistently.</p>
+<p>Kholo speech tends to sonorize (i.e. morph from voiceless to voiced) consonants which occur at the beginning of a word preceded by an ending voiceless consonant.<br>This change is formalized to the point that it is frequently glossed in writing, but not consistently.</p>
 <p>Formal texts will usually gloss sonorization in dialogue while preserving the original spelling in narration and other contexts. Highly formalized texts, such as ancestral codices or missives between cultures, are the most likely to gloss sonorization in all contexts.</p>
 <p>Informal texts, meanwhile, tend to ignore sonorized initial consonants entirely, using only the voiceless original spelling. In other words, for most Kholo, sonorization is a purely vocal phenomenon; its display in casual writing is a giveaway that the writer is either a foreigner or an egghead.</p>
 <table>
@@ -779,15 +789,15 @@ var hk_lexDB=[],d=document.getElementById.bind(document);function w(e){var n="";
 </tr>
 <tr>
 <th>Plural</th>
-<td>Baj<br/>-'i (suffix)</td>
+<td>Baj<br>-'i (suffix)</td>
 <td>Nhaj</td>
 <td>Nnaj</td>
 <td>Yhii'a</td>
 </tr>
 </table>
-<p>Repetition of proper names is common in groups of more than two speakers, given the relative lack of distinctions (especially for gender).<br/>Redundancy in this area is not quite the <i>faux pas</i> that it would be in English.</p>
-<p>As a rule, kholo address members of races they enslave or feed on exclusively in the third person.<br/>This has given rise to the perception of kholo brutes as constantly yipping (notice the <i>yh</i> sound in the 3rd-person pronouns): They are shouting insults at their targets.</p>
-<br/>
+<p>Repetition of proper names is common in groups of more than two speakers, given the relative lack of distinctions (especially for gender).<br>Redundancy in this area is not quite the <i>faux pas</i> that it would be in English.</p>
+<p>As a rule, kholo address members of races they enslave or feed on exclusively in the third person.<br>This has given rise to the perception of kholo brutes as constantly yipping (notice the <i>yh</i> sound in the 3rd-person pronouns): They are shouting insults at their targets.</p>
+<br>
 <h3>Interrogatives</h3>
 <table style="width: 450px;">
 <tr>
@@ -821,7 +831,7 @@ var hk_lexDB=[],d=document.getElementById.bind(document);function w(e){var n="";
 <tr>
 <td>Zero (0)</td>
 <td>Oa</td>
-<td><img class="number" src="images/nums/0.png"/></td>
+<td><img alt="0" class="number" src="images/nums/0.png"></td>
 </tr>
 <tr>
 <td>"A few"</td>
@@ -845,52 +855,52 @@ var hk_lexDB=[],d=document.getElementById.bind(document);function w(e){var n="";
 <tr>
 <td>One (1)</td>
 <td>Ik</td>
-<td><img class="number" src="images/nums/1.png"/></td>
+<td><img alt="1" class="number" src="images/nums/1.png"></td>
 </tr>
 <tr>
 <td>Two (2)</td>
 <td>Ird</td>
-<td><img class="number" src="images/nums/2.png"/></td>
+<td><img alt="2" class="number" src="images/nums/2.png"></td>
 </tr>
 <tr>
 <td>Three (3)</td>
 <td>Jink</td>
-<td><img class="number" src="images/nums/3.png"/></td>
+<td><img alt="3" class="number" src="images/nums/3.png"></td>
 </tr>
 <tr>
 <td>Four (4)</td>
 <td>Nen</td>
-<td><img class="number" src="images/nums/4.png"/></td>
+<td><img alt="4" class="number" src="images/nums/4.png"></td>
 </tr>
 <tr>
 <td>Five (5)</td>
 <td>Nara, Nar-</td>
-<td><img class="number" src="images/nums/5.png"/></td>
+<td><img alt="5" class="number" src="images/nums/5.png"></td>
 </tr>
 <tr>
 <td>Six (6)</td>
 <td>Mon</td>
-<td><img class="number" src="images/nums/6.png"/></td>
+<td><img alt="6" class="number" src="images/nums/6.png"></td>
 </tr>
 <tr>
 <td>Seven (7)</td>
 <td>Mjo</td>
-<td><img class="number" src="images/nums/7.png"/></td>
+<td><img alt="7" class="number" src="images/nums/7.png"></td>
 </tr>
 <tr>
 <td>Eight (8)</td>
 <td>Onje, On-</td>
-<td><img class="number" src="images/nums/8.png"/></td>
+<td><img alt="8" class="number" src="images/nums/8.png"></td>
 </tr>
 <tr>
 <td>Nine (9)</td>
 <td>Wen</td>
-<td><img class="number" src="images/nums/9.png"/></td>
+<td><img alt="9" class="number" src="images/nums/9.png"></td>
 </tr>
 <tr>
 <td>Ten (10)</td>
 <td>Wakh</td>
-<td><img class="number" src="images/nums/10.png"/></td>
+<td><img alt="10" class="number" src="images/nums/10.png"></td>
 </tr>
 </table>
 <table style="width: 250px; float: left;">
@@ -902,52 +912,52 @@ var hk_lexDB=[],d=document.getElementById.bind(document);function w(e){var n="";
 <tr>
 <td>Eleven (11)</td>
 <td>Wakh ik</td>
-<td><img class="number" src="images/nums/11.png"/></td>
+<td><img alt="11" class="number" src="images/nums/11.png"></td>
 </tr>
 <tr>
 <td>Twelve (12)</td>
 <td>Wakh ird</td>
-<td><img class="number" src="images/nums/12.png"/></td>
+<td><img alt="12" class="number" src="images/nums/12.png"></td>
 </tr>
 <tr>
 <td>Thirteen (13)</td>
 <td>Wakh jink</td>
-<td><img class="number" src="images/nums/13.png"/></td>
+<td><img alt="13" class="number" src="images/nums/13.png"></td>
 </tr>
 <tr>
 <td>Fourteen (14)</td>
 <td>Wakh nen</td>
-<td><img class="number" src="images/nums/14.png"/></td>
+<td><img alt="14" class="number" src="images/nums/14.png"></td>
 </tr>
 <tr>
 <td>Fifteen (15)</td>
 <td>Wakh nara</td>
-<td><img class="number" src="images/nums/15.png"/></td>
+<td><img alt="15" class="number" src="images/nums/15.png"></td>
 </tr>
 <tr>
 <td>Sixteen (16)</td>
 <td>Wakh mon</td>
-<td><img class="number" src="images/nums/16.png"/></td>
+<td><img alt="16" class="number" src="images/nums/16.png"></td>
 </tr>
 <tr>
 <td>Seventeen (17)</td>
 <td>Wakh mjo</td>
-<td><img class="number" src="images/nums/17.png"/></td>
+<td><img alt="17" class="number" src="images/nums/17.png"></td>
 </tr>
 <tr>
 <td>Eighteen (18)</td>
 <td>Wakh onje</td>
-<td><img class="number" src="images/nums/18.png"/></td>
+<td><img alt="18" class="number" src="images/nums/18.png"></td>
 </tr>
 <tr>
 <td>Nineteen (19)</td>
 <td>Wakh wen</td>
-<td><img class="number" src="images/nums/19.png"/></td>
+<td><img alt="19" class="number" src="images/nums/19.png"></td>
 </tr>
 <tr>
 <td>Twenty (20)</td>
 <td>Irdwakh</td>
-<td><img class="number" src="images/nums/20.png"/></td>
+<td><img alt="20" class="number" src="images/nums/20.png"></td>
 </tr>
 </table>
 <table style="width: 250px;">
@@ -959,28 +969,29 @@ var hk_lexDB=[],d=document.getElementById.bind(document);function w(e){var n="";
 <tr>
 <td>Hundred (100)</td>
 <td>Wanut</td>
-<td><img class="number" src="images/nums/100.png"/></td>
+<td><img alt="100" class="number" src="images/nums/100.png"></td>
 </tr>
 <tr>
 <td>Five hundred (500)</td>
 <td>Narwanut</td>
-<td><img class="number" src="images/nums/500.png"/></td>
+<td><img alt="500" class="number" src="images/nums/500.png"></td>
 </tr>
 <tr>
 <td>Thousand (1,000)</td>
 <td>Ghoro</td>
-<td><img class="number" src="images/nums/1000.png"/></td>
+<td><img alt="1000" class="number" src="images/nums/1000.png"></td>
 </tr>
 <tr>
 <td>Five thousand (5,000)</td>
 <td>Narghoro</td>
-<td><img class="number" src="images/nums/5000.png"/></td>
+<td><img alt="5000" class="number" src="images/nums/5000.png"></td>
 </tr>
 </table>
 </div>
 
 <div class="subdiv" id="lexicon">
-<h2>Lexicon</h2>
+<h3>English-to-Kholo Wordlists</h3>
+<br>
 <p style="font-style: italic;"><span class="smalltext">Katapeshi words are written in</span> <span class="kataText">pink.</span></p>
 <table id="lexRibbon">
 <tr style="font-size: 16pt;">
@@ -1012,11 +1023,15 @@ var hk_lexDB=[],d=document.getElementById.bind(document);function w(e){var n="";
 <th><button onclick="rdb('z');">Z</button></th>
 </tr>
 <tr style="font-size: 14pt;">
-<th colspan="13"><button onclick="rdb('*P');">Common Phrases</button></th>
-<th colspan="13"><button onclick="rdb('*S');">The Slave System</button></th>
+<th colspan="8"><button onclick="rdb('*P');">Common Phrases</button></th>
+<th colspan="8"><button onclick="rdb('*S');">The Slave System</button></th>
+<th colspan="10">
+<label for="khsearch" style="font-style: italic; margin-right: 5%; opacity: 0.7;">Search</label>
+<input type="text" id="khsearch" name="khsearch" size="20" style="margin: 5px;" onchange="sdb();">
+</th>
 </tr>
 </table>
-<br/><br/>
+<br><br>
 <noscript>Your browser does not support JavaScript. The lexicon cannot be displayed.</noscript>
 <div id="phrases" style="display: none;">
 <table>
@@ -1026,29 +1041,29 @@ var hk_lexDB=[],d=document.getElementById.bind(document);function w(e){var n="";
 <th>Kholo</th>
 </tr>
 <tr>
-<td>Hello<br/>Hi</td>
-<td>Bonjour<br/>Salut</td>
-<td>Khaja<br/>Ja</td>
+<td>Hello<br>Hi</td>
+<td>Bonjour<br>Salut</td>
+<td>Khaja<br>Ja</td>
 </tr>
 <tr>
-<td>Goodbye<br/>Bye</td>
-<td>Au revoir<br/>Adieu</td>
-<td>Khajii<br/>Jii</td>
+<td>Goodbye<br>Bye</td>
+<td>Au revoir<br>Adieu</td>
+<td>Khajii<br>Jii</td>
 </tr>
 <tr>
 <td>Who are you?</td>
-<td>Qui êtes-vous ?<br/>Qui es-tu ?</td>
-<td>Pak nna? <span style="color: #898989">(formal)</span><br/>Pak nha? <span style="color: #898989">(informal)</span></td>
+<td>Qui êtes-vous ?<br>Qui es-tu ?</td>
+<td>Pak nna? <span style="color: #898989">(formal)</span><br>Pak nha? <span style="color: #898989">(informal)</span></td>
 </tr>
 <tr>
 <td>How are you?</td>
 <td>Comment ça va ?</td>
-<td>Paj hhara?<br/><span style="color: #898989">("What problem?")</span></td>
+<td>Paj hhara?<br><span style="color: #898989">("What problem?")</span></td>
 </tr>
 <tr>
 <td>I'm fine.</td>
 <td>Ça va.</td>
-<td>Yhaja.<br/><span style="color: #898989">("I live")</span></td>
+<td>Yhaja.<br><span style="color: #898989">("I live")</span></td>
 </tr>
 <tr>
 <td>Good, and you?</td>
@@ -1063,7 +1078,7 @@ var hk_lexDB=[],d=document.getElementById.bind(document);function w(e){var n="";
 <tr>
 <td>I'm hungry</td>
 <td>J'ai faime</td>
-<td>Yyuu<br/><span style="color: #898989">(the noun "hunger")</span></td>
+<td>Yyuu<br><span style="color: #898989">(the noun "hunger")</span></td>
 </tr>
 <tr>
 <td>I'm tired</td>
@@ -1073,7 +1088,7 @@ var hk_lexDB=[],d=document.getElementById.bind(document);function w(e){var n="";
 <tr>
 <td>I love you</td>
 <td>Je t'aime</td>
-<td>Vii<br/><span style="color: #898989">(the noun "love")</span></td>
+<td>Vii<br><span style="color: #898989">(the noun "love")</span></td>
 </tr>
 <tr>
 <td>Let's go!</td>
@@ -1086,74 +1101,74 @@ var hk_lexDB=[],d=document.getElementById.bind(document);function w(e){var n="";
 <td>Prikajawa?</td>
 </tr>
 <tr>
-<td>But I do not.<br/>But you do not.<br/>But it does not.</td>
-<td>Mais je ne fais pas.<br/>Mais tu ne fais pas.<br/>Mais il ne fait pas.</td>
-<td>Uubasja. <span style="color: #898989">("U ba se'a.")</span><br/>Uunhasja. <span style="color: #898989">("U nha se'a.")</span><br/>Uuyhiisja. <span style="color: #898989">("U yhii se'a.")</span></td>
+<td>But I do not.<br>But you do not.<br>But it does not.</td>
+<td>Mais je ne fais pas.<br>Mais tu ne fais pas.<br>Mais il ne fait pas.</td>
+<td>Uubasja. <span style="color: #898989">("U ba se'a.")</span><br>Uunhasja. <span style="color: #898989">("U nha se'a.")</span><br>Uuyhiisja. <span style="color: #898989">("U yhii se'a.")</span></td>
 </tr>
 <tr>
 <td>We're going to drink your blood and chew your bones!</td>
 <td>On boira ton sang et rongera tes os !</td>
-<td>Onf'i nhi yhii, tilkh'i zhekh yhii!<br/><span style="color: #898989">(note the use of third-person pronouns)</span></td>
+<td>Onf'i nhi yhii, tilkh'i zhekh yhii!<br><span style="color: #898989">(note the use of third-person pronouns)</span></td>
 </tr>
 </table>
 </div>
 <div id="slave" style="display: none;">
-<p>Kholo infamously features 37 words to distinguish between the types of slaves in their culture.<br/>These are organized into six groups differing by their purpose and in harshness of their treatment.<br/>Slaves in the two 'highest' groups, indentured and personal servants, are owned by single kholo or families, and further ranked according to the work they do.<br/>Lower types are communally owned, and not differentiated in this way.</p>
-<p><i>Wik</i> (plural <i>wakh</i>) is a generic word referring to a worker of any type.<br/>When it appears as a suffix in the name of a servant type, it may be replaced with <i>wa</i> ("respectable work") or <i>triip</i> ("menial work") to refer to the labor itself.</p>
+<p>Kholo infamously features 37 words to distinguish between the types of slaves in their culture.<br>These are organized into six groups differing by their purpose and in harshness of their treatment.<br>Slaves in the two 'highest' groups, indentured and personal servants, are owned by single kholo or families, and further ranked according to the work they do.<br>Lower types are communally owned, and not differentiated in this way.</p>
+<p><i>Wik</i> (plural <i>wakh</i>) is a generic word referring to a worker of any type.<br>When it appears as a suffix in the name of a servant type, it may be replaced with <i>wa</i> ("respectable work") or <i>triip</i> ("menial work") to refer to the labor itself.</p>
 <table>
 <tr>
 <th>Venwik</th>
 <th>"White-worker"</th>
-<th>Indentured Servants (4 types, hierarchical)<br/>Personal homeworkers</th>
+<th>Indentured Servants (4 types, hierarchical)<br>Personal homeworkers</th>
 </tr>
-<tr><td>Silwik</td><td>"Friend-worker"</td><td>Performs "respectable" work around a kholo's home, including acting as a face similar to a butler.<br/>Usually trusted to care for their master's most treasured valuables.<br/>In addition, they often speak candidly with the master, and may even be on casually friendly terms.<br/>The silwik is much like a personal aid or private escort, or more bluntly a lap-dog.<br/>Among all kholo slaves who are ever willingly freed, the overwhelming majority are silwakh.</td></tr>
-<tr><td>Alwik</td><td>"High-worker"</td><td>Oversees and organizes the lower servants, both indentured and personal, as a supervisor of sorts.<br/>Their work is easily performed by a silwik, so to separately own an alwik is a mark of highly conspicuous luxury.</td></tr>
-<tr><td>Tovawik</td><td>"Jewel-worker"</td><td>An indentured apprentice in a kholo's trade. Despite their name, the trade need not necessarily be gemsmithing.<br/>The tovawik is taught much like a student in addition to their duties as a servant.<br/>Tovawakh are rarely freed, rather kept as assistants in the trade. Sometimes, an elderly master may free them on his deathbed.<br/>They may be sold to other kholo once their skills are sufficiently honed or are no longer needed.</td></tr>
-<tr><td>Tuuwik</td><td>"Home-worker"</td><td>Performs menial, undifferentiated work around the kholo's home, much like a farmhand.<br/>Their indentured status still affords them luxuries such as better meals and private living quarters.</td></tr>
+<tr><td>Silwik</td><td>"Friend-worker"</td><td>Performs "respectable" work around a kholo's home, including acting as a face similar to a butler.<br>Usually trusted to care for their master's most treasured valuables.<br>In addition, they often speak candidly with the master, and may even be on casually friendly terms.<br>The silwik is much like a personal aid or private escort, or more bluntly a lap-dog.<br>Among all kholo slaves who are ever willingly freed, the overwhelming majority are silwakh.</td></tr>
+<tr><td>Alwik</td><td>"High-worker"</td><td>Oversees and organizes the lower servants, both indentured and personal, as a supervisor of sorts.<br>Their work is easily performed by a silwik, so to separately own an alwik is a mark of highly conspicuous luxury.</td></tr>
+<tr><td>Tovawik</td><td>"Jewel-worker"</td><td>An indentured apprentice in a kholo's trade. Despite their name, the trade need not necessarily be gemsmithing.<br>The tovawik is taught much like a student in addition to their duties as a servant.<br>Tovawakh are rarely freed, rather kept as assistants in the trade. Sometimes, an elderly master may free them on his deathbed.<br>They may be sold to other kholo once their skills are sufficiently honed or are no longer needed.</td></tr>
+<tr><td>Tuuwik</td><td>"Home-worker"</td><td>Performs menial, undifferentiated work around the kholo's home, much like a farmhand.<br>Their indentured status still affords them luxuries such as better meals and private living quarters.</td></tr>
 </table>
-<br/>
+<br>
 <table>
 <tr>
 <th>Minwik</th>
 <th>"Grey-worker"</th>
-<th>Household Servants (4 types, hierarchical)<br/>Physical Laborers</th>
+<th>Household Servants (4 types, hierarchical)<br>Physical Laborers</th>
 </tr>
-<tr><td>Yyipwik</td><td>"Speak-worker"</td><td>A correspondent; carries orders to and from other servants and messages to other kholo.<br/>Frequently an assistant to a silwik or alwik.</td></tr>
+<tr><td>Yyipwik</td><td>"Speak-worker"</td><td>A correspondent; carries orders to and from other servants and messages to other kholo.<br>Frequently an assistant to a silwik or alwik.</td></tr>
 <tr><td>Niiwik</td><td>"Kill-worker"</td><td>A personal gatherer or hunter.</td></tr>
 <tr><td>Owjawik</td><td>"Paw-worker"</td><td>A personal groomer.</td></tr>
-<tr><td>Mejowik</td><td>"Green-worker"</td><td>A menial worker; similar to a tuuwik but dealing with "lower" work, often of an outdoor and/or sanitary nature.<br/>If the master owns livestock, it is usually mejowakh who care for them.</td></tr>
+<tr><td>Mejowik</td><td>"Green-worker"</td><td>A menial worker; similar to a tuuwik but dealing with "lower" work, often of an outdoor and/or sanitary nature.<br>If the master owns livestock, it is usually mejowakh who care for them.</td></tr>
 </table>
-<br/>
+<br>
 <table>
 <tr>
 <th>Zijiwik</th>
 <th>"Horn-worker"</th>
-<th>Caste Laborers (6 types)<br/>Those with a skill or talent that saves them from being treated like ordinary chattel slaves</th>
+<th>Caste Laborers (6 types)<br>Those with a skill or talent that saves them from being treated like ordinary chattel slaves</th>
 </tr>
 <tr><td>Bojawik</td><td>"Mechanic"</td><td>Someone capable of building and repairing simple to mid-complexity machines such as transport wagons.</td></tr>
 <tr><td>Gidwik</td><td>"Doctor"</td><td>A medical specialist, especially one skilled at preventing or treating infected wounds.</td></tr>
 <tr><td>Iizhwik</td><td>"Cloth-worker"</td><td>A clothier, weaves fabrics and clothing.</td></tr>
 <tr><td>Piirik</td><td>"Magic-worker"</td><td>A magical specialist, capable of interpreting incantations or conjuring cantrips for the benefit of other servants or kholo.</td></tr>
 <tr><td>Siiviwik</td><td>"Fresh-worker"</td><td>A butcher or someone otherwise skilled at extracting meat.</td></tr>
-<tr><td>Yyiphho'ik</td><td>"Speak-smith"</td><td>A poet or wordsmith. Most commonly used for entertainment, though some kholo use them to record native stories or to<br/>hear the stories of other peoples; academia being rare, but not unheard of in Kholo culture.</td></tr>
+<tr><td>Yyiphho'ik</td><td>"Speak-smith"</td><td>A poet or wordsmith. Most commonly used for entertainment, though some kholo use them to record native stories or to<br>hear the stories of other peoples; academia being rare, but not unheard of in Kholo culture.</td></tr>
 </table>
-<br/>
+<br>
 <table>
 <tr>
 <th>Uurwik</th>
 <th>"Half-worker"</th>
-<th>Hard Laborers (8 types)<br/>Chattel slaves belonging to a tribe or community as a whole</th>
+<th>Hard Laborers (8 types)<br>Chattel slaves belonging to a tribe or community as a whole</th>
 </tr>
 <tr><td>Gifowik</td><td>"Vein-worker"</td><td>A gatherer, responsible for either felling trees and/or mining stone, as well as less intensive tasks such as herb gathering.</td></tr>
 <tr><td>Ifrowik</td><td>"Treasure-worker"</td><td>A retainer, assists in the upkeep of stored food, armor, and weapons.</td></tr>
 <tr><td>Konadwik</td><td>"Road-worker"</td><td>A communal cleaner. Also constructs and cares for pathways around a settlement.</td></tr>
-<tr><td>Kromwik</td><td>"Animal-worker"</td><td>An animal handler; cares for livestock kept by a tribe as a whole.<br/>As opposed to animals owned by a single kholo or family, which are cared for by mejowakh.</td></tr>
-<tr><td>Loyyawik</td><td>"City-worker"</td><td>An undifferentiated worker valuable for their personal history or connections, such as a captive foreign noble.<br/>Most commonly they are treated as currency to be exchanged between tribes or held as hostages.</td></tr>
+<tr><td>Kromwik</td><td>"Animal-worker"</td><td>An animal handler; cares for livestock kept by a tribe as a whole.<br>As opposed to animals owned by a single kholo or family, which are cared for by mejowakh.</td></tr>
+<tr><td>Loyyawik</td><td>"City-worker"</td><td>An undifferentiated worker valuable for their personal history or connections, such as a captive foreign noble.<br>Most commonly they are treated as currency to be exchanged between tribes or held as hostages.</td></tr>
 <tr><td>Orahho'ik</td><td>"Wood-smith"</td><td>A woodworker; constructs weapons and wooden tools, as well as lesser fortifications and scaffolding.</td></tr>
 <tr><td>Pundhho'ik</td><td>"Stone-smith"</td><td>A stoneworker, mostly used for engraving and to construct fortifications.</td></tr>
 <tr><td>Vuutawik</td><td>"Carry-worker"</td><td>A simple transporter or packmule. Carries raw materials from one place to another, sometimes between settlements.</td></tr>
 </table>
-<br/>
+<br>
 <table>
 <tr>
 <th>Tunfo</th>
@@ -1162,14 +1177,14 @@ var hk_lexDB=[],d=document.getElementById.bind(document);function w(e){var n="";
 </tr>
 <tr>
 <td>Dantua</td><td>"Bow-rank"</td>
-<td rowspan="5"><i>Kholo rarely take captives as compelled soldiers.<br/>Much more commonly, this caste is a punishment for slaves of a different type who rebelled or shirked their duties.<br/>Those who fit here are always smaller and weaker than their kholo overseers,<br/>as even hyenafolk would not be stupid enough to hand a weapon to someone capable of killing them with it.<br/>It would thus be more accurate to describe these as "cannon fodder".</i></td>
+<td rowspan="5"><i>Kholo rarely take captives as compelled soldiers.<br>Much more commonly, this caste is a punishment for slaves of a different type who rebelled or shirked their duties.<br>Those who fit here are always smaller and weaker than their kholo overseers,<br>as even hyenafolk would not be stupid enough to hand a weapon to someone capable of killing them with it.<br>It would thus be more accurate to describe these as "cannon fodder".</i></td>
 </tr>
 <tr><td>Hhoratua</td><td>"Axe-rank"</td></tr>
 <tr><td>Iptua</td><td>"Spear-rank"</td></tr>
 <tr><td>Nhiitua</td><td>"Sword-rank"</td></tr>
 <tr><td>Sit'tua</td><td>"Mace-rank"</td></tr>
 </table>
-<br/>
+<br>
 <table>
 <tr>
 <th>Sikh</th>
@@ -1189,20 +1204,20 @@ var hk_lexDB=[],d=document.getElementById.bind(document);function w(e){var n="";
 <h2>Naming</h2>
 <p>From birth, kholo youths are given a 'root' for a name: A single word of natural origin, such as an animal, plant, or natural feature; or a part of such. As they age and gain notoriety, they may choose to add modifiers or adjectives to this root, symbolizing their growth and accomplishments.</p>
 <p>A kholo born with the root name 'Ash' may further name themselves 'Ash upon Ground' when reaching maturity. When slaying their first grave monstrosity, they may become 'Ash upon Arid Ground'. And so on and so forth.</p>
-<p>It is not common, but nor is it rare, for kholo to give each other such a naming element; some long-bonded parties practice this as a means of tying themselves to each other.</p><br/>
+<p>It is not common, but nor is it rare, for kholo to give each other such a naming element; some long-bonded parties practice this as a means of tying themselves to each other.</p><br>
 
 <h2>Matriarchy</h2>
-<p>Kholo society is famously matriarchal, whereby female huntresses &mdash; taller, stronger, and more naturally assertive than their male counterparts &mdash; play a dominant role in social ruling and organization.<br/>There are aspects of the Kholo language that are either explicitly or implicitly gendered accordingly.</p>
-<p>Take as an example the singular formal suffix, '-(w)im'. It is derived from the native word for female, 'imo'. The word for daughter, 'ima,' is also related.<br/>Informal common nouns are not given a suffix. 'Kholo,' as a native word meaning 'tribal predator,' therefore technically refers to a male, while 'kholowim' would be used to address a female listener. In human society, this distinction would likely come across as othering the listener.</p>
+<p>Kholo society is famously matriarchal, whereby female huntresses &mdash; taller, stronger, and more naturally assertive than their male counterparts &mdash; play a dominant role in social ruling and organization.<br>There are aspects of the Kholo language that are either explicitly or implicitly gendered accordingly.</p>
+<p>Take as an example the singular formal suffix, '-(w)im'. It is derived from the native word for female, 'imo'. The word for daughter, 'ima,' is also related.<br>Informal common nouns are not given a suffix. 'Kholo,' as a native word meaning 'tribal predator,' therefore technically refers to a male, while 'kholowim' would be used to address a female listener. In human society, this distinction would likely come across as othering the listener.</p>
 <p>Here, though, it is actually those without the suffix who are othered &mdash; the suffix is honorable, and is culturally treated like a noble title. It is important to remember that matriarchy is the default in kholo society, and assumptions are made by both speaker and listener accordingly.</p>
-<p>Male kholo are excluded from reference with formal suffixes under almost all circumstances. It is easier to list the exceptions to that rule, rather than elaborate on the rule directly. Namely:<br/>Elderly males are entitled to formal address by their grandchildren, but not by their adult children.<br/>Furthermore, a bonecarver or storyteller is entitled to formality from other males and young females of his tribe; but not from adult females.</p>
-<p>Individual exceptions are rarely also made for highly accomplished warriors, but these may be as rare as once in a generation.</p><br/>
+<p>Male kholo are excluded from reference with formal suffixes under almost all circumstances. It is easier to list the exceptions to that rule, rather than elaborate on the rule directly. Namely:<br>Elderly males are entitled to formal address by their grandchildren, but not by their adult children.<br>Furthermore, a bonecarver or storyteller is entitled to formality from other males and young females of his tribe; but not from adult females.</p>
+<p>Individual exceptions are rarely also made for highly accomplished warriors, but these may be as rare as once in a generation.</p><br>
 
 <h2>Literature</h2>
 <h3>Alkhitakh Hhama'ba</h3>
 <p>The <i>Alkhitakh Hhama'ba</i> is a collection of kholo folktales most comparable to <i>Aesop's Fables</i> or <i>A Thousand and One Nights</i>. As possibly the most comprehensive piece of native Kholo writing, its use is indispensable for outsiders in understanding cultural norms and nuance in an otherwise profoundly bellicose species.</p>
 <p>Its stories mostly center around a male kholo named Thorn, whose growth from youth to elder bonecarver is traced via exploits as a slaver, a brief reformist for the latter system, and a servant to a huntress whom eventually married him. Thorn has long been interpreted as a symbol of virtue for male kholo youths. His characterization as a level-headed, pragmatic, yet unflinchingly bloodthirsty warrior and a friend to outside peoples (as friendly as a kholo can reasonably be called) suggests a model for males to follow in a strongly female-dominated society.</p>
-<p>The collection's name means "Legends of my Father," or "Stories of my Father," making its use as a teaching tool for male kholo even more obvious.</p><br/>
+<p>The collection's name means "Legends of my Father," or "Stories of my Father," making its use as a teaching tool for male kholo even more obvious.</p><br>
 
 <h3>Tejalima</h3>
 <p>The <i>Tejalima</i> ("Huntress-queen") is a lyrical work handed down across generations by adventuring kholo minstrels, both inside and outside of the Mwangi Expanse. Its exact verses are as diverse as the bards who recite it, but at its core the <i>Tejalima</i> follows Lynx, a kholo huntress of ancient days who befriended a human settler from what would one day become Katapesh. The settler, whose name is never given, was wounded in a civil conflict and left for dead on the savannah; Lynx, intending to turn a profit against a slaver, captured the settler, but grew fond of him during their extended return deeper into the Expanse.</p>
@@ -1223,24 +1238,24 @@ var hk_lexDB=[],d=document.getElementById.bind(document);function w(e){var n="";
 </tr>
 <tr>
 <td>
-<p>Shava'nha a'lo'nha. Gida er'a fuu hho'nha.<br/>Gida er korayi lushajo'nha. Er nnima onje vuutajo'nha.<br/>Er khorahhii jogo, a'khlito'nha.<br/>Er jira tuunujan jogo, nhiso'nha.</p>
-<p>Er zijika meruua voajo, ez zetikel wilto.<br/>Er Rosua jogra, aljan zetik yhii'a zet'lete khurumo.</p>
-<p>Er tuama'ayi yhii'a, sil'nha woluto vuutajo al veren'yhii,<br/>ez pero shiiukh a'shikh, ez elmo hhiguu a'shikh.</p>
+<p>Shava'nha a'lo'nha. Gida er'a fuu hho'nha.<br>Gida er korayi lushajo'nha. Er nnima onje vuutajo'nha.<br>Er khorahhii jogo, a'khlito'nha.<br>Er jira tuunujan jogo, nhiso'nha.</p>
+<p>Er zijika meruua voajo, ez zetikel wilto.<br>Er Rosua jogra, aljan zetik yhii'a zet'lete khurumo.</p>
+<p>Er tuama'ayi yhii'a, sil'nha woluto vuutajo al veren'yhii,<br>ez pero shiiukh a'shikh, ez elmo hhiguu a'shikh.</p>
 </td>
 <td>
-<p>Heart-you not-predator-you. Hurts for-not make weak-you.<br/>Hurts for strong becomes-you. For loss weight carries-you.<br/>For despair under, not-breaks-you.<br/>For sun darkest under, rises-you.</p>
-<p>For horns-many heaven sounding, and warriors-many ride.<br/>For Earth over, champion they war-front holds.</p>
-<p>For ranks-with they, friend-you fallen carries high shield-they,<br/>and gives tears not-more, and feels sorrow not-more.</p>
+<p>Heart-you not-predator-you. Hurts for-not make weak-you.<br>Hurts for strong becomes-you. For loss weight carries-you.<br>For despair under, not-breaks-you.<br>For sun darkest under, rises-you.</p>
+<p>For horns-many heaven sounding, and warriors-many ride.<br>For Earth over, champion they war-front holds.</p>
+<p>For ranks-with they, friend-you fallen carries high shield-they,<br>and gives tears not-more, and feels sorrow not-more.</p>
 </td>
 <td>
-<p>Your heart is not your predator. It does not ache to weaken you.<br/>It aches so that you may grow strong. So that you may bear the weight of loss;<br/>that amidst despair, you may not break;<br/>that under the dimmest sun, you may yet rise.</p>
-<p>That the horns of Heaven may yet be sounded, and its warriors ride;<br/>for their champion on Earth may yet hold the front.</p>
-<p>For among their ranks, your fallen friend bears his shield high,<br/>and sheds no more tears, and feels no more sorrow.</p>
+<p>Your heart is not your predator. It does not ache to weaken you.<br>It aches so that you may grow strong. So that you may bear the weight of loss;<br>that amidst despair, you may not break;<br>that under the dimmest sun, you may yet rise.</p>
+<p>That the horns of Heaven may yet be sounded, and its warriors ride;<br>for their champion on Earth may yet hold the front.</p>
+<p>For among their ranks, your fallen friend bears his shield high,<br>and sheds no more tears, and feels no more sorrow.</p>
 </td>
 </tr>
 <tr><td colspan="3"> -- Ch. 3, <i>Yhaz Nnim</i> ("To Live and to Lose"). pp. 97.</td></tr>
 </table>
-<br/>
+<br>
 <table style="width: 95%;">
 <tr>
 <th>Kholo</th>
@@ -1249,42 +1264,42 @@ var hk_lexDB=[],d=document.getElementById.bind(document);function w(e){var n="";
 </tr>
 <tr>
 <td>
-<p>Owja Yyii'ta ghalmate alshuu yhii firita.<br/>"A'ba'alkejo niika'nha. U ba'fuur paj gent'nha, tunyhakh ghe."</p>
-<p>Inso bintosa.<br/>"Verensikh. Rel'i sestaz tuunusikh."</p>
-<p>Yyii'ta josa Zuato'ik ez yyiima yhii.<br/>Yyo'ami elma viiwe jogra.<br/>"Liivi yhii'a. Gent'rel. Er sikh, nha triip gromo?"</p>
-<p>Kipnhiikh Inso tiilikha, u mobeta'a sonaut Yyii'ta.<br/>"Sikh grom'a. A'pajda siiviz evri'ayi."</p>
-<p>Yyii'ta owaja dakh, sonaut tun'reza.<br/>"Kipik zhekh ez suuli. Ro'ik ben a'shikh.<br/>Alshuu, ba'ayi yyip iit. Paj'hhuu nha?"</p>
-<p>Inso bintaka keko issa. Twakh souukha.<br/>"Yyii'ta, nha reza'a? Mowan tunimokh bera'i.<br/>Nha yhii'a ko ghep'a—"</p>
-<p>Gom'bit Inso korkha, er kipnhii Yyii'ta shtiipa ghalmatekh.<br/>Owja Yyii'ta hhema benet Inso, hhapa ofrelet kral'er.<br/>Kowtsha fuu, ez woluja inakh'er, twakh aleme'ayi.<br/>Yyii'ta yhii tunkeja, ez woluja ot'er.</p>
-<p>Yyii'ta hhekh owaja ez tonta kipnhii. Peneta nhi tonto poltopakh ap.<br/>Weten, yohho e'punt. Joso er Zuatoakh zajii.</p>
-<p>Yyii'ta tunshikh uraja ez iifita owja.<br/>Folkha'ayi, vesweja wora yhii'a ez perreja.<br/>"Yhii a'fiia pera'i tashikh'er."<br/>Yyiip hhiguu woluja'ayi.<br/>"U tashikh dinkh, alshuu'ba luja."</p>
+<p>Owja Yyii'ta ghalmate alshuu yhii firita.<br>"A'ba'alkejo niika'nha. U ba'fuur paj gent'nha, tunyhakh ghe."</p>
+<p>Inso bintosa.<br>"Verensikh. Rel'i sestaz tuunusikh."</p>
+<p>Yyii'ta josa Zuato'ik ez yyiima yhii.<br>Yyo'ami elma viiwe jogra.<br>"Liivi yhii'a. Gent'rel. Er sikh, nha triip gromo?"</p>
+<p>Kipnhiikh Inso tiilikha, u mobeta'a sonaut Yyii'ta.<br>"Sikh grom'a. A'pajda siiviz evri'ayi."</p>
+<p>Yyii'ta owaja dakh, sonaut tun'reza.<br>"Kipik zhekh ez suuli. Ro'ik ben a'shikh.<br>Alshuu, ba'ayi yyip iit. Paj'hhuu nha?"</p>
+<p>Inso bintaka keko issa. Twakh souukha.<br>"Yyii'ta, nha reza'a? Mowan tunimokh bera'i.<br>Nha yhii'a ko ghep'a—"</p>
+<p>Gom'bit Inso korkha, er kipnhii Yyii'ta shtiipa ghalmatekh.<br>Owja Yyii'ta hhema benet Inso, hhapa ofrelet kral'er.<br>Kowtsha fuu, ez woluja inakh'er, twakh aleme'ayi.<br>Yyii'ta yhii tunkeja, ez woluja ot'er.</p>
+<p>Yyii'ta hhekh owaja ez tonta kipnhii. Peneta nhi tonto poltopakh ap.<br>Weten, yohho e'punt. Joso er Zuatoakh zajii.</p>
+<p>Yyii'ta tunshikh uraja ez iifita owja.<br>Folkha'ayi, vesweja wora yhii'a ez perreja.<br>"Yhii a'fiia pera'i tashikh'er."<br>Yyiip hhiguu woluja'ayi.<br>"U tashikh dinkh, alshuu'ba luja."</p>
 </td>
 <td>
-<p>Paw-Thorn shoulder-brother-he touched.<br/>"Not-I-judges slaughter-you. But I ask what use-you, survivors this."</p>
-<p>Hawk sneered.<br/>"Shieldmeat. We-have luck, and darkmeat."</p>
-<p>Thorn looked Osirion-one and mother-she.<br/>Why-thing felt brow over.<br/>"Young-they. Use-have. For meat, you labor waste?"</p>
-<p>Blades-Hawk flashed, but turned-not face Thorn.<br/>"Meat waste-not. Not-when fresh and bounty-with."</p>
-<p>Thorn stepped forward, face low-see.<br/>"Small-one bones and skin. Old-one good not-more.<br/>Brother, me-with speak truth. What-want you?"</p>
-<p>Hawk tooth-many through hissed. Eyes burned.<br/>"Thorn, you see-not? Savannah concubines we-given.<br/>You they in take-not—"</p>
-<p>Word-last Hawk choked, for blade-Thorn pierced shoulders.<br/>Paw-Thorn covered muzzle-Hawk, stopped shout help-for.<br/>Twisted weak, and fell knees-to, eyes terror-with.<br/>Thorn he released, and fell dirt-to.</p>
-<p>Thorn backward stepped and dropped blade. Watched blood drip fingers from.<br/>Still, silent like-stone. Looked to Osirians cowering.</p>
-<p>Thorn lower bent and hid paw.<br/>Other-with, reached bag their and offered.<br/>"He disgrace we-given long-for."<br/>Voice sorrow fell-with.<br/>"But long before, brother-me was."</p>
+<p>Paw-Thorn shoulder-brother-he touched.<br>"Not-I-judges slaughter-you. But I ask what use-you, survivors this."</p>
+<p>Hawk sneered.<br>"Shieldmeat. We-have luck, and darkmeat."</p>
+<p>Thorn looked Osirion-one and mother-she.<br>Why-thing felt brow over.<br>"Young-they. Use-have. For meat, you labor waste?"</p>
+<p>Blades-Hawk flashed, but turned-not face Thorn.<br>"Meat waste-not. Not-when fresh and bounty-with."</p>
+<p>Thorn stepped forward, face low-see.<br>"Small-one bones and skin. Old-one good not-more.<br>Brother, me-with speak truth. What-want you?"</p>
+<p>Hawk tooth-many through hissed. Eyes burned.<br>"Thorn, you see-not? Savannah concubines we-given.<br>You they in take-not—"</p>
+<p>Word-last Hawk choked, for blade-Thorn pierced shoulders.<br>Paw-Thorn covered muzzle-Hawk, stopped shout help-for.<br>Twisted weak, and fell knees-to, eyes terror-with.<br>Thorn he released, and fell dirt-to.</p>
+<p>Thorn backward stepped and dropped blade. Watched blood drip fingers from.<br>Still, silent like-stone. Looked to Osirians cowering.</p>
+<p>Thorn lower bent and hid paw.<br>Other-with, reached bag their and offered.<br>"He disgrace we-given long-for."<br>Voice sorrow fell-with.<br>"But long before, brother-me was."</p>
 </td>
 <td>
-<p>Thorn placed a paw upon his brother's shoulder.<br/>"I judge not your slaughter, but I ask what use you have for these survivors."</p>
-<p>Hawk sneered.<br/>"Shield-meat. Dark-meat if we're lucky."</p>
-<p>Thorn looked upon the Osirian and her mother.<br/>A question wrinkled his brow.<br/>"They are youthful. Useful. You're wasting their labor in favor of meat?"</p>
-<p>Hawk's blades flashed, but he did not turn to face Thorn.<br/>"Meat is not waste. Not when fresh and fruitful."</p>
-<p>Thorn stepped forward, his face turned low.<br/>"The small one is bones and skin. The elder is no better.<br/>Speak to me truly, brother. What is it you want?"</p>
-<p>Hawk hissed through his teeth, his eyes burning.<br/>"Do you not see, Thorn? The savannah has delivered us each a concubine.<br/>Would you not partake in them—"</p>
-<p>Hawk's last word was choked, for Thorn's blade had already pierced between his shoulders.<br/>Thorn's paw covered Hawk's muzzle and stopped him from shouting for help.<br/>He twisted weakly, and fell to his knees, eyes wide with terror.<br/>Only then did Thorn release him and allow him to fall to the dirt.</p>
-<p>Thorn stepped backward and dropped his blade, sternly watching the blood drip from his fingers.<br/>He was still and silent as a stone. And he looked to the cowering Osirians.</p>
-<p>Thorn bent lower and hid his paw.<br/>With his other, he reached for their bag and offered it to them.<br/>"He has long disgraced us."<br/>His voice fell with sorrow.<br/>"Yet long ago, he once was my brother."</p>
+<p>Thorn placed a paw upon his brother's shoulder.<br>"I judge not your slaughter, but I ask what use you have for these survivors."</p>
+<p>Hawk sneered.<br>"Shield-meat. Dark-meat if we're lucky."</p>
+<p>Thorn looked upon the Osirian and her mother.<br>A question wrinkled his brow.<br>"They are youthful. Useful. You're wasting their labor in favor of meat?"</p>
+<p>Hawk's blades flashed, but he did not turn to face Thorn.<br>"Meat is not waste. Not when fresh and fruitful."</p>
+<p>Thorn stepped forward, his face turned low.<br>"The small one is bones and skin. The elder is no better.<br>Speak to me truly, brother. What is it you want?"</p>
+<p>Hawk hissed through his teeth, his eyes burning.<br>"Do you not see, Thorn? The savannah has delivered us each a concubine.<br>Would you not partake in them—"</p>
+<p>Hawk's last word was choked, for Thorn's blade had already pierced between his shoulders.<br>Thorn's paw covered Hawk's muzzle and stopped him from shouting for help.<br>He twisted weakly, and fell to his knees, eyes wide with terror.<br>Only then did Thorn release him and allow him to fall to the dirt.</p>
+<p>Thorn stepped backward and dropped his blade, sternly watching the blood drip from his fingers.<br>He was still and silent as a stone. And he looked to the cowering Osirians.</p>
+<p>Thorn bent lower and hid his paw.<br>With his other, he reached for their bag and offered it to them.<br>"He has long disgraced us."<br>His voice fell with sorrow.<br>"Yet long ago, he once was my brother."</p>
 </td>
 </tr>
 <tr><td colspan="3"> -- Ch. 8, <i>Nnomo Paja</i> ("Mourning What Was"). pp. 201-202.</td></tr>
 </table>
-<br/><br/>
+<br><br>
 <h3>From the <i>Tejalima</i></h3>
 <table style="width: 95%;">
 <tr>
@@ -1294,19 +1309,19 @@ var hk_lexDB=[],d=document.getElementById.bind(document);function w(e){var n="";
 </tr>
 <tr>
 <td>
-<p>Tuunukh suuja viiwe jogra, kheke khurumja yhii.<br/>Khitsha buutoja yhii, hhiinwi ez sheg jogra.<br/>Tontakh nhi sonaut jogra, u yyiip Khitsha uura.<br/>"Yyo'a nhisho yhii khlita e'ghemnen roz fuu?"<br/>Lita mit yyiip Khitsha rela fiia, u zekhon ez.<br/>Metsa shava Khitsha, ket yhii riia janghwa.</p>
-<p>"Im'ba, kiizh'baz fuu. Tet'a retajto'nna."<br/>Mejokh sonaut jogra, nhisho weska e'zhet.<br/>"Reltowa'ba vest, si relto yyiip forip.<br/>Kwokh forikh'nna ko, hhojo'er khrishama zua."<br/>Khitsha owjahhona sonaut jogra.<br/>Khitsha riileto shikh, pajda emji firito.</p>
-<p>"Yhii khrisha opii'ba. Yhii khrisha a'reza."<br/>Leme'ap zekhon, khurumjo satwo yhii.<br/>Sotoii zetjarakh'ap, iiriikh e'liivim.<br/>"A'Shelin'ap yyiip nha. Ot'yyip'a nhaz, e?"<br/>Khitsha yyipo yhii'ap e'sil, ez e'kholo?<br/>Siisha yhii hhuuja, hhja'er, u yohhoja.</p>
+<p>Tuunukh suuja viiwe jogra, kheke khurumja yhii.<br>Khitsha buutoja yhii, hhiinwi ez sheg jogra.<br>Tontakh nhi sonaut jogra, u yyiip Khitsha uura.<br>"Yyo'a nhisho yhii khlita e'ghemnen roz fuu?"<br>Lita mit yyiip Khitsha rela fiia, u zekhon ez.<br>Metsa shava Khitsha, ket yhii riia janghwa.</p>
+<p>"Im'ba, kiizh'baz fuu. Tet'a retajto'nna."<br>Mejokh sonaut jogra, nhisho weska e'zhet.<br>"Reltowa'ba vest, si relto yyiip forip.<br>Kwokh forikh'nna ko, hhojo'er khrishama zua."<br>Khitsha owjahhona sonaut jogra.<br>Khitsha riileto shikh, pajda emji firito.</p>
+<p>"Yhii khrisha opii'ba. Yhii khrisha a'reza."<br>Leme'ap zekhon, khurumjo satwo yhii.<br>Sotoii zetjarakh'ap, iiriikh e'liivim.<br>"A'Shelin'ap yyiip nha. Ot'yyip'a nhaz, e?"<br>Khitsha yyipo yhii'ap e'sil, ez e'kholo?<br>Siisha yhii hhuuja, hhja'er, u yohhoja.</p>
 </td>
 <td>
-<p>Darks came brow over, cough held him.<br/>Lynx lied him, danger-without and grass over.<br/>Drops blood face over, but voice Lynx half-was.<br/>"Why body-it breaks like-glass old-and weak?"<br/>Always still voice Lynx had grace, but anger also.<br/>Opened heart Lynx, now it goes away.</p>
-<p>"Lady-me, sick-me-and weak. Bite-no wrist-you."<br/>Greens face over, body shakes like-rock.<br/>"Had-if-me song, or had voice elf.<br/>Fires ears-you in, makes-for thoughts new."<br/>Lynx paw-wished face on.<br/>Lynx knew more, when fur touched.</p>
-<p>"It thinks stupid-me. It thinks not-see."<br/>Fear-from anger, holding head-it.<br/>Growl frustrations-from, whines like-young.<br/>"Not-Shelyn-from voice-you. Dirt-speak-not you-also, aye?"<br/>Lynx spoke it-of like-friend, and like-kholo?<br/>Flute it wanted, sing-for, but silenced.</p>
+<p>Darks came brow over, cough held him.<br>Lynx lied him, danger-without and grass over.<br>Drops blood face over, but voice Lynx half-was.<br>"Why body-it breaks like-glass old-and weak?"<br>Always still voice Lynx had grace, but anger also.<br>Opened heart Lynx, now it goes away.</p>
+<p>"Lady-me, sick-me-and weak. Bite-no wrist-you."<br>Greens face over, body shakes like-rock.<br>"Had-if-me song, or had voice elf.<br>Fires ears-you in, makes-for thoughts new."<br>Lynx paw-wished face on.<br>Lynx knew more, when fur touched.</p>
+<p>"It thinks stupid-me. It thinks not-see."<br>Fear-from anger, holding head-it.<br>Growl frustrations-from, whines like-young.<br>"Not-Shelyn-from voice-you. Dirt-speak-not you-also, aye?"<br>Lynx spoke it-of like-friend, and like-kholo?<br>Flute it wanted, sing-for, but silenced.</p>
 </td>
 <td>
-<p>The shadow came upon his brow, the cough returned in force.<br/>She bid him rest as did before, in shade upon the grass.<br/>Blood drops stained his lips, but her voice was more hoarse.<br/>"Wherefore does its body shatter like old and beaten glass?"<br/>Still always sweeter was her tone, though anger curled her face.<br/>How dare he open up her heart, then go some other place?</p>
-<p>"My lady, I'm but ill from wounds. You need not fret yourself,"<br/>he said as green pooled on his cheeks, and spasms rocked his core.<br/>"Would that I had a song to sing, or that I'd been born an elf.<br/>I could take your mind off me, although my skills are poor."<br/>The more he talked, the greater burned her wish to palm his face.<br/>For Lynx knew better, even as her paw his hairline traced.</p>
-<p>"It thinks me foolish, clearly. It thinks I'm blind as a rat."<br/>Anger born of worry righteous, cradling his skull.<br/>Growling through frustration stubborn, whimp'ring like a cat.<br/>"No Shelyn-gifted is your voice, but neither are you dull."<br/>Wherefore did she speak of him like equals of a kind?<br/>His rounded ears perceived; he smiled, but kept words in his mind.</p>
+<p>The shadow came upon his brow, the cough returned in force.<br>She bid him rest as did before, in shade upon the grass.<br>Blood drops stained his lips, but her voice was more hoarse.<br>"Wherefore does its body shatter like old and beaten glass?"<br>Still always sweeter was her tone, though anger curled her face.<br>How dare he open up her heart, then go some other place?</p>
+<p>"My lady, I'm but ill from wounds. You need not fret yourself,"<br>he said as green pooled on his cheeks, and spasms rocked his core.<br>"Would that I had a song to sing, or that I'd been born an elf.<br>I could take your mind off me, although my skills are poor."<br>The more he talked, the greater burned her wish to palm his face.<br>For Lynx knew better, even as her paw his hairline traced.</p>
+<p>"It thinks me foolish, clearly. It thinks I'm blind as a rat."<br>Anger born of worry righteous, cradling his skull.<br>Growling through frustration stubborn, whimp'ring like a cat.<br>"No Shelyn-gifted is your voice, but neither are you dull."<br>Wherefore did she speak of him like equals of a kind?<br>His rounded ears perceived; he smiled, but kept words in his mind.</p>
 </td>
 </tr>
 </table>

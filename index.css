@@ -68,7 +68,7 @@ background-color: #5A3754;
 background-color: #8C2E3D;
 }
 
-tr *:not(a,button,i,p,span,sup) {
+tr *:not(a,button,i,label,p,span,sup) {
 border: 1px solid #555555;
 text-align: center;
 }
